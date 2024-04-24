@@ -58,8 +58,8 @@ set_property(TARGET Befaco PROPERTY CXX_STANDARD 20)
 #########################################################
 # Step 4: call create_plugin()
 create_plugin(
-    SOURCE_LIB      Befaco
-    PLUGIN_NAME     Befaco
-    SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins/Befaco
+    SOURCE_LIB      Befaco                  # This is the cmake target name (defined in add_target)
+    PLUGIN_NAME     Befaco                  # This must match the brand "slug" used in VCV Rack
+    SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Befaco # Path to where you want the plugin dir output: it can be shared between multiple plugins
 )

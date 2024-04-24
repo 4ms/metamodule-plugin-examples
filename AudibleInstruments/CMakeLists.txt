@@ -16,10 +16,10 @@ project(AudibleInstrumentsMetaModulePlugin
 #########################################################
 # Step 3: Create a cmake target for your plugin and add all your sources, compile flags, includes, etc.
 
+add_library(AudibleInstruments STATIC)
+
 # AUDIBLE_DIR is a convenient variable pointing to the AudibleInstruments VCV Rack repo
 set(AUDIBLE_DIR ${CMAKE_CURRENT_LIST_DIR}/AudibleInstruments)
-
-add_library(AudibleInstruments STATIC)
 
 target_sources(AudibleInstruments
     PRIVATE
@@ -191,5 +191,5 @@ create_plugin(
     SOURCE_LIB      AudibleInstruments                  # This is the cmake target name (defined in add_target)
     PLUGIN_NAME     AudibleInstruments                  # This must match the brand "slug" used in VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/build/metamodule-plugins/AudibleInstruments # Path to where you want the plugin dir output
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/AudibleInstruments # Path to where you want the plugin dir output: it can be shared between multiple plugins
 )
