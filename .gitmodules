@@ -1,0 +1,3 @@
+[submodule "metamodule-plugin-sdk"]
+	path = metamodule-plugin-sdk
+	url = git@github.com:4ms/metamodule-plugin-sdk
