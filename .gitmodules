@@ -7,3 +7,6 @@
 [submodule "Befaco/Befaco"]
 	path = Befaco/Befaco
 	url = https://github.com/hemmer/Befaco.git
+[submodule "hetrickcv/hetrickcv"]
+	path = hetrickcv/hetrickcv
+	url = https://github.com/mhetrick/hetrickcv.git
