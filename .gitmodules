@@ -10,3 +10,6 @@
 [submodule "hetrickcv/hetrickcv"]
 	path = hetrickcv/hetrickcv
 	url = https://github.com/mhetrick/hetrickcv.git
+[submodule "nonlinearcircuits/nonlinearcircuits"]
+	path = nonlinearcircuits/nonlinearcircuits
+	url = https://github.com/mhetrick/nonlinearcircuits
