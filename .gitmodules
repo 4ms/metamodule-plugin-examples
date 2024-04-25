@@ -13,3 +13,6 @@
 [submodule "nonlinearcircuits/nonlinearcircuits"]
 	path = nonlinearcircuits/nonlinearcircuits
 	url = https://github.com/mhetrick/nonlinearcircuits
+[submodule "eightfold/eightfold"]
+	path = eightfold/eightfold
+	url = https://github.com/scanner-darkly/eightfold.git
