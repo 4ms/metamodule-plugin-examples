@@ -93,8 +93,8 @@ drive.
 
 
 ``` 
-cd .. cp -R metamodule-plugins/ /Volumes/SDCard-or-USBDrive/
-
+cd ..  # Root of this repo
+cp -R metamodule-plugins/ /Volumes/SDCard-or-USBDrive/
 ``` 
 
 Make sure the metamodule-plugins/ dir itself resides in the root-level of
@@ -133,10 +133,10 @@ mkdir assets/panels
 mkdir assets/components
 
 # Convert res/panels/*.svg ==>> assets/panels/*.png: 
-../scripts/SvgToPng.py --input MyPluginVCV/res/panels/ --output assets/panels
+../metamodule-plugin-sdk/scripts/SvgToPng.py --input MyPluginVCV/res/panels/ --output assets/panels
 
 # Convert res/components/*.svg ==>> assets/components/*.png:
-../scripts/SvgToPng.py --input MyPluginVCV/res/components/ --output assets/components
+../metamodule-plugin-sdk/scripts/SvgToPng.py --input MyPluginVCV/res/components/ --output assets/components
 
 ```
 
