@@ -16,3 +16,6 @@
 [submodule "eightfold/eightfold"]
 	path = eightfold/eightfold
 	url = https://github.com/scanner-darkly/eightfold.git
+[submodule "Valley/ValleyRackFree"]
+	path = Valley/ValleyRackFree
+	url = https://github.com/ValleyAudio/ValleyRackFree.git
