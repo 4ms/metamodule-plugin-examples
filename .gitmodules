@@ -62,3 +62,6 @@
 [submodule "word-generator1"]
 	path = WordGenerator/word-generator
 	url = https://github.com/sindarknave/word-generator
+[submodule "Impromptu/ImpromptuModular"]
+	path = Impromptu/ImpromptuModular
+	url = https://github.com/MarcBoule/ImpromptuModular.git
