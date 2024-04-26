@@ -23,6 +23,19 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/ImpromptuModular)
 target_sources(Impromptu
     PRIVATE
     ${SOURCE_DIR}/src/Sygen.cpp
+	${SOURCE_DIR}/src/AdaptiveQuantizer.cpp
+	${SOURCE_DIR}/src/BigButtonSeq.cpp
+	${SOURCE_DIR}/src/BigButtonSeq2.cpp
+	# ${SOURCE_DIR}/src/ChordKey.cpp #needs make_element(OpaqueWidget*,...)
+	${SOURCE_DIR}/src/Clocked.cpp
+	${SOURCE_DIR}/src/ClockedCommon.cpp
+	${SOURCE_DIR}/src/ClockedExpander.cpp
+	${SOURCE_DIR}/src/Clkd.cpp
+	${SOURCE_DIR}/src/CvPad.cpp
+	# ${SOURCE_DIR}/src/Foundry.cpp #needs make_element(OpaqueWidget*,...)
+	# ${SOURCE_DIR}/src/FoundryExpander.cpp
+	# ${SOURCE_DIR}/src/FourView.cpp
+
 
     ${SOURCE_DIR}/src/FundamentalUtil.cpp
     ${SOURCE_DIR}/src/comp/Components.cpp
