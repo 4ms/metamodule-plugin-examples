@@ -8,12 +8,10 @@ import actions.png as png
 f"Python 3.6+ is required"
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser("""MetaModule SVG to PNG Conversion Helper
-    Converts SVG file(s) to 47.44 dpi PNG file(s) (240px/5.059in = 47.44dpi).
-
-    Requires inkscape (v1.2.2) to be present on PATH, or found at the
-    environment variable INKSCAPE_BIN_PATH
-     """)
+    parser = argparse.ArgumentParser(
+                 prog="SvgToPng", 
+                 description="MetaModule SVG to PNG Conversion Helper. Converts SVG file(s) to 47.44 dpi PNG file(s) (240px/5.059in = 47.44dpi).",
+                 epilog="Requires inkscape (v1.2.2) to be present on PATH, or found at the environment variable INKSCAPE_BIN_PATH")
 
     parser.add_argument("--input", required=True, help="Path to .svg file or directory containing svg files")
     parser.add_argument("--output", required=True, help="Directory where converted .png files will be saved")
