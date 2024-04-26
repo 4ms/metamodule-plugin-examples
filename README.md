@@ -73,4 +73,37 @@ Then insert the SD Card or USB drive into your MetaModule. Follow the MetaModule
 
 ## Images
 
-TODO
+VCV Rack uses SVG files for graphical assets, but MetaModule uses PNGs.
+So, we need to convert all SVGs to PNGs. Typically all SVGs are kept in a `res/` directory for VCV Rack plugins.
+For MetaModule plugins, the `res/` dir is omitted, but otherwise the directory structure and file base names are kept the same. 
+Before building your plugin, convert all the SVGs to PNGs and put them into the `assets/` dir in your plugin folder.
+This `assets/` dir is refered to by CMakeLists in the call to `create_plugin()`, so if you want to use a different directory, 
+just change it there. The Cmake script will simply copy the contents of the `assets/` dir to the plugin dir.
+
+There is a helper script that can convert a directory of SVGs to PNGs: `scripts/SvgToPng.py`.
+Running `scripts/SvgToPng.py -h` will display the help with available options.
+The script requires that you have inkscape installed and the `inkscape` executable on your PATH.
+Version 1.2.2 has been tested to work.
+
+You can use it to convert directories, one at a time (it does not recursively scan sub-dirs):
+
+```
+cd MyPlugin
+
+mkdir assets
+mkdir assets/panels
+mkdir assets/components
+
+# Convert res/panels/*.svg ==>> assets/panels/*.png:
+../scripts/SvgToPng.py --input MyPluginVCV/res/panels/ --output assets/panels
+
+# Convert res/components/*.svg ==>> assets/components/*.png:
+../scripts/SvgToPng.py --input MyPluginVCV/res/components/ --output assets/components
+
+```
+
+The script is not terribly complex, and will try to figure out the SVG's DPI but may get it wrong.
+If you need to, use the `--height=240` option when converting faceplates to force them to be 240px.
+
+If you want to disable transparency, then add the `--white` option.
+
