@@ -1,0 +1,82 @@
+{
+	"MetaModuleBrandName": "Impromptu",
+	"MetaModuleBrandSlug": "ImpromptuModular",
+	"MetaModulePluginMaintainer": "4ms Company",
+	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+	"MetaModulePluginMaintainerUrl": "",
+	"MetaModuleDescription": "ImpromptuModular VCV plugin ported to MetaModule",
+	"MetaModuleIncludedModules": [
+		{
+			"slug": "Adaptive-Quantizer",
+			"name": "AdaptiveQuantizer"
+		},
+		{
+			"slug": "Big-Button-Seq",
+			"name": "BigButtonSeq"
+		},
+		{
+			"slug": "Big-Button-Seq2",
+			"name": "BigButtonSeq2"
+		},
+		{
+			"slug": "Clocked",
+			"name": "Clocked"
+		},
+		{
+			"slug": "Chord-Key",
+			"name": "ChordKey"
+		},
+		{
+			"slug": "Clocked-Clkd",
+			"name": "Clkd"
+		},
+		{
+			"slug": "Cv-Pad",
+			"name": "CV-Pad"
+		},
+		{
+			"slug": "Foundry",
+			"name": "Foundry"
+		},
+		{
+			"slug": "Gate-Seq-64",
+			"name": "GateSeq64"
+		},
+		{
+			"slug": "Write-Seq-32",
+			"name": "WriteSeq32"
+		},
+		{
+			"slug": "Write-Seq-64",
+			"name": "WriteSeq64"
+		},
+		{
+			"slug": "Phrase-Seq-16",
+			"name": "PhraseSeq16"
+		},
+		{
+			"slug": "Phrase-Seq-32",
+			"name": "PhraseSeq32"
+		},
+		{
+			"slug": "NoteEcho",
+			"name": "NoteEcho"
+		},
+		{
+			"slug": "Variations",
+			"name": "Variations"
+		},
+		{
+			"slug": "Prob-Key",
+			"name": "ProbKey"
+		},
+		{
+			"slug": "Part-Gate-Split",
+			"name": "Part"
+		},
+		{
+			"slug": "Sygen",
+			"name": "Sygen"
+		}
+	]
+}
