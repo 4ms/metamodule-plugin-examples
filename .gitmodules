@@ -16,3 +16,6 @@
 [submodule "eightfold/eightfold"]
 	path = eightfold/eightfold
 	url = https://github.com/scanner-darkly/eightfold.git
+[submodule "Impromptu/ImpromptuModular"]
+	path = Impromptu/ImpromptuModular
+	url = https://github.com/MarcBoule/ImpromptuModular.git
