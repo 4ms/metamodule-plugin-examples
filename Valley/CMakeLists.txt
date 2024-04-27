@@ -33,9 +33,16 @@ target_sources(Valley
     Valley.cpp 
 )
 
-target_include_directories(Valley PRIVATE ${SOURCE_DIR}/src .)
+target_include_directories(Valley PRIVATE 
+	${SOURCE_DIR}/src 
+	${CMAKE_CURRENT_LIST_DIR}
+)
 
-target_compile_options(Valley PRIVATE -Wno-double-promotion $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>)
+target_compile_options(Valley 
+	PRIVATE 
+	-Wno-double-promotion 
+	$<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
+)
 
 set_property(TARGET Valley PROPERTY CXX_STANDARD 20)
 
