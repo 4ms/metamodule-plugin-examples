@@ -1,0 +1,50 @@
+cmake_minimum_required(VERSION 3.22)
+
+#########################################################
+# Step 1: Include plugin.cmake from the SDK. 
+# You must do this before anything else since it defines the TOOLCHAIN
+include(${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk/plugin.cmake)
+
+#########################################################
+# Step 2: Define your project name, vesion, etc
+project(ValleyMetaModulePlugin 
+    VERSION     0.1 
+    DESCRIPTION "Valley Plugin for MetaModule" 
+    LANGUAGES   C CXX ASM
+)
+
+#########################################################
+# Step 3: Create a cmake target for your plugin and add all your sources, compile flags, includes, etc.
+add_library(Valley STATIC)
+
+# convenient variable pointing to the VCV Rack repo
+set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/ValleyRackFree)
+
+target_sources(Valley
+    PRIVATE
+    ${SOURCE_DIR}/src/Plateau/Plateau.cpp
+    ${SOURCE_DIR}/src/Plateau/Dattorro.cpp
+
+    ${SOURCE_DIR}/src/dsp/modulation/LinearEnvelope.cpp
+    ${SOURCE_DIR}/src/dsp/filters/OnePoleFilters.cpp
+
+    # Note that we build our own plugin.cpp, not the one in Valley/src/
+    # This is because we want to exclude the above modules from the plugin
+    Valley.cpp 
+)
+
+target_include_directories(Valley PRIVATE ${SOURCE_DIR}/src .)
+
+target_compile_options(Valley PRIVATE -Wno-double-promotion $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>)
+
+set_property(TARGET Valley PROPERTY CXX_STANDARD 20)
+
+
+#########################################################
+# Step 4: call create_plugin()
+create_plugin(
+    SOURCE_LIB      Valley                  # This is the cmake target name (defined in add_target)
+    PLUGIN_NAME     Valley                  # This must match the brand "slug" used in VCV Rack
+    SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Valley # Path to where you want the plugin dir output: it can be shared between multiple plugins
+)
