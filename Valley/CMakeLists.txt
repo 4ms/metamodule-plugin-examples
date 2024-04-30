@@ -25,8 +25,17 @@ target_sources(Valley
     ${SOURCE_DIR}/src/Plateau/Plateau.cpp
     ${SOURCE_DIR}/src/Plateau/Dattorro.cpp
 
+    ${SOURCE_DIR}/src/Topograph/TopographPatternGenerator.cpp
+    ${SOURCE_DIR}/src/Topograph/Topograph.cpp
+    ${SOURCE_DIR}/src/Topograph/TopographResources.cpp
+    ${SOURCE_DIR}/src/uGraph/uGraph.cpp
+
     ${SOURCE_DIR}/src/dsp/modulation/LinearEnvelope.cpp
     ${SOURCE_DIR}/src/dsp/filters/OnePoleFilters.cpp
+    ${SOURCE_DIR}/src/timers/Metronome.cpp
+    ${SOURCE_DIR}/src/timers/Oneshot.cpp
+    ${SOURCE_DIR}/src/gui/ValleyChoiceMenu.cpp
+    ${SOURCE_DIR}/src/gui/PlainText.cpp
 
     # Note that we build our own plugin.cpp, not the one in Valley/src/
     # This is because we want to exclude the above modules from the plugin
@@ -35,7 +44,7 @@ target_sources(Valley
 
 target_include_directories(Valley PRIVATE 
 	${SOURCE_DIR}/src 
-	${CMAKE_CURRENT_LIST_DIR}
+	# ${CMAKE_CURRENT_LIST_DIR}
 )
 
 target_compile_options(Valley 
