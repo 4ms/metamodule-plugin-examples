@@ -22,11 +22,17 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/Geodesics)
 
 target_sources(Geodesics
     PRIVATE
-    ${SOURCE_DIR}/src/Ions.cpp
-    ${SOURCE_DIR}/src/Entropia.cpp
+    ${SOURCE_DIR}/src/BlackHoles.cpp
+    ${SOURCE_DIR}/src/Branes.cpp
+    ${SOURCE_DIR}/src/DarkEnergy.cpp
     ${SOURCE_DIR}/src/Energy.cpp
     ${SOURCE_DIR}/src/EnergyOsc.cpp
+    ${SOURCE_DIR}/src/Entropia.cpp
+    ${SOURCE_DIR}/src/Fate.cpp
     ${SOURCE_DIR}/src/GeoWidgets.cpp
+    ${SOURCE_DIR}/src/Ions.cpp
+    ${SOURCE_DIR}/src/Pulsars.cpp
+    ${SOURCE_DIR}/src/Torus.cpp
 
     # Note that we build our own plugin.cpp, not the one in Geodesics/src/
     # This is because we want to exclude the above modules from the plugin

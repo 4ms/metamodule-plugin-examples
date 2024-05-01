@@ -17,15 +17,15 @@ void init(Plugin *p) {
 
   // readDarkAsDefault();
 
-  // p->addModel(modelBlackHoles);
-  // p->addModel(modelPulsars);
-  // p->addModel(modelBranes);
+  p->addModel(modelBlackHoles);
+  p->addModel(modelPulsars);
+  p->addModel(modelBranes);
   p->addModel(modelIons);
   p->addModel(modelEntropia);
   p->addModel(modelEnergy);
-  // p->addModel(modelDarkEnergy);
-  // p->addModel(modelTorus);
-  // p->addModel(modelFate);
+  p->addModel(modelDarkEnergy);
+  p->addModel(modelTorus);
+  p->addModel(modelFate);
   // p->addModel(modelBlankLogo);
   // p->addModel(modelBlankInfo);
 }
