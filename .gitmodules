@@ -19,3 +19,6 @@
 [submodule "Valley/ValleyRackFree"]
 	path = Valley/ValleyRackFree
 	url = https://github.com/4ms/ValleyRackFree.git
+[submodule "Geodesics/Geodesics"]
+	path = Geodesics/Geodesics
+	url = https://github.com/MarcBoule/Geodesics.git
