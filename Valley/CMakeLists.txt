@@ -27,7 +27,6 @@ target_sources(Valley
 
     ${SOURCE_DIR}/src/Topograph/TopographPatternGenerator.cpp
     ${SOURCE_DIR}/src/Topograph/Topograph.cpp
-    ${SOURCE_DIR}/src/Topograph/TopographResources.cpp
     ${SOURCE_DIR}/src/uGraph/uGraph.cpp
 
     ${SOURCE_DIR}/src/dsp/modulation/LinearEnvelope.cpp
