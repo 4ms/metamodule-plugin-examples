@@ -22,3 +22,6 @@
 [submodule "Geodesics/Geodesics"]
 	path = Geodesics/Geodesics
 	url = https://github.com/MarcBoule/Geodesics.git
+[submodule "Bogaudio/BogaudioModules"]
+	path = Bogaudio/BogaudioModules
+	url = https://github.com/4ms/BogaudioModules
