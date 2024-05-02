@@ -23,17 +23,22 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/ChowDSP-VCV)
 target_sources(ChowDSP
     PRIVATE
 
+    # Chorus crashes when trying to run. Haven't looked into it.
     # ${SOURCE_DIR}/src/ChowChorus/BBDDelayLine.cpp
     # ${SOURCE_DIR}/src/ChowChorus/ChowChorus.cpp
+
     ${SOURCE_DIR}/src/ChowDer/ChowDer.cpp
     ${SOURCE_DIR}/src/ChowDer/BaxandallEQ.cpp
     ${SOURCE_DIR}/src/ChowModal/ChowModal.cpp
     ${SOURCE_DIR}/src/ChowPhaser/ChowPhaserFB.cpp
     ${SOURCE_DIR}/src/ChowPhaser/ChowPhaserMod.cpp
     ${SOURCE_DIR}/src/ChowPulse/ChowPulse.cpp
+
+    # RNN compiles but crashes when trying to run modul: haven't looked into why
     # ${SOURCE_DIR}/src/ChowRNN/ChowRNN.cpp
     # ${SOURCE_DIR}/src/ChowRNN/LayerJSON.cpp
     # ${SOURCE_DIR}/src/ChowRNN/LayerRandomiser.cpp
+
     ${SOURCE_DIR}/src/ChowTape/compression/ChowTapeCompression.cpp
     ${SOURCE_DIR}/src/ChowTape/degrade/ChowTapeChew.cpp
     ${SOURCE_DIR}/src/ChowTape/degrade/ChowTapeDegrade.cpp
@@ -48,7 +53,7 @@ target_sources(ChowDSP
     ${SOURCE_DIR}/src/shared/SineWave.cpp
     ${SOURCE_DIR}/src/shared/delay_line.cpp
 
-    # r8lib has heavy use of iostream (cerr)
+    # r8lib has heavy use of iostream (cerr), won't compile
     # ${SOURCE_DIR}/src/ChowFDN/ChowFDN.cpp
     # ${SOURCE_DIR}/src/ChowFDN/fdn.cpp
     # ${SOURCE_DIR}/lib/r8lib/r8lib.cpp
