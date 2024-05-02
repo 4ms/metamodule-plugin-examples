@@ -23,17 +23,17 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/ChowDSP-VCV)
 target_sources(ChowDSP
     PRIVATE
 
-    ${SOURCE_DIR}/src/ChowChorus/BBDDelayLine.cpp
-    ${SOURCE_DIR}/src/ChowChorus/ChowChorus.cpp
+    # ${SOURCE_DIR}/src/ChowChorus/BBDDelayLine.cpp
+    # ${SOURCE_DIR}/src/ChowChorus/ChowChorus.cpp
     ${SOURCE_DIR}/src/ChowDer/ChowDer.cpp
     ${SOURCE_DIR}/src/ChowDer/BaxandallEQ.cpp
     ${SOURCE_DIR}/src/ChowModal/ChowModal.cpp
     ${SOURCE_DIR}/src/ChowPhaser/ChowPhaserFB.cpp
     ${SOURCE_DIR}/src/ChowPhaser/ChowPhaserMod.cpp
     ${SOURCE_DIR}/src/ChowPulse/ChowPulse.cpp
-    ${SOURCE_DIR}/src/ChowRNN/ChowRNN.cpp
-    ${SOURCE_DIR}/src/ChowRNN/LayerJSON.cpp
-    ${SOURCE_DIR}/src/ChowRNN/LayerRandomiser.cpp
+    # ${SOURCE_DIR}/src/ChowRNN/ChowRNN.cpp
+    # ${SOURCE_DIR}/src/ChowRNN/LayerJSON.cpp
+    # ${SOURCE_DIR}/src/ChowRNN/LayerRandomiser.cpp
     ${SOURCE_DIR}/src/ChowTape/compression/ChowTapeCompression.cpp
     ${SOURCE_DIR}/src/ChowTape/degrade/ChowTapeChew.cpp
     ${SOURCE_DIR}/src/ChowTape/degrade/ChowTapeDegrade.cpp
@@ -42,8 +42,6 @@ target_sources(ChowDSP
     ${SOURCE_DIR}/src/ChowTape/tape/HysteresisProcessing.cpp
     ${SOURCE_DIR}/src/Warp/Warp.cpp
     ${SOURCE_DIR}/src/Warp/WarpFilter.cpp
-
-    # require __popcountsi2 and memalign symbols
     ${SOURCE_DIR}/src/Werner/GenSVF.cpp
     ${SOURCE_DIR}/src/Werner/Werner.cpp
 

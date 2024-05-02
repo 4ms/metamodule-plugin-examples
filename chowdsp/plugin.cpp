@@ -7,22 +7,22 @@ void init(Plugin *p) {
   pluginInstance = p;
 
   // Add modules here
-  p->addModel(modelChowTape);
+  p->addModel(modelChowTape); // takes up to 95% load!
   p->addModel(modelChowPhaserFeedback);
   p->addModel(modelChowPhaserMod);
-  // p->addModel(modelChowFDN);
-  p->addModel(modelChowRNN);
+  // p->addModel(modelChowFDN); //  uses too much iostreams
+  // p->addModel(modelChowRNN); // loads but crashes on run
   p->addModel(modelChowModal);
   p->addModel(modelChowDer);
   p->addModel(modelWarp);
-  // p->addModel(modelWerner);
+  p->addModel(modelWerner);
   // p->addModel(modelCredit);
   p->addModel(modelChowPulse);
   p->addModel(modelChowTapeCompression);
   p->addModel(modelChowTapeChew);
   p->addModel(modelChowTapeDegrade);
   p->addModel(modelChowTapeLoss);
-  p->addModel(modelChowChorus);
+  // p->addModel(modelChowChorus); // loads but crashes on run
 
   // Any other plugin initialization may go here.
   // As an alternative, consider lazy-loading assets and lookup tables when your
