@@ -22,21 +22,39 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/ChowDSP-VCV)
 
 target_sources(ChowDSP
     PRIVATE
+
+    ${SOURCE_DIR}/src/ChowChorus/BBDDelayLine.cpp
+    ${SOURCE_DIR}/src/ChowChorus/ChowChorus.cpp
+    ${SOURCE_DIR}/src/ChowDer/ChowDer.cpp
+    ${SOURCE_DIR}/src/ChowDer/BaxandallEQ.cpp
+    ${SOURCE_DIR}/src/ChowModal/ChowModal.cpp
+    ${SOURCE_DIR}/src/ChowPhaser/ChowPhaserFB.cpp
+    ${SOURCE_DIR}/src/ChowPhaser/ChowPhaserMod.cpp
+    ${SOURCE_DIR}/src/ChowPulse/ChowPulse.cpp
+    ${SOURCE_DIR}/src/ChowRNN/ChowRNN.cpp
+    ${SOURCE_DIR}/src/ChowRNN/LayerJSON.cpp
+    ${SOURCE_DIR}/src/ChowRNN/LayerRandomiser.cpp
     ${SOURCE_DIR}/src/ChowTape/compression/ChowTapeCompression.cpp
     ${SOURCE_DIR}/src/ChowTape/degrade/ChowTapeChew.cpp
     ${SOURCE_DIR}/src/ChowTape/degrade/ChowTapeDegrade.cpp
     ${SOURCE_DIR}/src/ChowTape/loss/ChowTapeLoss.cpp
     ${SOURCE_DIR}/src/ChowTape/tape/ChowTape.cpp
     ${SOURCE_DIR}/src/ChowTape/tape/HysteresisProcessing.cpp
+    ${SOURCE_DIR}/src/Warp/Warp.cpp
+    ${SOURCE_DIR}/src/Warp/WarpFilter.cpp
 
-    ${SOURCE_DIR}/src/ChowChorus/BBDDelayLine.cpp
-    ${SOURCE_DIR}/src/ChowChorus/ChowChorus.cpp
+    # require __popcountsi2 and memalign symbols
+    ${SOURCE_DIR}/src/Werner/GenSVF.cpp
+    ${SOURCE_DIR}/src/Werner/Werner.cpp
 
-    ${SOURCE_DIR}/src/ChowDer/ChowDer.cpp
-    ${SOURCE_DIR}/src/ChowDer/BaxandallEQ.cpp
+    ${SOURCE_DIR}/src/shared/SineWave.cpp
+    ${SOURCE_DIR}/src/shared/delay_line.cpp
 
-    ${SOURCE_DIR}/src/ChowFDN/ChowFDN.cpp
-    ${SOURCE_DIR}/src/ChowFDN/fdn.cpp
+    # r8lib has heavy use of iostream (cerr)
+    # ${SOURCE_DIR}/src/ChowFDN/ChowFDN.cpp
+    # ${SOURCE_DIR}/src/ChowFDN/fdn.cpp
+    # ${SOURCE_DIR}/lib/r8lib/r8lib.cpp
+    # ${SOURCE_DIR}/lib/r8lib/matrix_exponential.cpp
 
     # Note that we build our own plugin.cpp, not the one in ChowDSP/src/
     plugin.cpp 
@@ -52,9 +70,9 @@ target_include_directories(ChowDSP PRIVATE
 target_compile_definitions(ChowDSP PRIVATE USE_EIGEN)
 
 target_compile_options(ChowDSP PRIVATE 
--fexceptions
+    -fexceptions
+    -Wno-deprecated-enum-enum-conversion
 )
-# -Wno-double-promotion $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>)
 
 set_property(TARGET ChowDSP PROPERTY CXX_STANDARD 20)
 
