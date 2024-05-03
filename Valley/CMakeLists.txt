@@ -29,12 +29,20 @@ target_sources(Valley
     ${SOURCE_DIR}/src/Topograph/Topograph.cpp
     ${SOURCE_DIR}/src/uGraph/uGraph.cpp
 
+    # ${SOURCE_DIR}/src/Terrorform/Terrorform.cpp
+    ${SOURCE_DIR}/src/Interzone/Interzone.cpp
+
     ${SOURCE_DIR}/src/dsp/modulation/LinearEnvelope.cpp
     ${SOURCE_DIR}/src/dsp/filters/OnePoleFilters.cpp
+    ${SOURCE_DIR}/src/dsp/filters/VecOnePoleFilters.cpp
+    ${SOURCE_DIR}/src/dsp/filters/VecOTAFilter.cpp
+    ${SOURCE_DIR}/src/dsp/filters/OTAFilter.cpp
+    ${SOURCE_DIR}/src/dsp/modulation/VecLoopingADSR.cpp
     ${SOURCE_DIR}/src/timers/Metronome.cpp
     ${SOURCE_DIR}/src/timers/Oneshot.cpp
     ${SOURCE_DIR}/src/gui/ValleyChoiceMenu.cpp
     ${SOURCE_DIR}/src/gui/PlainText.cpp
+    ${SOURCE_DIR}/src/gui/SteppedSlider.cpp
 
     # Note that we build our own plugin.cpp, not the one in Valley/src/
     # This is because we want to exclude the above modules from the plugin

@@ -9,7 +9,7 @@ void init(rack::Plugin *p) {
   p->addModel(modelUGraph);
   // p->addModel(modelDexter);
   p->addModel(modelPlateau);
-  // p->addModel(modelInterzone);
+  p->addModel(modelInterzone);
   // p->addModel(modelAmalgam);
   // p->addModel(modelFeline);
   // p->addModel(modelTerrorform);
