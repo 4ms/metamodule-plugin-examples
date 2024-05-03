@@ -30,7 +30,20 @@ target_sources(Valley
     ${SOURCE_DIR}/src/uGraph/uGraph.cpp
 
     # ${SOURCE_DIR}/src/Terrorform/Terrorform.cpp
+
     ${SOURCE_DIR}/src/Interzone/Interzone.cpp
+    
+    ${SOURCE_DIR}/src/Amalgam/Amalgam.cpp
+    ${SOURCE_DIR}/src/Amalgam/VecAmalgam.cpp
+
+    ${SOURCE_DIR}/src/Feline/Feline.cpp
+
+    # Requires .bin files built into the binary (possibly, but not yet!)
+    # ${SOURCE_DIR}/src/Dexter/Dexter.cpp
+    # ${SOURCE_DIR}/src/Dexter/DexterCore.cpp
+    # ${SOURCE_DIR}/src/Dexter/DexterRoutingMatrix.cpp
+    # ${SOURCE_DIR}/src/Dexter/Chords.cpp
+
 
     ${SOURCE_DIR}/src/dsp/modulation/LinearEnvelope.cpp
     ${SOURCE_DIR}/src/dsp/filters/OnePoleFilters.cpp
@@ -38,11 +51,15 @@ target_sources(Valley
     ${SOURCE_DIR}/src/dsp/filters/VecOTAFilter.cpp
     ${SOURCE_DIR}/src/dsp/filters/OTAFilter.cpp
     ${SOURCE_DIR}/src/dsp/modulation/VecLoopingADSR.cpp
+    ${SOURCE_DIR}/src/dsp/fx/DiodeRingMod.cpp
+    ${SOURCE_DIR}/src/dsp/fx/VecDiodeRingMod.cpp
     ${SOURCE_DIR}/src/timers/Metronome.cpp
     ${SOURCE_DIR}/src/timers/Oneshot.cpp
     ${SOURCE_DIR}/src/gui/ValleyChoiceMenu.cpp
     ${SOURCE_DIR}/src/gui/PlainText.cpp
     ${SOURCE_DIR}/src/gui/SteppedSlider.cpp
+    ${SOURCE_DIR}/src/gui/DigitalDisplay.cpp
+    ${SOURCE_DIR}/src/utilities/Utilities.cpp
 
     # Note that we build our own plugin.cpp, not the one in Valley/src/
     # This is because we want to exclude the above modules from the plugin
