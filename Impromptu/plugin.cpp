@@ -24,10 +24,10 @@ void init(Plugin *p) {
   // p->addModel(modelClockedExpander);
   p->addModel(modelClkd);
   p->addModel(modelCvPad);
-  p->addModel(modelFoundry);
+  // p->addModel(modelFoundry);
   // p->addModel(modelFoundryExpander);
-  p->addModel(modelFourView);
-  // p->addModel(modelGateSeq64);
+  // p->addModel(modelFourView);
+  p->addModel(modelGateSeq64);
   // p->addModel(modelGateSeq64Expander);
   // p->addModel(modelHotkey);
   // p->addModel(modelNoteEcho);
@@ -38,7 +38,7 @@ void init(Plugin *p) {
   // p->addModel(modelProbKey);
   // p->addModel(modelSemiModularSynth);
   p->addModel(modelSygen);
-  // p->addModel(modelTact);
+  // p->addModel(modelTact); //pad
   // p->addModel(modelTact1);
   // p->addModel(modelTactG);
   // p->addModel(modelTwelveKey);

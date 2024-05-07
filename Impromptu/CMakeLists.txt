@@ -23,26 +23,37 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/ImpromptuModular)
 target_sources(Impromptu
     PRIVATE
     ${SOURCE_DIR}/src/Sygen.cpp
+
 	${SOURCE_DIR}/src/AdaptiveQuantizer.cpp
+
 	${SOURCE_DIR}/src/BigButtonSeq.cpp
 	${SOURCE_DIR}/src/BigButtonSeq2.cpp
-	# ${SOURCE_DIR}/src/ChordKey.cpp #needs make_element(OpaqueWidget*,...)
+
+	${SOURCE_DIR}/src/ChordKey.cpp # required by CvPad->FourView
+	${SOURCE_DIR}/src/ChordKeyExpander.cpp # required by CvPad->FourView
+
 	${SOURCE_DIR}/src/Clocked.cpp
 	${SOURCE_DIR}/src/ClockedCommon.cpp
 	${SOURCE_DIR}/src/ClockedExpander.cpp
-	${SOURCE_DIR}/src/Clkd.cpp
-	${SOURCE_DIR}/src/CvPad.cpp
-	# ${SOURCE_DIR}/src/Foundry.cpp #needs make_element(OpaqueWidget*,...)
-	# ${SOURCE_DIR}/src/FoundryExpander.cpp
-	# ${SOURCE_DIR}/src/FourView.cpp
 
+	${SOURCE_DIR}/src/Clkd.cpp
+
+	${SOURCE_DIR}/src/CvPad.cpp # requires FourView
+
+	# ${SOURCE_DIR}/src/Foundry.cpp #Has keyboard
+	# ${SOURCE_DIR}/src/FoundryExpander.cpp
+
+	${SOURCE_DIR}/src/FourView.cpp #Screen for chords, requires ChordKey and ChordKeyExpander
+
+	${SOURCE_DIR}/src/GateSeq64.cpp
+	${SOURCE_DIR}/src/GateSeq64Expander.cpp
 
     ${SOURCE_DIR}/src/FundamentalUtil.cpp
+	${SOURCE_DIR}/src/Interop.cpp
+	${SOURCE_DIR}/src/PhraseSeqUtil.cpp
     ${SOURCE_DIR}/src/comp/Components.cpp
     ${SOURCE_DIR}/src/comp/PanelTheme.cpp
-
-    # Note we do not support:
-    # ...
+    ${SOURCE_DIR}/src/comp/PianoKey.cpp
 
     # Note that we build our own plugin.cpp, not the one in the source repo
     # This is because we want to exclude the above modules from the plugin
