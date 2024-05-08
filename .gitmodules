@@ -27,4 +27,4 @@
 	url = https://github.com/4ms/BogaudioModules
 [submodule "chowdsp/ChowDSP-VCV"]
 	path = chowdsp/ChowDSP-VCV
-	url = https://github.com/jatinchowdhury18/ChowDSP-VCV.git
+	url = https://github.com/4ms/ChowDSP-VCV.git
