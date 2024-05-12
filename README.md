@@ -46,11 +46,11 @@ git submodule update --init --recursive
 Then, build any/all of the brands you are interested in:
 
 ```
-cd Befaco
+cd Bogaudio
 cmake -B build -G Ninja
 cmake --build build
 
-cd ../AudibleInstruments
+cd ../Valley
 cmake -B build -G Ninja
 cmake --build build
 
