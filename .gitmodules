@@ -1,21 +1,6 @@
-[submodule "AudibleInstruments/AudibleInstruments"]
-	path = AudibleInstruments/AudibleInstruments
-	url = https://github.com/4ms/AudibleInstruments
 [submodule "metamodule-plugin-sdk"]
 	path = metamodule-plugin-sdk
 	url = git@github.com:4ms/metamodule-plugin-sdk
-[submodule "Befaco/Befaco"]
-	path = Befaco/Befaco
-	url = https://github.com/hemmer/Befaco.git
-[submodule "hetrickcv/hetrickcv"]
-	path = hetrickcv/hetrickcv
-	url = https://github.com/mhetrick/hetrickcv.git
-[submodule "nonlinearcircuits/nonlinearcircuits"]
-	path = nonlinearcircuits/nonlinearcircuits
-	url = https://github.com/mhetrick/nonlinearcircuits
-[submodule "eightfold/eightfold"]
-	path = eightfold/eightfold
-	url = https://github.com/scanner-darkly/eightfold.git
 [submodule "Valley/ValleyRackFree"]
 	path = Valley/ValleyRackFree
 	url = https://github.com/4ms/ValleyRackFree.git
