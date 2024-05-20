@@ -13,3 +13,6 @@
 [submodule "chowdsp/ChowDSP-VCV"]
 	path = chowdsp/ChowDSP-VCV
 	url = https://github.com/4ms/ChowDSP-VCV.git
+[submodule "Venom/VenomModules"]
+	path = Venom/VenomModules
+	url = https://github.com/DaveBenham/VenomModules.git
