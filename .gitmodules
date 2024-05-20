@@ -13,3 +13,6 @@
 [submodule "chowdsp/ChowDSP-VCV"]
 	path = chowdsp/ChowDSP-VCV
 	url = https://github.com/4ms/ChowDSP-VCV.git
+[submodule "BaconMusic/BaconPlugs"]
+	path = BaconMusic/BaconPlugs
+	url = https://github.com/baconpaul/BaconPlugs.git
