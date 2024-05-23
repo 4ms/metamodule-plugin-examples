@@ -28,3 +28,6 @@
 [submodule "chowdsp/ChowDSP-VCV"]
 	path = chowdsp/ChowDSP-VCV
 	url = https://github.com/4ms/ChowDSP-VCV.git
+[submodule "Prism/Prism"]
+	path = Prism/Prism
+	url = https://github.com/SteveRussell33/Prism.git
