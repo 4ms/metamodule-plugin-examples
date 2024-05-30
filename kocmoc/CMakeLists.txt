@@ -59,5 +59,5 @@ create_plugin(
     SOURCE_LIB      kocmoc                  # This is the cmake target name (defined in add_target)
     PLUGIN_NAME     kocmoc                  # This must match the brand "slug" used in VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Kocmoc # Path to where you want the plugin dir output: it can be shared between multiple plugins
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/kocmoc # Path to where you want the plugin dir output: it can be shared between multiple plugins
 )
