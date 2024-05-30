@@ -209,6 +209,6 @@ create_plugin(
     SOURCE_LIB      BogaudioModules
     PLUGIN_NAME     Bogaudio                  # This must match the brand "slug" used in VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/BogaudioModules
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Bogaudio
 )
 
