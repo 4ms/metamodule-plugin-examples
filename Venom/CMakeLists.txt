@@ -22,7 +22,7 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/VenomModules)
 
 target_sources(Venom
     PRIVATE
-    ${SOURCE_DIR}/src/BlackHoles.cpp
+    ${SOURCE_DIR}/src/BenjolinOsc.cpp
 
 	# Note that we build our own plugin.cpp, not the one in VenomModules/src/
     # This is because we want to exclude the above modules from the plugin
@@ -30,14 +30,14 @@ target_sources(Venom
 )
 
 target_include_directories(Venom PRIVATE 
-	${SOURCE_DIR}/src 
+	# ${SOURCE_DIR}/src 
 	# ${CMAKE_CURRENT_LIST_DIR}
 )
 
 target_compile_options(Venom 
 	PRIVATE 
-	# -Wno-double-promotion 
-	# $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
+	-Wno-deprecated # for warnings about deprecated use of = in lambda capture (should use explicit `this`)
+	-Wno-nonnull  # for warnings about this pointer being null (MetaModule does not support context menus)
 )
 
 set_property(TARGET Venom PROPERTY CXX_STANDARD 20)
