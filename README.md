@@ -161,4 +161,35 @@ The screen is 240px x 320px, about 144 ppi. We use 16-bit color (RGB565).
 Modules are displayed 240px high when viewed full-screen and 180px high when zoomed-out.
 We may add future options to zoom out to 120px when zoomed-out.
 
+### Special cases for Images
+
+The MetaModule only uses a single image for a knob. On the other hand, VCV Rack sometimes
+uses multiple SVG images for a knob.
+
+For example, `rack::componentlibrary::Rogan` knobs have two `SvgWidget` members: `bg` and `fg`.
+The class also derives from `SvgWidget` so there is a third SVG:
+
+```c++
+struct Rogan6PSWhite : Rogan {
+	Rogan6PSWhite() {
+		setSvg(Svg::load(asset::system("res/ComponentLibrary/Rogan6PSWhite.svg")));
+		bg->setSvg(Svg::load(asset::system("res/ComponentLibrary/Rogan6PS_bg.svg")));
+		fg->setSvg(Svg::load(asset::system("res/ComponentLibrary/Rogan6PSWhite_fg.svg")));
+	}
+};
+```
+
+To accomodate the MetaModule, the easiest thing to do is to just include the main image (`Rogan6PSWhite.png`)
+and remove the `bg` and `fg` images. MetaModule will just ignore the missing images and use the one it found.
+Visually, you may want to combine the `fg` and main SVGs into a single combined image, and then export that
+as a PNG with the same name. That is, use Inkscape to place `Rogan6PSWhite_fg.svg` on top of `Rogan6PSWhite.svg`
+and export this as `Rogan6PSWhite.png`, and making sure to not have any file named `Rogan6PS_bg.png` or `Rogan6PSWhite_fg.png`
+in the assets dir.
+
+There is a special-case: Rack component library and the Befaco VCV plugin (and probably other plugins) use 
+the `BefacoTinyKnob` class to define a knob whose SVG is just a dot (white or black). The child `bg` SVG is the
+knob body color. There is no `fg` SVG. In this case, you need to manually combine the two SVGs and save them as the
+file name of the `bg` image. Also, the main image file (the dot) needs to be present in order to determine the size
+of the widget for placement, although it's not drawn.
+
 
