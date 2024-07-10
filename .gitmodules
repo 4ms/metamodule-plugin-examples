@@ -15,4 +15,4 @@
 	url = https://github.com/4ms/ChowDSP-VCV.git
 [submodule "BaconMusic/BaconPlugs"]
 	path = BaconMusic/BaconPlugs
-	url = https://github.com/baconpaul/BaconPlugs.git
+	url = https://github.com/4ms/BaconPlugs.git
