@@ -23,6 +23,12 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/BaconPlugs)
 target_sources(BaconMusic
     PRIVATE
     ${SOURCE_DIR}/src/Glissinator.cpp
+    ${SOURCE_DIR}/src/HarMoNee.cpp
+    ${SOURCE_DIR}/src/QuantEyes.cpp
+    ${SOURCE_DIR}/src/LuckyHold.cpp
+    ${SOURCE_DIR}/src/SampleDelay.cpp
+    ${SOURCE_DIR}/src/PolyGnome.cpp
+
     ${SOURCE_DIR}/src/Components.cpp
     ${SOURCE_DIR}/src/Style.cpp
 
