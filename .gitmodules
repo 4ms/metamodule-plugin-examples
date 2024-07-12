@@ -15,4 +15,4 @@
 	url = https://github.com/4ms/ChowDSP-VCV.git
 [submodule "Sapphire/sapphire"]
 	path = Sapphire/sapphire
-	url = https://github.com/cosinekitty/sapphire.git
+	url = https://github.com/4ms/sapphire.git
