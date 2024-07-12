@@ -43,18 +43,11 @@ cd metamodule-plugin-examples
 git submodule update --init --recursive
 ```
 
-Then, build any/all of the brands you are interested in:
+To build all the plugins (brands):
 
 ```
-cd Bogaudio
 cmake -B build -G Ninja
 cmake --build build
-
-cd ../Valley
-cmake -B build -G Ninja
-cmake --build build
-
-# etc. for each brand
 ```
 
 Building will put the build artifacts into a directory called
@@ -62,6 +55,16 @@ Building will put the build artifacts into a directory called
 be a subdirectory for each brand you built. Inside each subdirectory is a
 shared object (.so) file, which is the plugin. Also there will be all the PNG
 files (graphical assets) needed.
+
+If you want to just build one brand:
+
+```
+cd Bogaudio
+cmake -B build -G Ninja
+cmake --build build
+```
+
+This will also install the plugin in the top-level `metamodule-plugins` directory.
 
 
 ## Building your own plugin
