@@ -21,6 +21,7 @@ set(PLUGINS
     kocmoc
     NANO
     VCV-Fundamental
+    Sapphire
 )
 
 foreach(plugin ${PLUGINS})
