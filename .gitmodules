@@ -6,7 +6,7 @@
 	url = https://github.com/4ms/ValleyRackFree.git
 [submodule "Geodesics/Geodesics"]
 	path = Geodesics/Geodesics
-	url = https://github.com/MarcBoule/Geodesics.git
+	url = https://github.com/4ms/Geodesics.git
 [submodule "Bogaudio/BogaudioModules"]
 	path = Bogaudio/BogaudioModules
 	url = https://github.com/4ms/BogaudioModules
@@ -16,3 +16,6 @@
 [submodule "CountModula/VCVRackPlugins"]
 	path = CountModula/VCVRackPlugins
 	url = https://github.com/countmodula/VCVRackPlugins.git
+[submodule "kocmoc/kocmoc-rack-modules"]
+	path = kocmoc/kocmoc-rack-modules
+	url = https://github.com/janne808/kocmoc-rack-modules.git
