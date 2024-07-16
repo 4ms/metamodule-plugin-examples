@@ -22,7 +22,46 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/VenomModules)
 
 target_sources(Venom
     PRIVATE
+
+    ${SOURCE_DIR}/src/AuxClone.cpp
     ${SOURCE_DIR}/src/BenjolinOsc.cpp
+    ${SOURCE_DIR}/src/BernoulliSwitch.cpp
+    ${SOURCE_DIR}/src/BernoulliSwitchExpander.cpp
+    ${SOURCE_DIR}/src/CloneMerge.cpp
+    ${SOURCE_DIR}/src/HQ.cpp
+    ${SOURCE_DIR}/src/Knob5.cpp
+    ${SOURCE_DIR}/src/LinearBeats.cpp
+    ${SOURCE_DIR}/src/LinearBeatsExpander.cpp
+    ${SOURCE_DIR}/src/Logic.cpp
+    ${SOURCE_DIR}/src/Mix4.cpp
+    ${SOURCE_DIR}/src/Mix4Stereo.cpp
+    ${SOURCE_DIR}/src/MixFade.cpp
+    ${SOURCE_DIR}/src/MixFade2.cpp
+    ${SOURCE_DIR}/src/MixMute.cpp
+    ${SOURCE_DIR}/src/MixOffset.cpp
+    ${SOURCE_DIR}/src/MixPan.cpp
+    ${SOURCE_DIR}/src/MixSend.cpp
+    ${SOURCE_DIR}/src/MixSolo.cpp
+    ${SOURCE_DIR}/src/MultiMerge.cpp
+    ${SOURCE_DIR}/src/MultiSplit.cpp
+    #${SOURCE_DIR}/src/NORS-IQ.cpp
+    ${SOURCE_DIR}/src/NORSIQChord2Scale.cpp
+    ${SOURCE_DIR}/src/PolyClone.cpp
+    ${SOURCE_DIR}/src/PolyOffset.cpp
+    ${SOURCE_DIR}/src/PolySHASR.cpp
+    ${SOURCE_DIR}/src/PolyScale.cpp
+    ${SOURCE_DIR}/src/PolyUnison.cpp
+    ${SOURCE_DIR}/src/Push5.cpp
+    ${SOURCE_DIR}/src/Recurse.cpp
+    ${SOURCE_DIR}/src/RecurseStereo.cpp
+    ${SOURCE_DIR}/src/Reformation.cpp
+    ${SOURCE_DIR}/src/RhythmExplorer.cpp
+    ${SOURCE_DIR}/src/ShapedVCA.cpp
+    ${SOURCE_DIR}/src/VCAMix4.cpp
+    ${SOURCE_DIR}/src/VCAMix4Stereo.cpp
+    ${SOURCE_DIR}/src/VenomBlank.cpp
+    #${SOURCE_DIR}/src/WidgetMenuExtender.cpp
+    ${SOURCE_DIR}/src/WinComp.cpp
 
 	# Note that we build our own plugin.cpp, not the one in VenomModules/src/
     # This is because we want to exclude the above modules from the plugin
