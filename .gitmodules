@@ -16,3 +16,6 @@
 [submodule "kocmoc/kocmoc-rack-modules"]
 	path = kocmoc/kocmoc-rack-modules
 	url = https://github.com/janne808/kocmoc-rack-modules.git
+[submodule "OrangeLine"]
+	path = OrangeLine/OrangeLine
+	url = git@github.com:Stubs42/OrangeLine
