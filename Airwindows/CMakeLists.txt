@@ -10,6 +10,7 @@ project(AirwindowsModules
 
 set(METAMODULE ON)
 add_subdirectory(airwin2rack)
+target_compile_options(airwin-registry PRIVATE "-Wno-misleading-indentation;-Wno-unused-variable")
 
 add_library(AirwindowsModules STATIC)
 
