@@ -9,6 +9,7 @@ TEST_SOURCES += $(wildcard $(TEST_DIR)/*_tests.cc)
 TEST_SOURCES += $(wildcard $(TEST_DIR)/*_tests.cpp)
 TEST_SOURCES += $(wildcard $(TEST_DIR)/test_*.cc)
 TEST_SOURCES += $(wildcard $(TEST_DIR)/test_*.cpp)
+TEST_SOURCES += ../airwin2rack/src/airwin_consolidated_base.cpp
 
 CXXFLAGS = 	-Wall \
 		 	-std=c++23 \

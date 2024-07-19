@@ -4,19 +4,7 @@
 #include <iostream>
 #include <string>
 
-bool string2float(const char *txt, float &f) {
-  char *pEnd = nullptr;
-  float v = std::strtof(txt, &pEnd);
-  if (pEnd == txt) {
-    return false;
-  } else if (v != INFINITY && v != -INFINITY &&
-             (v == HUGE_VALF || v == -HUGE_VALF)) {
-    return false;
-  } else {
-    f = v;
-    return true;
-  }
-}
+bool string2float(const char *txt, float &f);
 
 bool Xstring2float(const char *txt, float &f) {
   try {
