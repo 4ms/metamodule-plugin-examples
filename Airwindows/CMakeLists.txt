@@ -17,7 +17,6 @@ target_include_directories(AirwindowsModules PRIVATE
 
 target_sources(AirwindowsModules PRIVATE
 	airwin_modules.cc
-    plugin.cc
 )
 
 target_compile_definitions(AirwindowsModules PRIVATE 
@@ -28,7 +27,6 @@ target_compile_definitions(AirwindowsModules PRIVATE
 # target_compile_options(airwin-registry PRIVATE "-Wno-misleading-indentation;-Wno-unused-variable;-Wno-stringop-truncation")
 # target_link_libraries(AirwindowsModules PUBLIC airwin-registry)
 # target_link_libraries(airwin-registry arch_mp15x_a7)
-add_compile_options(-fvisibility=default)
 
 #### from airwin2rack/CMakeLists.txt:
 include(airwin2rack/src/autogen_airwin/CMakeLists.txt)
