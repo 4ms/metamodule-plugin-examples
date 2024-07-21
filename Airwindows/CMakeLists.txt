@@ -7,28 +7,58 @@ project(AirwindowsModules
     LANGUAGES C CXX ASM
 )
 
-
-add_subdirectory(airwin2rack)
-target_compile_options(airwin-registry PRIVATE "-Wno-misleading-indentation;-Wno-unused-variable;-Wno-stringop-truncation")
-
 add_library(AirwindowsModules STATIC)
 
-target_link_libraries(AirwindowsModules PRIVATE airwin-registry)
 
-
-# Add includes and compile options for source repo
-target_include_directories(AirwindowsModules 
-    PRIVATE 
-    ${CMAKE_CURRENT_LIST_DIR}
-    ${CMAKE_CURRENT_LIST_DIR}/../airwin2rack/src
+target_include_directories(AirwindowsModules PRIVATE 
+	. 
+    airwin2rack/src
 )
 
 target_sources(AirwindowsModules PRIVATE
+	airwin_modules.cc
     plugin.cc
 )
 
-target_compile_options(AirwindowsModules PRIVATE 
+target_compile_definitions(AirwindowsModules PRIVATE 
+	DISABLE_CONSOLE
 )
+
+# add_subdirectory(airwin2rack)
+# target_compile_options(airwin-registry PRIVATE "-Wno-misleading-indentation;-Wno-unused-variable;-Wno-stringop-truncation")
+# target_link_libraries(AirwindowsModules PUBLIC airwin-registry)
+# target_link_libraries(airwin-registry arch_mp15x_a7)
+add_compile_options(-fvisibility=default)
+
+#### from airwin2rack/CMakeLists.txt:
+include(airwin2rack/src/autogen_airwin/CMakeLists.txt)
+list(TRANSFORM AIRWIN_SOURCES PREPEND "airwin2rack/")
+
+# file(GLOB AWDOC_RESOURCES_GLOB airwin2rack/res/awpdoc/*.txt)
+# include(airwin2rack/cmake/CmakeRC.cmake)
+# cmrc_add_resource_library(awdoc_resources ${AWDOC_RESOURCES_GLOB})
+# target_link_libraries(AirwindowsModules PRIVATE awdoc_resources)
+
+target_sources(AirwindowsModules PRIVATE
+	airwin2rack/src/AirwinRegistry.cpp
+	airwin2rack/src/airwin_consolidated_base.cpp
+
+	${AIRWIN_SOURCES}
+)
+target_compile_definitions(AirwindowsModules PRIVATE _USE_MATH_DEFINES)
+
+target_compile_options(AirwindowsModules PRIVATE 
+	-Wno-unused-function
+	-Wno-unused-value
+	-Wno-unused-but-set-variable
+	-Wno-multichar
+	# Added for MM:
+	-Wno-misleading-indentation
+	-Wno-unused-variable
+	-Wno-stringop-truncation
+)
+
+
 
 # Call this to link and create the plugin file
 create_plugin(
