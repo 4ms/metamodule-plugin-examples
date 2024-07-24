@@ -1,5 +1,5 @@
 TEST_DIR ?= ./
-BUILDDIR = $(TEST_DIR)/build
+BUILDDIR = $(TEST_DIR)/build/obj
 RYMLDIR = ../shared/patch_convert/ryml/rapidyaml
 
 TEST_SOURCES = $(TEST_DIR)/doctest.cc
@@ -9,6 +9,7 @@ TEST_SOURCES += $(wildcard $(TEST_DIR)/*_tests.cc)
 TEST_SOURCES += $(wildcard $(TEST_DIR)/*_tests.cpp)
 TEST_SOURCES += $(wildcard $(TEST_DIR)/test_*.cc)
 TEST_SOURCES += $(wildcard $(TEST_DIR)/test_*.cpp)
+TEST_SOURCES += ../airwin2rack/src/airwin_consolidated_base.cpp
 
 CXXFLAGS = 	-Wall \
 		 	-std=c++23 \
@@ -29,6 +30,9 @@ TMPFILE = $(BUILDDIR)/runtests.out
 .PHONY: all tests clean
 
 all: tests
+
+# Disable exceptions so that we can compare throwing vs. non-throwing versions
+$(BUILDDIR)/../airwin2rack/src/airwin_consolidated_base.o: CXXFLAGS += -fno-exceptions
 
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(dir $@)

@@ -4,19 +4,7 @@
 #include <iostream>
 #include <string>
 
-bool string2float(const char *txt, float &f) {
-  char *pEnd = nullptr;
-  float v = std::strtof(txt, &pEnd);
-  if (pEnd == txt) {
-    return false;
-  } else if (v != INFINITY && v != -INFINITY &&
-             (v == HUGE_VALF || v == -HUGE_VALF)) {
-    return false;
-  } else {
-    f = v;
-    return true;
-  }
-}
+bool string2float(const char *txt, float &f);
 
 bool Xstring2float(const char *txt, float &f) {
   try {
@@ -75,7 +63,7 @@ TEST_CASE("Compare throwing and non-throwing string2float") {
   check("+0", true);
   check("-0.0", true);
 
-  // 0 vs FAIL
+  // Smaller than smallest subnormal: 0 vs FAIL
   check("0.0000000000000000000000000000000000000000000001", false);
 
   // 1.4e-45 vs FAIL
@@ -99,10 +87,10 @@ TEST_CASE("Compare throwing and non-throwing string2float") {
   // -1e-37
   check("-0.0000000000000000000000000000000000001", true);
 
-  // inf vs FAIL
+  // inf vs FAIL (1e39 + 1)
   check("1000000000000000000000000000000000000001", false);
 
-  // 1e+38
+  // 1e+38 (1e+38 + 1)
   check("100000000000000000000000000000000000001", true);
 
   //-inf vs FAIL
@@ -112,12 +100,14 @@ TEST_CASE("Compare throwing and non-throwing string2float") {
   check("-100000000000000000000000000000000000001", true);
 
   // Summary:
-  // Small numbers within about 1e-45 < abs(x) < 1e-38 work with the
-  // non-throwing version but fail on the throwing version.
+  // Both throwing and Non-throwing behave the same except for:
   //
-  // Small numbers abs(x) < 1e-45 return 0 with the
-  // non-throwing version but fail on the throwing version.
-  //
-  // Large numbers return +/- inf on the non-throwing version and fail on the
-  // throwing version ... but "inf" does not fail on either version
+  //  Magnitude     | Non-throwing |   Throwing  |
+  // ---------------|--------------|-------------|
+  //  < Subnormals  |     0        |    fails    |
+  //  Subnormals    |   works      |    fails    |
+  //   > 2^127      |    inf.      |    fails    |
+
+  // Note: Largest non-subnormal is about 1.2e-38
+  // Smallest subnormal is about 2.3e-44
 }
