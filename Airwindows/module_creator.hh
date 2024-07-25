@@ -48,6 +48,7 @@ private:
 
 		auto fx = AirwinRegistry::registry[registry_idx].generator();
 		auto num_fx_params = std::min<unsigned>(AirwinRegistry::registry[registry_idx].nParams, maxParams);
+		fx->setSampleRate(48000);
 
 		element_names.clear();
 
