@@ -38,7 +38,6 @@ private:
 	void create_elements() {
 		constexpr float WidthHP = 10.f;
 		constexpr float WidthPx = WidthHP * 0.2f * 75.f;
-		constexpr float HeightPx = 240.f;
 
 		constexpr std::string_view JackImage = "Airwin2Rack/comp/jack.png";
 		constexpr std::string_view MainKnobImage = "Airwin2Rack/comp/main_knob.png";
@@ -64,7 +63,7 @@ private:
 		index_element(elem_idx, title, num_text_elements++);
 
 		{
-			const float row_spacing = 270.f / num_fx_params;
+			const float row_spacing = std::min(270.f / num_fx_params, 45.f);
 			const float left_pad = 4.f;
 			const float control_col = 70.f;
 			const float knob_radius = 12.f;
