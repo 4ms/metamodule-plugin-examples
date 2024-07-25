@@ -58,7 +58,7 @@ private:
 		title.text = element_names.emplace_back(AirwinRegistry::registry[registry_idx].name);
 		title.font = element_names.emplace_back("Default_12");
 		title.color = Colors565::White;
-		title.width_mm = MetaModule::to_mm(WidthPx);
+		title.width_mm = MetaModule::to_mm(WidthPx - 12);
 		title.height_mm = MetaModule::to_mm(20);
 		index_element(elem_idx, title, num_text_elements++);
 
@@ -72,6 +72,8 @@ private:
 			const float label_offset = num_fx_params < 7 ? 30.f : row_spacing / 4.f;
 
 			float ypos = 28.f + row_spacing / 2.f;
+			if (num_fx_params < 7)
+				ypos += 6.f; //extra padding if we have it
 
 			char name_buffer[256]{};
 
