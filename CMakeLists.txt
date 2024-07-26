@@ -15,6 +15,7 @@ set(PLUGINS
     Geodesics
     chowdsp
     kocmoc
+    Airwindows
 )
 
 foreach(plugin ${PLUGINS})
