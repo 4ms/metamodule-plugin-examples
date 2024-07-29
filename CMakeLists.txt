@@ -15,6 +15,7 @@ set(PLUGINS
     Geodesics
     chowdsp
     kocmoc
+    CountModula
 )
 
 foreach(plugin ${PLUGINS})
