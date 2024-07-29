@@ -31,13 +31,13 @@ target_sources(CountModula
     ${MODULE_DIR}/BasicSequencer8.cpp
     ${MODULE_DIR}/BinaryComparator.cpp
     ${MODULE_DIR}/BinarySequencer.cpp
-    ${MODULE_DIR}/BlankPanel12HP.cpp
-    ${MODULE_DIR}/BlankPanel16HP.cpp
-    ${MODULE_DIR}/BlankPanel20HP.cpp
-    ${MODULE_DIR}/BlankPanel24HP.cpp
-    ${MODULE_DIR}/BlankPanel2HP.cpp
-    ${MODULE_DIR}/BlankPanel4HP.cpp
-    ${MODULE_DIR}/BlankPanel8HP.cpp
+    #${MODULE_DIR}/BlankPanel12HP.cpp
+    #${MODULE_DIR}/BlankPanel16HP.cpp
+    #${MODULE_DIR}/BlankPanel20HP.cpp
+    #${MODULE_DIR}/BlankPanel24HP.cpp
+    #${MODULE_DIR}/BlankPanel2HP.cpp
+    #${MODULE_DIR}/BlankPanel4HP.cpp
+    #${MODULE_DIR}/BlankPanel8HP.cpp
     ${MODULE_DIR}/BooleanAND.cpp
     ${MODULE_DIR}/BooleanOR.cpp
     ${MODULE_DIR}/BooleanVCNOT.cpp
@@ -96,7 +96,7 @@ target_sources(CountModula
     ${MODULE_DIR}/OctetTriggerSequencerCVExpander.cpp
     ${MODULE_DIR}/OctetTriggerSequencerGateExpander.cpp
     ${MODULE_DIR}/OffsetGenerator.cpp
-    ${MODULE_DIR}/Oscilloscope.cpp
+    #${MODULE_DIR}/Oscilloscope.cpp
     #${MODULE_DIR}/Palette.cpp
     ${MODULE_DIR}/PolyChances.cpp
     ${MODULE_DIR}/PolyG2T.cpp
@@ -108,8 +108,8 @@ target_sources(CountModula
     ${MODULE_DIR}/PolyrhythmicGeneratorMkII.cpp
     ${MODULE_DIR}/PolyVCPolarizer.cpp
     ${MODULE_DIR}/PolyVCSwitch.cpp
-    ${MODULE_DIR}/RackEarL.cpp
-    ${MODULE_DIR}/RackEarR.cpp
+    #${MODULE_DIR}/RackEarL.cpp
+    #${MODULE_DIR}/RackEarR.cpp
     ${MODULE_DIR}/RandomAccessSwitch18.cpp
     ${MODULE_DIR}/RandomAccessSwitch81.cpp
     ${MODULE_DIR}/Rectifier.cpp
