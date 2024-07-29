@@ -52,7 +52,6 @@ void init(Plugin *p) {
   p->addModel(modelClockedRandomGates);
   p->addModel(modelComparator);
   p->addModel(modelCVSpreader);
-  p->addModel(modelGateSequencer16);
   p->addModel(modelEuclid);
   // p->addModel(modelEuclidExpanderCV);
   p->addModel(modelEventArranger);
