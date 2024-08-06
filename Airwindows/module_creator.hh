@@ -39,11 +39,11 @@ private:
 		constexpr float WidthHP = 10.f;
 		constexpr float WidthPx = WidthHP * 0.2f * 75.f;
 
-		constexpr std::string_view JackImage = "Airwin2Rack/comp/jack.png";
-		constexpr std::string_view MainKnobImage = "Airwin2Rack/comp/main_knob.png";
-		constexpr std::string_view AttenKnob = "Airwin2Rack/comp/atten_knob.png";
-		constexpr std::string_view SliderBg = "Airwin2Rack/comp/slider_bg.png";
-		constexpr std::string_view SliderHandle = "Airwin2Rack/comp/slider_handle.png";
+		constexpr std::string_view JackImage = "Airwindows/comp/jack.png";
+		constexpr std::string_view MainKnobImage = "Airwindows/comp/main_knob.png";
+		constexpr std::string_view AttenKnob = "Airwindows/comp/atten_knob.png";
+		constexpr std::string_view SliderBg = "Airwindows/comp/slider_bg.png";
+		constexpr std::string_view SliderHandle = "Airwindows/comp/slider_handle.png";
 
 		auto fx = AirwinRegistry::registry[registry_idx].generator();
 		auto num_fx_params = std::min<unsigned>(AirwinRegistry::registry[registry_idx].nParams, maxParams);
@@ -154,7 +154,7 @@ private:
 		//TODO: add other strings from airwin registry?
 		info.description = description;
 
-		std::string panel_name = "Airwin2Rack/panel/panel.png";
+		std::string panel_name = "Airwindows/panel/panel.png";
 		std::string brand = "Airwindows";
 
 		MetaModule::register_module(

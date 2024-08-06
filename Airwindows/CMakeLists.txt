@@ -32,8 +32,8 @@ set(EXTRA_LINK_OPTIONS $<TARGET_OBJECTS:airwin-registry>)
 # Call this to link and create the plugin file
 create_plugin(
     SOURCE_LIB      AirwindowsModules
-    PLUGIN_NAME     Airwin2Rack                  # This must match the brand "slug" used in VCV Rack
+    PLUGIN_NAME     Airwindows                  # This must match the brand "slug" used in VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Airwin2Rack
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Airwindows
 )
 
