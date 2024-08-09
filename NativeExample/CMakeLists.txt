@@ -20,6 +20,7 @@ target_sources(NativeExample PRIVATE
 create_plugin(
     SOURCE_LIB      NativeExample
     PLUGIN_NAME     NativeExample
+    PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/plugin.json           # Path to the plugin.json file used by VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/NativeExample
 )

@@ -10,7 +10,7 @@ project(BogaudioModules
 add_library(BogaudioModules STATIC)
 
 # Add sources from the Rack source repo
-set(SOURCEDIR BogaudioModules)
+set(SOURCEDIR ${CMAKE_CURRENT_LIST_DIR}/BogaudioModules)
 
 
 file(GLOB DSP_SOURCES 
@@ -208,6 +208,7 @@ $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
 create_plugin(
     SOURCE_LIB      BogaudioModules
     PLUGIN_NAME     Bogaudio                  # This must match the brand "slug" used in VCV Rack
+    PLUGIN_JSON     ${SOURCEDIR}/plugin.json           # Path to the plugin.json file used by VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Bogaudio
 )

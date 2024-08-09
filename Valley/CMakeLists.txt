@@ -85,8 +85,9 @@ set_property(TARGET Valley PROPERTY CXX_STANDARD 20)
 #########################################################
 # Step 4: call create_plugin()
 create_plugin(
-    SOURCE_LIB      Valley                  # This is the cmake target name (defined in add_target)
-    PLUGIN_NAME     Valley                  # This must match the brand "slug" used in VCV Rack
+    SOURCE_LIB      Valley                              # This is the cmake target name (defined in add_target)
+    PLUGIN_NAME     Valley                              # This must match the brand "slug" used in VCV Rack
+    PLUGIN_JSON     ${SOURCE_DIR}/plugin.json           # Path to the plugin.json file used by VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Valley # Path to where you want the plugin dir output: it can be shared between multiple plugins
 )

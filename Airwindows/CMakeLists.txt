@@ -29,10 +29,10 @@ target_compile_options(airwin-registry PRIVATE "-Wno-misleading-indentation;-Wno
 target_link_libraries(AirwindowsModules PUBLIC airwin-registry)
 set(EXTRA_LINK_OPTIONS $<TARGET_OBJECTS:airwin-registry>)
 
-# Call this to link and create the plugin file
 create_plugin(
     SOURCE_LIB      AirwindowsModules
-    PLUGIN_NAME     Airwindows                  # This must match the brand "slug" used in VCV Rack
+    PLUGIN_NAME     Airwindows
+    PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/airwin2rack/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Airwindows
 )
