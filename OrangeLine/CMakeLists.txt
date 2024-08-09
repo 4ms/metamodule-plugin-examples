@@ -44,8 +44,8 @@ target_include_directories(OrangeLine PRIVATE
 
 target_compile_options(OrangeLine 
 	PRIVATE 
-	# -Wno-double-promotion 
-	# $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
+	$<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
+	$<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
 )
 
 set_property(TARGET OrangeLine PROPERTY CXX_STANDARD 20)
