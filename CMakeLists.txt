@@ -10,13 +10,14 @@ project(MetaModulePluginExamples
 )
 
 set(PLUGINS 
-    Valley
+    Airwindows
     Bogaudio
+    CountModula
     Geodesics
+    OrangeLine
+    Valley
     chowdsp
     kocmoc
-    Airwindows
-    CountModula
 )
 
 foreach(plugin ${PLUGINS})
