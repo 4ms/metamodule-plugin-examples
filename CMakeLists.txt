@@ -16,6 +16,7 @@ set(PLUGINS
     chowdsp
     kocmoc
     Airwindows
+    CountModula
 )
 
 foreach(plugin ${PLUGINS})
