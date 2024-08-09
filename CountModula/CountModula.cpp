@@ -21,7 +21,7 @@ void init(Plugin *p) {
   prevDefaultTheme = -1;
 
   p->addModel(modelAnalogueShiftRegister);
-  p->addModel(modelArpeggiator);
+  // p->addModel(modelArpeggiator);
   p->addModel(modelAttenuator);
   p->addModel(modelAttenuverter);
   p->addModel(modelBarGraph);
@@ -69,7 +69,7 @@ void init(Plugin *p) {
   // p->addModel(modelHyperManiacalLFO); // compilation error
   // p->addModel(modelHyperManiacalLFOExpander);
   // p->addModel(modelMegalomaniac);
-  p->addModel(modelLightStrip);
+  // p->addModel(modelLightStrip);
   p->addModel(modelMangler);
   p->addModel(modelManifold);
   p->addModel(modelManualCV);

@@ -24,7 +24,7 @@ set(MODULE_DIR ${SOURCE_DIR}/src/modules)
 target_sources(CountModula
     PRIVATE
     ${MODULE_DIR}/AnalogueShiftRegister.cpp
-    ${MODULE_DIR}/Arpeggiator.cpp
+    # ${MODULE_DIR}/Arpeggiator.cpp #Needs to rectify PORT_MAX_CHANNELS = 4 but ARP steps is 8
     ${MODULE_DIR}/Attenuator.cpp
     ${MODULE_DIR}/Attenuverter.cpp
     ${MODULE_DIR}/BarGraph.cpp
@@ -173,8 +173,8 @@ target_include_directories(CountModula PRIVATE
 
 target_compile_options(CountModula 
 	PRIVATE 
-	# -Wno-double-promotion 
-	# $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
+	$<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
+    -Wno-array-bounds #Fix because Menu returns a nullptr
 )
 
 set_property(TARGET CountModula PROPERTY CXX_STANDARD 20)
