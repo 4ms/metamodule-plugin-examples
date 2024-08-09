@@ -74,7 +74,7 @@ target_sources(CountModula
     #${MODULE_DIR}/HyperManiac.cpp
     #${MODULE_DIR}/HyperManiacalLFO.cpp
     #${MODULE_DIR}/HyperManiacalLFOExpander.cpp
-    ${MODULE_DIR}/LightStrip.cpp
+    # ${MODULE_DIR}/LightStrip.cpp
     ${MODULE_DIR}/Mangler.cpp
     ${MODULE_DIR}/Manifold.cpp
     ${MODULE_DIR}/ManualCV.cpp
