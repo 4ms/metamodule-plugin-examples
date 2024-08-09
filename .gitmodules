@@ -22,3 +22,6 @@
 [submodule "Airwindows/airwin2rack"]
 	path = Airwindows/airwin2rack
 	url = https://github.com/4ms/airwin2rack
+[submodule "OrangeLine"]
+	path = OrangeLine/OrangeLine
+	url = git@github.com:Stubs42/OrangeLine
