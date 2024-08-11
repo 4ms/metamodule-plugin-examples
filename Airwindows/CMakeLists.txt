@@ -34,6 +34,6 @@ create_plugin(
     PLUGIN_NAME     Airwindows
     PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/airwin2rack/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Airwindows
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins
 )
 

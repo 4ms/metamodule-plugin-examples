@@ -1,201 +1,209 @@
 cmake_minimum_required(VERSION 3.22)
-include(../metamodule-plugin-sdk/plugin.cmake)
 
+#########################################################
+# Step 1: Include plugin.cmake from the SDK. 
+# You must do this before anything else since it defines the TOOLCHAIN
+include(${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk/plugin.cmake)
+
+#########################################################
+# Step 2: Define your project name, vesion, etc
 project(BogaudioModules 
     VERSION 0.1 
     DESCRIPTION "Bogaudio Plugin for MetaModule" 
     LANGUAGES C CXX ASM
 )
 
+#########################################################
+# Step 3: Create a cmake target for your plugin and add all your sources, compile flags, includes, etc.
 add_library(BogaudioModules STATIC)
 
 # Add sources from the Rack source repo
-set(SOURCEDIR ${CMAKE_CURRENT_LIST_DIR}/BogaudioModules)
+set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/BogaudioModules)
 
 
 file(GLOB DSP_SOURCES 
-    ${SOURCEDIR}/src/dsp/*cpp 
-    ${SOURCEDIR}/src/dsp/filters/*cpp
+    ${SOURCE_DIR}/src/dsp/*cpp 
+    ${SOURCE_DIR}/src/dsp/filters/*cpp
 )
 
 set(ENABLED_MODULE_SOURCES 
-    ${SOURCEDIR}/src/Additator.cpp #missing widget (StatefulButton)
-    ${SOURCEDIR}/src/FMOp.cpp
-    ${SOURCEDIR}/src/Chirp.cpp
-    ${SOURCEDIR}/src/LFO.cpp
-    ${SOURCEDIR}/src/LLFO.cpp #missing widget (StatefulButton)
-    ${SOURCEDIR}/src/FourFO.cpp
-    ${SOURCEDIR}/src/EightFO.cpp
-    ${SOURCEDIR}/src/LVCF.cpp #missing widget (StatefulButton)
-    ${SOURCEDIR}/src/LVCO.cpp #missing widget (StatefulButton)
-    ${SOURCEDIR}/src/Pulse.cpp
-    ${SOURCEDIR}/src/Sine.cpp
-    ${SOURCEDIR}/src/VCF.cpp
-    ${SOURCEDIR}/src/VCO.cpp
-    ${SOURCEDIR}/src/XCO.cpp
-    ${SOURCEDIR}/src/FFB.cpp
-    ${SOURCEDIR}/src/EQ.cpp
-    ${SOURCEDIR}/src/EQS.cpp
-    ${SOURCEDIR}/src/LPG.cpp
-    ${SOURCEDIR}/src/LLPG.cpp
-    ${SOURCEDIR}/src/MegaGate.cpp #missing widget (StatefulButton)
-    ${SOURCEDIR}/src/PEQ.cpp
-    ${SOURCEDIR}/src/DADSRH.cpp #missing widget (StatefulButton)
-    ${SOURCEDIR}/src/DADSRHPlus.cpp #missing widget (StatefulButton)
-    ${SOURCEDIR}/src/Shaper.cpp
-    ${SOURCEDIR}/src/ShaperPlus.cpp
-    ${SOURCEDIR}/src/AD.cpp
-    ${SOURCEDIR}/src/ASR.cpp
-    ${SOURCEDIR}/src/ADSR.cpp
-    ${SOURCEDIR}/src/Vish.cpp
-    ${SOURCEDIR}/src/Follow.cpp
-    ${SOURCEDIR}/src/DGate.cpp
-    ${SOURCEDIR}/src/RGate.cpp
-    ${SOURCEDIR}/src/Edge.cpp
+    ${SOURCE_DIR}/src/Additator.cpp #missing widget (StatefulButton)
+    ${SOURCE_DIR}/src/FMOp.cpp
+    ${SOURCE_DIR}/src/Chirp.cpp
+    ${SOURCE_DIR}/src/LFO.cpp
+    ${SOURCE_DIR}/src/LLFO.cpp #missing widget (StatefulButton)
+    ${SOURCE_DIR}/src/FourFO.cpp
+    ${SOURCE_DIR}/src/EightFO.cpp
+    ${SOURCE_DIR}/src/LVCF.cpp #missing widget (StatefulButton)
+    ${SOURCE_DIR}/src/LVCO.cpp #missing widget (StatefulButton)
+    ${SOURCE_DIR}/src/Pulse.cpp
+    ${SOURCE_DIR}/src/Sine.cpp
+    ${SOURCE_DIR}/src/VCF.cpp
+    ${SOURCE_DIR}/src/VCO.cpp
+    ${SOURCE_DIR}/src/XCO.cpp
+    ${SOURCE_DIR}/src/FFB.cpp
+    ${SOURCE_DIR}/src/EQ.cpp
+    ${SOURCE_DIR}/src/EQS.cpp
+    ${SOURCE_DIR}/src/LPG.cpp
+    ${SOURCE_DIR}/src/LLPG.cpp
+    ${SOURCE_DIR}/src/MegaGate.cpp #missing widget (StatefulButton)
+    ${SOURCE_DIR}/src/PEQ.cpp
+    ${SOURCE_DIR}/src/DADSRH.cpp #missing widget (StatefulButton)
+    ${SOURCE_DIR}/src/DADSRHPlus.cpp #missing widget (StatefulButton)
+    ${SOURCE_DIR}/src/Shaper.cpp
+    ${SOURCE_DIR}/src/ShaperPlus.cpp
+    ${SOURCE_DIR}/src/AD.cpp
+    ${SOURCE_DIR}/src/ASR.cpp
+    ${SOURCE_DIR}/src/ADSR.cpp
+    ${SOURCE_DIR}/src/Vish.cpp
+    ${SOURCE_DIR}/src/Follow.cpp
+    ${SOURCE_DIR}/src/DGate.cpp
+    ${SOURCE_DIR}/src/RGate.cpp
+    ${SOURCE_DIR}/src/Edge.cpp
 
     # Can't load because of the dynamic_cast on the sliders:
-    ${SOURCEDIR}/src/PEQ6.cpp
-    ${SOURCEDIR}/src/PEQ6XF.cpp
-    ${SOURCEDIR}/src/PEQ14.cpp
-    ${SOURCEDIR}/src/PEQ14XF.cpp
-    ${SOURCEDIR}/src/PEQ14XR.cpp
-    ${SOURCEDIR}/src/PEQ14XV.cpp
+    ${SOURCE_DIR}/src/PEQ6.cpp
+    ${SOURCE_DIR}/src/PEQ6XF.cpp
+    ${SOURCE_DIR}/src/PEQ14.cpp
+    ${SOURCE_DIR}/src/PEQ14XF.cpp
+    ${SOURCE_DIR}/src/PEQ14XR.cpp
+    ${SOURCE_DIR}/src/PEQ14XV.cpp
 
-    ${SOURCEDIR}/src/Noise.cpp
-    ${SOURCEDIR}/src/SampleHold.cpp
-    ${SOURCEDIR}/src/Walk2.cpp #misssing widget (XY pad) 
-    ${SOURCEDIR}/src/Walk.cpp
-
-    # dynamic_cast widget:
-    ${SOURCEDIR}/src/Mix8.cpp
-    ${SOURCEDIR}/src/Mix4.cpp
-    ${SOURCEDIR}/src/Mix2.cpp
-    ${SOURCEDIR}/src/Mix1.cpp
-    ${SOURCEDIR}/src/Mix8x.cpp
-    ${SOURCEDIR}/src/Mix4x.cpp
-
-    ${SOURCEDIR}/src/VCM.cpp
-    ${SOURCEDIR}/src/Mute8.cpp #missing widget (SoloMuteButton)
-    ${SOURCEDIR}/src/Pan.cpp
-    ${SOURCEDIR}/src/XFade.cpp
-    ${SOURCEDIR}/src/VCA.cpp
-    # dynamic_cast widget:
-    ${SOURCEDIR}/src/VCAmp.cpp
-    ${SOURCEDIR}/src/Velo.cpp
-
-    ${SOURCEDIR}/src/UMix.cpp
-    ${SOURCEDIR}/src/Mumix.cpp
+    ${SOURCE_DIR}/src/Noise.cpp
+    ${SOURCE_DIR}/src/SampleHold.cpp
+    ${SOURCE_DIR}/src/Walk2.cpp #misssing widget (XY pad) 
+    ${SOURCE_DIR}/src/Walk.cpp
 
     # dynamic_cast widget:
-    ${SOURCEDIR}/src/Matrix81.cpp
-    ${SOURCEDIR}/src/Matrix18.cpp
-    ${SOURCEDIR}/src/Matrix44.cpp
-    ${SOURCEDIR}/src/Matrix44Cvm.cpp
-    ${SOURCEDIR}/src/Matrix88.cpp
-    ${SOURCEDIR}/src/Matrix88M.cpp
-    ${SOURCEDIR}/src/Matrix88Cv.cpp
-    ${SOURCEDIR}/src/Switch81.cpp
-    ${SOURCEDIR}/src/Switch18.cpp
-    ${SOURCEDIR}/src/Switch44.cpp
-    ${SOURCEDIR}/src/Switch88.cpp
-    ${SOURCEDIR}/src/Switch1616.cpp
+    ${SOURCE_DIR}/src/Mix8.cpp
+    ${SOURCE_DIR}/src/Mix4.cpp
+    ${SOURCE_DIR}/src/Mix2.cpp
+    ${SOURCE_DIR}/src/Mix1.cpp
+    ${SOURCE_DIR}/src/Mix8x.cpp
+    ${SOURCE_DIR}/src/Mix4x.cpp
 
-    ${SOURCEDIR}/src/AMRM.cpp
-    ${SOURCEDIR}/src/Pressor.cpp
-    ${SOURCEDIR}/src/Clpr.cpp
-    ${SOURCEDIR}/src/Lmtr.cpp
-    ${SOURCEDIR}/src/Nsgt.cpp
-    ${SOURCEDIR}/src/CmpDist.cpp
+    ${SOURCE_DIR}/src/VCM.cpp
+    ${SOURCE_DIR}/src/Mute8.cpp #missing widget (SoloMuteButton)
+    ${SOURCE_DIR}/src/Pan.cpp
+    ${SOURCE_DIR}/src/XFade.cpp
+    ${SOURCE_DIR}/src/VCA.cpp
+    # dynamic_cast widget:
+    ${SOURCE_DIR}/src/VCAmp.cpp
+    ${SOURCE_DIR}/src/Velo.cpp
 
-    ${SOURCEDIR}/src/OneEight.cpp
-    ${SOURCEDIR}/src/EightOne.cpp
-    ${SOURCEDIR}/src/AddrSeq.cpp
-    ${SOURCEDIR}/src/AddrSeqX.cpp
-    ${SOURCEDIR}/src/Pgmr.cpp
-    ${SOURCEDIR}/src/PgmrX.cpp
+    ${SOURCE_DIR}/src/UMix.cpp
+    ${SOURCE_DIR}/src/Mumix.cpp
 
-    ${SOURCEDIR}/src/VU.cpp
+    # dynamic_cast widget:
+    ${SOURCE_DIR}/src/Matrix81.cpp
+    ${SOURCE_DIR}/src/Matrix18.cpp
+    ${SOURCE_DIR}/src/Matrix44.cpp
+    ${SOURCE_DIR}/src/Matrix44Cvm.cpp
+    ${SOURCE_DIR}/src/Matrix88.cpp
+    ${SOURCE_DIR}/src/Matrix88M.cpp
+    ${SOURCE_DIR}/src/Matrix88Cv.cpp
+    ${SOURCE_DIR}/src/Switch81.cpp
+    ${SOURCE_DIR}/src/Switch18.cpp
+    ${SOURCE_DIR}/src/Switch44.cpp
+    ${SOURCE_DIR}/src/Switch88.cpp
+    ${SOURCE_DIR}/src/Switch1616.cpp
+
+    ${SOURCE_DIR}/src/AMRM.cpp
+    ${SOURCE_DIR}/src/Pressor.cpp
+    ${SOURCE_DIR}/src/Clpr.cpp
+    ${SOURCE_DIR}/src/Lmtr.cpp
+    ${SOURCE_DIR}/src/Nsgt.cpp
+    ${SOURCE_DIR}/src/CmpDist.cpp
+
+    ${SOURCE_DIR}/src/OneEight.cpp
+    ${SOURCE_DIR}/src/EightOne.cpp
+    ${SOURCE_DIR}/src/AddrSeq.cpp
+    ${SOURCE_DIR}/src/AddrSeqX.cpp
+    ${SOURCE_DIR}/src/Pgmr.cpp
+    ${SOURCE_DIR}/src/PgmrX.cpp
+
+    ${SOURCE_DIR}/src/VU.cpp
     
     # Needs std::condition_variable
-    # ${SOURCEDIR}/src/Analyzer.cpp
-    # ${SOURCEDIR}/src/AnalyzerXL.cpp
-    # ${SOURCEDIR}/src/Ranalyzer.cpp
+    # ${SOURCE_DIR}/src/Analyzer.cpp
+    # ${SOURCE_DIR}/src/AnalyzerXL.cpp
+    # ${SOURCE_DIR}/src/Ranalyzer.cpp
 
-    ${SOURCEDIR}/src/Detune.cpp
-    ${SOURCEDIR}/src/Stack.cpp
-    ${SOURCEDIR}/src/Reftone.cpp
+    ${SOURCE_DIR}/src/Detune.cpp
+    ${SOURCE_DIR}/src/Stack.cpp
+    ${SOURCE_DIR}/src/Reftone.cpp
 
-    ${SOURCEDIR}/src/Mono.cpp
-    ${SOURCEDIR}/src/Arp.cpp #misssing widget (StatefulButton)
-    ${SOURCEDIR}/src/Assign.cpp
-    ${SOURCEDIR}/src/Unison.cpp
-    ${SOURCEDIR}/src/PolyCon8.cpp
-    ${SOURCEDIR}/src/PolyCon16.cpp
-    ${SOURCEDIR}/src/PolyOff8.cpp
-    ${SOURCEDIR}/src/PolyOff16.cpp
-    ${SOURCEDIR}/src/PolyMult.cpp
+    ${SOURCE_DIR}/src/Mono.cpp
+    ${SOURCE_DIR}/src/Arp.cpp #misssing widget (StatefulButton)
+    ${SOURCE_DIR}/src/Assign.cpp
+    ${SOURCE_DIR}/src/Unison.cpp
+    ${SOURCE_DIR}/src/PolyCon8.cpp
+    ${SOURCE_DIR}/src/PolyCon16.cpp
+    ${SOURCE_DIR}/src/PolyOff8.cpp
+    ${SOURCE_DIR}/src/PolyOff16.cpp
+    ${SOURCE_DIR}/src/PolyMult.cpp
 
-    ${SOURCEDIR}/src/Bool.cpp
-    ${SOURCEDIR}/src/Cmp.cpp
-    ${SOURCEDIR}/src/CVD.cpp
-    ${SOURCEDIR}/src/FlipFlop.cpp
-    ${SOURCEDIR}/src/Inv.cpp
-    ${SOURCEDIR}/src/Manual.cpp
-    ${SOURCEDIR}/src/FourMan.cpp
-    ${SOURCEDIR}/src/Mult.cpp
-    ${SOURCEDIR}/src/Offset.cpp
-    ${SOURCEDIR}/src/Slew.cpp
-    ${SOURCEDIR}/src/Sums.cpp
-    ${SOURCEDIR}/src/Switch.cpp
-    ${SOURCEDIR}/src/Lgsw.cpp
+    ${SOURCE_DIR}/src/Bool.cpp
+    ${SOURCE_DIR}/src/Cmp.cpp
+    ${SOURCE_DIR}/src/CVD.cpp
+    ${SOURCE_DIR}/src/FlipFlop.cpp
+    ${SOURCE_DIR}/src/Inv.cpp
+    ${SOURCE_DIR}/src/Manual.cpp
+    ${SOURCE_DIR}/src/FourMan.cpp
+    ${SOURCE_DIR}/src/Mult.cpp
+    ${SOURCE_DIR}/src/Offset.cpp
+    ${SOURCE_DIR}/src/Slew.cpp
+    ${SOURCE_DIR}/src/Sums.cpp
+    ${SOURCE_DIR}/src/Switch.cpp
+    ${SOURCE_DIR}/src/Lgsw.cpp
 
 )
 
 target_sources(BogaudioModules PUBLIC
     # enabled modules:
-    ${SOURCEDIR}/src/metamodule-plugin.cpp
+    ${SOURCE_DIR}/src/metamodule-plugin.cpp
 
     # Module sources:
     ${ENABLED_MODULE_SOURCES}
 
     # Helpers:
-    ${SOURCEDIR}/src/module.cpp
-    ${SOURCEDIR}/src/mixer.cpp
-    ${SOURCEDIR}/src/skins.cpp
-    ${SOURCEDIR}/src/widgets.cpp
-    ${SOURCEDIR}/src/addressable_sequence.cpp
-    ${SOURCEDIR}/src/dadsrh_core.cpp
-    ${SOURCEDIR}/src/disable_output_limit.cpp
-    ${SOURCEDIR}/src/follower_base.cpp
-    ${SOURCEDIR}/src/lfo_base.cpp
-    ${SOURCEDIR}/src/lpg_common.cpp
-    ${SOURCEDIR}/src/matrix_base.cpp
-    ${SOURCEDIR}/src/menu.cpp
-    ${SOURCEDIR}/src/mixer_expander.cpp
-    ${SOURCEDIR}/src/output_range.cpp
-    ${SOURCEDIR}/src/param_quantities.cpp
-    ${SOURCEDIR}/src/parametric_eq.cpp
-    ${SOURCEDIR}/src/poly_channels.cpp
-    ${SOURCEDIR}/src/rack_overrides.cpp
-    ${SOURCEDIR}/src/save_latch_to_patch.cpp
-    ${SOURCEDIR}/src/shaper_core.cpp
-    ${SOURCEDIR}/src/slew_common.cpp
-    ${SOURCEDIR}/src/trigger_on_load.cpp
-    ${SOURCEDIR}/src/utils.cpp
-    ${SOURCEDIR}/src/vco_base.cpp
-    ${SOURCEDIR}/src/Pgmr_shared.cpp
+    ${SOURCE_DIR}/src/module.cpp
+    ${SOURCE_DIR}/src/mixer.cpp
+    ${SOURCE_DIR}/src/skins.cpp
+    ${SOURCE_DIR}/src/widgets.cpp
+    ${SOURCE_DIR}/src/addressable_sequence.cpp
+    ${SOURCE_DIR}/src/dadsrh_core.cpp
+    ${SOURCE_DIR}/src/disable_output_limit.cpp
+    ${SOURCE_DIR}/src/follower_base.cpp
+    ${SOURCE_DIR}/src/lfo_base.cpp
+    ${SOURCE_DIR}/src/lpg_common.cpp
+    ${SOURCE_DIR}/src/matrix_base.cpp
+    ${SOURCE_DIR}/src/menu.cpp
+    ${SOURCE_DIR}/src/mixer_expander.cpp
+    ${SOURCE_DIR}/src/output_range.cpp
+    ${SOURCE_DIR}/src/param_quantities.cpp
+    ${SOURCE_DIR}/src/parametric_eq.cpp
+    ${SOURCE_DIR}/src/poly_channels.cpp
+    ${SOURCE_DIR}/src/rack_overrides.cpp
+    ${SOURCE_DIR}/src/save_latch_to_patch.cpp
+    ${SOURCE_DIR}/src/shaper_core.cpp
+    ${SOURCE_DIR}/src/slew_common.cpp
+    ${SOURCE_DIR}/src/trigger_on_load.cpp
+    ${SOURCE_DIR}/src/utils.cpp
+    ${SOURCE_DIR}/src/vco_base.cpp
+    ${SOURCE_DIR}/src/Pgmr_shared.cpp
     ${DSP_SOURCES}
 
-    # ${SOURCEDIR}/src/analyzer_base.cpp #needs std::condition_variable
+    # ${SOURCE_DIR}/src/analyzer_base.cpp #needs std::condition_variable
 )
 
 # Add includes and compile options for source repo
 target_include_directories(BogaudioModules 
     PRIVATE 
     ${CMAKE_CURRENT_LIST_DIR}
-    ${SOURCEDIR}/src
-    ${SOURCEDIR}/src/dsp
-    ${SOURCEDIR}/lib
+    ${SOURCE_DIR}/src
+    ${SOURCE_DIR}/src/dsp
+    ${SOURCE_DIR}/lib
 )
 
 target_compile_options(BogaudioModules PRIVATE 
@@ -204,12 +212,13 @@ $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
 $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
 )
 
-# Call this to link and create the plugin file
+#########################################################
+# Step 4: call create_plugin()
 create_plugin(
-    SOURCE_LIB      BogaudioModules
-    PLUGIN_NAME     Bogaudio                  # This must match the brand "slug" used in VCV Rack
-    PLUGIN_JSON     ${SOURCEDIR}/plugin.json           # Path to the plugin.json file used by VCV Rack
-    SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Bogaudio
+    SOURCE_LIB      BogaudioModules                                   # This is the cmake target name (defined in add_target)
+    PLUGIN_NAME     Bogaudio                                          # This must match the brand "slug" used in VCV Rack
+    PLUGIN_JSON     ${SOURCE_DIR}/plugin.json                         # Path to the plugin.json file used by VCV Rack
+    SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets                  # Path to the assets/ dir containing the PNGs
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/  # Dir where plugin .mmplugin file should be put
 )
 

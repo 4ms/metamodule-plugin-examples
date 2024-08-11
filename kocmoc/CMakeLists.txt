@@ -60,5 +60,5 @@ create_plugin(
     PLUGIN_NAME     kocmoc                                                    # This must match the brand "slug" used in VCV Rack
     PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/kocmoc-rack-modules/plugin.json # Path to the plugin.json file used by VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets                          # Path to the assets/ dir containing the PNGs
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/kocmoc    # Path to where you want the plugin dir output
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins           # Path to where you want the plugin file output
 )

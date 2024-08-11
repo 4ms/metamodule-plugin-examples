@@ -22,5 +22,5 @@ create_plugin(
     PLUGIN_NAME     NativeExample
     PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/plugin.json           # Path to the plugin.json file used by VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/NativeExample
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/
 )

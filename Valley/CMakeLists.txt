@@ -89,5 +89,5 @@ create_plugin(
     PLUGIN_NAME     Valley                              # This must match the brand "slug" used in VCV Rack
     PLUGIN_JSON     ${SOURCE_DIR}/plugin.json           # Path to the plugin.json file used by VCV Rack
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Valley # Path to where you want the plugin dir output: it can be shared between multiple plugins
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins  # Dir where plugin .mmplugin file should be put
 )
