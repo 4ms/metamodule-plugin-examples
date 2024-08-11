@@ -22,13 +22,6 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/ValleyRackFree)
 
 target_sources(Valley
     PRIVATE
-    ${SOURCE_DIR}/src/Plateau/Plateau.cpp
-    ${SOURCE_DIR}/src/Plateau/Dattorro.cpp
-
-    ${SOURCE_DIR}/src/Topograph/TopographPatternGenerator.cpp
-    ${SOURCE_DIR}/src/Topograph/Topograph.cpp
-    ${SOURCE_DIR}/src/uGraph/uGraph.cpp
-
     # ${SOURCE_DIR}/src/Terrorform/Terrorform.cpp
 
     ${SOURCE_DIR}/src/Interzone/Interzone.cpp
@@ -45,17 +38,12 @@ target_sources(Valley
     # ${SOURCE_DIR}/src/Dexter/Chords.cpp
 
 
-    ${SOURCE_DIR}/src/dsp/modulation/LinearEnvelope.cpp
     ${SOURCE_DIR}/src/dsp/filters/OnePoleFilters.cpp
     ${SOURCE_DIR}/src/dsp/filters/VecOnePoleFilters.cpp
     ${SOURCE_DIR}/src/dsp/filters/VecOTAFilter.cpp
     ${SOURCE_DIR}/src/dsp/modulation/VecLoopingADSR.cpp
     ${SOURCE_DIR}/src/dsp/fx/DiodeRingMod.cpp
     ${SOURCE_DIR}/src/dsp/fx/VecDiodeRingMod.cpp
-    ${SOURCE_DIR}/src/timers/Metronome.cpp
-    ${SOURCE_DIR}/src/timers/Oneshot.cpp
-    ${SOURCE_DIR}/src/gui/ValleyChoiceMenu.cpp
-    ${SOURCE_DIR}/src/gui/PlainText.cpp
     ${SOURCE_DIR}/src/gui/SteppedSlider.cpp
     ${SOURCE_DIR}/src/gui/DigitalDisplay.cpp
     ${SOURCE_DIR}/src/utilities/Utilities.cpp
