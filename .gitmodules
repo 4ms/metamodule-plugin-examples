@@ -25,3 +25,6 @@
 [submodule "OrangeLine"]
 	path = OrangeLine/OrangeLine
 	url = git@github.com:Stubs42/OrangeLine
+[submodule "NANO/NANO-Modules_VCV"]
+	path = NANO/NANO-Modules_VCV
+	url = https://github.com/4ms/NANO-Modules_VCV.git
