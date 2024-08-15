@@ -18,6 +18,7 @@ set(PLUGINS
     Valley
     chowdsp
     kocmoc
+    NANO
 )
 
 foreach(plugin ${PLUGINS})
