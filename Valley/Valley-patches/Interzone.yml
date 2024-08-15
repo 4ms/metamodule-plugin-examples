@@ -1,0 +1,322 @@
+PatchData:
+  patch_name: Interzone
+  description: Patch Description
+  module_slugs:
+    0: HubMedium
+    1: Interzone
+  int_cables:
+    - out:
+        module_id: 1
+        jack_id: 10
+      ins:
+        - module_id: 1
+          jack_id: 3
+      color: 35419
+    - out:
+        module_id: 1
+        jack_id: 13
+      ins:
+        - module_id: 1
+          jack_id: 6
+      color: 0
+    - out:
+        module_id: 1
+        jack_id: 6
+      ins:
+        - module_id: 1
+          jack_id: 4
+      color: 65535
+    - out:
+        module_id: 1
+        jack_id: 3
+      ins:
+        - module_id: 1
+          jack_id: 2
+      color: 64934
+    - out:
+        module_id: 1
+        jack_id: 2
+      ins:
+        - module_id: 1
+          jack_id: 13
+      color: 13501
+    - out:
+        module_id: 1
+        jack_id: 12
+      ins:
+        - module_id: 1
+          jack_id: 10
+      color: 35419
+  mapped_ins:
+    - panel_jack_id: 0
+      ins:
+        - module_id: 1
+          jack_id: 0
+    - panel_jack_id: 1
+      ins:
+        - module_id: 1
+          jack_id: 1
+    - panel_jack_id: 6
+      ins:
+        - module_id: 1
+          jack_id: 11
+    - panel_jack_id: 2
+      ins:
+        - module_id: 1
+          jack_id: 7
+    - panel_jack_id: 7
+      ins:
+        - module_id: 1
+          jack_id: 12
+  mapped_outs:
+    - panel_jack_id: 0
+      out:
+        module_id: 1
+        jack_id: 5
+    - panel_jack_id: 1
+      out:
+        module_id: 1
+        jack_id: 2
+    - panel_jack_id: 2
+      out:
+        module_id: 1
+        jack_id: 6
+  static_knobs:
+    - module_id: 1
+      param_id: 0
+      value: 0.5
+    - module_id: 1
+      param_id: 1
+      value: 0.306024
+    - module_id: 1
+      param_id: 2
+      value: 0.5
+    - module_id: 1
+      param_id: 3
+      value: 0.99
+    - module_id: 1
+      param_id: 4
+      value: 1
+    - module_id: 1
+      param_id: 5
+      value: 0
+    - module_id: 1
+      param_id: 6
+      value: 0.331325
+    - module_id: 1
+      param_id: 7
+      value: 0.864
+    - module_id: 1
+      param_id: 8
+      value: 0.5
+    - module_id: 1
+      param_id: 9
+      value: 1
+    - module_id: 1
+      param_id: 10
+      value: 0
+    - module_id: 1
+      param_id: 11
+      value: 0.232
+    - module_id: 1
+      param_id: 12
+      value: 0.862651
+    - module_id: 1
+      param_id: 13
+      value: 0.5
+    - module_id: 1
+      param_id: 14
+      value: 1
+    - module_id: 1
+      param_id: 15
+      value: 0.433735
+    - module_id: 1
+      param_id: 16
+      value: 0.6
+    - module_id: 1
+      param_id: 17
+      value: 1
+    - module_id: 1
+      param_id: 18
+      value: 0.718072
+    - module_id: 1
+      param_id: 19
+      value: 0
+    - module_id: 1
+      param_id: 20
+      value: 0.275904
+    - module_id: 1
+      param_id: 21
+      value: 0.777109
+    - module_id: 1
+      param_id: 22
+      value: 0.314
+    - module_id: 1
+      param_id: 23
+      value: 1
+    - module_id: 1
+      param_id: 24
+      value: 0.331325
+    - module_id: 1
+      param_id: 25
+      value: 0.433735
+    - module_id: 1
+      param_id: 26
+      value: 0.396386
+    - module_id: 1
+      param_id: 27
+      value: 1
+    - module_id: 1
+      param_id: 28
+      value: 0.475904
+    - module_id: 1
+      param_id: 29
+      value: 0.880723
+    - module_id: 1
+      param_id: 30
+      value: 0.32
+    - module_id: 1
+      param_id: 31
+      value: 0.5
+    - module_id: 1
+      param_id: 32
+      value: 0.381928
+    - module_id: 1
+      param_id: 33
+      value: 0.833333
+    - module_id: 1
+      param_id: 34
+      value: 0.308434
+    - module_id: 1
+      param_id: 35
+      value: 0.606
+    - module_id: 1
+      param_id: 36
+      value: 0.656
+    - module_id: 1
+      param_id: 37
+      value: 0.206024
+    - module_id: 1
+      param_id: 38
+      value: 1
+    - module_id: 1
+      param_id: 39
+      value: 0
+    - module_id: 1
+      param_id: 40
+      value: 0
+    - module_id: 1
+      param_id: 41
+      value: 1
+    - module_id: 1
+      param_id: 42
+      value: 0.836145
+  mapped_knobs:
+    - name: ''
+      set:
+        - panel_knob_id: 0
+          module_id: 1
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 1
+          module_id: 1
+          param_id: 6
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 15
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 3
+          module_id: 1
+          param_id: 16
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 4
+          module_id: 1
+          param_id: 17
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 5
+          module_id: 1
+          param_id: 12
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 7
+          module_id: 1
+          param_id: 20
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 8
+          module_id: 1
+          param_id: 21
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 9
+          module_id: 1
+          param_id: 37
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 10
+          module_id: 1
+          param_id: 34
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 11
+          module_id: 1
+          param_id: 18
+          curve_type: 0
+          min: 0
+          max: 1
+    - name: ''
+      set:
+        - panel_knob_id: 0
+          module_id: 1
+          param_id: 26
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 1
+          module_id: 1
+          param_id: 24
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 25
+          curve_type: 0
+          min: 0
+          max: 1
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+  midi_maps:
+    name: ''
+    set: []
+  midi_poly_num: 0
+  vcvModuleStates:
+    - module_id: 1
+      data: |-
+        {"panelStyle":0}

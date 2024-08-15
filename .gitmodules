@@ -6,7 +6,7 @@
 	url = https://github.com/4ms/ValleyRackFree.git
 [submodule "Geodesics/Geodesics"]
 	path = Geodesics/Geodesics
-	url = https://github.com/MarcBoule/Geodesics.git
+	url = https://github.com/4ms/Geodesics.git
 [submodule "Bogaudio/BogaudioModules"]
 	path = Bogaudio/BogaudioModules
 	url = https://github.com/4ms/BogaudioModules
@@ -16,3 +16,18 @@
 [submodule "Venom/VenomModules"]
 	path = Venom/VenomModules
 	url = https://github.com/DaveBenham/VenomModules.git
+[submodule "CountModula/VCVRackPlugins"]
+	path = CountModula/VCVRackPlugins
+	url = https://github.com/4ms/CountModulaVCVRackPlugins.git
+[submodule "kocmoc/kocmoc-rack-modules"]
+	path = kocmoc/kocmoc-rack-modules
+	url = https://github.com/janne808/kocmoc-rack-modules.git
+[submodule "Airwindows/airwin2rack"]
+	path = Airwindows/airwin2rack
+	url = https://github.com/4ms/airwin2rack
+[submodule "OrangeLine"]
+	path = OrangeLine/OrangeLine
+	url = git@github.com:Stubs42/OrangeLine
+[submodule "NANO/NANO-Modules_VCV"]
+	path = NANO/NANO-Modules_VCV
+	url = https://github.com/4ms/NANO-Modules_VCV.git
