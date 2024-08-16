@@ -87,6 +87,7 @@ set_property(TARGET Fundamental PROPERTY CXX_STANDARD 20)
 create_plugin(
     SOURCE_LIB      Fundamental                  # This is the cmake target name (defined in add_target)
     PLUGIN_NAME     Fundamental                  # This must match the brand "slug" used in VCV Rack
+    PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/Fundamental/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Fundamental # Path to where you want the plugin dir output: it can be shared between multiple plugins
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins # Path to where you want the plugin dir output: it can be shared between multiple plugins
 )
