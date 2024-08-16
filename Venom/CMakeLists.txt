@@ -44,6 +44,7 @@ target_sources(Venom
     ${SOURCE_DIR}/src/MixSolo.cpp
     ${SOURCE_DIR}/src/MultiMerge.cpp
     ${SOURCE_DIR}/src/MultiSplit.cpp
+    ${SOURCE_DIR}/src/Oscillator.cpp
     #${SOURCE_DIR}/src/NORS-IQ.cpp
     ${SOURCE_DIR}/src/NORSIQChord2Scale.cpp
     ${SOURCE_DIR}/src/PolyClone.cpp
@@ -59,7 +60,7 @@ target_sources(Venom
     ${SOURCE_DIR}/src/ShapedVCA.cpp
     ${SOURCE_DIR}/src/VCAMix4.cpp
     ${SOURCE_DIR}/src/VCAMix4Stereo.cpp
-    ${SOURCE_DIR}/src/VenomBlank.cpp
+    # ${SOURCE_DIR}/src/VenomBlank.cpp
     #${SOURCE_DIR}/src/WidgetMenuExtender.cpp
     ${SOURCE_DIR}/src/WinComp.cpp
 

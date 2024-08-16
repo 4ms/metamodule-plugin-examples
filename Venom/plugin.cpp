@@ -72,29 +72,33 @@ void init(Plugin *p) {
   pluginInstance = p;
 
   // Add modules here
-  // p->addModel(modelAuxClone);
+  // p->addModel(modelAuxClone); //Expander
+  // p->addModel(modelBayInput); //Expander
+  // p->addModel(modelBayNorm); //Expander
+  // p->addModel(modelBayOutput); //Expander
   p->addModel(modelBenjolinOsc);
   p->addModel(modelBernoulliSwitch);
-  // p->addModel(modelBernoulliSwitchExpander);
+  // p->addModel(modelBernoulliSwitchExpander); //Expander
   p->addModel(modelCloneMerge);
   p->addModel(modelHQ);
   p->addModel(modelKnob5);
   p->addModel(modelLinearBeats);
-  // p->addModel(modelLinearBeatsExpander);
+  // p->addModel(modelLinearBeatsExpander); //Expander
   p->addModel(modelLogic);
   p->addModel(modelMix4);
   p->addModel(modelMix4Stereo);
-  p->addModel(modelMixFade);
-  p->addModel(modelMixFade2);
-  p->addModel(modelMixMute);
-  p->addModel(modelMixOffset);
-  p->addModel(modelMixPan);
-  p->addModel(modelMixSend);
-  p->addModel(modelMixSolo);
+  // p->addModel(modelMixFade); //Expander
+  // p->addModel(modelMixFade2); //Expander
+  // p->addModel(modelMixMute); //Expander
+  // p->addModel(modelMixOffset); //Expander
+  // p->addModel(modelMixPan); //Expander
+  // p->addModel(modelMixSend); //Expander
+  // p->addModel(modelMixSolo); //Expander
   p->addModel(modelMultiMerge);
   p->addModel(modelMultiSplit);
+  p->addModel(modelOscillator);
   // p->addModel(modelNORS_IQ); // compile error
-  p->addModel(modelNORSIQChord2Scale);
+  // p->addModel(modelNORSIQChord2Scale); //Expander
   p->addModel(modelPolyClone);
   p->addModel(modelPolyOffset);
   p->addModel(modelPolySHASR);
@@ -108,8 +112,8 @@ void init(Plugin *p) {
   p->addModel(modelShapedVCA);
   p->addModel(modelVCAMix4);
   p->addModel(modelVCAMix4Stereo);
-  p->addModel(modelVenomBlank);
-  // p->addModel(modelWidgetMenuExtender);
+  // p->addModel(modelVenomBlank); //Blank
+  // p->addModel(modelWidgetMenuExtender); //Expander
   p->addModel(modelWinComp);
 
   // Any other plugin initialization may go here.
