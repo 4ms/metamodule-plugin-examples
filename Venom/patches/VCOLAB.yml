@@ -1,0 +1,437 @@
+PatchData:
+  patch_name: VCO LAB
+  description: Patch Description
+  module_slugs:
+    0: '4msCompany:HubMedium'
+    1: 'Venom:Oscillator'
+  int_cables: []
+  mapped_ins:
+    - panel_jack_id: 0
+      ins:
+        - module_id: 1
+          jack_id: 4
+    - panel_jack_id: 1
+      ins:
+        - module_id: 1
+          jack_id: 5
+    - panel_jack_id: 2
+      ins:
+        - module_id: 1
+          jack_id: 2
+    - panel_jack_id: 3
+      ins:
+        - module_id: 1
+          jack_id: 3
+    - panel_jack_id: 4
+      ins:
+        - module_id: 1
+          jack_id: 0
+    - panel_jack_id: 5
+      ins:
+        - module_id: 1
+          jack_id: 1
+    - panel_jack_id: 6
+      ins:
+        - module_id: 1
+          jack_id: 26
+  mapped_outs:
+    - panel_jack_id: 0
+      out:
+        module_id: 1
+        jack_id: 0
+    - panel_jack_id: 1
+      out:
+        module_id: 1
+        jack_id: 1
+    - panel_jack_id: 2
+      out:
+        module_id: 1
+        jack_id: 2
+    - panel_jack_id: 3
+      out:
+        module_id: 1
+        jack_id: 3
+    - panel_jack_id: 4
+      out:
+        module_id: 1
+        jack_id: 4
+  static_knobs:
+    - module_id: 1
+      param_id: 0
+      value: 0.142857
+    - module_id: 1
+      param_id: 1
+      value: 0.2
+    - module_id: 1
+      param_id: 2
+      value: 1
+    - module_id: 1
+      param_id: 3
+      value: 0.2
+    - module_id: 1
+      param_id: 4
+      value: 1
+    - module_id: 1
+      param_id: 5
+      value: 0.5
+    - module_id: 1
+      param_id: 6
+      value: 0.5
+    - module_id: 1
+      param_id: 7
+      value: 0
+    - module_id: 1
+      param_id: 8
+      value: 0.5
+    - module_id: 1
+      param_id: 9
+      value: 0.5
+    - module_id: 1
+      param_id: 10
+      value: 0.5
+    - module_id: 1
+      param_id: 11
+      value: 0.5
+    - module_id: 1
+      param_id: 12
+      value: 0.5
+    - module_id: 1
+      param_id: 13
+      value: 0.5
+    - module_id: 1
+      param_id: 14
+      value: 0
+    - module_id: 1
+      param_id: 15
+      value: 0.5
+    - module_id: 1
+      param_id: 16
+      value: 0.5
+    - module_id: 1
+      param_id: 17
+      value: 0.5
+    - module_id: 1
+      param_id: 18
+      value: 0.5
+    - module_id: 1
+      param_id: 19
+      value: 0.5
+    - module_id: 1
+      param_id: 20
+      value: 0.5
+    - module_id: 1
+      param_id: 21
+      value: 0.5
+    - module_id: 1
+      param_id: 22
+      value: 0.5
+    - module_id: 1
+      param_id: 23
+      value: 0.5
+    - module_id: 1
+      param_id: 24
+      value: 0.5
+    - module_id: 1
+      param_id: 25
+      value: 0.5
+    - module_id: 1
+      param_id: 26
+      value: 0.5
+    - module_id: 1
+      param_id: 27
+      value: 0.5
+    - module_id: 1
+      param_id: 28
+      value: 0.5
+    - module_id: 1
+      param_id: 29
+      value: 0.5
+    - module_id: 1
+      param_id: 30
+      value: 0.5
+    - module_id: 1
+      param_id: 31
+      value: 0.5
+    - module_id: 1
+      param_id: 32
+      value: 0.5
+    - module_id: 1
+      param_id: 33
+      value: 0.5
+    - module_id: 1
+      param_id: 34
+      value: 0.5
+    - module_id: 1
+      param_id: 35
+      value: 0.5
+    - module_id: 1
+      param_id: 36
+      value: 0.5
+    - module_id: 1
+      param_id: 37
+      value: 0.5
+    - module_id: 1
+      param_id: 38
+      value: 0.5
+    - module_id: 1
+      param_id: 39
+      value: 0.5
+    - module_id: 1
+      param_id: 40
+      value: 0.5
+    - module_id: 1
+      param_id: 41
+      value: 0.5
+    - module_id: 1
+      param_id: 42
+      value: 0.5
+    - module_id: 1
+      param_id: 43
+      value: 0.5
+    - module_id: 1
+      param_id: 44
+      value: 0.5
+    - module_id: 1
+      param_id: 45
+      value: 0.5
+    - module_id: 1
+      param_id: 46
+      value: 0.5
+    - module_id: 1
+      param_id: 47
+      value: 0.5
+    - module_id: 1
+      param_id: 48
+      value: 0.5
+    - module_id: 1
+      param_id: 49
+      value: 0.5
+    - module_id: 1
+      param_id: 50
+      value: 0
+    - module_id: 1
+      param_id: 51
+      value: 0
+    - module_id: 1
+      param_id: 52
+      value: 0
+    - module_id: 1
+      param_id: 53
+      value: 0
+  mapped_knobs:
+    - name: Main
+      set:
+        - panel_knob_id: 0
+          module_id: 1
+          param_id: 5
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 1
+          module_id: 1
+          param_id: 6
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 8
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 3
+          module_id: 1
+          param_id: 9
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 4
+          module_id: 1
+          param_id: 10
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 5
+          module_id: 1
+          param_id: 11
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 6
+          module_id: 1
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 7
+          module_id: 1
+          param_id: 1
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 8
+          module_id: 1
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 9
+          module_id: 1
+          param_id: 3
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 10
+          module_id: 1
+          param_id: 4
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 11
+          module_id: 1
+          param_id: 7
+          curve_type: 0
+          min: 0
+          max: 1
+    - name: Shapes
+      set:
+        - panel_knob_id: 0
+          module_id: 1
+          param_id: 10
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 1
+          module_id: 1
+          param_id: 11
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 12
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 3
+          module_id: 1
+          param_id: 13
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 4
+          module_id: 1
+          param_id: 14
+          curve_type: 0
+          min: 0
+          max: 1
+    - name: Phase
+      set:
+        - panel_knob_id: 0
+          module_id: 1
+          param_id: 20
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 1
+          module_id: 1
+          param_id: 21
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 22
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 3
+          module_id: 1
+          param_id: 23
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 4
+          module_id: 1
+          param_id: 24
+          curve_type: 0
+          min: 0
+          max: 1
+    - name: Offset
+      set:
+        - panel_knob_id: 0
+          module_id: 1
+          param_id: 30
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 1
+          module_id: 1
+          param_id: 31
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 32
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 3
+          module_id: 1
+          param_id: 33
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 4
+          module_id: 1
+          param_id: 34
+          curve_type: 0
+          min: 0
+          max: 1
+    - name: Levels
+      set:
+        - panel_knob_id: 0
+          module_id: 1
+          param_id: 40
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 1
+          module_id: 1
+          param_id: 41
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 42
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 3
+          module_id: 1
+          param_id: 43
+          curve_type: 0
+          min: 0
+          max: 1
+        - panel_knob_id: 4
+          module_id: 1
+          param_id: 44
+          curve_type: 0
+          min: 0
+          max: 1
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+  midi_maps:
+    name: ''
+    set: []
+  midi_poly_num: 0
+  vcvModuleStates:
+    - module_id: 1
+      data: |-
+        {"paramLock0":false,"paramDflt0":0.0,"paramVal0":1.0,"paramName0":"Frequency Mode","paramLock1":false,"paramDflt1":0.0,"paramVal1":1.0,"paramName1":"Oversample","paramLock2":false,"paramDflt2":0.0,"paramVal2":1.0,"paramName2":"Pulse Width Range","paramLock3":false,"paramDflt3":0.0,"paramVal3":1.0,"paramName3":"Mix Shape Mode","paramLock4":false,"paramDflt4":0.0,"paramVal4":1.0,"paramName4":"DC Block","paramLock5":false,"paramDflt5":0.0,"paramVal5":0.0,"paramName5":"Frequency","paramLock6":false,"paramDflt6":0.0,"paramVal6":0.0,"paramName6":"Octave","paramLock7":false,"paramDflt7":0.0,"paramVal7":0.0,"paramName7":"Reset polyphony count","paramLock8":false,"paramDflt8":0.0,"paramVal8":0.0,"paramName8":"Exponential FM","paramLock9":false,"paramDflt9":0.0,"paramVal9":0.0,"paramName9":"Linear FM","paramLock10":false,"paramDflt10":0.0,"paramVal10":0.0,"paramName10":"Sine shape","paramLock11":false,"paramDflt11":0.0,"paramVal11":0.0,"paramName11":"Triangle shape","paramLock12":false,"paramDflt12":0.0,"paramVal12":0.0,"paramName12":"Square pulse width","paramLock13":false,"paramDflt13":0.0,"paramVal13":0.0,"paramName13":"Saw shape","paramLock14":false,"paramDflt14":-1.0,"paramVal14":-1.0,"paramName14":"Mix shape","paramLock15":false,"paramDflt15":0.0,"paramVal15":0.0,"paramName15":"Sine shape CV amount","paramLock16":false,"paramDflt16":0.0,"paramVal16":0.0,"paramName16":"Triangle shape CV amount","paramLock17":false,"paramDflt17":0.0,"paramVal17":0.0,"paramName17":"Square shape CV amount","paramLock18":false,"paramDflt18":0.0,"paramVal18":0.0,"paramName18":"Saw shape CV amount","paramLock19":false,"paramDflt19":0.0,"paramVal19":0.0,"paramName19":"Mix shape CV amount","paramLock20":false,"paramDflt20":0.0,"paramVal20":0.0,"paramName20":"Sine phase","paramLock21":false,"paramDflt21":0.0,"paramVal21":0.0,"paramName21":"Triangle phase","paramLock22":false,"paramDflt22":0.0,"paramVal22":0.0,"paramName22":"Square phase","paramLock23":false,"paramDflt23":0.0,"paramVal23":0.0,"paramName23":"Saw phase","paramLock24":false,"paramDflt24":0.0,"paramVal24":0.0,"paramName24":"Global phase","paramLock25":false,"paramDflt25":0.0,"paramVal25":0.0,"paramName25":"Sine phase CV amount","paramLock26":false,"paramDflt26":0.0,"paramVal26":0.0,"paramName26":"Triangle phase CV amount","paramLock27":false,"paramDflt27":0.0,"paramVal27":0.0,"paramName27":"Square phase CV amount","paramLock28":false,"paramDflt28":0.0,"paramVal28":0.0,"paramName28":"Saw phase CV amount","paramLock29":false,"paramDflt29":0.0,"paramVal29":0.0,"paramName29":"Global phase CV amount","paramLock30":false,"paramDflt30":0.0,"paramVal30":0.0,"paramName30":"Sine offset","paramLock31":false,"paramDflt31":0.0,"paramVal31":0.0,"paramName31":"Triangle offset","paramLock32":false,"paramDflt32":0.0,"paramVal32":0.0,"paramName32":"Square offset","paramLock33":false,"paramDflt33":0.0,"paramVal33":0.0,"paramName33":"Saw offset","paramLock34":false,"paramDflt34":0.0,"paramVal34":0.0,"paramName34":"Mix offset","paramLock35":false,"paramDflt35":0.0,"paramVal35":0.0,"paramName35":"Sine offset CV amount","paramLock36":false,"paramDflt36":0.0,"paramVal36":0.0,"paramName36":"Triangle offset CV amount","paramLock37":false,"paramDflt37":0.0,"paramVal37":0.0,"paramName37":"Square offset CV amount","paramLock38":false,"paramDflt38":0.0,"paramVal38":0.0,"paramName38":"Saw offset CV amount","paramLock39":false,"paramDflt39":0.0,"paramVal39":0.0,"paramName39":"Mix offset CV amount","paramLock40":false,"paramDflt40":0.0,"paramVal40":0.0,"paramName40":"Sine level","paramLock41":false,"paramDflt41":0.0,"paramVal41":0.0,"paramName41":"Triangle level","paramLock42":false,"paramDflt42":0.0,"paramVal42":0.0,"paramName42":"Square level","paramLock43":false,"paramDflt43":0.0,"paramVal43":0.0,"paramName43":"Saw level","paramLock44":false,"paramDflt44":0.0,"paramVal44":0.0,"paramName44":"Mix level","paramLock45":false,"paramDflt45":0.0,"paramVal45":0.0,"paramName45":"Sine level CV amount","paramLock46":false,"paramDflt46":0.0,"paramVal46":0.0,"paramName46":"Triangle level CV amount","paramLock47":false,"paramDflt47":0.0,"paramVal47":0.0,"paramName47":"Square level CV amount","paramLock48":false,"paramDflt48":0.0,"paramVal48":0.0,"paramName48":"Saw level CV amount","paramLock49":false,"paramDflt49":0.0,"paramVal49":0.0,"paramName49":"Mix level CV amount","paramLock50":false,"paramDflt50":0.0,"paramVal50":0.0,"paramName50":"Sine level assignment","paramLock51":false,"paramDflt51":0.0,"paramVal51":0.0,"paramName51":"Triangle level assignment","paramLock52":false,"paramDflt52":0.0,"paramVal52":0.0,"paramName52":"Square level assignment","paramLock53":false,"paramDflt53":0.0,"paramVal53":0.0,"paramName53":"Saw level assignment","inputName0":"Exponential FM","inputName1":"Linear FM","inputName2":"Exponential FM depth","inputName3":"Linear FM depth","inputName4":"V/Oct","inputName5":"Sync","inputName6":"Sine shape CV","inputName7":"Triangle shape CV","inputName8":"Square shape CV","inputName9":"Saw shape CV","inputName10":"Mix shape CV","inputName11":"Sine phase CV","inputName12":"Triangle phase CV","inputName13":"Square phase CV","inputName14":"Saw phase CV","inputName15":"Global phase CV","inputName16":"Sine offset CV","inputName17":"Triangle offset CV","inputName18":"Square offset CV","inputName19":"Saw offset CV","inputName20":"Mix offset CV","inputName21":"Sine level CV","inputName22":"Triangle level CV","inputName23":"Square level CV","inputName24":"Saw level CV","inputName25":"Mix level CV","inputName26":"Soft sync","outputName0":"Sine","outputName1":"Triangle","outputName2":"Square","outputName3":"Saw","outputName4":"Mix","currentTheme":0,"disableOver":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],"ringMod":[false,false,false,false,false],"linDCCouple":false,"overParam":1}
