@@ -19,6 +19,7 @@ set(PLUGINS
     chowdsp
     kocmoc
     NANO
+    Venom
 )
 
 foreach(plugin ${PLUGINS})
