@@ -29,13 +29,8 @@ on:
         required: true
         default: false
         type: boolean
-      mac_x64:
+      macos:
         description: 'build on Mac x64'
-        required: true
-        default: false
-        type: boolean
-      mac_arm:
-        description: 'build on Mac arm'
         required: true
         default: false
         type: boolean
@@ -76,10 +71,15 @@ jobs:
         with:
           submodules: 'recursive'
 
+      - name: Install linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install ninja-build
+
       - name: Build
         run: |
           cd ${{ inputs.plugin }}
-          cmake -B build 
+          cmake -B build -G Ninja
           cmake --build build
 
       - name: Set Release Version
@@ -122,6 +122,43 @@ jobs:
 
       - name: Build
         run: |
-          cmake -B build 
+          cd ${{ inputs.plugin }}
+          cmake -B build -G Ninja
+          cmake --build build
+
+  build-mac-x64:
+    if: ${{ github.event_name == 'push' || inputs.macos }}
+    strategy:
+        matrix:
+          gcc: ['12.2.Rel1']  # can add other versions if needed
+    name: "Build firmware on mac x64"
+    runs-on: macos-latest
+    steps:
+      - name: Install Arm GNU Toolchain (arm-none-eabi-gcc)
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+        with:
+          release: ${{ matrix.gcc }}
+
+      - name: Install cmake
+        uses: jwlawson/actions-setup-cmake@v1.13
+        with:
+          cmake-version: '3.26.x'
+          
+      - name: Git setup
+        run: git config --global --add safe.directory '*'
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Install mac dependencies
+        run: |
+          brew install ninja 
+
+      - name: Build
+        run: |
+          cd ${{ inputs.plugin }}
+          cmake -B build -G ninja
           cmake --build build
 
