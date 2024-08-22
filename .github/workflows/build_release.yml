@@ -29,25 +29,16 @@ on:
         required: true
         default: true
         type: boolean
-      win_x64:
-        description: 'build on Windows (no releases)'
-        required: true
-        default: false
-        type: boolean
+      # win_x64:
+      #   description: 'build on Windows (no releases)'
+      #   required: true
+      #   default: false
+      #   type: boolean
       macos:
         description: 'build on Mac (no releases)'
         required: true
         default: false
         type: boolean
-  push:
-    branches:
-      - release # make a new release of all modules
-      - fix-ci # for debugging
-    tags:
-      - 'plugin-api-v[0-9]+.[0-9]+.[0-9]+'
-      - 'debug-*'
-    paths:
-      - '!**.md' # Skip docs
 
 jobs:
   build-lin:
@@ -88,11 +79,11 @@ jobs:
           cmake --build build
 
       - name: Set Release Version
-        if: ${{ inputs.do_release }}
+        if: startsWith(github.ref, 'refs/tags/')
         uses: FranzDiebold/github-env-vars-action@v2
 
       - name: Release
-        if: ${{ inputs.do_release }}
+        if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
         with:
           name: "Release: ${{ env.CI_REF_NAME }}"
