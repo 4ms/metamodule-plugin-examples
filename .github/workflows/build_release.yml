@@ -20,17 +20,17 @@ on:
           - Valley
           - "./"
       linux_x64:
-        description: 'Build on Linux x64'
+        description: 'Build on Linux'
         required: true
         default: true
         type: boolean
       win_x64:
-        description: 'build on Windows x64'
+        description: 'build on Windows (no releases)'
         required: true
         default: false
         type: boolean
       macos:
-        description: 'build on Mac x64'
+        description: 'build on Mac (no releases)'
         required: true
         default: false
         type: boolean
@@ -50,7 +50,7 @@ jobs:
     strategy:
         matrix:
           gcc: ['12.2.Rel1']  # can add other versions if needed
-    name: "Build firmware"
+    name: "Build firmware on linux"
     runs-on: ubuntu-24.04
     steps:
       - name: Install Arm GNU Toolchain (arm-none-eabi-gcc)
@@ -83,14 +83,14 @@ jobs:
           cmake --build build
 
       - name: Set Release Version
-        if: startsWith(github.ref, 'refs/tags/plugin-api-v')
+        if: startsWith(github.ref, 'refs/tags/release-')
         uses: FranzDiebold/github-env-vars-action@v2
 
       - name: Release
-        if: startsWith(github.ref, 'refs/tags/plugin-api-v')
+        if: startsWith(github.ref, 'refs/tags/release-')
         uses: softprops/action-gh-release@v1
         with:
-          name: "Plugins: API Version ${{ env.CI_REF_NAME }}"
+          name: "Release: ${{ env.CI_REF_NAME }}"
           files: |
             metamodule-plugins/*.mmplugin
             
@@ -122,6 +122,7 @@ jobs:
 
       - name: Build
         run: |
+          git config --global core.longpaths true
           cd ${{ inputs.plugin }}
           cmake -B build -G Ninja
           cmake --build build
@@ -159,6 +160,6 @@ jobs:
       - name: Build
         run: |
           cd ${{ inputs.plugin }}
-          cmake -B build -G ninja
+          cmake -B build -G Ninja
           cmake --build build
 
