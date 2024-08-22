@@ -19,7 +19,7 @@ set(PLUGINS
     chowdsp
     kocmoc
     NANO
-	VCV-Fundamental
+    VCV-Fundamental
 )
 
 foreach(plugin ${PLUGINS})
