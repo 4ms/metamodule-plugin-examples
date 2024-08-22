@@ -1,6 +1,16 @@
 {
-	"MetaModulePluginMaintainer": "4ms Company",
-	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": ""
+    "MetaModulePluginMaintainer": "4ms Company",
+    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+    "MetaModulePluginMaintainerUrl": "",
+    "MetaModuleDescription": "",
+    "MetaModuleIncludedModules": [
+        "SVF",
+        "TRG",
+        "LADR",
+        "OP",
+        "PHASR",
+        "MUL",
+        "SKF",
+        "DDLY"
+    ]
 }
