@@ -54,6 +54,8 @@ target_sources(Fundamental
 	${SOURCE_DIR}/VCMixer.cpp
 	${SOURCE_DIR}/VCO.cpp
 
+	quant.cc
+
     # Screens don't work in MM:
 	# ${SOURCE_DIR}/Scope.cpp 
 

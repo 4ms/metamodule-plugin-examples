@@ -1,4 +1,5 @@
 #include "plugin.hpp"
+#include "quant.hh"
 
 Plugin *pluginInstance;
 
@@ -37,6 +38,7 @@ void init(Plugin *p) {
   p->addModel(modelSHASR);
 
 #ifdef METAMODULE
+  MetaModule::RackClone::Quant::register_module();
 #else
   p->addModel(modelVCO2);
   p->addModel(modelLFO2);
