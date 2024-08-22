@@ -1,6 +1,20 @@
 {
-	"MetaModulePluginMaintainer": "4ms Company",
-	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": ""
+    "MetaModulePluginMaintainer": "4ms Company",
+    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+    "MetaModulePluginMaintainerUrl": "",
+    "MetaModuleDescription": "",
+    "MetaModuleIncludedModules": [
+        "ChowTape", 
+        "ChowPhaserFeedback",
+        "ChowPhaserMod",
+        "ChowModal",
+        "ChowDer",
+        "Warp",
+        "Werner Filter",
+        "ChowPulse",
+        "ChowTape Compression",
+        "ChowTape Chew",
+        "ChowTape Degrade",
+        "ChowTape Loss"
+    ]
 }
