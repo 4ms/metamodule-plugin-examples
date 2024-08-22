@@ -27,12 +27,10 @@ target_sources(Fundamental
 	${SOURCE_DIR}/ADSR.cpp
 	${SOURCE_DIR}/CVMix.cpp
 	${SOURCE_DIR}/Compare.cpp
-	# ${SOURCE_DIR}/Delay.cpp #src_new src_delete src_process
 	${SOURCE_DIR}/Fade.cpp
 	${SOURCE_DIR}/Gates.cpp
 	${SOURCE_DIR}/LFO.cpp
 	${SOURCE_DIR}/Logic.cpp
-	# ${SOURCE_DIR}/Merge.cpp #not relevent without polyphony
 	${SOURCE_DIR}/MidSide.cpp
 	${SOURCE_DIR}/Mixer.cpp
 	${SOURCE_DIR}/Mult.cpp
@@ -48,16 +46,21 @@ target_sources(Fundamental
 	${SOURCE_DIR}/Rescale.cpp
 	${SOURCE_DIR}/SEQ3.cpp
 	${SOURCE_DIR}/SHASR.cpp
-	# ${SOURCE_DIR}/Scope.cpp # screens don't work in MM
 	${SOURCE_DIR}/SequentialSwitch.cpp
-	# ${SOURCE_DIR}/Split.cpp # not relevent without polyphony
-	${SOURCE_DIR}/Sum.cpp
 	${SOURCE_DIR}/Unity.cpp
 	${SOURCE_DIR}/VCA-1.cpp
 	${SOURCE_DIR}/VCA.cpp
 	${SOURCE_DIR}/VCF.cpp
 	${SOURCE_DIR}/VCMixer.cpp
 	${SOURCE_DIR}/VCO.cpp
+
+    # Screens don't work in MM:
+	# ${SOURCE_DIR}/Scope.cpp 
+
+    # Not relevent without polyphony:
+	# ${SOURCE_DIR}/Merge.cpp
+	# ${SOURCE_DIR}/Split.cpp # not relevent without polyphony
+	# ${SOURCE_DIR}/Sum.cpp # not relevent without polyphony
 	# ${SOURCE_DIR}/Viz.cpp #not relevent without polyphony
 
 	# Uses filesystem:
@@ -65,7 +68,9 @@ target_sources(Fundamental
 	# ${SOURCE_DIR}/WTVCO.cpp
 	# ${SOURCE_DIR}/dr_wav.c
 
-	# ${SOURCE_DIR}/plugin.cpp
+    # src_new src_delete src_process
+	# ${SOURCE_DIR}/Delay.cpp
+
 	plugin.cpp
 )
 
@@ -77,6 +82,10 @@ target_include_directories(Fundamental PRIVATE
 target_compile_options(Fundamental PRIVATE 
     -fexceptions
     -Wno-deprecated-enum-enum-conversion
+)
+
+target_compile_definitions(Fundamental PRIVATE 
+	METAMODULE
 )
 
 set_property(TARGET Fundamental PROPERTY CXX_STANDARD 20)

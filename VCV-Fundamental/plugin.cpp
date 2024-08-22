@@ -6,13 +6,10 @@ void init(Plugin *p) {
   pluginInstance = p;
 
   p->addModel(modelVCO);
-  // p->addModel(modelVCO2);
   p->addModel(modelVCF);
   p->addModel(modelVCA_1);
   p->addModel(modelVCA);
   p->addModel(modelLFO);
-  // p->addModel(modelLFO2);
-  // p->addModel(modelDelay);
   p->addModel(modelADSR);
   p->addModel(modelMixer);
   p->addModel(modelVCMixer);
@@ -20,16 +17,10 @@ void init(Plugin *p) {
   p->addModel(modelUnity);
   p->addModel(modelMutes);
   p->addModel(modelPulses);
-  // p->addModel(modelScope);
   p->addModel(modelSEQ3);
   p->addModel(modelSequentialSwitch1);
   p->addModel(modelSequentialSwitch2);
   p->addModel(modelOctave);
-  p->addModel(modelQuantizer);
-  // p->addModel(modelSplit);
-  // p->addModel(modelMerge);
-  p->addModel(modelSum);
-  // p->addModel(modelViz);
   p->addModel(modelMidSide);
   p->addModel(modelNoise);
   p->addModel(modelRandom);
@@ -44,6 +35,19 @@ void init(Plugin *p) {
   p->addModel(modelRandomValues);
   p->addModel(modelPush);
   p->addModel(modelSHASR);
+
+#ifdef METAMODULE
+#else
+  p->addModel(modelVCO2);
+  p->addModel(modelLFO2);
+  p->addModel(modelDelay);
+  p->addModel(modelScope);
+  p->addModel(modelSplit);
+  p->addModel(modelMerge);
+  p->addModel(modelSum);
+  p->addModel(modelViz);
+  p->addModel(modelQuantizer);
+#endif
 }
 
 MenuItem *createRangeItem(std::string label, float *gain, float *offset) {
