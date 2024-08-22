@@ -104,7 +104,7 @@ target_sources(CountModula
     ${MODULE_DIR}/PolyLogic.cpp
     ${MODULE_DIR}/PolyMinMax.cpp
     ${MODULE_DIR}/PolyMute.cpp
-    ${MODULE_DIR}/PolyrhythmicGenerator.cpp
+    #${MODULE_DIR}/PolyrhythmicGenerator.cpp
     ${MODULE_DIR}/PolyrhythmicGeneratorMkII.cpp
     ${MODULE_DIR}/PolyVCPolarizer.cpp
     ${MODULE_DIR}/PolyVCSwitch.cpp
@@ -151,7 +151,7 @@ target_sources(CountModula
     ${MODULE_DIR}/Switch8To1.cpp
     ${MODULE_DIR}/TriggerSequencer16.cpp
     ${MODULE_DIR}/TriggerSequencer8.cpp
-    ${MODULE_DIR}/VCFrequencyDivider.cpp
+    #${MODULE_DIR}/VCFrequencyDivider.cpp
     ${MODULE_DIR}/VCFrequencyDividerMkII.cpp
     ${MODULE_DIR}/VCPolarizer.cpp
     ${MODULE_DIR}/VCPulseDivider.cpp
