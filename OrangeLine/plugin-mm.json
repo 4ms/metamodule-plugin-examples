@@ -1,6 +1,17 @@
 {
-	"MetaModulePluginMaintainer": "4ms Company",
-	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": ""
+    "MetaModulePluginMaintainer": "4ms Company",
+    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+    "MetaModulePluginMaintainerUrl": "",
+    "MetaModuleDescription": "",
+    "MetaModuleIncludedModules": [
+        "Fence",
+        "Swing",
+        "Mother",
+        "Phrase",
+        "Dejavu",
+        "Gator",
+        "Resc",
+        "Morph",
+        "Morpheus"
+    ]
 }
