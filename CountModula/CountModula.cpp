@@ -99,7 +99,7 @@ void init(Plugin *p) {
   p->addModel(modelPolyLogic);
   p->addModel(modelPolyMinMax);
   p->addModel(modelPolyMute);
-  p->addModel(modelPolyrhythmicGenerator);
+  // p->addModel(modelPolyrhythmicGenerator);
   p->addModel(modelPolyrhythmicGeneratorMkII);
   p->addModel(modelPolyVCPolarizer);
   p->addModel(modelPolyVCSwitch);
@@ -148,7 +148,7 @@ void init(Plugin *p) {
   p->addModel(modelTFlipFlop);
   p->addModel(modelTriggerSequencer16);
   p->addModel(modelTriggerSequencer8);
-  p->addModel(modelVCFrequencyDivider);
+  // p->addModel(modelVCFrequencyDivider);
   p->addModel(modelVCFrequencyDividerMkII);
   p->addModel(modelVCPolarizer);
   p->addModel(modelVCPulseDivider);
