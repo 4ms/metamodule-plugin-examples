@@ -3,6 +3,22 @@ name: Build and release plugins
 on:
   workflow_dispatch:
     inputs:
+      plugin:
+        description: 'Plugin to build'
+        required: true
+        type: choice
+        options:
+          - Airwindows
+          - Bogaudio
+          - chowdsp
+          - CountModula
+          - Geodesics
+          - kocmoc
+          - NANO
+          - OrangeLine
+          - VCV-Fundamental
+          - Valley
+          - "./"
       linux_x64:
         description: 'Build on Linux x64'
         required: true
@@ -25,8 +41,8 @@ on:
         type: boolean
   push:
     branches:
-      - main
-      - fix-ci
+      - release # make a new release of all modules
+      - fix-ci # for debugging
     tags:
       - 'plugin-api-v[0-9]+.[0-9]+.[0-9]+'
       - 'debug-*'
@@ -62,6 +78,7 @@ jobs:
 
       - name: Build
         run: |
+          cd ${{ inputs.plugin }}
           cmake -B build 
           cmake --build build
 
