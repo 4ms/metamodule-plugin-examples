@@ -1,17 +1,15 @@
 # Example MetaModule Plugins using the SDK
 
-Here are examples of VCV Rack plugins that are compiled as MetaModule plugins, using the MetaModule Plugin SDK.
+Here are examples of mostly VCV Rack plugins being compiled as MetaModule plugins, using the MetaModule Plugin SDK.
 
 The goal of the SDK is to make it as easy as possible to compile existing VCV Rack plugin source code 
-and produce a MetaModule-compatible plugin.
+and produce a MetaModule-compatible plugin. The SDK also supports "native" plugins, which are not based 
+on VCV Rack plugins (read below).
 
 Some of these plugins are using the original, unaltered Rack source code. Some are using a fork or branch of the code with
 (minor) changes made in order to work as a MetaModule plugin.
 
 In some cases, certain modules are omitted from the MetaModule plugin.
-
-Note that all of these plugins are already built into MetaModule firmware. So loading the plugins into stock MetaModule
-firmware will have no effect. The goal of this is to merely demonstrate how plugins can be built.
 
 ## Requirements
 
@@ -67,7 +65,7 @@ cmake --build build
 This will also install the plugin in the top-level `metamodule-plugins` directory.
 
 
-## Building your own plugin
+## Building a MetaModule plugin from an existing VCV Rack plugin
 
 To build your existing VCV Rack plugin as a MetaModule plugin:
 
@@ -89,16 +87,111 @@ To build your existing VCV Rack plugin as a MetaModule plugin:
 8. Build as done above.
 
 
+## Native plugins
+
+Plugins do not need to be based on VCV Rack. For examples, see NativeExample
+and Airwindows.
+
+At minimum, a plugin must define an init() function, but there is nothing else
+required. 
+
+- When a plugin is loaded, first all the assets are copied to the internal RAM
+  drive into a subdirectory.
+
+- Next, the `.so` file is parsed (as an elf file) and all dynamic relocations are performed. If there are unresolved symbols, they are reported and it
+  aborts.
+
+- Next, the global static constructors are called
+
+- Finally, the init() function is called. Both `init()` and
+  `init(rack::Plugin::plugin *)` are searched, with the latter taking
+  precedence.
+
+A plugin's job is to intialize plugin-wide data (if any) and register its
+modules. This is usually done in init() but also can be done in the global
+constructors.
+
+In a typical VCV Rack plugin, modules are registered with calls to
+`p->addModel(modelName)` in `init(plugin*)`. In the more general case, modules
+can be registered using the function `register_module()`, declared in
+`metamodule-core-interface` in `CoreModules/register_module.hh`:
+
+```c++
+using CreateModuleFunc = std::function<std::unique_ptr<CoreProcessor>()>;
+
+bool register_module(std::string_view brand_name,
+					 std::string_view typeslug,
+					 CreateModuleFunc funcCreate,
+					 ModuleInfoView const &info,
+					 std::string_view faceplate_filename);
+```
+
+The `brand_name` and `typeslug` are the plugin name and the module name. These 
+must match what's present in VCV Rack if you want your users to be able to create
+patches in VCV Rack using your modules.
+
+The full path to the faceplate is specified in the last parameter.
+
+`ModuleInfoView const &info` is a view into the module's elements (knobs, jacks, etc).
+Since only a view is passed to the MetaModule core interface, the actual data
+must live statically for the entire duration of the plugin. There are various ways to
+store data statically:
+- VCV plugins use global `Model` variables.
+- The NativeExample project uses `static` variables in the module init function.
+- The Airwindows project uses a global vector which allocates on the heap.
+
+`funcCreate` is a factory function that returns a unique_ptr to a
+`CoreProcessor` module. The `CoreProcessor` class is a virtual base class which
+is the base of all MetaModule modules:
+
+```c++
+class CoreProcessor {
+public:
+	virtual void update() = 0;
+	virtual void set_samplerate(float sr) = 0;
+	virtual void set_param(int param_id, float val) = 0;
+	virtual void set_input(int input_id, float val) = 0;
+	virtual float get_output(int output_id) const = 0;
+	virtual float get_led_brightness(int led_id) { return 0; }
+	virtual void mark_all_inputs_unpatched() {}
+	virtual void mark_input_unpatched(int input_id) {}
+	virtual void mark_input_patched(int input_id) {}
+	virtual void mark_all_outputs_unpatched() {}
+	virtual void mark_output_unpatched(int output_id) {}
+	virtual void mark_output_patched(int output_id) {}
+	virtual void load_state(std::string_view state_data) {}
+	virtual std::string save_state() { return ""; }
+};
+```
+
+Putting it all together, the NativeExample plugin demonstrates how it works
+with a very simple module that provies gain to an audio signal (with an LED to show the gain).
+
+The method used in `simple_gain_elements.cc` to generate all the elements
+(jacks, knob, etc), is just for this toy example. For large sets of modules you
+would probably want to generate the X,Y positions and various values either at
+runtime (using a grid perhaps), or with scripts. For the 4ms modules, we use a
+python script to parse SVGs and generate a c++ header file with a constexpr
+array of elements. 
+
+One "gotcha" is that if the strings are not backed by static storage (that is,
+they are dynamically generated on the stack or heap), then you will need to
+provide the strings in some sort of static container. The reason is that
+Element type and module registry only contain string_views.
+See the Airwindows `module_creator.cc` for an example.
+
+
 ## Installing a plugin
 
 After building, copy the top-level metamodule-plugins dir to an SD Card or USB
 drive.
 
-
-``` 
+```
 cd ..  # Root of this repo
 cp -R metamodule-plugins/ /Volumes/SDCard-or-USBDrive/
-``` 
+
+```
+
 
 Make sure the metamodule-plugins/ dir itself resides in the root-level of
 the SD Card. That is, copy the entire folder, not just the contents.
@@ -107,10 +200,56 @@ Then insert the SD Card or USB drive into your MetaModule. Follow the
 MetaModule docs to load the plugins.
 
 
+
 ## Images
 
-VCV Rack uses SVG files for graphical assets, but MetaModule uses PNGs. So, we
-need to convert all SVGs to PNGs. Typically all SVGs are kept in a `res/`
+The MetaModule uses PNGs for images. The DPI is about 47.4 DPI because Eurorack 
+modules are 5.059 inches high, and MetaModule modules are 240px high (240/5.059=47.44).
+PNGs with transparency can be used for components.
+
+The CMakeLists file will copy all PNG assets from the `assets/` dir to the plugin dir.
+Only one level of subdirectories is supported at this time (API v0.14.x).
+For example, this is a typical way of structuring the assets:
+
+```
+assets/
+    components/
+        knob-blue.png
+        knob-red.png
+        ...
+    faceplates/
+        VCF.png
+        VCO.png
+        ...
+```
+
+You cannot have any more nested subdirectories that the above (that is, no `assets/components/extra-sub-dir/knob.png`)
+
+The CMakeLists build will copy this directory to the metamodule-plugins dir like this:
+
+```
+metamodule-plugins/
+    MyPluginBrand/
+        MyPluginBrand.so
+        components/
+            knob-blue.png
+            knob-red.png
+            ...
+        faceplates/
+            VCF.png
+            VCO.png
+    OtherBrand/
+        OtherBrand.so
+        other_module.png
+```
+
+On plugin load, all files will be copied to the internal RAM Disk. Space is limited and shared amongst all plugins,
+so make efforts to remove any unused files.
+
+### Converting VCV Rack SVGs to PNGs
+If you are converting a VCV Rack plugin, you need to convert the SVG assets to PNG format.
+
+Typically all SVGs are kept in a `res/`
 directory for VCV Rack plugins. For MetaModule plugins, the `res/` dir is
 omitted, but otherwise the directory structure and file base names are kept the
 same. Before building your plugin, convert all the SVGs to PNGs and put them
@@ -191,5 +330,4 @@ the `BefacoTinyKnob` class to define a knob whose SVG is just a dot (white or bl
 knob body color. There is no `fg` SVG. In this case, you need to manually combine the two SVGs and save them as the
 file name of the `bg` image. Also, the main image file (the dot) needs to be present in order to determine the size
 of the widget for placement, although it's not drawn.
-
 

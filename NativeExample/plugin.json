@@ -1,0 +1,18 @@
+{
+  "slug": "NativeExample",
+  "name": "NativeExample",
+  "version": "1.0.0",
+  "license": "GPL-3.0-or-later",
+  "brand": "4msCompany",
+  "author": "Dan Green",
+  "modules": [
+    {
+      "slug": "SimpleGain",
+      "name": "SimpleGain",
+      "description": "Example plugin",
+      "tags": [
+      ]
+    }
+  ]
+}
+
