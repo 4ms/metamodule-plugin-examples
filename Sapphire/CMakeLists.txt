@@ -28,9 +28,8 @@ target_sources(Sapphire
     ${SOURCE_DIR}/src/mesh_hex.cpp
     ${SOURCE_DIR}/src/sapphire_globals.cpp
 
-    # Note that we build our own plugin.cpp, not the one in Sapphire/src/
-    # This is because we want to exclude the above modules from the plugin
-    Sapphire.cpp 
+	firmware-stubs.cc
+    plugin.cpp 
 )
 
 target_include_directories(Sapphire PRIVATE 
@@ -38,10 +37,12 @@ target_include_directories(Sapphire PRIVATE
 	${CMAKE_CURRENT_LIST_DIR}
 )
 
-target_compile_options(Sapphire 
-	PRIVATE 
-	# -Wno-double-promotion 
-	# $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
+target_compile_options(Sapphire PRIVATE 
+#TODO
+)
+
+target_compile_definitions(Sapphire PRIVATE 
+	METAMODULE
 )
 
 set_property(TARGET Sapphire PROPERTY CXX_STANDARD 20)
@@ -50,8 +51,9 @@ set_property(TARGET Sapphire PROPERTY CXX_STANDARD 20)
 #########################################################
 # Step 4: call create_plugin()
 create_plugin(
-    SOURCE_LIB      Sapphire                   # This is the cmake target name (defined in add_target)
-    PLUGIN_NAME     Sapphire        # This must match the brand "slug" used in VCV Rack
+    SOURCE_LIB      Sapphire                            # This is the cmake target name (defined in add_target)
+    PLUGIN_NAME     CosineKitty-Sapphire                # This must match the brand "slug" used in VCV Rack
+	PLUGIN_JSON     ${SOURCE_DIR}/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/Sapphire # Path to where you want the plugin dir output: it can be shared between multiple plugins
+    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins    # Path to where you want the plugin dir output: it can be shared between multiple plugins
 )
