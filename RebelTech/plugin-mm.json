@@ -1,0 +1,14 @@
+{
+	"MetaModulePluginMaintainer": "4ms Company",
+	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+	"MetaModulePluginMaintainerUrl": "",
+	"MetaModuleDescription": "Ports of Rebel Tech plugins",
+	"MetaModuleIncludedModules": [
+		"CLK",
+		"Klasmata",
+		"Logoi",
+		"Phoreo",
+		"Stoicheia",
+		"Tonic"
+	]
+}

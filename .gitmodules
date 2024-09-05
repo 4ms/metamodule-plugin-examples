@@ -31,3 +31,6 @@
 [submodule "NANO/NANO-Modules_VCV"]
 	path = NANO/NANO-Modules_VCV
 	url = https://github.com/4ms/NANO-Modules_VCV.git
+[submodule "RebelTech/rebel-tech-vcv"]
+	path = RebelTech/rebel-tech-vcv
+	url = https://github.com/hemmer/rebel-tech-vcv

@@ -15,6 +15,7 @@ set(PLUGINS
     CountModula
     Geodesics
     OrangeLine
+    RebelTech
     Valley
     chowdsp
     kocmoc
