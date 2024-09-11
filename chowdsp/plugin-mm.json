@@ -4,17 +4,53 @@
     "MetaModulePluginMaintainerUrl": "",
     "MetaModuleDescription": "",
     "MetaModuleIncludedModules": [
-        "ChowTape", 
-        "ChowPhaserFeedback",
-        "ChowPhaserMod",
-        "ChowModal",
-        "ChowDer",
-        "Warp",
-        "Werner Filter",
-        "ChowPulse",
-        "ChowTape Compression",
-        "ChowTape Chew",
-        "ChowTape Degrade",
-        "ChowTape Loss"
+	{
+		"slug": "ChowTape",
+		"name": "ChowTape"
+	}, 
+	{
+		"slug": "ChowPhaserFeedback",
+		"name": "ChowPhaserFeedback"
+	},
+	{
+		"slug": "ChowPhaserMod",
+		"name": "ChowPhaserMod"
+	},
+	{
+		"slug": "ChowModal",
+		"name": "ChowModal"
+	},
+	{
+		"slug": "ChowDer",
+		"name": "ChowDer"
+	},
+	{
+		"slug": "Warp",
+		"name": "Warp"
+	},
+	{
+		"slug": "Werner",
+		"name": "Werner Filter"
+	},
+	{
+		"slug": "ChowPulse",
+		"name": "ChowPulse"
+	},
+	{
+		"slug": "ChowTapeComp",
+		"name": "ChowTape Compression"
+	},
+	{
+		"slug": "ChowTapeChew",
+		"name": "ChowTape Chew"
+	},
+	{
+		"slug": "ChowTapeDegrade",
+		"name": "ChowTape Degrade"
+	},
+	{
+		"slug": "ChowTapeLoss",
+		"name": "ChowTape Loss"
+	}
     ]
 }

@@ -4,104 +4,369 @@
     "MetaModulePluginMaintainerUrl": "",
     "MetaModuleDescription": "",
     "MetaModuleIncludedModules": [
-        "Analogue Shift Register",
-        "Attenuator",
-        "Attenuverter",
-        "Bar Graph",
-        "Basic 8 Step Sequencer",
-        "Binary Comparator",
-        "Binary Sequencer",
-        "Boolean AND Gate",
-        "Boolean OR Gate",
-        "Boolean VC Inverter",
-        "Boolean XOR Gate",
-        "Breakout",
-        "Burst Generator",
-        "Burst Generator64",
-        "Bus Route",
-        "Bus Route 2",
-        "Carousel Rotating Router",
-        "Chances - bernoulli gate",
-        "Clock Divider",
-        "Clocked Random Gates",
-        "Comparator",
-        "CV Spreader",
-        "Euclidean Sequencer",
-        "Event Arranger",
-        "Countdown",
-        "Countdown 5",
-        "Fade-in/Fade-out and Record Controller",
-        "G2T - Gate to Trigger Converter",
-        "Gated Comparator",
-        "Gate Delay",
-        "Tapped Gate Delay",
-        "Gate Modifier",
-        "8 x 16 Gate Sequencer",
-        "8 x 8 Gate Sequencer",
-        "Mangler",
-        "Signal Manifold",
-        "Manual CV Generator",
-        "Polyphonic Manual CV Generator",
-        "Manual Gate",
-        "Master Reset Controller",
-        "Matrix Combiner",
-        "Matrix Mixer",
-        "Minimus Maximus",
-        "Mixer",
-        "Morph Shaper",
-        "Multiple",
-        "Multiplexer",
-        "Multi-step Sequencer",
-        "Mute",
-        "Mute-iple",
-        "Nibble Trigger Sequencer",
-        "Octet Trigger Sequencer",
-        "Offset Generator",
-        "Polyphonic Bernoulli Gate",
-        "Gate to Trigger Converter",
-        "Poly Gate Modifier",
-        "Polyphonic Boolean Logic Processor",
-        "Polyphonic Min/Max",
-        "Polyphonic Mute",
-        "Polyrhythmic Generator MkII",
-        "Polyphonic VC Polarizer",
-        "Polyphonic Voltage Controlled Switch",
-        "Random Access Switch 1-8",
-        "Random Access Switch 8-1",
-        "Rectifier",
-        "Sample & Hold",
-        "Super Sample & Hold",
-        "4Bit Sequence Encoder",
-        "16 Step Sequencer",
-        "64 Step Sequencer",
-        "8 Step Sequencer",
-        "Shepard Generator",
-        "16 Step Shift Register",
-        "32 Step Shift Register",
-        "D Flip Flop",
-        "SR Flip Flop",
-        "T Flip Flop",
-        "Slope Detector",
-        "Dual SR Flip Flop",
-        "CV Stack",
-        "Startup Delay",
-        "Dual 8 Step Sequencer",
-        "Sub Harmonic Generator",
-        "Switch 16-1",
-        "Switch 1-16",
-        "Switch 1-8",
-        "Manual DPDT Switch",
-        "Manual 3 Input Switch",
-        "Manual 4 Input Switch",
-        "Switch 8-1",
-        "Dual T Flip Flop",
-        "Trigger Sequencer (16 Step)",
-        "Trigger Sequencer (8 Step)",
-        "Voltage Controlled Frequency Divider MkII",
-        "Polyphonic VC Polarizer",
-        "Voltage Controlled Pulse Divider",
-        "Voltage Controlled Switch",
-        "Voltage Inverter",
-        "Voltage Scaler"
+		{
+		  "slug": "AnalogueShiftRegister",
+		  "name": "Analogue Shift Register",
+		},
+		{
+		  "slug": "Attenuator",
+		  "name": "Attenuator",
+		},
+		{
+		  "slug": "Attenuverter",
+		  "name": "Attenuverter",
+		},
+		{
+		  "slug": "BarGraph",
+		  "name": "Bar Graph",
+		},
+		{
+		  "slug": "BasicSequencer8",
+		  "name": "Basic 8 Step Sequencer",
+		},
+		{
+		  "slug": "BinarySequencer",
+		  "name": "Binary Sequencer",
+		},
+		{
+		  "slug": "BooleanAND",
+		  "name": "Boolean AND Gate",
+		},
+		{
+		  "slug": "BooleanOR",
+		  "name": "Boolean OR Gate",
+		},
+		{
+		  "slug": "BooleanVCNOT",
+		  "name": "Boolean VC Inverter",
+		},
+		{
+		  "slug": "BooleanXOR",
+		  "name": "Boolean XOR Gate",
+		},
+		{
+		  "slug": "BurstGenerator",
+		  "name": "Burst Generator",
+		},
+		{
+		  "slug": "BurstGenerator64",
+		  "name": "Burst Generator 64",
+		},
+		{
+		  "slug": "BusRoute",
+		  "name": "Bus Route",
+		},
+		{
+		  "slug": "BusRoute2",
+		  "name": "Bus Route",
+		},
+		{
+		  "slug": "Carousel",
+		  "name": "Carousel Rotating Router",
+		},
+		{
+		  "slug": "Chances",
+		  "name": "Chances - bernoulli gate",
+		},
+		{
+		  "slug": "ClockDivider",
+		  "name": "Clock Divider",
+		},
+		{
+		  "slug": "ClockedRandomGates",
+		  "name": "Clocked Random Gates",
+		},
+		{
+		  "slug": "Comparator",
+		  "name": "Comparator",
+		},
+		{
+		  "slug": "CVSpreader",
+		  "name": "CV Spreader",
+		},
+		{
+		  "slug": "Euclid",
+		  "name": "Euclidean Sequencer",
+		},
+		{
+		  "slug": "EventArranger",
+		  "name": "Event Arranger",
+		},
+		{
+		  "slug": "EventTimer",
+		  "name": "Countdown",
+		},
+		{
+		  "slug": "EventTimer2",
+		  "name": "Countdown 5",
+		},
+		{
+		  "slug": "Fade",
+		  "name": "Fade-in/Fade-out and Record Controller",
+		},
+		{
+		  "slug": "GatedComparator",
+		  "name": "Gated Comparator",
+		},
+		{
+		  "slug": "GateDelay",
+		  "name": "Gate Delay",
+		},
+		{
+		  "slug": "GateModifier",
+		  "name": "Gate Modifier",
+		},
+		{
+		  "slug": "GateDelayMT",
+		  "name": "Tapped Gate Delay",
+		},
+		{
+		  "slug": "GateSequencer8",
+		  "name": "8 x 8 Gate Sequencer",
+		},
+		{
+		  "slug": "GateSequencer16",
+		  "name": "8 x 16 Gate Sequencer",
+		},
+		{
+		  "slug": "Mangler",
+		  "name": "Mangler",
+		},
+		{
+		  "slug": "Manifold",
+		  "name": "Signal Manifold",
+		},
+		{
+		  "slug": "ManualCV",
+		  "name": "Manual CV Generator",
+		},
+		{
+		  "slug": "ManualCV2",
+		  "name": "Polyphonic Manual CV Generator",
+		},
+		{
+		  "slug": "ManualGate",
+		  "name": "Manual Gate",
+		},
+		{
+		  "slug": "MasterReset",
+		  "name": "Master Reset Controller",
+		},
+		{
+		  "slug": "MatrixCombiner",
+		  "name": "Matrix Combiner",
+		},
+		{
+		  "slug": "MatrixMixer",
+		  "name": "Matrix Mixer",
+		},
+		{
+		  "slug": "MinimusMaximus",
+		  "name": "Minimus Maximus",
+		},
+		{
+		  "slug": "Mixer",
+		  "name": "Mixer",
+		},
+		{
+		  "slug": "MorphShaper",
+		  "name": "Morph Shaper",
+		},
+		{
+		  "slug": "Mult",
+		  "name": "Multiple",
+		},
+		{
+		  "slug": "Multiplexer",
+		  "name": "Multiplexer",
+		},
+		{
+		  "slug": "MultiStepSequencer",
+		  "name": "Multi-step Sequencer",
+		},
+		{
+		  "slug": "Mute",
+		  "name": "Mute",
+		},
+		{
+		  "slug": "Mute-iple",
+		  "name": "Mute-iple",
+		},
+		{
+		  "slug": "NibbleTriggerSequencer",
+		  "name": "Nibble Trigger Sequencer",
+		},
+		{
+		  "slug": "OctetTriggerSequencer",
+		  "name": "Octet Trigger Sequencer",
+		},
+		{
+		  "slug": "OffsetGenerator",
+		  "name": "Offset Generator",
+		},
+		{
+		  "slug": "G2T",
+		  "name": "Gate to Trigger Converter",
+		},
+		{
+		  "slug": "PolyrhythmicGeneratorMkII",
+		  "name": "Polyrhythmic Generator MkII",
+		},
+		{
+		  "slug": "RandomAccessSwitch18",
+		  "name": "Random Access Switch 1-8",
+		},
+		{
+		  "slug": "RandomAccessSwitch81",
+		  "name": "Random Access Switch 8-1",
+		},
+		{
+		  "slug": "Rectifier",
+		  "name": "Rectifier",
+		},
+		{
+		  "slug": "SampleAndHold",
+		  "name": "Sample & Hold",
+		},
+		{
+		  "slug": "SampleAndHold2",
+		  "name": "Super Sample & Hold",
+		},
+		{
+		  "slug": "SequenceEncoder",
+		  "name": "4Bit Sequence Encoder",
+		},
+		{
+		  "slug": "Sequencer64",
+		  "name": "64 Step Sequencer",
+		},
+		{
+		  "slug": "Sequencer16",
+		  "name": "16 Step Sequencer",
+		},
+		{
+		  "slug": "Sequencer8",
+		  "name": "8 Step Sequencer",
+		},
+		{
+		  "slug": "ShepardGenerator",
+		  "name": "Shepard Generator",
+		},
+		{
+		  "slug": "ShiftRegister16",
+		  "name": "16 Step Shift Register",
+		},
+		{
+		  "slug": "ShiftRegister32",
+		  "name": "32 Step Shift Register",
+		},
+		{
+		  "slug": "SingleDFlipFlop",
+		  "name": "D Flip Flop",
+		},
+		{
+		  "slug": "SingleTFlipFlop",
+		  "name": "T Flip Flop",
+		},
+		{
+		  "slug": "SingleSRFlipFlop",
+		  "name": "SR Flip Flop",
+		},
+		{
+		  "slug": "SRFlipFlop",
+		  "name": "Dual SR Flip Flop",
+		},
+		{
+		  "slug": "TFlipFlop",
+		  "name": "Dual T Flip Flop",
+		},	
+		{
+		  "slug": "SlopeDetector",
+		  "name": "Slope Detector",
+		},
+		{
+		  "slug": "Stack",
+		  "name": "CV Stack",
+		},
+		{
+		  "slug": "StartupDelay",
+		  "name": "Startup Delay",
+		},
+		{
+		  "slug": "StepSequencer8",
+		  "name": "Dual 8 Step Sequencer",
+		},	
+		{
+		  "slug": "SubHarmonicGenerator",
+		  "name": "Sub Harmonic Generator ",
+		},
+		{
+		  "slug": "Switch1To8",
+		  "name": "Switch 1-8",
+		},
+		{
+		  "slug": "Switch8To1",
+		  "name": "Switch 8-1",
+		},
+		{
+		  "slug": "Switch1To16",
+		  "name": "Switch 1-16",
+		},
+		{
+		  "slug": "Switch16To1",
+		  "name": "Switch 16-1",
+		},
+		{
+		  "slug": "Switch2",
+		  "name": "Manual DPDT Switch",
+		},
+		{
+		  "slug": "Switch3",
+		  "name": "Manual 3 Input Switch",
+		},
+		{
+		  "slug": "Switch4",
+		  "name": "Manual 4 Input Switch",
+		},
+		{
+		  "slug": "TriggerSequencer8",
+		  "name": "Trigger Sequencer (8 Step)",
+		},
+		{
+		  "slug": "TriggerSequencer16",
+		  "name": "Trigger Sequencer (16 Step)",
+		},
+		{
+		  "slug": "VCFrequencyDividerMkII",
+		  "name": "Voltage Controlled Frequency Divider MkII",
+		},
+		{
+		  "slug": "VCPolarizer",
+		  "name": "Voltage Controlled Polarizer",
+		},
+		{
+		  "slug": "VCPulseDivider",
+		  "name": "Voltage Controlled Pulse Divider",
+		},
+		{
+		  "slug": "VoltageControlledSwitch",
+		  "name": "Voltage Controlled Switch",
+		},
+		{
+		  "slug": "VoltageInverter",
+		  "name": "Voltage Inverter",
+		},
+		{
+		  "slug": "VoltageScaler",
+		  "name": "Voltage Scaler",
+		},
+		{
+		  "slug": "BinaryComparator",
+		  "name": "Binary Comparator",
+		},
+		{
+		  "slug": "GateSequencer16b",
+		  "name": "12 x 16 Gate Sequencer",
+		}
     ]
 }

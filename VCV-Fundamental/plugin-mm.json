@@ -4,36 +4,129 @@
 	"MetaModulePluginMaintainerUrl": "",
 	"MetaModuleDescription": "Ports of Rack Fundamental plugins",
 	"MetaModuleIncludedModules": [
-		"8vert",
-		"ADSR",
-		"CVMix",
-		"Compare",
-		"Fade",
-		"Gates",
-		"LFO",
-		"Logic",
-		"Mid/Side",
-		"Mixer",
-		"Mult",
-		"Mutes",
-		"Noise",
-		"Octave",
-		"Process",
-		"Pulses",
-		"Push",
-		"Random",
-		"RandomValues",
-		"Rescale",
-		"SEQ 3",
-		"S&H Analog Shift Register",
-		"Sequential Switch 1 to 4",
-		"Sequential Switch 4 to 1",
-		"Unity",
-		"VCA-2",
-		"VCA-1",
-		"VCF",
-		"VCA Mix",
-		"VCO",
-		"Quantizer"
+	{
+		"slug": "8vert",
+		"name": "8vert"
+	},
+	{
+		"slug": "ADSR",
+		"name": "ADSR EG"
+	},
+	{
+		"slug": "CVMix",
+		"name": "CV Mix"
+	},
+	{
+		"slug": "Compare",
+		"name": "Compare"
+	},
+	{
+		"slug": "Fade",
+		"name": "Fade"
+	},
+	{
+		"slug": "Gates",
+		"name": "Gates"
+	},
+	{
+		"slug": "LFO",
+		"name": "LFO"
+	},
+	{
+		"slug": "Logic",
+		"name": "Logic"
+	},
+	{
+		"slug": "MidSide",
+		"name": "Mid/Side"
+	},
+	{
+		"slug": "Mixer",
+		"name": "Mix"
+	},
+	{
+		"slug": "Mult",
+		"name": "Mult"
+	},
+	{
+		"slug": "Mutes",
+		"name": "Mutes"
+	},
+	{
+		"slug": "Noise",
+		"name": "Noise"
+	},
+	{
+		"slug": "Octave",
+		"name": "Octave"
+	},
+	{
+		"slug": "Process",
+		"name": "Process"
+	},
+	{
+		"slug": "Pulses",
+		"name": "Pulses"
+	},
+	{
+		"slug": "Push",
+		"name": "Push"
+	},
+	{
+		"slug": "Random",
+		"name": "Random"
+	},
+	{
+		"slug": "RandomValues",
+		"name": "Random Values"
+	},
+	{
+		"slug": "Rescale",
+		"name": "Rescale"
+	},
+	{
+		"slug": "SEQ3",
+		"name": "SEQ 3"
+	},
+	{
+		"slug": "SHASR",
+		"name": "S&H Analog Shift Register"
+	},
+	{
+		"slug": "SequentialSwitch1",
+		"name": "Sequential Switch 1 to 4"
+	},
+	{
+		"slug": "SequentialSwitch2",
+		"name": "Sequential Switch 4 to 1"
+	},
+	{
+		"slug": "Unity",
+		"name": "Unity"
+	},
+	{
+		"slug": "VCA",
+		"name": "VCA (2 chan)"
+	},
+	{
+		"slug": "VCA-1",
+		"name": "VCA"
+	},
+	{
+		"slug": "VCF",
+		"name": "VCF"
+	},
+	{
+		"slug": "VCMixer",
+		"name": "VCA Mixer"
+	},
+	{
+		"slug": "VCO",
+		"name": "VCO"
+	},
+	{
+		"slug": "Quantizer",
+		"name": "Quantizer"
+	}
 	]
 }

@@ -4,13 +4,37 @@
     "MetaModulePluginMaintainerUrl": "",
     "MetaModuleDescription": "",
     "MetaModuleIncludedModules": [
-        "SVF",
-        "TRG",
-        "LADR",
-        "OP",
-        "PHASR",
-        "MUL",
-        "SKF",
-        "DDLY"
+	{
+		"slug": "SVF-1",
+		"name": "SVF"
+	},
+	{
+		"slug": "TRG",
+		"name": "TRG"
+	},
+	{
+		"slug": "LADR",
+		"name": "LADR"
+	},
+	{
+		"slug": "OP",
+		"name": "OP"
+	},
+	{
+		"slug": "PHASR",
+		"name": "PHASR"
+	},
+	{
+		"slug": "MUL",
+		"name": "MUL"
+	},
+	{
+		"slug": "SKF",
+		"name": "SKF"
+	},
+	{
+		"slug": "DDLY",
+		"name": "DDLY"
+	}
     ]
 }

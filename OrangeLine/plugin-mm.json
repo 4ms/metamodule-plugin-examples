@@ -4,14 +4,41 @@
     "MetaModulePluginMaintainerUrl": "",
     "MetaModuleDescription": "",
     "MetaModuleIncludedModules": [
-        "Fence",
-        "Swing",
-        "Mother",
-        "Phrase",
-        "Dejavu",
-        "Gator",
-        "Resc",
-        "Morph",
-        "Morpheus"
+	{
+		"slug": "Fence",
+		"name": "Fence"
+	},
+	{
+		"slug": "Swing",
+		"name": "Swing"
+	},
+	{
+		"slug": "Mother",
+		"name": "Mother"
+	},
+	{
+		"slug": "Phrase",
+		"name": "Phrase"
+	},
+	{
+		"slug": "Dejavu",
+		"name": "Dejavu"
+	},
+	{
+		"slug": "Gator",
+		"name": "Gator"
+	},
+	{
+		"slug": "Resc",
+		"name": "Resc"
+	},
+	{
+		"slug": "Morph",
+		"name": "Morph"
+	},
+	{
+		"slug": "Morpheus",
+		"name": "Morpheus"
+	}
     ]
 }

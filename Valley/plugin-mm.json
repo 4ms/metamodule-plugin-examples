@@ -4,8 +4,17 @@
     "MetaModulePluginMaintainerUrl": "",
     "MetaModuleDescription": "",
     "MetaModuleIncludedModules": [
-        "Interzone",
-        "Amalgam",
-        "Feline"
+	{
+		"slug": "Interzone",
+		"name": "Interzone"
+	},
+	{
+		"slug": "Amalgam",
+		"name": "Amalgam"
+	},
+	{
+		"slug": "Feline",
+		"name": "Feline"
+	}
     ]
 }

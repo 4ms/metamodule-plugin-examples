@@ -4,102 +4,393 @@
 	"MetaModulePluginMaintainerUrl": "",
 	"MetaModuleDescription": "",
 	"MetaModuleIncludedModules": [
-        "AD",
-        "ADSR",
-        "AMRM",
-        "ASR",
-        "Additator",
-        "AddrSeq",
-        "Arp",
-        "Assign",
-        "Bool",
-        "CVD",
-        "Chirp",
-        "Clpr",
-        "Cmp",
-        "CmpDist",
-        "DADSRH",
-        "DADSRHPlus",
-        "DGate",
-        "Detune",
-        "EQ",
-        "EQS",
-        "Edge",
-        "EightFO",
-        "EightOne",
-        "FFB",
-        "FMOp",
-        "FlipFlop",
-        "Follow",
-        "FourFO",
-        "FourMan",
-        "Inv",
-        "LFO",
-        "LLFO",
-        "LLPG",
-        "LPG",
-        "LVCF",
-        "LVCO",
-        "Lgsw",
-        "Lmtr",
-        "Manual",
-        "Matrix18",
-        "Matrix44",
-        "Matrix81",
-        "Matrix88",
-        "MegaGate",
-        "Mix1",
-        "Mix2",
-        "Mix4",
-        "Mix8",
-        "Mono",
-        "Mult",
-        "Mumix",
-        "Mute8",
-        "Noise",
-        "Nsgt",
-        "Offset",
-        "OneEight",
-        "PEQ",
-        "PEQ14",
-        "PEQ6",
-        "Pan",
-        "Pgmr",
-        "PolyCon16",
-        "PolyCon8",
-        "PolyMult",
-        "PolyOff16",
-        "PolyOff8",
-        "Pressor",
-        "Pulse",
-        "RGate",
-        "Reftone",
-        "SampleHold",
-        "Shaper",
-        "ShaperPlus",
-        "Sine",
-        "Slew",
-        "Stack",
-        "Sums",
-        "Switch",
-        "Switch1616",
-        "Switch18",
-        "Switch44",
-        "Switch81",
-        "Switch88",
-        "UMix",
-        "Unison",
-        "VCA",
-        "VCAmp",
-        "VCF",
-        "VCM",
-        "VCO",
-        "VU",
-        "Velo",
-        "Vish",
-        "Walk",
-        "Walk2",
-        "XCO",
-        "XFade"
+	{
+		"slug": "Bogaudio-AD",
+		"name": "AD"
+	},
+	{
+		"slug": "Bogaudio-ADSR",
+		"name": "ADSR"
+	},
+	{
+		"slug": "Bogaudio-AMRM",
+		"name": "AMRM"
+	},
+	{
+		"slug": "Bogaudio-ASR",
+		"name": "ASR"
+	},
+	{
+		"slug": "Bogaudio-Additator",
+		"name": "Additator"
+	},
+	{
+		"slug": "Bogaudio-AddrSeq",
+		"name": "AddrSeq"
+	},
+	{
+		"slug": "Bogaudio-Arp",
+		"name": "Arp"
+	},
+	{
+		"slug": "Bogaudio-Assign",
+		"name": "Assign"
+	},
+	{
+		"slug": "Bogaudio-Bool",
+		"name": "Bool"
+	},
+	{
+		"slug": "Bogaudio-CVD",
+		"name": "CVD"
+	},
+	{
+		"slug": "Bogaudio-Chirp",
+		"name": "Chirp"
+	},
+	{
+		"slug": "Bogaudio-Clpr",
+		"name": "Clpr"
+	},
+	{
+		"slug": "Bogaudio-Cmp",
+		"name": "Cmp"
+	},
+	{
+		"slug": "Bogaudio-CmpDist",
+		"name": "CmpDist"
+	},
+	{
+		"slug": "Bogaudio-DADSRH",
+		"name": "DADSRH"
+	},
+	{
+		"slug": "Bogaudio-DADSRHPlus",
+		"name": "DADSRHPlus"
+	},
+	{
+		"slug": "Bogaudio-DGate",
+		"name": "DGate"
+	},
+	{
+		"slug": "Bogaudio-Detune",
+		"name": "Detune"
+	},
+	{
+		"slug": "Bogaudio-EQ",
+		"name": "EQ"
+	},
+	{
+		"slug": "Bogaudio-EQS",
+		"name": "EQS"
+	},
+	{
+		"slug": "Bogaudio-Edge",
+		"name": "Edge"
+	},
+	{
+		"slug": "Bogaudio-EightFO",
+		"name": "EightFO"
+	},
+	{
+		"slug": "Bogaudio-EightOne",
+		"name": "EightOne"
+	},
+	{
+		"slug": "Bogaudio-FFB",
+		"name": "FFB"
+	},
+	{
+		"slug": "Bogaudio-FMOp",
+		"name": "FMOp"
+	},
+	{
+		"slug": "Bogaudio-FlipFlop",
+		"name": "FlipFlop"
+	},
+	{
+		"slug": "Bogaudio-Follow",
+		"name": "Follow"
+	},
+	{
+		"slug": "Bogaudio-FourFO",
+		"name": "FourFO"
+	},
+	{
+		"slug": "Bogaudio-FourMan",
+		"name": "FourMan"
+	},
+	{
+		"slug": "Bogaudio-Inv",
+		"name": "Inv"
+	},
+	{
+		"slug": "Bogaudio-LFO",
+		"name": "LFO"
+	},
+	{
+		"slug": "Bogaudio-LLFO",
+		"name": "LLFO"
+	},
+	{
+		"slug": "Bogaudio-LLPG",
+		"name": "LLPG"
+	},
+	{
+		"slug": "Bogaudio-LPG",
+		"name": "LPG"
+	},
+	{
+		"slug": "Bogaudio-LVCF",
+		"name": "LVCF"
+	},
+	{
+		"slug": "Bogaudio-LVCO",
+		"name": "LVCO"
+	},
+	{
+		"slug": "Bogaudio-Lgsw",
+		"name": "Lgsw"
+	},
+	{
+		"slug": "Bogaudio-Lmtr",
+		"name": "Lmtr"
+	},
+	{
+		"slug": "Bogaudio-Manual",
+		"name": "Manual"
+	},
+	{
+		"slug": "Bogaudio-Matrix18",
+		"name": "Matrix18"
+	},
+	{
+		"slug": "Bogaudio-Matrix44",
+		"name": "Matrix44"
+	},
+	{
+		"slug": "Bogaudio-Matrix81",
+		"name": "Matrix81"
+	},
+	{
+		"slug": "Bogaudio-Matrix88",
+		"name": "Matrix88"
+	},
+	{
+		"slug": "Bogaudio-MegaGate",
+		"name": "MegaGate"
+	},
+	{
+		"slug": "Bogaudio-Mix1",
+		"name": "Mix1"
+	},
+	{
+		"slug": "Bogaudio-Mix2",
+		"name": "Mix2"
+	},
+	{
+		"slug": "Bogaudio-Mix4",
+		"name": "Mix4"
+	},
+	{
+		"slug": "Bogaudio-Mix8",
+		"name": "Mix8"
+	},
+	{
+		"slug": "Bogaudio-Mono",
+		"name": "Mono"
+	},
+	{
+		"slug": "Bogaudio-Mult",
+		"name": "Mult"
+	},
+	{
+		"slug": "Bogaudio-Mumix",
+		"name": "Mumix"
+	},
+	{
+		"slug": "Bogaudio-Mute8",
+		"name": "Mute8"
+	},
+	{
+		"slug": "Bogaudio-Noise",
+		"name": "Noise"
+	},
+	{
+		"slug": "Bogaudio-Nsgt",
+		"name": "Nsgt"
+	},
+	{
+		"slug": "Bogaudio-Offset",
+		"name": "Offset"
+	},
+	{
+		"slug": "Bogaudio-OneEight",
+		"name": "OneEight"
+	},
+	{
+		"slug": "Bogaudio-PEQ",
+		"name": "PEQ"
+	},
+	{
+		"slug": "Bogaudio-PEQ14",
+		"name": "PEQ14"
+	},
+	{
+		"slug": "Bogaudio-PEQ6",
+		"name": "PEQ6"
+	},
+	{
+		"slug": "Bogaudio-Pan",
+		"name": "Pan"
+	},
+	{
+		"slug": "Bogaudio-Pgmr",
+		"name": "Pgmr"
+	},
+	{
+		"slug": "Bogaudio-PolyCon16",
+		"name": "PolyCon16"
+	},
+	{
+		"slug": "Bogaudio-PolyCon8",
+		"name": "PolyCon8"
+	},
+	{
+		"slug": "Bogaudio-PolyMult",
+		"name": "PolyMult"
+	},
+	{
+		"slug": "Bogaudio-PolyOff16",
+		"name": "PolyOff16"
+	},
+	{
+		"slug": "Bogaudio-PolyOff8",
+		"name": "PolyOff8"
+	},
+	{
+		"slug": "Bogaudio-Pressor",
+		"name": "Pressor"
+	},
+	{
+		"slug": "Bogaudio-Pulse",
+		"name": "Pulse"
+	},
+	{
+		"slug": "Bogaudio-RGate",
+		"name": "RGate"
+	},
+	{
+		"slug": "Bogaudio-Reftone",
+		"name": "Reftone"
+	},
+	{
+		"slug": "Bogaudio-SampleHold",
+		"name": "SampleHold"
+	},
+	{
+		"slug": "Bogaudio-Shaper",
+		"name": "Shaper"
+	},
+	{
+		"slug": "Bogaudio-ShaperPlus",
+		"name": "ShaperPlus"
+	},
+	{
+		"slug": "Bogaudio-Sine",
+		"name": "Sine"
+	},
+	{
+		"slug": "Bogaudio-Slew",
+		"name": "Slew"
+	},
+	{
+		"slug": "Bogaudio-Stack",
+		"name": "Stack"
+	},
+	{
+		"slug": "Bogaudio-Sums",
+		"name": "Sums"
+	},
+	{
+		"slug": "Bogaudio-Switch",
+		"name": "Switch"
+	},
+	{
+		"slug": "Bogaudio-Switch1616",
+		"name": "Switch1616"
+	},
+	{
+		"slug": "Bogaudio-Switch18",
+		"name": "Switch18"
+	},
+	{
+		"slug": "Bogaudio-Switch44",
+		"name": "Switch44"
+	},
+	{
+		"slug": "Bogaudio-Switch81",
+		"name": "Switch81"
+	},
+	{
+		"slug": "Bogaudio-Switch88",
+		"name": "Switch88"
+	},
+	{
+		"slug": "Bogaudio-UMix",
+		"name": "UMix"
+	},
+	{
+		"slug": "Bogaudio-Unison",
+		"name": "Unison"
+	},
+	{
+		"slug": "Bogaudio-VCA",
+		"name": "VCA"
+	},
+	{
+		"slug": "Bogaudio-VCAmp",
+		"name": "VCAmp"
+	},
+	{
+		"slug": "Bogaudio-VCF",
+		"name": "VCF"
+	},
+	{
+		"slug": "Bogaudio-VCM",
+		"name": "VCM"
+	},
+	{
+		"slug": "Bogaudio-VCO",
+		"name": "VCO"
+	},
+	{
+		"slug": "Bogaudio-VU",
+		"name": "VU"
+	},
+	{
+		"slug": "Bogaudio-Velo",
+		"name": "Velo"
+	},
+	{
+		"slug": "Bogaudio-Vish",
+		"name": "Vish"
+	},
+	{
+		"slug": "Bogaudio-Walk",
+		"name": "Walk"
+	},
+	{
+		"slug": "Bogaudio-Walk2",
+		"name": "Walk2"
+	},
+	{
+		"slug": "Bogaudio-XCO",
+		"name": "XCO"
+	},
+	{
+		"slug": "Bogaudio-XFade",
+		"name": "XFade"
+	}
 	]
 }
