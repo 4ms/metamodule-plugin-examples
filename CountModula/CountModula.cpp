@@ -1,13 +1,3 @@
-//***********************************************************************************************
-// Geodesics: A modular collection for VCV Rack by Pierre Collard and Marc Boulé
-//
-// Based on code from the Fundamental plugins by Andrew Belt
-//  and graphics from the Component Library by Wes Milholen
-// See ./LICENSE.txt for all licenses
-// See ./res/fonts/ for font licenses
-//
-//***********************************************************************************************
-
 #include "CountModula.hpp"
 
 Plugin *pluginInstance;
@@ -39,7 +29,7 @@ void init(Plugin *p) {
   p->addModel(modelBooleanOR);
   p->addModel(modelBooleanVCNOT);
   p->addModel(modelBooleanXOR);
-  p->addModel(modelBreakout);
+  // p->addModel(modelBreakout);
   p->addModel(modelBurstGenerator);
   p->addModel(modelBurstGenerator64);
   p->addModel(modelBusRoute);
@@ -52,6 +42,7 @@ void init(Plugin *p) {
   p->addModel(modelClockedRandomGates);
   p->addModel(modelComparator);
   p->addModel(modelCVSpreader);
+  p->addModel(modelGateSequencer16b); // aka DrumSequencer
   p->addModel(modelEuclid);
   // p->addModel(modelEuclidExpanderCV);
   p->addModel(modelEventArranger);
@@ -92,17 +83,17 @@ void init(Plugin *p) {
   // p->addModel(modelOctetTriggerSequencerGateExpander);
   p->addModel(modelOffsetGenerator);
   // p->addModel(modelOscilloscope);
-  // p->addModel(modelPalette); //can't find glfw symbols
-  p->addModel(modelPolyChances);
-  p->addModel(modelPolyG2T);
-  p->addModel(modelPolyGateModifier);
-  p->addModel(modelPolyLogic);
-  p->addModel(modelPolyMinMax);
-  p->addModel(modelPolyMute);
+  // p->addModel(modelPalette);
+  // p->addModel(modelPolyChances);
+  // p->addModel(modelPolyG2T);
+  // p->addModel(modelPolyGateModifier);
+  // p->addModel(modelPolyLogic);
+  // p->addModel(modelPolyMinMax);
+  // p->addModel(modelPolyMute);
   // p->addModel(modelPolyrhythmicGenerator);
   p->addModel(modelPolyrhythmicGeneratorMkII);
-  p->addModel(modelPolyVCPolarizer);
-  p->addModel(modelPolyVCSwitch);
+  // p->addModel(modelPolyVCPolarizer);
+  // p->addModel(modelPolyVCSwitch);
   // p->addModel(modelRackEarLeft);
   // p->addModel(modelRackEarRight);
   p->addModel(modelRandomAccessSwitch18);

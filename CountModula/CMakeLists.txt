@@ -42,7 +42,7 @@ target_sources(CountModula
     ${MODULE_DIR}/BooleanOR.cpp
     ${MODULE_DIR}/BooleanVCNOT.cpp
     ${MODULE_DIR}/BooleanXOR.cpp
-    ${MODULE_DIR}/Breakout.cpp
+    # ${MODULE_DIR}/Breakout.cpp
     ${MODULE_DIR}/BurstGenerator.cpp
     ${MODULE_DIR}/BurstGenerator64.cpp
     ${MODULE_DIR}/BusRoute.cpp
@@ -55,8 +55,8 @@ target_sources(CountModula
     ${MODULE_DIR}/ClockedRandomGates.cpp
     ${MODULE_DIR}/Comparator.cpp
     ${MODULE_DIR}/CVSpreader.cpp
-    ${MODULE_DIR}/GateSequencer16.cpp
-    ${MODULE_DIR}/GateSequencer8.cpp
+    ${MODULE_DIR}/DFlipFlop.cpp
+    ${MODULE_DIR}/DrumSequencer16.cpp
     ${MODULE_DIR}/Euclid.cpp
     ${MODULE_DIR}/EuclidExpanderCV.cpp
     ${MODULE_DIR}/EventArranger.cpp
@@ -65,16 +65,16 @@ target_sources(CountModula
     ${MODULE_DIR}/Fade.cpp
     ${MODULE_DIR}/FadeExpander.cpp
     ${MODULE_DIR}/G2T.cpp
-    ${MODULE_DIR}/GatedComparator.cpp
     ${MODULE_DIR}/GateDelay.cpp
     ${MODULE_DIR}/GateDelayMT.cpp
     ${MODULE_DIR}/GateModifier.cpp
     ${MODULE_DIR}/GateSequencer16.cpp
     ${MODULE_DIR}/GateSequencer8.cpp
+    ${MODULE_DIR}/GatedComparator.cpp
     #${MODULE_DIR}/HyperManiac.cpp
     #${MODULE_DIR}/HyperManiacalLFO.cpp
     #${MODULE_DIR}/HyperManiacalLFOExpander.cpp
-    # ${MODULE_DIR}/LightStrip.cpp
+    #${MODULE_DIR}/LightStrip.cpp
     ${MODULE_DIR}/Mangler.cpp
     ${MODULE_DIR}/Manifold.cpp
     ${MODULE_DIR}/ManualCV.cpp
@@ -98,16 +98,16 @@ target_sources(CountModula
     ${MODULE_DIR}/OffsetGenerator.cpp
     #${MODULE_DIR}/Oscilloscope.cpp
     #${MODULE_DIR}/Palette.cpp
-    ${MODULE_DIR}/PolyChances.cpp
-    ${MODULE_DIR}/PolyG2T.cpp
-    ${MODULE_DIR}/PolyGateModifier.cpp
-    ${MODULE_DIR}/PolyLogic.cpp
-    ${MODULE_DIR}/PolyMinMax.cpp
-    ${MODULE_DIR}/PolyMute.cpp
+    # ${MODULE_DIR}/PolyChances.cpp
+    # ${MODULE_DIR}/PolyG2T.cpp
+    # ${MODULE_DIR}/PolyGateModifier.cpp
+    # ${MODULE_DIR}/PolyLogic.cpp
+    # ${MODULE_DIR}/PolyMinMax.cpp
+    # ${MODULE_DIR}/PolyMute.cpp
     #${MODULE_DIR}/PolyrhythmicGenerator.cpp
     ${MODULE_DIR}/PolyrhythmicGeneratorMkII.cpp
-    ${MODULE_DIR}/PolyVCPolarizer.cpp
-    ${MODULE_DIR}/PolyVCSwitch.cpp
+    # ${MODULE_DIR}/PolyVCPolarizer.cpp
+    # ${MODULE_DIR}/PolyVCSwitch.cpp
     #${MODULE_DIR}/RackEarL.cpp
     #${MODULE_DIR}/RackEarR.cpp
     ${MODULE_DIR}/RandomAccessSwitch18.cpp
