@@ -4,16 +4,49 @@
     "MetaModulePluginMaintainerUrl": "",
     "MetaModuleDescription": "",
     "MetaModuleIncludedModules": [
-        "MAR",
-        "FONT",
-        "ALT",
-        "QUART",
-        "ONA",
-        "SERRA",
-        "CEQ",
-        "ST MAR",
-        "Performance Mixer",
-        "VCV Random",
-        "EXP4"
+	{
+		"slug": "MAR",
+		"name": "MAR"
+	},
+	{
+		"slug": "FONT",
+		"name": "FONT"
+	},
+	{
+		"slug": "ALT",
+		"name": "ALT"
+	},
+	{
+		"slug": "QUART",
+		"name": "QUART"
+	},
+	{
+		"slug": "ONA",
+		"name": "ONA"
+	},
+	{
+		"slug": "SERRA",
+		"name": "SERRA"
+	},
+	{
+		"slug": "CEQ",
+		"name": "CEQ"
+	},
+	{
+		"slug": "STMAR",
+		"name": "ST MAR"
+	},
+	{
+		"slug": "PerformanceMixer",
+		"name": "Performance Mixer"
+	},
+	{
+		"slug": "VCVRANDOM",
+		"name": "VCV Random"
+	},
+	{
+		"slug": "EXP4",
+		"name": "EXP4"
+	}
     ]
 }

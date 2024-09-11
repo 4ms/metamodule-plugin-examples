@@ -4,11 +4,29 @@
 	"MetaModulePluginMaintainerUrl": "",
 	"MetaModuleDescription": "Ports of Rebel Tech plugins",
 	"MetaModuleIncludedModules": [
-		"CLK",
-		"Klasmata",
-		"Logoi",
-		"Phoreo",
-		"Stoicheia",
-		"Tonic"
+	{
+		"slug": "CLK",
+		"name": "CLK"
+	},
+	{
+		"slug": "Klasmata",
+		"name": "Klasmata"
+	},
+	{
+		"slug": "Logoi",
+		"name": "Logoi"
+	},
+	{
+		"slug": "Phoreo",
+		"name": "Phoreo"
+	},
+	{
+		"slug": "Stoicheia",
+		"name": "Stoicheia"
+	},
+	{
+		"slug": "Tonic",
+		"name": "Tonic"
+	}
 	]
 }

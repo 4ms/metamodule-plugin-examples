@@ -2,420 +2,1663 @@
     "MetaModulePluginMaintainer": "Dan Green (for now)",
     "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
     "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "Splits the VCV Rack module `Airwin2Rack` into separate modules for each FX",
+    "MetaModuleDescription": "Splits the VCV Rack module 'Airwin2Rack' into separate modules for each FX",
     "MetaModuleIncludedModules": [
-        "ADClip7",
-        "ADClip8",
-        "ADT",
-        "AQuickVoiceClip",
-        "Acceleration",
-        "Acceleration2",
-        "Air",
-        "Air2",
-        "Air3",
-        "Apicolypse",
-        "AtmosphereBuss",
-        "AtmosphereChannel",
-        "Aura",
-        "AutoPan",
-        "AverMatrix",
-        "Average",
-        "Balanced",
-        "BassAmp",
-        "BassDrive",
-        "BassKit",
-        "Baxandall",
-        "Baxandall2",
-        "Beam",
-        "BigAmp",
-        "Biquad",
-        "Biquad2",
-        "BiquadDouble",
-        "BiquadHiLo",
-        "BiquadNonLin",
-        "BiquadOneHalf",
-        "BiquadPlus",
-        "BiquadStack",
-        "BiquadTriple",
-        "BitGlitter",
-        "BitShiftGain",
-        "BitShiftPan",
-        "Bite",
-        "BlockParty",
-        "BrassRider",
-        "BrightAmbience",
-        "BrightAmbience2",
-        "BrightAmbience3",
-        "BuildATPDF",
-        "BussColors4",
-        "ButterComp",
-        "ButterComp2",
-        "C5RawBuss",
-        "C5RawChannel",
-        "CStrip",
-        "CStrip2",
-        "Cabs",
-        "Calibre",
-        "Capacitor",
-        "Capacitor2",
-        "Chamber",
-        "Chamber2",
-        "Channel4",
-        "Channel5",
-        "Channel6",
-        "Channel7",
-        "Channel8",
-        "Channel9",
-        "Chorus",
-        "ChorusEnsemble",
-        "ChromeOxide",
-        "Cider",
-        "ClearCoat",
-        "ClipOnly2",
-        "ClipSoftly",
-        "CloudCoat",
-        "Coils",
-        "Coils2",
-        "Cojones",
-        "Compresaturator",
-        "Console0Buss",
-        "Console0Channel",
-        "Console4Buss",
-        "Console4Channel",
-        "Console5Buss",
-        "Console5Channel",
-        "Console5DarkCh",
-        "Console6Buss",
-        "Console6Channel",
-        "Console7Buss",
-        "Console7Cascade",
-        "Console7Channel",
-        "Console7Crunch",
-        "Console8BussHype",
-        "Console8BussIn",
-        "Console8BussOut",
-        "Console8ChannelHype",
-        "Console8ChannelIn",
-        "Console8ChannelOut",
-        "Console8LiteBuss",
-        "Console8LiteChannel",
-        "Console8SubHype",
-        "Console8SubIn",
-        "Console8SubOut",
-        "Console9Buss",
-        "Console9Channel",
-        "ConsoleLABuss",
-        "ConsoleLAChannel",
-        "ConsoleMCBuss",
-        "ConsoleMCChannel",
-        "ConsoleMDBuss",
-        "ConsoleMDChannel",
-        "ConsoleXBuss",
-        "ConsoleXChannel",
-        "ContentHideD",
-        "CreamCoat",
-        "Creature",
-        "CrickBass",
-        "CrunchCoat",
-        "CrunchyGrooveWear",
-        "Crystal",
-        "DCVoltage",
-        "Dark",
-        "DarkNoise",
-        "DeBess",
-        "DeEss",
-        "DeHiss",
-        "DeRez",
-        "DeRez2",
-        "DeRez3",
-        "Deckwrecka",
-        "Density",
-        "Density2",
-        "Desk",
-        "Desk4",
-        "DigitalBlack",
-        "Dirt",
-        "Discontinuity",
-        "Distance",
-        "Distance2",
-        "Distance3",
-        "Distortion",
-        "DitherFloat",
-        "DitherMeDiskers",
-        "DitherMeTimbers",
-        "Ditherbox",
-        "DoublePaul",
-        "Doublelay",
-        "Drive",
-        "DrumSlam",
-        "DubCenter",
-        "DubSub",
-        "Dubly",
-        "DustBunny",
-        "Dynamics",
-        "Dyno",
-        "EQ",
-        "EdIsDim",
-        "Edge",
-        "Elation",
-        "ElectroHat",
-        "Energy",
-        "Energy2",
-        "Ensemble",
-        "EveryConsole",
-        "EverySlew",
-        "EveryTrim",
-        "Exciter",
-        "Facet",
-        "FathomFive",
-        "FinalClip",
-        "FireAmp",
-        "Flipity",
-        "Floor",
-        "Flutter",
-        "Flutter2",
-        "Focus",
-        "Fracture",
-        "Fracture2",
-        "FromTape",
-        "Galactic",
-        "Galactic2",
-        "GalacticVibe",
-        "Gatelope",
-        "GlitchShifter",
-        "GoldenSlew",
-        "Golem",
-        "GrindAmp",
-        "Gringer",
-        "GrooveWear",
-        "GuitarConditioner",
-        "HardVacuum",
-        "HermeTrim",
-        "Hermepass",
-        "HighGlossDither",
-        "HighImpact",
-        "Highpass",
-        "Highpass2",
-        "Holt",
-        "Holt2",
-        "Hombre",
-        "Huge",
-        "Hull",
-        "Hull2",
-        "Hype",
-        "HypersonX",
-        "Hypersonic",
-        "Infinity",
-        "Infinity2",
-        "Inflamer",
-        "Infrasonic",
-        "Interstage",
-        "IronOxide5",
-        "IronOxideClassic",
-        "IronOxideClassic2",
-        "Isolator",
-        "Isolator2",
-        "Kalman",
-        "LRFlipTimer",
-        "LeadAmp",
-        "LeftoMono",
-        "LilAmp",
-        "Logical4",
-        "Loud",
-        "Lowpass",
-        "Lowpass2",
-        "Luxor",
-        "MSFlipTimer",
-        "MV",
-        "MV2",
-        "MackEQ",
-        "Mackity",
-        "MatrixVerb",
-        "Melt",
-        "MidAmp",
-        "MidSide",
-        "MoNoam",
-        "Mojo",
-        "Monitoring",
-        "Monitoring2",
-        "Monitoring3",
-        "MultiBandDistortion",
-        "NCSeventeen",
-        "NaturalizeDither",
-        "Neverland",
-        "Nikola",
-        "NodeDither",
-        "Noise",
-        "NonlinearSpace",
-        "NotJustAnotherCD",
-        "NotJustAnotherDither",
-        "OneCornerClip",
-        "OrbitKick",
-        "Overheads",
-        "PDBuss",
-        "PDChannel",
-        "Pafnuty",
-        "Pafnuty2",
-        "Parametric",
-        "PaulDither",
-        "PaulWide",
-        "PeaksOnly",
-        "Pear",
-        "Pear2",
-        "PhaseNudge",
-        "PitchDelay",
-        "PitchNasty",
-        "PlatinumSlew",
-        "PocketVerbs",
-        "Pockey",
-        "Pockey2",
-        "Podcast",
-        "PodcastDeluxe",
-        "Point",
-        "Pop",
-        "Pop2",
-        "Pop3",
-        "PowerSag",
-        "PowerSag2",
-        "Precious",
-        "Preponderant",
-        "Pressure4",
-        "Pressure5",
-        "PurestAir",
-        "PurestConsole2Buss",
-        "PurestConsole2Channel",
-        "PurestConsole3Buss",
-        "PurestConsole3Channel",
-        "PurestConsoleBuss",
-        "PurestConsoleChannel",
-        "PurestDrive",
-        "PurestEcho",
-        "PurestFade",
-        "PurestGain",
-        "PurestSquish",
-        "PurestWarm",
-        "PurestWarm2",
-        "Pyewacket",
-        "RawGlitters",
-        "RawTimbers",
-        "Recurve",
-        "Remap",
-        "ResEQ",
-        "ResEQ2",
-        "Reverb",
-        "Righteous4",
-        "RightoMono",
-        "SampleDelay",
-        "Shape",
-        "ShortBuss",
-        "SideDull",
-        "Sidepass",
-        "Silhouette",
-        "Sinew",
-        "SingleEndedTriode",
-        "Slew",
-        "Slew2",
-        "Slew3",
-        "SlewOnly",
-        "SlewSonic",
-        "Smooth",
-        "SoftGate",
-        "SpatializeDither",
-        "Spiral",
-        "Spiral2",
-        "Srsly",
-        "Srsly2",
-        "Srsly3",
-        "StarChild",
-        "StarChild2",
-        "StereoChorus",
-        "StereoDoubler",
-        "StereoEnsemble",
-        "StereoFX",
-        "StoneFireComp",
-        "Stonefire",
-        "StudioTan",
-        "SubTight",
-        "SubsOnly",
-        "Surge",
-        "SurgeTide",
-        "Sweeten",
-        "Swell",
-        "TPDFDither",
-        "TPDFWide",
-        "Tape",
-        "TapeDelay",
-        "TapeDelay2",
-        "TapeDither",
-        "TapeDust",
-        "TapeFat",
-        "Texturize",
-        "TexturizeMS",
-        "Thunder",
-        "ToTape5",
-        "ToTape6",
-        "ToVinyl4",
-        "ToneSlant",
-        "TransDesk",
-        "TremoSquare",
-        "Tremolo",
-        "Trianglizer",
-        "TripleSpread",
-        "Tube",
-        "Tube2",
-        "TubeDesk",
-        "UltrasonX",
-        "Ultrasonic",
-        "UltrasonicLite",
-        "UltrasonicMed",
-        "UnBox",
-        "VariMu",
-        "Verbity",
-        "Verbity2",
-        "Vibrato",
-        "VinylDither",
-        "VoiceOfTheStarship",
-        "VoiceTrick",
-        "Weight",
-        "Wider",
-        "Wolfbot",
-        "XBandpass",
-        "XHighpass",
-        "XLowpass",
-        "XNotch",
-        "XRegion",
-        "YBandpass",
-        "YHighpass",
-        "YLowpass",
-        "YNotBandpass",
-        "YNotHighpass",
-        "YNotLowpass",
-        "YNotNotch",
-        "YNotch",
-        "ZBandpass",
-        "ZBandpass2",
-        "ZHighpass",
-        "ZHighpass2",
-        "ZLowpass",
-        "ZLowpass2",
-        "ZNotch",
-        "ZNotch2",
-        "ZOutputStage",
-        "ZRegion",
-        "ZRegion2",
-        "curve",
-        "kCathedral",
-        "kCathedral2",
-        "kCathedral3",
-        "kChamberAR",
-        "kGuitarHall",
-        "kPlate140",
-        "kPlate240",
-        "kPlateA",
-        "kPlateB",
-        "kPlateC",
-        "kPlateD",
-        "uLawDecode",
-        "uLawEncode"
+	{
+		"slug": "Airwin2Rack",
+		"name": ""
+	},
+	{
+		"slug": "",
+		"name": "ADClip7"
+	},
+	{
+		"slug": "",
+		"name": "ADClip8"
+	},
+	{
+		"slug": "",
+		"name": "ADT"
+	},
+	{
+		"slug": "",
+		"name": "AQuickVoiceClip"
+	},
+	{
+		"slug": "",
+		"name": "Acceleration"
+	},
+	{
+		"slug": "",
+		"name": "Acceleration2"
+	},
+	{
+		"slug": "",
+		"name": "Air"
+	},
+	{
+		"slug": "",
+		"name": "Air2"
+	},
+	{
+		"slug": "",
+		"name": "Air3"
+	},
+	{
+		"slug": "",
+		"name": "Apicolypse"
+	},
+	{
+		"slug": "",
+		"name": "AtmosphereBuss"
+	},
+	{
+		"slug": "",
+		"name": "AtmosphereChannel"
+	},
+	{
+		"slug": "",
+		"name": "Aura"
+	},
+	{
+		"slug": "",
+		"name": "AutoPan"
+	},
+	{
+		"slug": "",
+		"name": "AverMatrix"
+	},
+	{
+		"slug": "",
+		"name": "Average"
+	},
+	{
+		"slug": "",
+		"name": "Balanced"
+	},
+	{
+		"slug": "",
+		"name": "BassAmp"
+	},
+	{
+		"slug": "",
+		"name": "BassDrive"
+	},
+	{
+		"slug": "",
+		"name": "BassKit"
+	},
+	{
+		"slug": "",
+		"name": "Baxandall"
+	},
+	{
+		"slug": "",
+		"name": "Baxandall2"
+	},
+	{
+		"slug": "",
+		"name": "Beam"
+	},
+	{
+		"slug": "",
+		"name": "BigAmp"
+	},
+	{
+		"slug": "",
+		"name": "Biquad"
+	},
+	{
+		"slug": "",
+		"name": "Biquad2"
+	},
+	{
+		"slug": "",
+		"name": "BiquadDouble"
+	},
+	{
+		"slug": "",
+		"name": "BiquadHiLo"
+	},
+	{
+		"slug": "",
+		"name": "BiquadNonLin"
+	},
+	{
+		"slug": "",
+		"name": "BiquadOneHalf"
+	},
+	{
+		"slug": "",
+		"name": "BiquadPlus"
+	},
+	{
+		"slug": "",
+		"name": "BiquadStack"
+	},
+	{
+		"slug": "",
+		"name": "BiquadTriple"
+	},
+	{
+		"slug": "",
+		"name": "BitGlitter"
+	},
+	{
+		"slug": "",
+		"name": "BitShiftGain"
+	},
+	{
+		"slug": "",
+		"name": "BitShiftPan"
+	},
+	{
+		"slug": "",
+		"name": "Bite"
+	},
+	{
+		"slug": "",
+		"name": "BlockParty"
+	},
+	{
+		"slug": "",
+		"name": "BrassRider"
+	},
+	{
+		"slug": "",
+		"name": "BrightAmbience"
+	},
+	{
+		"slug": "",
+		"name": "BrightAmbience2"
+	},
+	{
+		"slug": "",
+		"name": "BrightAmbience3"
+	},
+	{
+		"slug": "",
+		"name": "BuildATPDF"
+	},
+	{
+		"slug": "",
+		"name": "BussColors4"
+	},
+	{
+		"slug": "",
+		"name": "ButterComp"
+	},
+	{
+		"slug": "",
+		"name": "ButterComp2"
+	},
+	{
+		"slug": "",
+		"name": "C5RawBuss"
+	},
+	{
+		"slug": "",
+		"name": "C5RawChannel"
+	},
+	{
+		"slug": "",
+		"name": "CStrip"
+	},
+	{
+		"slug": "",
+		"name": "CStrip2"
+	},
+	{
+		"slug": "",
+		"name": "Cabs"
+	},
+	{
+		"slug": "",
+		"name": "Calibre"
+	},
+	{
+		"slug": "",
+		"name": "Capacitor"
+	},
+	{
+		"slug": "",
+		"name": "Capacitor2"
+	},
+	{
+		"slug": "",
+		"name": "Chamber"
+	},
+	{
+		"slug": "",
+		"name": "Chamber2"
+	},
+	{
+		"slug": "",
+		"name": "Channel4"
+	},
+	{
+		"slug": "",
+		"name": "Channel5"
+	},
+	{
+		"slug": "",
+		"name": "Channel6"
+	},
+	{
+		"slug": "",
+		"name": "Channel7"
+	},
+	{
+		"slug": "",
+		"name": "Channel8"
+	},
+	{
+		"slug": "",
+		"name": "Channel9"
+	},
+	{
+		"slug": "",
+		"name": "Chorus"
+	},
+	{
+		"slug": "",
+		"name": "ChorusEnsemble"
+	},
+	{
+		"slug": "",
+		"name": "ChromeOxide"
+	},
+	{
+		"slug": "",
+		"name": "Cider"
+	},
+	{
+		"slug": "",
+		"name": "ClearCoat"
+	},
+	{
+		"slug": "",
+		"name": "ClipOnly2"
+	},
+	{
+		"slug": "",
+		"name": "ClipSoftly"
+	},
+	{
+		"slug": "",
+		"name": "CloudCoat"
+	},
+	{
+		"slug": "",
+		"name": "Coils"
+	},
+	{
+		"slug": "",
+		"name": "Coils2"
+	},
+	{
+		"slug": "",
+		"name": "Cojones"
+	},
+	{
+		"slug": "",
+		"name": "Compresaturator"
+	},
+	{
+		"slug": "",
+		"name": "Console0Buss"
+	},
+	{
+		"slug": "",
+		"name": "Console0Channel"
+	},
+	{
+		"slug": "",
+		"name": "Console4Buss"
+	},
+	{
+		"slug": "",
+		"name": "Console4Channel"
+	},
+	{
+		"slug": "",
+		"name": "Console5Buss"
+	},
+	{
+		"slug": "",
+		"name": "Console5Channel"
+	},
+	{
+		"slug": "",
+		"name": "Console5DarkCh"
+	},
+	{
+		"slug": "",
+		"name": "Console6Buss"
+	},
+	{
+		"slug": "",
+		"name": "Console6Channel"
+	},
+	{
+		"slug": "",
+		"name": "Console7Buss"
+	},
+	{
+		"slug": "",
+		"name": "Console7Cascade"
+	},
+	{
+		"slug": "",
+		"name": "Console7Channel"
+	},
+	{
+		"slug": "",
+		"name": "Console7Crunch"
+	},
+	{
+		"slug": "",
+		"name": "Console8BussHype"
+	},
+	{
+		"slug": "",
+		"name": "Console8BussIn"
+	},
+	{
+		"slug": "",
+		"name": "Console8BussOut"
+	},
+	{
+		"slug": "",
+		"name": "Console8ChannelHype"
+	},
+	{
+		"slug": "",
+		"name": "Console8ChannelIn"
+	},
+	{
+		"slug": "",
+		"name": "Console8ChannelOut"
+	},
+	{
+		"slug": "",
+		"name": "Console8LiteBuss"
+	},
+	{
+		"slug": "",
+		"name": "Console8LiteChannel"
+	},
+	{
+		"slug": "",
+		"name": "Console8SubHype"
+	},
+	{
+		"slug": "",
+		"name": "Console8SubIn"
+	},
+	{
+		"slug": "",
+		"name": "Console8SubOut"
+	},
+	{
+		"slug": "",
+		"name": "Console9Buss"
+	},
+	{
+		"slug": "",
+		"name": "Console9Channel"
+	},
+	{
+		"slug": "",
+		"name": "ConsoleLABuss"
+	},
+	{
+		"slug": "",
+		"name": "ConsoleLAChannel"
+	},
+	{
+		"slug": "",
+		"name": "ConsoleMCBuss"
+	},
+	{
+		"slug": "",
+		"name": "ConsoleMCChannel"
+	},
+	{
+		"slug": "",
+		"name": "ConsoleMDBuss"
+	},
+	{
+		"slug": "",
+		"name": "ConsoleMDChannel"
+	},
+	{
+		"slug": "",
+		"name": "ConsoleXBuss"
+	},
+	{
+		"slug": "",
+		"name": "ConsoleXChannel"
+	},
+	{
+		"slug": "",
+		"name": "ContentHideD"
+	},
+	{
+		"slug": "",
+		"name": "CreamCoat"
+	},
+	{
+		"slug": "",
+		"name": "Creature"
+	},
+	{
+		"slug": "",
+		"name": "CrickBass"
+	},
+	{
+		"slug": "",
+		"name": "CrunchCoat"
+	},
+	{
+		"slug": "",
+		"name": "CrunchyGrooveWear"
+	},
+	{
+		"slug": "",
+		"name": "Crystal"
+	},
+	{
+		"slug": "",
+		"name": "DCVoltage"
+	},
+	{
+		"slug": "",
+		"name": "Dark"
+	},
+	{
+		"slug": "",
+		"name": "DarkNoise"
+	},
+	{
+		"slug": "",
+		"name": "DeBess"
+	},
+	{
+		"slug": "",
+		"name": "DeEss"
+	},
+	{
+		"slug": "",
+		"name": "DeHiss"
+	},
+	{
+		"slug": "",
+		"name": "DeRez"
+	},
+	{
+		"slug": "",
+		"name": "DeRez2"
+	},
+	{
+		"slug": "",
+		"name": "DeRez3"
+	},
+	{
+		"slug": "",
+		"name": "Deckwrecka"
+	},
+	{
+		"slug": "",
+		"name": "Density"
+	},
+	{
+		"slug": "",
+		"name": "Density2"
+	},
+	{
+		"slug": "",
+		"name": "Desk"
+	},
+	{
+		"slug": "",
+		"name": "Desk4"
+	},
+	{
+		"slug": "",
+		"name": "DigitalBlack"
+	},
+	{
+		"slug": "",
+		"name": "Dirt"
+	},
+	{
+		"slug": "",
+		"name": "Discontinuity"
+	},
+	{
+		"slug": "",
+		"name": "Distance"
+	},
+	{
+		"slug": "",
+		"name": "Distance2"
+	},
+	{
+		"slug": "",
+		"name": "Distance3"
+	},
+	{
+		"slug": "",
+		"name": "Distortion"
+	},
+	{
+		"slug": "",
+		"name": "DitherFloat"
+	},
+	{
+		"slug": "",
+		"name": "DitherMeDiskers"
+	},
+	{
+		"slug": "",
+		"name": "DitherMeTimbers"
+	},
+	{
+		"slug": "",
+		"name": "Ditherbox"
+	},
+	{
+		"slug": "",
+		"name": "DoublePaul"
+	},
+	{
+		"slug": "",
+		"name": "Doublelay"
+	},
+	{
+		"slug": "",
+		"name": "Drive"
+	},
+	{
+		"slug": "",
+		"name": "DrumSlam"
+	},
+	{
+		"slug": "",
+		"name": "DubCenter"
+	},
+	{
+		"slug": "",
+		"name": "DubSub"
+	},
+	{
+		"slug": "",
+		"name": "Dubly"
+	},
+	{
+		"slug": "",
+		"name": "DustBunny"
+	},
+	{
+		"slug": "",
+		"name": "Dynamics"
+	},
+	{
+		"slug": "",
+		"name": "Dyno"
+	},
+	{
+		"slug": "",
+		"name": "EQ"
+	},
+	{
+		"slug": "",
+		"name": "EdIsDim"
+	},
+	{
+		"slug": "",
+		"name": "Edge"
+	},
+	{
+		"slug": "",
+		"name": "Elation"
+	},
+	{
+		"slug": "",
+		"name": "ElectroHat"
+	},
+	{
+		"slug": "",
+		"name": "Energy"
+	},
+	{
+		"slug": "",
+		"name": "Energy2"
+	},
+	{
+		"slug": "",
+		"name": "Ensemble"
+	},
+	{
+		"slug": "",
+		"name": "EveryConsole"
+	},
+	{
+		"slug": "",
+		"name": "EverySlew"
+	},
+	{
+		"slug": "",
+		"name": "EveryTrim"
+	},
+	{
+		"slug": "",
+		"name": "Exciter"
+	},
+	{
+		"slug": "",
+		"name": "Facet"
+	},
+	{
+		"slug": "",
+		"name": "FathomFive"
+	},
+	{
+		"slug": "",
+		"name": "FinalClip"
+	},
+	{
+		"slug": "",
+		"name": "FireAmp"
+	},
+	{
+		"slug": "",
+		"name": "Flipity"
+	},
+	{
+		"slug": "",
+		"name": "Floor"
+	},
+	{
+		"slug": "",
+		"name": "Flutter"
+	},
+	{
+		"slug": "",
+		"name": "Flutter2"
+	},
+	{
+		"slug": "",
+		"name": "Focus"
+	},
+	{
+		"slug": "",
+		"name": "Fracture"
+	},
+	{
+		"slug": "",
+		"name": "Fracture2"
+	},
+	{
+		"slug": "",
+		"name": "FromTape"
+	},
+	{
+		"slug": "",
+		"name": "Galactic"
+	},
+	{
+		"slug": "",
+		"name": "Galactic2"
+	},
+	{
+		"slug": "",
+		"name": "GalacticVibe"
+	},
+	{
+		"slug": "",
+		"name": "Gatelope"
+	},
+	{
+		"slug": "",
+		"name": "GlitchShifter"
+	},
+	{
+		"slug": "",
+		"name": "GoldenSlew"
+	},
+	{
+		"slug": "",
+		"name": "Golem"
+	},
+	{
+		"slug": "",
+		"name": "GrindAmp"
+	},
+	{
+		"slug": "",
+		"name": "Gringer"
+	},
+	{
+		"slug": "",
+		"name": "GrooveWear"
+	},
+	{
+		"slug": "",
+		"name": "GuitarConditioner"
+	},
+	{
+		"slug": "",
+		"name": "HardVacuum"
+	},
+	{
+		"slug": "",
+		"name": "HermeTrim"
+	},
+	{
+		"slug": "",
+		"name": "Hermepass"
+	},
+	{
+		"slug": "",
+		"name": "HighGlossDither"
+	},
+	{
+		"slug": "",
+		"name": "HighImpact"
+	},
+	{
+		"slug": "",
+		"name": "Highpass"
+	},
+	{
+		"slug": "",
+		"name": "Highpass2"
+	},
+	{
+		"slug": "",
+		"name": "Holt"
+	},
+	{
+		"slug": "",
+		"name": "Holt2"
+	},
+	{
+		"slug": "",
+		"name": "Hombre"
+	},
+	{
+		"slug": "",
+		"name": "Huge"
+	},
+	{
+		"slug": "",
+		"name": "Hull"
+	},
+	{
+		"slug": "",
+		"name": "Hull2"
+	},
+	{
+		"slug": "",
+		"name": "Hype"
+	},
+	{
+		"slug": "",
+		"name": "HypersonX"
+	},
+	{
+		"slug": "",
+		"name": "Hypersonic"
+	},
+	{
+		"slug": "",
+		"name": "Infinity"
+	},
+	{
+		"slug": "",
+		"name": "Infinity2"
+	},
+	{
+		"slug": "",
+		"name": "Inflamer"
+	},
+	{
+		"slug": "",
+		"name": "Infrasonic"
+	},
+	{
+		"slug": "",
+		"name": "Interstage"
+	},
+	{
+		"slug": "",
+		"name": "IronOxide5"
+	},
+	{
+		"slug": "",
+		"name": "IronOxideClassic"
+	},
+	{
+		"slug": "",
+		"name": "IronOxideClassic2"
+	},
+	{
+		"slug": "",
+		"name": "Isolator"
+	},
+	{
+		"slug": "",
+		"name": "Isolator2"
+	},
+	{
+		"slug": "",
+		"name": "Kalman"
+	},
+	{
+		"slug": "",
+		"name": "LRFlipTimer"
+	},
+	{
+		"slug": "",
+		"name": "LeadAmp"
+	},
+	{
+		"slug": "",
+		"name": "LeftoMono"
+	},
+	{
+		"slug": "",
+		"name": "LilAmp"
+	},
+	{
+		"slug": "",
+		"name": "Logical4"
+	},
+	{
+		"slug": "",
+		"name": "Loud"
+	},
+	{
+		"slug": "",
+		"name": "Lowpass"
+	},
+	{
+		"slug": "",
+		"name": "Lowpass2"
+	},
+	{
+		"slug": "",
+		"name": "Luxor"
+	},
+	{
+		"slug": "",
+		"name": "MSFlipTimer"
+	},
+	{
+		"slug": "",
+		"name": "MV"
+	},
+	{
+		"slug": "",
+		"name": "MV2"
+	},
+	{
+		"slug": "",
+		"name": "MackEQ"
+	},
+	{
+		"slug": "",
+		"name": "Mackity"
+	},
+	{
+		"slug": "",
+		"name": "MatrixVerb"
+	},
+	{
+		"slug": "",
+		"name": "Melt"
+	},
+	{
+		"slug": "",
+		"name": "MidAmp"
+	},
+	{
+		"slug": "",
+		"name": "MidSide"
+	},
+	{
+		"slug": "",
+		"name": "MoNoam"
+	},
+	{
+		"slug": "",
+		"name": "Mojo"
+	},
+	{
+		"slug": "",
+		"name": "Monitoring"
+	},
+	{
+		"slug": "",
+		"name": "Monitoring2"
+	},
+	{
+		"slug": "",
+		"name": "Monitoring3"
+	},
+	{
+		"slug": "",
+		"name": "MultiBandDistortion"
+	},
+	{
+		"slug": "",
+		"name": "NCSeventeen"
+	},
+	{
+		"slug": "",
+		"name": "NaturalizeDither"
+	},
+	{
+		"slug": "",
+		"name": "Neverland"
+	},
+	{
+		"slug": "",
+		"name": "Nikola"
+	},
+	{
+		"slug": "",
+		"name": "NodeDither"
+	},
+	{
+		"slug": "",
+		"name": "Noise"
+	},
+	{
+		"slug": "",
+		"name": "NonlinearSpace"
+	},
+	{
+		"slug": "",
+		"name": "NotJustAnotherCD"
+	},
+	{
+		"slug": "",
+		"name": "NotJustAnotherDither"
+	},
+	{
+		"slug": "",
+		"name": "OneCornerClip"
+	},
+	{
+		"slug": "",
+		"name": "OrbitKick"
+	},
+	{
+		"slug": "",
+		"name": "Overheads"
+	},
+	{
+		"slug": "",
+		"name": "PDBuss"
+	},
+	{
+		"slug": "",
+		"name": "PDChannel"
+	},
+	{
+		"slug": "",
+		"name": "Pafnuty"
+	},
+	{
+		"slug": "",
+		"name": "Pafnuty2"
+	},
+	{
+		"slug": "",
+		"name": "Parametric"
+	},
+	{
+		"slug": "",
+		"name": "PaulDither"
+	},
+	{
+		"slug": "",
+		"name": "PaulWide"
+	},
+	{
+		"slug": "",
+		"name": "PeaksOnly"
+	},
+	{
+		"slug": "",
+		"name": "Pear"
+	},
+	{
+		"slug": "",
+		"name": "Pear2"
+	},
+	{
+		"slug": "",
+		"name": "PhaseNudge"
+	},
+	{
+		"slug": "",
+		"name": "PitchDelay"
+	},
+	{
+		"slug": "",
+		"name": "PitchNasty"
+	},
+	{
+		"slug": "",
+		"name": "PlatinumSlew"
+	},
+	{
+		"slug": "",
+		"name": "PocketVerbs"
+	},
+	{
+		"slug": "",
+		"name": "Pockey"
+	},
+	{
+		"slug": "",
+		"name": "Pockey2"
+	},
+	{
+		"slug": "",
+		"name": "Podcast"
+	},
+	{
+		"slug": "",
+		"name": "PodcastDeluxe"
+	},
+	{
+		"slug": "",
+		"name": "Point"
+	},
+	{
+		"slug": "",
+		"name": "Pop"
+	},
+	{
+		"slug": "",
+		"name": "Pop2"
+	},
+	{
+		"slug": "",
+		"name": "Pop3"
+	},
+	{
+		"slug": "",
+		"name": "PowerSag"
+	},
+	{
+		"slug": "",
+		"name": "PowerSag2"
+	},
+	{
+		"slug": "",
+		"name": "Precious"
+	},
+	{
+		"slug": "",
+		"name": "Preponderant"
+	},
+	{
+		"slug": "",
+		"name": "Pressure4"
+	},
+	{
+		"slug": "",
+		"name": "Pressure5"
+	},
+	{
+		"slug": "",
+		"name": "PurestAir"
+	},
+	{
+		"slug": "",
+		"name": "PurestConsole2Buss"
+	},
+	{
+		"slug": "",
+		"name": "PurestConsole2Channel"
+	},
+	{
+		"slug": "",
+		"name": "PurestConsole3Buss"
+	},
+	{
+		"slug": "",
+		"name": "PurestConsole3Channel"
+	},
+	{
+		"slug": "",
+		"name": "PurestConsoleBuss"
+	},
+	{
+		"slug": "",
+		"name": "PurestConsoleChannel"
+	},
+	{
+		"slug": "",
+		"name": "PurestDrive"
+	},
+	{
+		"slug": "",
+		"name": "PurestEcho"
+	},
+	{
+		"slug": "",
+		"name": "PurestFade"
+	},
+	{
+		"slug": "",
+		"name": "PurestGain"
+	},
+	{
+		"slug": "",
+		"name": "PurestSquish"
+	},
+	{
+		"slug": "",
+		"name": "PurestWarm"
+	},
+	{
+		"slug": "",
+		"name": "PurestWarm2"
+	},
+	{
+		"slug": "",
+		"name": "Pyewacket"
+	},
+	{
+		"slug": "",
+		"name": "RawGlitters"
+	},
+	{
+		"slug": "",
+		"name": "RawTimbers"
+	},
+	{
+		"slug": "",
+		"name": "Recurve"
+	},
+	{
+		"slug": "",
+		"name": "Remap"
+	},
+	{
+		"slug": "",
+		"name": "ResEQ"
+	},
+	{
+		"slug": "",
+		"name": "ResEQ2"
+	},
+	{
+		"slug": "",
+		"name": "Reverb"
+	},
+	{
+		"slug": "",
+		"name": "Righteous4"
+	},
+	{
+		"slug": "",
+		"name": "RightoMono"
+	},
+	{
+		"slug": "",
+		"name": "SampleDelay"
+	},
+	{
+		"slug": "",
+		"name": "Shape"
+	},
+	{
+		"slug": "",
+		"name": "ShortBuss"
+	},
+	{
+		"slug": "",
+		"name": "SideDull"
+	},
+	{
+		"slug": "",
+		"name": "Sidepass"
+	},
+	{
+		"slug": "",
+		"name": "Silhouette"
+	},
+	{
+		"slug": "",
+		"name": "Sinew"
+	},
+	{
+		"slug": "",
+		"name": "SingleEndedTriode"
+	},
+	{
+		"slug": "",
+		"name": "Slew"
+	},
+	{
+		"slug": "",
+		"name": "Slew2"
+	},
+	{
+		"slug": "",
+		"name": "Slew3"
+	},
+	{
+		"slug": "",
+		"name": "SlewOnly"
+	},
+	{
+		"slug": "",
+		"name": "SlewSonic"
+	},
+	{
+		"slug": "",
+		"name": "Smooth"
+	},
+	{
+		"slug": "",
+		"name": "SoftGate"
+	},
+	{
+		"slug": "",
+		"name": "SpatializeDither"
+	},
+	{
+		"slug": "",
+		"name": "Spiral"
+	},
+	{
+		"slug": "",
+		"name": "Spiral2"
+	},
+	{
+		"slug": "",
+		"name": "Srsly"
+	},
+	{
+		"slug": "",
+		"name": "Srsly2"
+	},
+	{
+		"slug": "",
+		"name": "Srsly3"
+	},
+	{
+		"slug": "",
+		"name": "StarChild"
+	},
+	{
+		"slug": "",
+		"name": "StarChild2"
+	},
+	{
+		"slug": "",
+		"name": "StereoChorus"
+	},
+	{
+		"slug": "",
+		"name": "StereoDoubler"
+	},
+	{
+		"slug": "",
+		"name": "StereoEnsemble"
+	},
+	{
+		"slug": "",
+		"name": "StereoFX"
+	},
+	{
+		"slug": "",
+		"name": "StoneFireComp"
+	},
+	{
+		"slug": "",
+		"name": "Stonefire"
+	},
+	{
+		"slug": "",
+		"name": "StudioTan"
+	},
+	{
+		"slug": "",
+		"name": "SubTight"
+	},
+	{
+		"slug": "",
+		"name": "SubsOnly"
+	},
+	{
+		"slug": "",
+		"name": "Surge"
+	},
+	{
+		"slug": "",
+		"name": "SurgeTide"
+	},
+	{
+		"slug": "",
+		"name": "Sweeten"
+	},
+	{
+		"slug": "",
+		"name": "Swell"
+	},
+	{
+		"slug": "",
+		"name": "TPDFDither"
+	},
+	{
+		"slug": "",
+		"name": "TPDFWide"
+	},
+	{
+		"slug": "",
+		"name": "Tape"
+	},
+	{
+		"slug": "",
+		"name": "TapeDelay"
+	},
+	{
+		"slug": "",
+		"name": "TapeDelay2"
+	},
+	{
+		"slug": "",
+		"name": "TapeDither"
+	},
+	{
+		"slug": "",
+		"name": "TapeDust"
+	},
+	{
+		"slug": "",
+		"name": "TapeFat"
+	},
+	{
+		"slug": "",
+		"name": "Texturize"
+	},
+	{
+		"slug": "",
+		"name": "TexturizeMS"
+	},
+	{
+		"slug": "",
+		"name": "Thunder"
+	},
+	{
+		"slug": "",
+		"name": "ToTape5"
+	},
+	{
+		"slug": "",
+		"name": "ToTape6"
+	},
+	{
+		"slug": "",
+		"name": "ToVinyl4"
+	},
+	{
+		"slug": "",
+		"name": "ToneSlant"
+	},
+	{
+		"slug": "",
+		"name": "TransDesk"
+	},
+	{
+		"slug": "",
+		"name": "TremoSquare"
+	},
+	{
+		"slug": "",
+		"name": "Tremolo"
+	},
+	{
+		"slug": "",
+		"name": "Trianglizer"
+	},
+	{
+		"slug": "",
+		"name": "TripleSpread"
+	},
+	{
+		"slug": "",
+		"name": "Tube"
+	},
+	{
+		"slug": "",
+		"name": "Tube2"
+	},
+	{
+		"slug": "",
+		"name": "TubeDesk"
+	},
+	{
+		"slug": "",
+		"name": "UltrasonX"
+	},
+	{
+		"slug": "",
+		"name": "Ultrasonic"
+	},
+	{
+		"slug": "",
+		"name": "UltrasonicLite"
+	},
+	{
+		"slug": "",
+		"name": "UltrasonicMed"
+	},
+	{
+		"slug": "",
+		"name": "UnBox"
+	},
+	{
+		"slug": "",
+		"name": "VariMu"
+	},
+	{
+		"slug": "",
+		"name": "Verbity"
+	},
+	{
+		"slug": "",
+		"name": "Verbity2"
+	},
+	{
+		"slug": "",
+		"name": "Vibrato"
+	},
+	{
+		"slug": "",
+		"name": "VinylDither"
+	},
+	{
+		"slug": "",
+		"name": "VoiceOfTheStarship"
+	},
+	{
+		"slug": "",
+		"name": "VoiceTrick"
+	},
+	{
+		"slug": "",
+		"name": "Weight"
+	},
+	{
+		"slug": "",
+		"name": "Wider"
+	},
+	{
+		"slug": "",
+		"name": "Wolfbot"
+	},
+	{
+		"slug": "",
+		"name": "XBandpass"
+	},
+	{
+		"slug": "",
+		"name": "XHighpass"
+	},
+	{
+		"slug": "",
+		"name": "XLowpass"
+	},
+	{
+		"slug": "",
+		"name": "XNotch"
+	},
+	{
+		"slug": "",
+		"name": "XRegion"
+	},
+	{
+		"slug": "",
+		"name": "YBandpass"
+	},
+	{
+		"slug": "",
+		"name": "YHighpass"
+	},
+	{
+		"slug": "",
+		"name": "YLowpass"
+	},
+	{
+		"slug": "",
+		"name": "YNotBandpass"
+	},
+	{
+		"slug": "",
+		"name": "YNotHighpass"
+	},
+	{
+		"slug": "",
+		"name": "YNotLowpass"
+	},
+	{
+		"slug": "",
+		"name": "YNotNotch"
+	},
+	{
+		"slug": "",
+		"name": "YNotch"
+	},
+	{
+		"slug": "",
+		"name": "ZBandpass"
+	},
+	{
+		"slug": "",
+		"name": "ZBandpass2"
+	},
+	{
+		"slug": "",
+		"name": "ZHighpass"
+	},
+	{
+		"slug": "",
+		"name": "ZHighpass2"
+	},
+	{
+		"slug": "",
+		"name": "ZLowpass"
+	},
+	{
+		"slug": "",
+		"name": "ZLowpass2"
+	},
+	{
+		"slug": "",
+		"name": "ZNotch"
+	},
+	{
+		"slug": "",
+		"name": "ZNotch2"
+	},
+	{
+		"slug": "",
+		"name": "ZOutputStage"
+	},
+	{
+		"slug": "",
+		"name": "ZRegion"
+	},
+	{
+		"slug": "",
+		"name": "ZRegion2"
+	},
+	{
+		"slug": "",
+		"name": "curve"
+	},
+	{
+		"slug": "",
+		"name": "kCathedral"
+	},
+	{
+		"slug": "",
+		"name": "kCathedral2"
+	},
+	{
+		"slug": "",
+		"name": "kCathedral3"
+	},
+	{
+		"slug": "",
+		"name": "kChamberAR"
+	},
+	{
+		"slug": "",
+		"name": "kGuitarHall"
+	},
+	{
+		"slug": "",
+		"name": "kPlate140"
+	},
+	{
+		"slug": "",
+		"name": "kPlate240"
+	},
+	{
+		"slug": "",
+		"name": "kPlateA"
+	},
+	{
+		"slug": "",
+		"name": "kPlateB"
+	},
+	{
+		"slug": "",
+		"name": "kPlateC"
+	},
+	{
+		"slug": "",
+		"name": "kPlateD"
+	},
+	{
+		"slug": "",
+		"name": "uLawDecode"
+	},
+	{
+		"slug": "",
+		"name": "uLawEncode"
+	}
     ]
 }

@@ -4,14 +4,41 @@
     "MetaModulePluginMaintainerUrl": "",
     "MetaModuleDescription": "",
     "MetaModuleIncludedModules": [
-        "BlackHoles",
-        "Pulsars",
-        "Branes",
-        "Ions",
-        "Entropia",
-        "Energy",
-        "DarkEnergy",
-        "Torus",
-        "Fate"
+	{
+		"slug": "BlackHoles",
+		"name": "BlackHoles"
+	},
+	{
+		"slug": "Pulsars",
+		"name": "Pulsars"
+	},
+	{
+		"slug": "Branes",
+		"name": "Branes"
+	},
+	{
+		"slug": "Ions",
+		"name": "Ions"
+	},
+	{
+		"slug": "Entropia",
+		"name": "Entropia"
+	},
+	{
+		"slug": "Energy",
+		"name": "Energy"
+	},
+	{
+		"slug": "DarkEnergy",
+		"name": "DarkEnergy"
+	},
+	{
+		"slug": "Torus",
+		"name": "Torus"
+	},
+	{
+		"slug": "Fate",
+		"name": "Fate"
+	}
     ]
 }
