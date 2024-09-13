@@ -92,15 +92,15 @@ struct Module : CoreProcessor {
 	std::unique_ptr<AirwinConsolidatedBase> fx;
 
 private:
-	std::array<float, NUM_PARAMS> params;
-	std::array<float, NUM_OUTPUTS> outs;
-	std::array<float, NUM_INPUTS> ins;
-	std::array<bool, NUM_INPUTS> input_patched;
+	std::array<float, NUM_PARAMS> params{};
+	std::array<float, NUM_OUTPUTS> outs{};
+	std::array<float, NUM_INPUTS> ins{};
+	std::array<bool, NUM_INPUTS> input_patched{};
 
-	InputBuffer<float, BlockSize> inL_buf;
-	InputBuffer<float, BlockSize> inR_buf;
-	OutputBuffer<float, BlockSize> outL_buf;
-	OutputBuffer<float, BlockSize> outR_buf;
+	InputBuffer<float, BlockSize> inL_buf{};
+	InputBuffer<float, BlockSize> inR_buf{};
+	OutputBuffer<float, BlockSize> outL_buf{};
+	OutputBuffer<float, BlockSize> outR_buf{};
 };
 
 } // namespace MetaModuleAirwindows
