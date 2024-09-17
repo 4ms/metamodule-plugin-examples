@@ -82,7 +82,7 @@ jobs:
           cd ${{ inputs.plugin }}
           cmake -B build -G Ninja
           cmake --build build
-          cd ${{ github.workspace }}
+          cd ${{ github.workspace }}/metamodule-plugins/
           for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done;
 
       - name: Release
