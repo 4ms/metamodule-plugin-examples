@@ -104,10 +104,12 @@ void Quant::dataFromJson(json_t *rootJ) {
 }
 
 void Quant::set_param(int param_id, float val) {
-	if (param_id == QuantInfo::OffsetKnob)
-		offset_knob = val;
+	if (param_id == QuantInfo::OffsetKnob) {
+		offset_knob = val * 2.f - 1.f; //0..1 => -1..1
+	}
 
-	else if (param_id <= 12) {
+	else if (param_id <= 12)
+	{
 		auto note = param_id - 1;
 		if (val > 0.55f) {
 			if (lastButtonState[note] == false) {
