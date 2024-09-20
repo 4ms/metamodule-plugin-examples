@@ -1,5 +1,6 @@
 #pragma once
 #include "CoreModules/elements/element_info.hh"
+#include "quant-scales.hh"
 #include <array>
 
 namespace MetaModule::RackClone
@@ -32,6 +33,16 @@ struct JackOut : JackOutput {
 	}
 };
 
+struct ScaleSelect : AltParamChoiceLabeled {
+	constexpr ScaleSelect(BaseElement b) {
+		DefaultValue = 1;
+		num_pos = std::min(pos_names.size(), QuantScales.size());
+		for (auto i = 0u; i < num_pos; i++) {
+			pos_names[i] = QuantScales[i].name;
+		}
+	}
+};
+
 struct QuantInfo : ModuleInfoBase {
 	static constexpr std::string_view slug{"Quantizer"};
 	static constexpr std::string_view description{"Quantizer"};
@@ -41,7 +52,7 @@ struct QuantInfo : ModuleInfoBase {
 
 	using enum Coords;
 
-	static constexpr std::array<Element, 15> Elements{{
+	static constexpr std::array<Element, 16> Elements{{
 		Trimpot{{to_mm<72>(28.92), to_mm<72>(258.63), Center, "Pre-offset", ""}, 0.5f},
 		SmallLEDButton{{to_mm<72>(24.83), to_mm<72>(230.07), Center, "C", ""}},
 		SmallLEDButton{{to_mm<72>(11.76), to_mm<72>(211.5), Center, "C#", ""}},
@@ -57,6 +68,7 @@ struct QuantInfo : ModuleInfoBase {
 		SmallLEDButton{{to_mm<72>(24.83), to_mm<72>(25.81), Center, "B", ""}},
 		JackIn{{to_mm<72>(39.15), to_mm<72>(304.27), Center, "V/oct In", ""}},
 		JackOut{{to_mm<72>(39.83), to_mm<72>(340.66), Center, "V/oct Out", ""}},
+		ScaleSelect{{1, 1, Center, "Scale", ""}},
 	}};
 
 	enum class Elem {
@@ -75,6 +87,7 @@ struct QuantInfo : ModuleInfoBase {
 		CButton,
 		In,
 		Out,
+		ScaleSelectAltParam,
 	};
 
 	enum ParamId {
@@ -91,6 +104,7 @@ struct QuantInfo : ModuleInfoBase {
 		DButton,
 		CsharpButton,
 		CButton,
+		ScaleSelectAlt,
 	};
 
 	enum InputId { In };
