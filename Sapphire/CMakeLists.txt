@@ -25,7 +25,6 @@ target_sources(Sapphire
     ${SOURCE_DIR}/src/elastika_vcv.cpp
     ${SOURCE_DIR}/src/mesh_physics.cpp
     ${SOURCE_DIR}/src/mesh_hex.cpp
-    ${SOURCE_DIR}/src/sapphire_globals.cpp
 
     ${SOURCE_DIR}/src/frolic_vcv.cpp
     ${SOURCE_DIR}/src/galaxy_vcv.cpp
@@ -35,6 +34,15 @@ target_sources(Sapphire
     ${SOURCE_DIR}/src/nucleus_vcv.cpp
     ${SOURCE_DIR}/src/pivot_vcv.cpp
     ${SOURCE_DIR}/src/polynucleus_vcv.cpp
+    ${SOURCE_DIR}/src/pop_vcv.cpp
+    ${SOURCE_DIR}/src/rotini_vcv.cpp
+    ${SOURCE_DIR}/src/sam_vcv.cpp
+    ${SOURCE_DIR}/src/tin_vcv.cpp
+    ${SOURCE_DIR}/src/tout_vcv.cpp
+    ${SOURCE_DIR}/src/tricorder_vcv.cpp
+    ${SOURCE_DIR}/src/tubeunit_vcv.cpp
+
+    ${SOURCE_DIR}/src/sapphire_globals.cpp
 
 	firmware-stubs.cc
     plugin.cpp 
