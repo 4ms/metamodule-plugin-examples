@@ -33,6 +33,7 @@ target_sources(kocmoc
 
 	${SOURCE_DIR}/fir.cpp
 	${SOURCE_DIR}/iir.cpp
+	${SOURCE_DIR}/iir32.cpp
 	${SOURCE_DIR}/ladder.cpp
 	${SOURCE_DIR}/phasor.cpp
 	${SOURCE_DIR}/sallenkey.cpp
@@ -49,6 +50,8 @@ target_compile_options(kocmoc
 	PRIVATE
 	# No flags needed
 )
+
+target_compile_definitions(kocmoc PRIVATE FLOATDSP)
 
 set_property(TARGET kocmoc PROPERTY CXX_STANDARD 20)
 
