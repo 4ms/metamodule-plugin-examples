@@ -46,7 +46,7 @@ jobs:
     if: ${{ github.event_name == 'push' || inputs.linux_x64 }}
     strategy:
         matrix:
-          gcc: ['12.2.Rel1']  # can add other versions if needed
+          gcc: ['12.3.Rel1']  # can add other versions if needed
     name: "Build firmware on linux"
     runs-on: ubuntu-24.04
     steps:
@@ -112,7 +112,7 @@ jobs:
       - name: Install Arm GNU Toolchain (arm-none-eabi-gcc)
         uses: carlosperate/arm-none-eabi-gcc-action@v1
         with:
-          release: '12.2.Rel1'
+          release: '12.3.Rel1'
           
       - name: Git setup
         run: |
@@ -134,7 +134,7 @@ jobs:
     if: ${{ github.event_name == 'push' || inputs.macos }}
     strategy:
         matrix:
-          gcc: ['12.2.Rel1']  # can add other versions if needed
+          gcc: ['12.3.Rel1']  # can add other versions if needed
     name: "Build firmware on mac x64"
     runs-on: macos-latest
     steps:
