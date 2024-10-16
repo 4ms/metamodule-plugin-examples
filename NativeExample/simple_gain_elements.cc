@@ -5,6 +5,9 @@
 #include "simple_gain.hh"
 
 void init_simple_gain() {
+  // This is a simple way to create a ModuleInfoView
+  // See the README for better ways when dealing with more elements.
+
   static std::array<MetaModule::Element, 4> elements;
   static std::array<ElementCount::Indices, 4> indices;
 
@@ -47,8 +50,6 @@ void init_simple_gain() {
       .indices = indices,
   };
 
-  MetaModule::register_module(
-      "NativeExample", "SimpleGain",
-      []() { return std::make_unique<SimpleGain>(); }, info,
-      "NativeExample/simple_gain.png");
+  MetaModule::register_module<SimpleGain>("NativeExample", "SimpleGain", info,
+                                          "NativeExample/simple_gain.png");
 }
