@@ -47,8 +47,6 @@ void init_simple_gain() {
       .indices = indices,
   };
 
-  MetaModule::register_module(
-      "NativeExample", "SimpleGain",
-      []() { return std::make_unique<SimpleGain>(); }, info,
-      "NativeExample/simple_gain.png");
+  MetaModule::register_module<SimpleGain>("NativeExample", "SimpleGain", info,
+                                          "NativeExample/simple_gain.png");
 }
