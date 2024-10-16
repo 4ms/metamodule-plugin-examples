@@ -75,7 +75,7 @@ Read the documentation in the plugin-sdk repo: [Basic Example for Converting a R
 Plugins do not need to be based on VCV Rack. For examples, see NativeExample
 and Airwindows in this repo.
 
-Read the full documentation in the plugin-sdk: [Native Plugins](metamodule-plugin-sdk/docs/native-plugin.md)
+Read the full documentation in the plugin-sdk: [Native Plugins](https://github.com/4ms/metamodule-plugin-sdk/tree/main/docs/native-plugin.md)
 
 
 ## Installing a plugin
@@ -98,10 +98,10 @@ MetaModule docs to load the plugins.
 
 ## Text Screens (Displays)
 
-See documentation in the plugin SDK: [Text Displays](./metamodule-plugin-sdk/docs/text-displays.md)
+See documentation in the plugin SDK: [Text Displays](https://github.com/4ms/metamodule-plugin-sdk/tree/main/docs/text-displays.md)
 
 
 ## Images
 
-See documentation in the plugin SDK: [Graphics](./metamodule-plugin-sdk/docs/graphics.md)
+See documentation in the plugin SDK: [Graphics](https://github.com/4ms/metamodule-plugin-sdk/tree/main/docs/graphics.md)
 
