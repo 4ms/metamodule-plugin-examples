@@ -31,6 +31,8 @@ target_sources(OrangeLine
     ${SOURCE_DIR}/src/Resc.cpp
     ${SOURCE_DIR}/src/Morph.cpp
     ${SOURCE_DIR}/src/Morpheus.cpp
+    ${SOURCE_DIR}/src/Buckets.cpp
+    ${SOURCE_DIR}/src/Cron.cpp
 
     ${SOURCE_DIR}/src/OrangeLine.cpp
 
