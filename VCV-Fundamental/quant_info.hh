@@ -8,7 +8,7 @@ namespace MetaModule::RackClone
 struct Trimpot : Knob {
 	constexpr Trimpot(BaseElement b, float defaultValue = 0.5f)
 		: Knob{{{b, "rack-lib/Trimpot.png"}}} {
-		DefaultValue = defaultValue;
+		default_value = defaultValue;
 	}
 };
 
