@@ -28,6 +28,7 @@ target_sources(Sapphire
 
     ${SOURCE_DIR}/src/frolic_vcv.cpp
     ${SOURCE_DIR}/src/galaxy_vcv.cpp
+    ${SOURCE_DIR}/src/gravy_vcv.cpp
     ${SOURCE_DIR}/src/glee_vcv.cpp
     ${SOURCE_DIR}/src/hiss_vcv.cpp
     # ${SOURCE_DIR}/src/moots_vcv.cpp
@@ -43,6 +44,7 @@ target_sources(Sapphire
     # ${SOURCE_DIR}/src/tubeunit_vcv.cpp
 
     ${SOURCE_DIR}/src/sapphire_globals.cpp
+    ${SOURCE_DIR}/src/sapphire_panel.cpp
 
 	firmware-stubs.cc
     plugin.cpp 
