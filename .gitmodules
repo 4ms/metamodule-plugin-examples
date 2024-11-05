@@ -34,3 +34,6 @@
 [submodule "RebelTech/rebel-tech-vcv"]
 	path = RebelTech/rebel-tech-vcv
 	url = https://github.com/hemmer/rebel-tech-vcv
+[submodule "Sapphire/sapphire"]
+	path = Sapphire/sapphire
+	url = https://github.com/4ms/sapphire.git
