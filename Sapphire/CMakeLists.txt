@@ -22,25 +22,25 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/sapphire)
 
 target_sources(Sapphire
     PRIVATE
-    ${SOURCE_DIR}/src/elastika_vcv.cpp
-    ${SOURCE_DIR}/src/mesh_physics.cpp
-    ${SOURCE_DIR}/src/mesh_hex.cpp
+    # ${SOURCE_DIR}/src/elastika_vcv.cpp
+    # ${SOURCE_DIR}/src/mesh_physics.cpp
+    # ${SOURCE_DIR}/src/mesh_hex.cpp
 
     ${SOURCE_DIR}/src/frolic_vcv.cpp
     ${SOURCE_DIR}/src/galaxy_vcv.cpp
     ${SOURCE_DIR}/src/glee_vcv.cpp
     ${SOURCE_DIR}/src/hiss_vcv.cpp
-    ${SOURCE_DIR}/src/moots_vcv.cpp
-    ${SOURCE_DIR}/src/nucleus_vcv.cpp
-    ${SOURCE_DIR}/src/pivot_vcv.cpp
-    ${SOURCE_DIR}/src/polynucleus_vcv.cpp
-    ${SOURCE_DIR}/src/pop_vcv.cpp
-    ${SOURCE_DIR}/src/rotini_vcv.cpp
-    ${SOURCE_DIR}/src/sam_vcv.cpp
-    ${SOURCE_DIR}/src/tin_vcv.cpp
-    ${SOURCE_DIR}/src/tout_vcv.cpp
-    ${SOURCE_DIR}/src/tricorder_vcv.cpp
-    ${SOURCE_DIR}/src/tubeunit_vcv.cpp
+    # ${SOURCE_DIR}/src/moots_vcv.cpp
+    # ${SOURCE_DIR}/src/nucleus_vcv.cpp
+    # ${SOURCE_DIR}/src/pivot_vcv.cpp
+    # ${SOURCE_DIR}/src/polynucleus_vcv.cpp
+    # ${SOURCE_DIR}/src/pop_vcv.cpp
+    # ${SOURCE_DIR}/src/rotini_vcv.cpp
+    # ${SOURCE_DIR}/src/sam_vcv.cpp
+    # ${SOURCE_DIR}/src/tin_vcv.cpp
+    # ${SOURCE_DIR}/src/tout_vcv.cpp
+    # ${SOURCE_DIR}/src/tricorder_vcv.cpp
+    # ${SOURCE_DIR}/src/tubeunit_vcv.cpp
 
     ${SOURCE_DIR}/src/sapphire_globals.cpp
 
