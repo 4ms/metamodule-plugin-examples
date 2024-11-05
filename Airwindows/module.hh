@@ -65,6 +65,12 @@ struct Module : CoreProcessor {
 			params[param_id] = val;
 	}
 
+	float get_param(int param_id) const override {
+		if ((unsigned)param_id < params.size())
+			return params[param_id];
+		return 0;
+	}
+
 	void set_input(int input_id, float val) override {
 		if ((unsigned)input_id < ins.size()) {
 			ins[input_id] = val;
