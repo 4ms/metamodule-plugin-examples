@@ -5,8 +5,24 @@
 	"MetaModuleDescription": "",
 	"MetaModuleIncludedModules": [
 	{
-		"slug": "Elastika",
-		"name": "Elastika"
+		"slug": "Frolic",
+		"name": "Frolic"
+	},
+	{
+		"slug": "Galaxy",
+		"name": "Galaxy"
+	},
+	{
+		"slug": "Glee",
+		"name": "Glee"
+	},
+	{
+		"slug": "Gravy",
+		"name": "Gravy"
+	},
+	{
+		"slug": "Hiss",
+		"name": "Hiss"
 	}
 	]
 }
