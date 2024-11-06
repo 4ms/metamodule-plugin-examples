@@ -35,9 +35,9 @@ private:
 	std::array<int, 24> ranges;
 	std::array<bool, 12> playingNotes;
 
-	float input;
-	float offset_knob;
-	float output;
+	float input{0};
+	float offset_knob{0};
+	float output{0};
 };
 
 } // namespace MetaModule::RackClone
