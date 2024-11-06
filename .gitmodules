@@ -18,7 +18,7 @@
 	url = https://github.com/4ms/CountModulaVCVRackPlugins.git
 [submodule "kocmoc/kocmoc-rack-modules"]
 	path = kocmoc/kocmoc-rack-modules
-	url = https://github.com/4ms/kocmoc-rack-modules.git
+	url = https://github.com/janne808/kocmoc-rack-modules.git
 [submodule "VCV-Fundamental/Fundamental"]
 	path = VCV-Fundamental/Fundamental
 	url = https://github.com/4ms/VCVRack-Fundamental.git
