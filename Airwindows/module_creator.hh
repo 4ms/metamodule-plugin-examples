@@ -86,7 +86,7 @@ private:
 
 				auto param_name = std::string{name_buffer};
 				auto main_knob = new_element<MetaModule::Knob>(WidthPx - control_col, ypos, MainKnobImage, param_name);
-				main_knob.DefaultValue = 0;
+				main_knob.DefaultValue = fx->getParameter(i + ParamIds::PARAM_0);
 				index_element(elem_idx, main_knob, i + ParamIds::PARAM_0);
 
 				auto cv_knob = new_element<MetaModule::Knob>(WidthPx - 45, ypos, AttenKnob, param_name + " CV Scale");
