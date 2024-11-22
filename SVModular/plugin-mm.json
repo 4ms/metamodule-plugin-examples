@@ -1,0 +1,40 @@
+{
+    "MetaModulePluginMaintainer": "4ms Company",
+    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+    "MetaModulePluginMaintainerUrl": "",
+    "MetaModuleDescription": "",
+    "MetaModuleIncludedModules": [
+	{
+		"slug": "SVF-1",
+		"name": "SVF"
+	},
+	{
+		"slug": "TRG",
+		"name": "TRG"
+	},
+	{
+		"slug": "LADR",
+		"name": "LADR"
+	},
+	{
+		"slug": "OP",
+		"name": "OP"
+	},
+	{
+		"slug": "PHASR",
+		"name": "PHASR"
+	},
+	{
+		"slug": "MUL",
+		"name": "MUL"
+	},
+	{
+		"slug": "SKF",
+		"name": "SKF"
+	},
+	{
+		"slug": "DDLY",
+		"name": "DDLY"
+	}
+    ]
+}
