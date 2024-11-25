@@ -28,35 +28,29 @@ target_sources(Drumkit
     ${SOURCE_DIR}/../deps/SynthDevKit/src/CV.cpp
 
     ${SOURCE_DIR}/controller/BD9.cpp
-    #${SOURCE_DIR}/controller/Baronial.cpp
     ${SOURCE_DIR}/controller/CR78.cpp
     ${SOURCE_DIR}/controller/ClosedHH.cpp
     ${SOURCE_DIR}/controller/DMX.cpp
     ${SOURCE_DIR}/controller/Gnome.cpp
-    #${SOURCE_DIR}/controller/Marionette.cpp
     ${SOURCE_DIR}/controller/OpenHH.cpp
     ${SOURCE_DIR}/controller/SBD.cpp
     ${SOURCE_DIR}/controller/SampleController.cpp
-    ${SOURCE_DIR}/controller/Sequencer.cpp
     ${SOURCE_DIR}/controller/Snare.cpp
     ${SOURCE_DIR}/controller/Tomi.cpp
 
     ${SOURCE_DIR}/model/SampleManager.cpp
 
     ${SOURCE_DIR}/view/BD9.cpp
-    #${SOURCE_DIR}/view/Baronial.cpp
     ${SOURCE_DIR}/view/CR78.cpp
     ${SOURCE_DIR}/view/ClosedHH.cpp
     ${SOURCE_DIR}/view/DMX.cpp
     ${SOURCE_DIR}/view/Gnome.cpp
-    #${SOURCE_DIR}/view/Marionette.cpp
     ${SOURCE_DIR}/view/OpenHH.cpp
     ${SOURCE_DIR}/view/SBD.cpp
-    ${SOURCE_DIR}/view/Sequencer.cpp
     ${SOURCE_DIR}/view/Snare.cpp
     ${SOURCE_DIR}/view/Tomi.cpp
 
-    ${SOURCE_DIR}/DrumKit.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/DrumKit.cpp
 )
 
 target_include_directories(Drumkit PRIVATE
