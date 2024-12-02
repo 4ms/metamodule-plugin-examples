@@ -24,11 +24,13 @@ target_sources(kocmoc
 	PRIVATE
 	${SOURCE_DIR}/DDLY.cpp
 	${SOURCE_DIR}/LADR.cpp
+	${SOURCE_DIR}/uLADR.cpp
 	${SOURCE_DIR}/MUL.cpp
 	${SOURCE_DIR}/OP.cpp
 	${SOURCE_DIR}/PHASR.cpp
 	${SOURCE_DIR}/SKF.cpp
 	${SOURCE_DIR}/SVF.cpp
+	${SOURCE_DIR}/uSVF.cpp
 	${SOURCE_DIR}/TRG.cpp
 
 	${SOURCE_DIR}/fir.cpp
