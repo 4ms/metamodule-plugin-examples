@@ -37,3 +37,6 @@
 [submodule "Sapphire/sapphire"]
 	path = Sapphire/sapphire
 	url = https://github.com/4ms/sapphire.git
+[submodule "CVfunk"]
+	path = CVfunk
+	url = https://github.com/4ms/CVfunk-Modules.git
