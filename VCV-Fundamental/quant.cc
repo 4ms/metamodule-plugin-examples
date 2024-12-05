@@ -171,7 +171,32 @@ void Quant::load_state(std::string_view state_data) {
 		return;
 	}
 
-	dataFromJson(root);
+	// we need to check if the incoming state data is a preset or patch
+	// occasionally presets use params, and other times they use the data node.
+	// the params node is always present, however the data node is not.
+	const auto is_preset = [root]() {
+		std::array<std::string_view, 4> nodes = {
+			"plugin",
+			"model",
+			"version",
+			"params",
+		};
+
+		for (const auto i : nodes) {
+			if (!json_object_get(root, i.data())) {
+				return false;
+			}
+		}
+		return true;
+	}();
+
+	if (is_preset) {
+		if (auto node = json_object_get(root, "data"); node) {
+			dataFromJson(node);
+		}
+	} else {
+		dataFromJson(root);
+	}
 
 	json_decref(root);
 }
