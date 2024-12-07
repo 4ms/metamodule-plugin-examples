@@ -22,6 +22,7 @@ set(PLUGINS
     NANO
     VCV-Fundamental
     Sapphire
+    CVFunk
 )
 
 foreach(plugin ${PLUGINS})
