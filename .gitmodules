@@ -37,3 +37,6 @@
 [submodule "Sapphire/sapphire"]
 	path = Sapphire/sapphire
 	url = https://github.com/4ms/sapphire.git
+[submodule "SVModular-Drumkit"]
+	path = SVModular/Drumkit
+	url = git@github.com:SVModular/DrumKit.git
