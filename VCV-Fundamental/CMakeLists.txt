@@ -53,11 +53,9 @@ target_sources(Fundamental
 	${SOURCE_DIR}/VCF.cpp
 	${SOURCE_DIR}/VCMixer.cpp
 	${SOURCE_DIR}/VCO.cpp
+	${SOURCE_DIR}/Scope.cpp 
 
 	quant.cc
-
-    # Screens don't work in MM:
-	# ${SOURCE_DIR}/Scope.cpp 
 
     # Not relevent without polyphony:
 	# ${SOURCE_DIR}/Merge.cpp

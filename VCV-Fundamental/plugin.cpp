@@ -36,6 +36,7 @@ void init(Plugin *p) {
   p->addModel(modelRandomValues);
   p->addModel(modelPush);
   p->addModel(modelSHASR);
+  p->addModel(modelScope);
 
 #ifdef METAMODULE
   MetaModule::RackClone::Quant::register_module();
@@ -43,7 +44,6 @@ void init(Plugin *p) {
   p->addModel(modelVCO2);
   p->addModel(modelLFO2);
   p->addModel(modelDelay);
-  p->addModel(modelScope);
   p->addModel(modelSplit);
   p->addModel(modelMerge);
   p->addModel(modelSum);
