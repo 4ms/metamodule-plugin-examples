@@ -22,6 +22,7 @@ set(PLUGINS
     NANO
     VCV-Fundamental
     Sapphire
+    DrumKit
 )
 
 foreach(plugin ${PLUGINS})
@@ -31,6 +32,7 @@ foreach(plugin ${PLUGINS})
     ExternalProject_Add(
         ${plugin}
         SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/${plugin}
+        CMAKE_ARGS -DMETAMODULE_SDK_DIR=${CMAKE_CURRENT_LIST_DIR}/metamodule-plugin-sdk -DINSTALL_DIR=${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins
         BUILD_ALWAYS true
         INSTALL_COMMAND ""
     )
