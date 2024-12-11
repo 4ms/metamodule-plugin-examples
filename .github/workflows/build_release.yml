@@ -83,7 +83,7 @@ jobs:
         run: |
           mkdir -p metamodule-plugins
           cd ${{ inputs.plugin }}
-          cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=../metamodule-plugin-sdk -DINSTALL_DIR=../metamodule-plugins
+          cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=../metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
           cmake --build build
           cd ${{ github.workspace }}/metamodule-plugins/
           for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done;
