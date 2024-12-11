@@ -12,6 +12,7 @@ on:
           - Bogaudio
           - chowdsp
           - CountModula
+          - DrumKit
           - Geodesics
           - kocmoc
           - NANO
