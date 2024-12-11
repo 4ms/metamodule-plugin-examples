@@ -23,6 +23,7 @@ set(PLUGINS
     VCV-Fundamental
     Sapphire
     DrumKit
+    CVFunk
 )
 
 foreach(plugin ${PLUGINS})
