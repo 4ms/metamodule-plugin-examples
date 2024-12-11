@@ -37,3 +37,7 @@
 [submodule "Sapphire/sapphire"]
 	path = Sapphire/sapphire
 	url = https://github.com/4ms/sapphire.git
+[submodule "DrumKit"]
+	path = DrumKit
+	url = https://github.com/4ms/DrumKit
+	branch = metamodule
