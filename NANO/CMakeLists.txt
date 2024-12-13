@@ -53,7 +53,7 @@ set_property(TARGET NanoModules PROPERTY CXX_STANDARD 20)
 # Step 4: call create_plugin()
 create_plugin(
     SOURCE_LIB      NanoModules                  # This is the cmake target name (defined in add_target)
-    PLUGIN_NAME     NanoModules                  # This must match the brand "slug" used in VCV Rack
+    PLUGIN_NAME     NANOModules                  # This must match the brand "slug" used in VCV Rack
     PLUGIN_JSON     ${SOURCE_DIR}/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets    # Path to the assets/ dir containing the PNGs
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins # Path to where you want the plugin dir output: it can be shared between multiple plugins
