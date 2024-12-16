@@ -40,3 +40,7 @@
 [submodule "CVfunk"]
 	path = CVfunk
 	url = https://github.com/4ms/CVfunk-Modules.git
+[submodule "DrumKit"]
+	path = DrumKit
+	url = https://github.com/4ms/DrumKit.git
+	branch = metamodule
