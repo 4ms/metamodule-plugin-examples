@@ -12,18 +12,18 @@ project(MetaModulePluginExamples
 set(PLUGINS 
     Airwindows
     Bogaudio
+    CVfunk
+    ChowDSP
+    CosineKitty-Sapphire
     CountModula
+    DrumKit
+    Fundamental
     Geodesics
+    NANOModules
     OrangeLine
     RebelTech
     Valley
-    chowdsp
     kocmoc
-    NANO
-    VCV-Fundamental
-    Sapphire
-    DrumKit
-    CVfunk
 )
 
 foreach(plugin ${PLUGINS})

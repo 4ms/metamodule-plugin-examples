@@ -11,7 +11,7 @@
 	path = Bogaudio/BogaudioModules
 	url = https://github.com/4ms/BogaudioModules
 [submodule "chowdsp/ChowDSP-VCV"]
-	path = chowdsp/ChowDSP-VCV
+	path = ChowDSP/ChowDSP-VCV
 	url = https://github.com/4ms/ChowDSP-VCV.git
 [submodule "CountModula/VCVRackPlugins"]
 	path = CountModula/VCVRackPlugins
@@ -20,7 +20,7 @@
 	path = kocmoc/kocmoc-rack-modules
 	url = https://github.com/janne808/kocmoc-rack-modules.git
 [submodule "VCV-Fundamental/Fundamental"]
-	path = VCV-Fundamental/Fundamental
+	path = Fundamental/Fundamental
 	url = https://github.com/4ms/VCVRack-Fundamental.git
 [submodule "Airwindows/airwin2rack"]
 	path = Airwindows/airwin2rack
@@ -29,18 +29,18 @@
 	path = OrangeLine/OrangeLine
 	url = git@github.com:4ms/OrangeLine
 [submodule "NANO/NANO-Modules_VCV"]
-	path = NANO/NANO-Modules_VCV
+	path = NANOModules/NANO-Modules_VCV
 	url = https://github.com/4ms/NANO-Modules_VCV.git
 [submodule "RebelTech/rebel-tech-vcv"]
 	path = RebelTech/rebel-tech-vcv
 	url = https://github.com/hemmer/rebel-tech-vcv
 [submodule "Sapphire/sapphire"]
-	path = Sapphire/sapphire
+	path = CosineKitty-Sapphire/sapphire
 	url = https://github.com/4ms/sapphire.git
-[submodule "DrumKit"]
-	path = DrumKit
-	url = https://github.com/4ms/DrumKit
-	branch = metamodule
 [submodule "CVfunk"]
 	path = CVfunk
 	url = https://github.com/4ms/CVfunk-Modules.git
+[submodule "DrumKit"]
+	path = DrumKit
+	url = https://github.com/4ms/DrumKit.git
+	branch = metamodule

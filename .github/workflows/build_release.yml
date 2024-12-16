@@ -10,17 +10,17 @@ on:
         options:
           - Airwindows
           - Bogaudio
-          - chowdsp
+          - ChowDSP
           - CountModula
           - CVfunk
           - DrumKit
           - Geodesics
           - kocmoc
-          - NANO
+          - NANOModules
           - OrangeLine
           - RebelTech
-          - Sapphire
-          - VCV-Fundamental
+          - CosineKitty-Sapphire
+          - Fundamental
           - Valley
           - "./"
       do_release:

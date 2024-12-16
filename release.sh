@@ -17,13 +17,13 @@ fi
 rx='^v([0-9]+\.){2,2}(\*|[0-9]+)(\-.*){0,1}$'
 if [[ $2 =~ $rx ]]; then
 	if [ "$1" == "all" ]; then
-		echo git tag -a $2 -m "$2"
-		echo git push origin $2
-		echo gh workflow run build_release.yml -f plugin="./" -f do_release=true -r $2
+		git tag -a $2 -m "$2"
+		git push origin $2
+		gh workflow run build_release.yml -f plugin="./" -f do_release=true -r $2
 	else
-		echo git tag -a $1-$2 -m "$1-$2"
-		echo git push origin $1-$2
-		echo gh workflow run build_release.yml -f plugin="$1" -f do_release=true -r $1-$2
+		git tag -a $1-$2 -m "$1-$2"
+		git push origin $1-$2
+		gh workflow run build_release.yml -f plugin="$1" -f do_release=true -r $1-$2
 	fi
 else
 	echo "Error: Version must be in the form 'vX.Y.Z' or 'vX.Y.Z-*'"
