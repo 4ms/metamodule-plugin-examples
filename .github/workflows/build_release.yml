@@ -87,7 +87,7 @@ jobs:
           cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=../metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
           cmake --build build
           cd ${{ github.workspace }}/metamodule-plugins/
-          for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done;
+          if [ "${{ inputs.plugin }}" == "./" ]; then for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done; else for f in *.mmplugin; do mv $f ${{ env.CI_REF_NAME }}.mmplugin; done; fi
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/') && ${{ inputs.do_release }}
