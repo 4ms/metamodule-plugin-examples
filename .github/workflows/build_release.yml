@@ -80,6 +80,10 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: FranzDiebold/github-env-vars-action@v2
 
+        # Convert $CI_REF_NAME to $PLUGIN_NAME
+        # CI_REF_NAME = CVfunk-v1.5.3
+        # $f = CVfunk.mmplugin
+        # if input.plugin == "./"
       - name: Build
         run: |
           mkdir -p metamodule-plugins
@@ -87,7 +91,8 @@ jobs:
           cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=../metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
           cmake --build build
           cd ${{ github.workspace }}/metamodule-plugins/
-          for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done;
+          if [ "${{ inputs.plugin }}" == "./" ]; then for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done;
+          else for f in *.mmplugin; do mv $f ${{ env.CI_REF_NAME }}.mmplugin; done; fi
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/') && ${{ inputs.do_release }}
