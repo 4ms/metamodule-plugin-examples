@@ -44,3 +44,6 @@
 	path = DrumKit
 	url = https://github.com/4ms/DrumKit.git
 	branch = metamodule
+[submodule "MSM-vcvrack-plugin"]
+	path = MSM-vcvrack-plugin
+	url = git@github.com:netboy3/MSM-vcvrack-plugin
