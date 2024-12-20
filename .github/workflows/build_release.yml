@@ -22,6 +22,7 @@ on:
           - CosineKitty-Sapphire
           - Fundamental
           - Valley
+          - Venom
           - "./"
       do_release:
         description: 'Create Release (must also tag!)'

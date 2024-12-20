@@ -23,6 +23,7 @@ set(PLUGINS
     OrangeLine
     RebelTech
     Valley
+    Venom
     kocmoc
 )
 
