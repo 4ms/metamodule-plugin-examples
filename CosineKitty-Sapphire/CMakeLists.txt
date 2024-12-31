@@ -56,7 +56,8 @@ target_include_directories(Sapphire PRIVATE
 )
 
 target_compile_options(Sapphire PRIVATE 
-#TODO
+     -fvisibility=hidden
+     -fvisibility-inlines-hidden
 )
 
 target_compile_definitions(Sapphire PRIVATE 
