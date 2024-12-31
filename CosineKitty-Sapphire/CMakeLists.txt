@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.22)
 
-#########################################################
-# Step 1: Include plugin.cmake from the SDK. 
-# You must do this before anything else since it defines the TOOLCHAIN
-include(${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk/plugin.cmake)
+if (DEFINED ENV{METAMODULE_SDK_DIR})
+    set(METAMODULE_SDK_DIR "$ENV{METAMODULE_SDK_DIR}")
+elseif("${METAMODULE_SDK_DIR}" STREQUAL "")
+    set(METAMODULE_SDK_DIR "${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk")
+endif()
+include(${METAMODULE_SDK_DIR}/plugin.cmake)
 
 #########################################################
 # Step 2: Define your project name, vesion, etc
@@ -22,9 +24,9 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/sapphire)
 
 target_sources(Sapphire
     PRIVATE
-    # ${SOURCE_DIR}/src/elastika_vcv.cpp
-    # ${SOURCE_DIR}/src/mesh_physics.cpp
-    # ${SOURCE_DIR}/src/mesh_hex.cpp
+    ${SOURCE_DIR}/src/elastika_vcv.cpp
+    ${SOURCE_DIR}/src/mesh_physics.cpp
+    ${SOURCE_DIR}/src/mesh_hex.cpp
 
     ${SOURCE_DIR}/src/frolic_vcv.cpp
     ${SOURCE_DIR}/src/galaxy_vcv.cpp
@@ -53,6 +55,7 @@ target_sources(Sapphire
 target_include_directories(Sapphire PRIVATE 
 	${SOURCE_DIR}/src 
 	${CMAKE_CURRENT_LIST_DIR}
+    ${METAMODULE_SDK_DIR}
 )
 
 target_compile_options(Sapphire PRIVATE 

@@ -5,6 +5,10 @@
 	"MetaModuleDescription": "",
 	"MetaModuleIncludedModules": [
 	{
+		"slug": "Elastika",
+		"name": "Elastika"
+	},
+	{
 		"slug": "Frolic",
 		"name": "Frolic"
 	},

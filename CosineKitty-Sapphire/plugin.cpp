@@ -5,7 +5,7 @@ Plugin *pluginInstance;
 void init(Plugin *p) {
   pluginInstance = p;
 
-  // p->addModel(modelSapphireElastika);
+  p->addModel(modelSapphireElastika);
   p->addModel(modelSapphireFrolic);
   p->addModel(modelSapphireGalaxy);
   p->addModel(modelSapphireGlee);
