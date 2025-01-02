@@ -1,16 +1,11 @@
 #include "module_creator.hh"
-namespace rack::plugin
-{
-struct Plugin;
-}
 
 namespace MetaModuleAirwindows
 {
 std::vector<ModuleCreator> modules;
 }
 
-__attribute__((__visibility__("default"))) void init(rack::plugin::Plugin *p) {
-
+extern "C" void init() {
 	AirwinConsolidatedBase::defaultSampleRate = 48000;
 
 	for (unsigned reg_idx = 0; auto module : AirwinRegistry::registry) {
