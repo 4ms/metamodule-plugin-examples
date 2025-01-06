@@ -22,9 +22,9 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/sapphire)
 
 target_sources(Sapphire
     PRIVATE
-    # ${SOURCE_DIR}/src/elastika_vcv.cpp
-    # ${SOURCE_DIR}/src/mesh_physics.cpp
-    # ${SOURCE_DIR}/src/mesh_hex.cpp
+    ${SOURCE_DIR}/src/elastika_vcv.cpp
+    ${SOURCE_DIR}/src/mesh_physics.cpp
+    ${SOURCE_DIR}/src/elastika_mesh.cpp
 
     ${SOURCE_DIR}/src/frolic_vcv.cpp
     ${SOURCE_DIR}/src/galaxy_vcv.cpp
