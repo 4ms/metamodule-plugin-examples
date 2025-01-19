@@ -40,11 +40,15 @@ target_compile_options(airwin-registry PRIVATE "-Wno-misleading-indentation;-Wno
 target_link_libraries(AirwindowsModules PUBLIC airwin-registry)
 set(EXTRA_LINK_OPTIONS $<TARGET_OBJECTS:airwin-registry>)
 
+if("${INSTALL_DIR}" STREQUAL "")
+    set(INSTALL_DIR ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins)
+endif()
+
 create_plugin(
     SOURCE_LIB      AirwindowsModules
     PLUGIN_NAME     Airwindows
     PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/airwin2rack/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins
+    DESTINATION     ${INSTALL_DIR}
 )
 
