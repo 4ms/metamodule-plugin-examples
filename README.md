@@ -1,10 +1,14 @@
 # Example MetaModule Plugins using the SDK
 
-Here are examples of mostly VCV Rack plugins being compiled as MetaModule plugins, using the MetaModule Plugin SDK.
+Here are examples of VCV Rack plugins being compiled as MetaModule plugins, using the MetaModule Plugin SDK.
 
-The goal of the SDK is to make it as easy as possible to compile existing VCV Rack plugin source code 
-and produce a MetaModule-compatible plugin. The SDK also supports "native" plugins, which are not based 
-on VCV Rack plugins (read below).
+There are also two native plugins: Airwindows, and NativeExample.
+
+The SDK contains a VCV Rack SDK wrapper, whose goal is to make it as easy as
+possible to compile existing VCV Rack plugin source code and produce a
+MetaModule-compatible plugin. The SDK also supports "native" plugins, which are
+not based on VCV Rack plugins and just use the MetaModule core interface
+directly.
 
 Some of these plugins are using the original, unaltered Rack source code. Some are using a fork or branch of the code with
 (minor) changes made in order to work as a MetaModule plugin.
@@ -41,42 +45,39 @@ cd metamodule-plugin-examples
 git submodule update --init --recursive
 ```
 
-To build all the plugins (brands): (takes a while!)
+To build all the plugins (brands) -- warning: this takes a while! See below for how to build just one brand.
 
 ```
-cmake -B build -G Ninja
+cmake --fresh -B build -G Ninja
 cmake --build build
 ```
 
-Building will put the build artifacts into a directory called
-`metamodule-plugins` in the top-level directory of the repo. Inside this will
-be a subdirectory for each brand you built. Inside each subdirectory is a
-shared object (.so) file, which is the plugin. Also there will be all the PNG
-files (graphical assets) needed.
+Building will create a `.mmplugin` file for each brand and put it in the
+`metamodule-plugins` directory in the top-level of the repo. 
 
 If you want to just build one brand:
 
 ```
+# To configure the build:
 cd Bogaudio
-cmake -B build -G Ninja
+cmake --fresh -B build -G Ninja
+
+# To build or re-build:
 cmake --build build
 ```
 
-This will also install the plugin in the top-level `metamodule-plugins` directory.
+This will install the plugin project's directory (`Bogaudio/metamodule-plugins/` in this case).
 
+If you want to use a different installation of the plugin sdk, you can pass it to cmake:
 
-## Creating a MetaModule plugin from an existing VCV Rack plugin
+```
+# To configure the build:
+cd Bogaudio
+cmake --fresh -B build -G Ninja -DMETAMODULE_SDK_DIR=/path/to/sdk
 
-Read the documentation in the plugin-sdk repo: [Basic Example for Converting a Rack Plugin](https://github.com/4ms/metamodule-plugin-sdk/tree/main?tab=readme-ov-file#basic-example-for-converting-a-rack-plugin)
-
-
-## Creating a native plugin
-
-Plugins do not need to be based on VCV Rack. For examples, see NativeExample
-and Airwindows in this repo.
-
-Read the full documentation in the plugin-sdk: [Native Plugins](https://github.com/4ms/metamodule-plugin-sdk/tree/main/docs/native-plugin.md)
-
+# To build or re-build:
+cmake --build build
+```
 
 ## Installing a plugin
 
@@ -85,7 +86,7 @@ drive.
 
 ```
 cd ..  # Root of this repo
-cp -R metamodule-plugins/ /Volumes/SDCard-or-USBDrive/
+cp -R metamodule-plugins /Volumes/SDCard-or-USBDrive/
 
 ```
 
@@ -96,12 +97,18 @@ the SD Card. That is, copy the entire folder, not just the contents.
 Then insert the SD Card or USB drive into your MetaModule. Follow the
 MetaModule docs to load the plugins.
 
-## Text Screens (Displays)
 
-See documentation in the plugin SDK: [Text Displays](https://github.com/4ms/metamodule-plugin-sdk/tree/main/docs/text-displays.md)
+## SDK Documentation
 
+The MetaModule plugin SDK is documented in the SDK repo:
+[MetaModule plugin SDK README](https://github.com/4ms/metamodule-plugin-sdk/tree/main?tab=readme-ov-file#metamodule-plugin-sdk)
 
-## Images
-
-See documentation in the plugin SDK: [Graphics](https://github.com/4ms/metamodule-plugin-sdk/tree/main/docs/graphics.md)
+The docs include such topics as:
+- Creating a MetaModule plugin from an existing VCV Rack plugin
+- Creating a native plugin
+- Text screens and displays
+- Graphics guide
+- Plugin format
+- Limitations
+- Tips
 

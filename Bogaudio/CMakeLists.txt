@@ -1,23 +1,25 @@
 cmake_minimum_required(VERSION 3.22)
 
-#########################################################
-# Step 1: Include plugin.cmake from the SDK. 
-# You must do this before anything else since it defines the TOOLCHAIN
-include(${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk/plugin.cmake)
+if(NOT "${METAMODULE_SDK_DIR}" STREQUAL "")
+    message("METAMODULE_SDK_DIR set by CMake variable ${METAMODULE_SDK_DIR}")
+elseif (DEFINED ENV{METAMODULE_SDK_DIR})
+    set(METAMODULE_SDK_DIR "$ENV{METAMODULE_SDK_DIR}")
+    message("METAMODULE_SDK_DIR set by environment variable ${METAMODULE_SDK_DIR}")
+else()
+    set(METAMODULE_SDK_DIR "${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk")
+    message("METAMODULE_SDK_DIR set to default: ${METAMODULE_SDK_DIR}")
+endif()
 
-#########################################################
-# Step 2: Define your project name, vesion, etc
+include(${METAMODULE_SDK_DIR}/plugin.cmake)
+
 project(BogaudioModules 
     VERSION 0.1 
     DESCRIPTION "Bogaudio Plugin for MetaModule" 
     LANGUAGES C CXX ASM
 )
 
-#########################################################
-# Step 3: Create a cmake target for your plugin and add all your sources, compile flags, includes, etc.
 add_library(BogaudioModules STATIC)
 
-# Add sources from the Rack source repo
 set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/BogaudioModules)
 
 
@@ -207,18 +209,20 @@ target_include_directories(BogaudioModules
 )
 
 target_compile_options(BogaudioModules PRIVATE 
-$<$<COMPILE_LANGUAGE:CXX>:-include src/mutex-stub.hh>
-$<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
-$<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
+    $<$<COMPILE_LANGUAGE:CXX>:-include src/mutex-stub.hh>
+    $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
+    $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
 )
 
-#########################################################
-# Step 4: call create_plugin()
+if("${INSTALL_DIR}" STREQUAL "")
+    set(INSTALL_DIR ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins)
+endif()
+
 create_plugin(
-    SOURCE_LIB      BogaudioModules                                   # This is the cmake target name (defined in add_target)
-    PLUGIN_NAME     Bogaudio                                          # This must match the brand "slug" used in VCV Rack
-    PLUGIN_JSON     ${SOURCE_DIR}/plugin.json                         # Path to the plugin.json file used by VCV Rack
-    SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets                  # Path to the assets/ dir containing the PNGs
-    DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugins/  # Dir where plugin .mmplugin file should be put
+    SOURCE_LIB      BogaudioModules                       # This is the cmake target name (defined in add_target)
+    PLUGIN_NAME     Bogaudio                              # This must match the brand "slug" used in VCV Rack
+    PLUGIN_JSON     ${SOURCE_DIR}/plugin.json             # Path to the plugin.json file used by VCV Rack
+    SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets      # Path to the assets/ dir containing the PNGs
+    DESTINATION     ${INSTALL_DIR}                        # Dir where plugin .mmplugin file should be put
 )
 
