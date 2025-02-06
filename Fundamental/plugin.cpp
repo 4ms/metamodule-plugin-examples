@@ -7,10 +7,12 @@ void init(Plugin *p) {
   pluginInstance = p;
 
   p->addModel(modelVCO);
+  p->addModel(modelVCO2);
   p->addModel(modelVCF);
   p->addModel(modelVCA_1);
   p->addModel(modelVCA);
   p->addModel(modelLFO);
+  p->addModel(modelLFO2);
   p->addModel(modelADSR);
   p->addModel(modelMixer);
   p->addModel(modelVCMixer);
@@ -37,13 +39,11 @@ void init(Plugin *p) {
   p->addModel(modelPush);
   p->addModel(modelSHASR);
   p->addModel(modelScope);
+  p->addModel(modelDelay);
 
 #ifdef METAMODULE
   MetaModule::RackClone::Quant::register_module();
 #else
-  p->addModel(modelVCO2);
-  p->addModel(modelLFO2);
-  p->addModel(modelDelay);
   p->addModel(modelSplit);
   p->addModel(modelMerge);
   p->addModel(modelSum);

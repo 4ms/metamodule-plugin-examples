@@ -64,12 +64,12 @@ target_sources(Fundamental
 	# ${SOURCE_DIR}/Viz.cpp #not relevent without polyphony
 
 	# Uses filesystem:
-	# ${SOURCE_DIR}/WTLFO.cpp
-	# ${SOURCE_DIR}/WTVCO.cpp
-	# ${SOURCE_DIR}/dr_wav.c
+	${SOURCE_DIR}/WTLFO.cpp
+	${SOURCE_DIR}/WTVCO.cpp
+	${SOURCE_DIR}/dr_wav.c
 
     # src_new src_delete src_process
-	# ${SOURCE_DIR}/Delay.cpp
+	${SOURCE_DIR}/Delay.cpp
 
 	plugin.cpp
 )
