@@ -1,22 +1,25 @@
 cmake_minimum_required(VERSION 3.22)
 
-if (DEFINED ENV{METAMODULE_SDK_DIR})
-	set(METAMODULE_SDK_DIR "$ENV{METAMODULE_SDK_DIR}")
-elseif("${METAMODULE_SDK_DIR}" STREQUAL "")
-	set(METAMODULE_SDK_DIR "${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk")
+if(NOT "${METAMODULE_SDK_DIR}" STREQUAL "")
+	message("METAMODULE_SDK_DIR set by CMake variable ${METAMODULE_SDK_DIR}")
+elseif (DEFINED ENV{METAMODULE_SDK_DIR})
+    set(METAMODULE_SDK_DIR "$ENV{METAMODULE_SDK_DIR}")
+	message("METAMODULE_SDK_DIR set by environment variable ${METAMODULE_SDK_DIR}")
+else()
+    set(METAMODULE_SDK_DIR "${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk")
+	message("METAMODULE_SDK_DIR set to default: ${METAMODULE_SDK_DIR}")
 endif()
+
 include(${METAMODULE_SDK_DIR}/plugin.cmake)
 
-
-project(Bogaudio 
+project(BogaudioModules 
     VERSION 0.1 
     DESCRIPTION "Bogaudio Plugin for MetaModule" 
     LANGUAGES C CXX ASM
 )
 
-add_library(Bogaudio STATIC)
+add_library(BogaudioModules STATIC)
 
-# Add sources from the Rack source repo
 set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/BogaudioModules)
 
 
@@ -210,10 +213,6 @@ $<$<COMPILE_LANGUAGE:CXX>:-include src/mutex-stub.hh>
 $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
 $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
 )
-
-if("${INSTALL_DIR}" STREQUAL "")
-    set(INSTALL_DIR ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins)
-endif()
 
 create_plugin(
     SOURCE_LIB      Bogaudio                   # This is the cmake target name (defined in add_target)
