@@ -1,0 +1,12 @@
+{
+	"MetaModulePluginMaintainer": "My Name",
+	"MetaModulePluginMaintainerEmail": "",
+	"MetaModulePluginMaintainerUrl": "",
+	"MetaModuleDescription": "",
+	"MetaModuleIncludedModules": [
+		{
+			"slug": "SquinkyLabs",
+			"name": "Filter Module"
+		}
+	]
+}
