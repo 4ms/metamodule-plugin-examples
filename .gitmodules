@@ -47,3 +47,6 @@
 [submodule "Venom"]
 	path = Venom
 	url = https://github.com/4ms/VenomModules.git
+[submodule "Squinky/squinky"]
+	path = Squinky/squinky
+	url = https://github.com/4ms/SquinkyVCV-main.git
