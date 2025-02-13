@@ -19,12 +19,13 @@ set(PLUGINS
     DrumKit
     Fundamental
     Geodesics
+    kocmoc
     NANOModules
     OrangeLine
     RebelTech
+    SickoCV
     Valley
-	Venom
-    kocmoc
+    Venom
 )
 
 foreach(plugin ${PLUGINS})
