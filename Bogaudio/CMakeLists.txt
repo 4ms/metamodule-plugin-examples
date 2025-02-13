@@ -180,7 +180,6 @@ target_sources(BogaudioModules PRIVATE
 target_include_directories(BogaudioModules 
     PRIVATE 
     ${CMAKE_CURRENT_LIST_DIR}
-    ${SOURCE_DIR}/src
     ${SOURCE_DIR}/src/dsp
     ${SOURCE_DIR}/lib
 )
@@ -189,7 +188,12 @@ target_compile_options(BogaudioModules PRIVATE
 $<$<COMPILE_LANGUAGE:CXX>:-include src/mutex-stub.hh>
 $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion>
 $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
+$<$<COMPILE_LANGUAGE:CXX>:-Wno-array-bounds>
 )
+
+if("${INSTALL_DIR}" STREQUAL "")
+    set(INSTALL_DIR ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins)
+endif()
 
 create_plugin(
     SOURCE_LIB      BogaudioModules                   # This is the cmake target name (defined in add_target)
