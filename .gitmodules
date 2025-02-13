@@ -47,3 +47,6 @@
 [submodule "Venom"]
 	path = Venom
 	url = https://github.com/4ms/VenomModules.git
+[submodule "SickoCV"]
+	path = SickoCV
+	url = https://github.com/4ms/SickoCV.git
