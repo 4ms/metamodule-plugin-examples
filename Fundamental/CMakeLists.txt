@@ -83,12 +83,19 @@ target_include_directories(Fundamental PRIVATE
 
 target_compile_options(Fundamental PRIVATE 
     -fexceptions
-    -Wno-deprecated-enum-enum-conversion
+	$<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-enum-conversion>
 )
 
 target_compile_definitions(Fundamental PRIVATE 
 	METAMODULE
 )
+
+set_source_files_properties(
+	${SOURCE_DIR}/WTLFO.cpp
+	${SOURCE_DIR}/WTVCO.cpp
+	COMPILE_FLAGS -Wno-deprecated #silence warnings about deprecated capture of this with [=]
+)
+
 
 set_property(TARGET Fundamental PROPERTY CXX_STANDARD 20)
 
