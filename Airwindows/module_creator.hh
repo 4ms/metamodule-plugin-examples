@@ -80,7 +80,7 @@ private:
 			for (auto i = 0u; i < num_fx_params; i++) {
 				fx->getParameterName(i + PARAM_0, name_buffer);
 				if (name_buffer[0] == '\0') {
-					printf("Skip param with no name\n");
+					// printf("Skip param with no name\n");
 					continue;
 				}
 
