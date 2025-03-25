@@ -1,10 +1,10 @@
 #include "CountModula.hpp"
 
-Plugin *pluginInstance;
+extern Plugin *pluginInstance;
 int defaultTheme = 0;
 int prevDefaultTheme = -1;
 
-void init(Plugin *p) {
+void init_CountModula(Plugin *p) {
   pluginInstance = p;
 
   defaultTheme = readDefaultIntegerValue("DefaultTheme");
