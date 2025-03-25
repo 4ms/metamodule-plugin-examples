@@ -108,7 +108,7 @@ void Quant::set_param(int param_id, float val) {
 		offset_knob = val * 2.f - 1.f; //0..1 => -1..1
 	}
 
-	else if (param_id <= 12)
+	else if (param_id >= 1 && param_id <= 12)
 	{
 		auto note = param_id - 1;
 		if (val > 0.55f) {
@@ -121,6 +121,20 @@ void Quant::set_param(int param_id, float val) {
 			lastButtonState[note] = false;
 		}
 	}
+}
+
+float Quant::get_param(int param_id) const {
+	if (param_id == QuantInfo::OffsetKnob) {
+		return (offset_knob + 1.f) * 0.5f; //-1..1 => 0..1
+	}
+
+	else if (param_id >= 1 && param_id <= 12)
+	{
+		auto note = param_id - 1;
+		return lastButtonState[note] ? 1 : 0;
+	}
+
+	return 0;
 }
 
 void Quant::set_samplerate(float sr) {

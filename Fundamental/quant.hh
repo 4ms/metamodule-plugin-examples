@@ -10,6 +10,7 @@ public:
 	Quant();
 	void update() override;
 	void set_param(int param_id, float val) override;
+	float get_param(int param_id) const override;
 	void set_samplerate(float sr) override;
 	void set_input(int input_id, float val) override;
 	float get_output(int output_id) const override;
