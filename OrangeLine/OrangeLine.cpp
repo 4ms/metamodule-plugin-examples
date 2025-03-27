@@ -10,9 +10,9 @@
 
 #include "plugin.hpp"
 
-extern Plugin *pluginInstance;
+Plugin *pluginInstance;
 
-void init_OrangeLine(Plugin *p) {
+void init(Plugin *p) {
   pluginInstance = p;
 
   p->addModel(modelFence);
