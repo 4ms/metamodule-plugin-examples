@@ -29,11 +29,18 @@ set(PLUGINS
 
 foreach(plugin ${PLUGINS})
 
-    message("Building ${plugin}")
+	# `subdir` is where the CMakeLists.txt file lives:
+	if (plugin STREQUAL "Fundamental")
+		set(project_cmake_root "Fundamental/metamodule")
+	else()
+		set(project_cmake_root ${plugin})
+	endif()
+
+    message("Building ${plugin} from ${project_cmake_root}")
 
     ExternalProject_Add(
         ${plugin}
-        SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/${plugin}
+        SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/${project_cmake_root}
         CMAKE_ARGS -DMETAMODULE_SDK_DIR=${CMAKE_CURRENT_LIST_DIR}/metamodule-plugin-sdk -DINSTALL_DIR=${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins
         BUILD_ALWAYS true
         INSTALL_COMMAND ""
