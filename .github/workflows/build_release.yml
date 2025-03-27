@@ -50,7 +50,7 @@ jobs:
     if: ${{ github.event_name == 'push' || inputs.linux_x64 }}
     strategy:
         matrix:
-          gcc: ['14.2.Rel1']  # can add other versions if needed
+          gcc: ['12.3.Rel1'] 
     name: "Build firmware on linux"
     runs-on: ubuntu-24.04
     steps:
