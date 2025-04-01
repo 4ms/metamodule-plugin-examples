@@ -20,7 +20,7 @@
 	path = kocmoc/kocmoc-rack-modules
 	url = https://github.com/janne808/kocmoc-rack-modules.git
 [submodule "VCV-Fundamental/Fundamental"]
-	path = Fundamental/Fundamental
+	path = Fundamental
 	url = https://github.com/4ms/VCVRack-Fundamental.git
 [submodule "Airwindows/airwin2rack"]
 	path = Airwindows/airwin2rack
