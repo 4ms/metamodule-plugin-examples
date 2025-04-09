@@ -23,6 +23,7 @@ void init(Plugin *p) {
   p->addModel(modelBasicSequencer8);
   p->addModel(modelBinaryComparator);
   p->addModel(modelBinarySequencer);
+  p->addModel(modelBinarySequencerPlus);
   // p->addModel(modelBlank12HP);
   // p->addModel(modelBlank16HP);
   // p->addModel(modelBlank20HP);
@@ -75,6 +76,7 @@ void init(Plugin *p) {
   p->addModel(modelMatrixCombiner);
   p->addModel(modelMatrixMixer);
   p->addModel(modelMinimusMaximus);
+  p->addModel(modelMiniMix);
   p->addModel(modelMixer);
   p->addModel(modelMorphShaper);
   p->addModel(modelMult);

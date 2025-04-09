@@ -33,6 +33,7 @@ target_sources(CountModula
     ${MODULE_DIR}/BasicSequencer8.cpp
     ${MODULE_DIR}/BinaryComparator.cpp
     ${MODULE_DIR}/BinarySequencer.cpp
+    ${MODULE_DIR}/BinarySequencerPlus.cpp
     #${MODULE_DIR}/BlankPanel12HP.cpp
     #${MODULE_DIR}/BlankPanel16HP.cpp
     #${MODULE_DIR}/BlankPanel20HP.cpp
@@ -86,6 +87,7 @@ target_sources(CountModula
     ${MODULE_DIR}/MatrixCombiner.cpp
     ${MODULE_DIR}/MatrixMixer.cpp
     ${MODULE_DIR}/MinimusMaximus.cpp
+    ${MODULE_DIR}/MiniMix.cpp
     ${MODULE_DIR}/Mixer.cpp
     ${MODULE_DIR}/MorphShaper.cpp
     ${MODULE_DIR}/Mult.cpp
