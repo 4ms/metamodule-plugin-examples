@@ -22,19 +22,18 @@ set(PLUGINS
     NANOModules
     OrangeLine
     RebelTech
-    Valley
-	Venom
+    Venom
     kocmoc
 )
 
 foreach(plugin ${PLUGINS})
 
-	# `subdir` is where the CMakeLists.txt file lives:
-	if (plugin STREQUAL "Fundamental")
-		set(project_cmake_root "Fundamental/metamodule")
-	else()
-		set(project_cmake_root ${plugin})
-	endif()
+    # `subdir` is where the CMakeLists.txt file lives:
+    if (plugin STREQUAL "Fundamental")
+        set(project_cmake_root "Fundamental/metamodule")
+    else()
+        set(project_cmake_root ${plugin})
+    endif()
 
     message("Building ${plugin} from ${project_cmake_root}")
 
