@@ -28,11 +28,9 @@ set(PLUGINS
 
 foreach(plugin ${PLUGINS})
 
-    # `subdir` is where the CMakeLists.txt file lives:
-    if (plugin STREQUAL "Fundamental")
-        set(project_cmake_root "Fundamental/metamodule")
-    else()
-        set(project_cmake_root ${plugin})
+    set(project_cmake_root ${plugin})
+    if ((plugin STREQUAL "Fundamental") OR (plugin STREQUAL "CountModula"))
+        set(project_cmake_root "${plugin}/metamodule")
     endif()
 
     message("Building ${plugin} from ${project_cmake_root}")
