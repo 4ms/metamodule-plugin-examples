@@ -11,7 +11,7 @@
 	path = ChowDSP/ChowDSP-VCV
 	url = https://github.com/4ms/ChowDSP-VCV.git
 [submodule "CountModula/VCVRackPlugins"]
-	path = CountModula/VCVRackPlugins
+	path = CountModula
 	url = https://github.com/4ms/CountModulaVCVRackPlugins.git
 [submodule "kocmoc/kocmoc-rack-modules"]
 	path = kocmoc/kocmoc-rack-modules
