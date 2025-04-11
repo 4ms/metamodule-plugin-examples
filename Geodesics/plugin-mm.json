@@ -1,8 +1,10 @@
 {
-    "MetaModulePluginMaintainer": "4ms Company",
-    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "",
+	"MetaModuleBrandName": "Geodesics",
+	"MetaModuleBrandSlug": "Geodesics",
+	"MetaModulePluginMaintainer": "4ms Company",
+	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Ports of Geodesics plugins from VCV",
     "MetaModuleIncludedModules": [
 	{
 		"slug": "BlackHoles",

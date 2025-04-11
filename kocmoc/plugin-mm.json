@@ -1,16 +1,18 @@
 {
-    "MetaModulePluginMaintainer": "4ms Company",
-    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "",
-    "MetaModuleIncludedModules": [
+	"MetaModuleBrandName": "kocmoc",
+	"MetaModuleBrandSlug": "kocmoc",
+	"MetaModulePluginMaintainer": "4ms Company",
+	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "kocmoc modules ported from VCV",
+	"MetaModuleIncludedModules": [
 	{
 		"slug": "SVF-1",
 		"name": "SVF"
 	},
-    {
-      "slug": "uSVF",
-      "name": "uSVF"
+	{
+		"slug": "uSVF",
+		"name": "uSVF"
 	},
 	{
 		"slug": "TRG",

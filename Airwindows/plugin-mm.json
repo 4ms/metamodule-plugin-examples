@@ -1,7 +1,9 @@
 {
+	"MetaModuleBrandName": "Airwindows",
+	"MetaModuleBrandSlug": "Airwindows",
     "MetaModulePluginMaintainer": "Dan Green (for now)",
     "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "",
+    "MetaModulePluginMaintainerUrl": "https://metamodule.info",
     "MetaModuleDescription": "Splits the VCV Rack module 'Airwin2Rack' into separate modules for each FX",
     "MetaModuleIncludedModules": [
 	{

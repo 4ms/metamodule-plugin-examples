@@ -1,8 +1,10 @@
 {
+	"MetaModuleBrandName": "CountModula",
+	"MetaModuleBrandSlug": "CountModula",
     "MetaModulePluginMaintainer": "4ms Company",
     "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "",
+    "MetaModulePluginMaintainerUrl": "https://metamodule.info",
+    "MetaModuleDescription": "CountModula modules ported from VCV",
     "MetaModuleIncludedModules": [
 		{
 		  "slug": "AnalogueShiftRegister",

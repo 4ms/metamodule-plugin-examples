@@ -1,8 +1,10 @@
 {
-	"MetaModulePluginMaintainer": "4ms Company",
+	"MetaModuleBrandName": "RebelTech",
+	"MetaModuleBrandSlug": "RebelTech",
+	"MetaModulePluginMaintainer": "Michael Hetrick, 4ms Company",
 	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": "Ports of Rebel Tech plugins",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Ports of Rebel Tech plugins from VCV",
 	"MetaModuleIncludedModules": [
 	{
 		"slug": "CLK",
