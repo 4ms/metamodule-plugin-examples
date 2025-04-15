@@ -86,14 +86,18 @@ jobs:
         # if input.plugin == "./"
       - name: Build
         run: |
+          if [ "${{ inputs.plugin }}" == "Fundamental" ] || [ "${{ inputs.plugin }}" == "CountModula" ]; then
+            subdir="metamodule"
+          else
+            subdir=""
+          fi
           mkdir -p metamodule-plugins
-          cd ${{ inputs.plugin }}
-          if [ "${{ inputs.plugin }}" == "Fundamental" ]; then cd metamodule; fi;
-          if [ "${{ inputs.plugin }}" == "CountModula" ]; then cd metamodule; fi;
-          cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=../metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
+          cd ${{ inputs.plugin }}/${subdir}
+          cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=${{ github.workspace }}/metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
           cmake --build build
           cd ${{ github.workspace }}/metamodule-plugins/
           if [ "${{ inputs.plugin }}" == "./" ]; then for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done; else for f in *.mmplugin; do mv $f ${{ env.CI_REF_NAME }}.mmplugin; done; fi
+
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/') && ${{ inputs.do_release }}
