@@ -21,7 +21,6 @@ on:
           - RebelTech
           - CosineKitty-Sapphire
           - Fundamental
-          - Valley
           - Venom
           - "./"
       do_release:
@@ -89,6 +88,8 @@ jobs:
         run: |
           mkdir -p metamodule-plugins
           cd ${{ inputs.plugin }}
+          if [ "${{ inputs.plugin }}" == "Fundamental" ]; then cd metamodule; fi;
+          if [ "${{ inputs.plugin }}" == "CountModula" ]; then cd metamodule; fi;
           cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=../metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
           cmake --build build
           cd ${{ github.workspace }}/metamodule-plugins/
