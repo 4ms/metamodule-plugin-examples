@@ -77,6 +77,7 @@ target_compile_definitions(ChowDSP PRIVATE USE_EIGEN)
 target_compile_options(ChowDSP PRIVATE 
     -fexceptions
     -Wno-deprecated-enum-enum-conversion
+	-Wno-switch
 )
 
 set_property(TARGET ChowDSP PROPERTY CXX_STANDARD 20)
