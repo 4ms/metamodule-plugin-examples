@@ -1,8 +1,10 @@
 {
+	"MetaModuleBrandName": "NANO Modules",
+	"MetaModuleBrandSlug": "NANOModules",
     "MetaModulePluginMaintainer": "4ms Company",
     "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "",
+    "MetaModulePluginMaintainerUrl": "https://metamodule.info",
+    "MetaModuleDescription": "NANO Modules ported from VCV",
     "MetaModuleIncludedModules": [
 	{
 		"slug": "MAR",

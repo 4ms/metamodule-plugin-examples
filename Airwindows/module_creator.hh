@@ -80,17 +80,17 @@ private:
 			for (auto i = 0u; i < num_fx_params; i++) {
 				fx->getParameterName(i + PARAM_0, name_buffer);
 				if (name_buffer[0] == '\0') {
-					printf("Skip param with no name\n");
+					// printf("Skip param with no name\n");
 					continue;
 				}
 
 				auto param_name = std::string{name_buffer};
 				auto main_knob = new_element<MetaModule::Knob>(WidthPx - control_col, ypos, MainKnobImage, param_name);
-				main_knob.DefaultValue = fx->getParameter(i + ParamIds::PARAM_0);
+				main_knob.default_value = fx->getParameter(i + PARAM_0);
 				index_element(elem_idx, main_knob, i + ParamIds::PARAM_0);
 
 				auto cv_knob = new_element<MetaModule::Knob>(WidthPx - 45, ypos, AttenKnob, param_name + " CV Scale");
-				cv_knob.DefaultValue = 0.5f;
+				cv_knob.default_value = 0.5f;
 				index_element(elem_idx, cv_knob, i + ParamIds::ATTEN_0);
 
 				auto cv_jack = new_element<MetaModule::JackInput>(WidthPx - 18, ypos, JackImage, param_name + " CV In");
@@ -125,14 +125,14 @@ private:
 		{
 			auto slider_in = new_element<MetaModule::Slider>(65, 325, SliderBg, "Input Level");
 			slider_in.image_handle = SliderHandle;
-			slider_in.DefaultValue = 0.7f;
+			slider_in.default_value = 0.7f;
 			index_element(elem_idx, slider_in, ParamIds::IN_LEVEL);
 		}
 
 		{
 			auto slider_out = new_element<MetaModule::Slider>(86, 325, SliderBg, "Output Level");
 			slider_out.image_handle = SliderHandle;
-			slider_out.DefaultValue = 0.7f;
+			slider_out.default_value = 0.7f;
 			index_element(elem_idx, slider_out, ParamIds::OUT_LEVEL);
 		}
 

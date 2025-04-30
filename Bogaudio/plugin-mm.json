@@ -1,396 +1,495 @@
 {
+	"MetaModuleBrandName": "Bogaudio",
+	"MetaModuleBrandSlug": "Bogaudio",
 	"MetaModulePluginMaintainer": "4ms Company",
 	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": "",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Bogaudio modules ported from VCV",
 	"MetaModuleIncludedModules": [
 	{
 		"slug": "Bogaudio-AD",
-		"name": "AD"
+		"name": "AD",
+		"displayName": "AD"
 	},
 	{
 		"slug": "Bogaudio-ADSR",
-		"name": "ADSR"
+		"name": "ADSR",
+		"displayName": "ADSR"
 	},
 	{
 		"slug": "Bogaudio-AMRM",
-		"name": "AMRM"
+		"name": "AMRM",
+		"displayName": "AMRM"
 	},
 	{
 		"slug": "Bogaudio-ASR",
-		"name": "ASR"
+		"name": "ASR",
+		"displayName": "ASR"
 	},
 	{
 		"slug": "Bogaudio-Additator",
-		"name": "Additator"
+		"name": "Additator",
+		"displayName": "Additator"
 	},
 	{
 		"slug": "Bogaudio-AddrSeq",
-		"name": "AddrSeq"
+		"name": "AddrSeq",
+		"displayName": "AddrSeq"
 	},
 	{
 		"slug": "Bogaudio-Arp",
-		"name": "Arp"
+		"name": "Arp",
+		"displayName": "Arp"
 	},
 	{
 		"slug": "Bogaudio-Assign",
-		"name": "Assign"
+		"name": "Assign",
+		"displayName": "Assign"
 	},
 	{
 		"slug": "Bogaudio-Bool",
-		"name": "Bool"
+		"name": "Bool",
+		"displayName": "Bool"
 	},
 	{
 		"slug": "Bogaudio-CVD",
-		"name": "CVD"
+		"name": "CVD",
+		"displayName": "CVD"
 	},
 	{
 		"slug": "Bogaudio-Chirp",
-		"name": "Chirp"
+		"name": "Chirp",
+		"displayName": "Chirp"
 	},
 	{
 		"slug": "Bogaudio-Clpr",
-		"name": "Clpr"
+		"name": "Clpr",
+		"displayName": "Clpr"
 	},
 	{
 		"slug": "Bogaudio-Cmp",
-		"name": "Cmp"
+		"name": "Cmp",
+		"displayName": "Cmp"
 	},
 	{
 		"slug": "Bogaudio-CmpDist",
-		"name": "CmpDist"
+		"name": "CmpDist",
+		"displayName": "CmpDist"
 	},
 	{
 		"slug": "Bogaudio-DADSRH",
-		"name": "DADSRH"
+		"name": "DADSRH",
+		"displayName": "DADSRH"
 	},
 	{
 		"slug": "Bogaudio-DADSRHPlus",
-		"name": "DADSRHPlus"
+		"name": "DADSRHPlus",
+		"displayName": "DADSRHPlus"
 	},
 	{
 		"slug": "Bogaudio-DGate",
-		"name": "DGate"
+		"name": "DGate",
+		"displayName": "DGate"
 	},
 	{
 		"slug": "Bogaudio-Detune",
-		"name": "Detune"
+		"name": "Detune",
+		"displayName": "Detune"
 	},
 	{
 		"slug": "Bogaudio-EQ",
-		"name": "EQ"
+		"name": "EQ",
+		"displayName": "EQ"
 	},
 	{
 		"slug": "Bogaudio-EQS",
-		"name": "EQS"
+		"name": "EQS",
+		"displayName": "EQS"
 	},
 	{
 		"slug": "Bogaudio-Edge",
-		"name": "Edge"
+		"name": "Edge",
+		"displayName": "Edge"
 	},
 	{
 		"slug": "Bogaudio-EightFO",
-		"name": "EightFO"
+		"name": "EightFO",
+		"displayName": "EightFO"
 	},
 	{
 		"slug": "Bogaudio-EightOne",
-		"name": "EightOne"
+		"name": "EightOne",
+		"displayName": "EightOne"
 	},
 	{
 		"slug": "Bogaudio-FFB",
-		"name": "FFB"
+		"name": "FFB",
+		"displayName": "FFB"
 	},
 	{
 		"slug": "Bogaudio-FMOp",
-		"name": "FMOp"
+		"name": "FMOp",
+		"displayName": "FMOp"
 	},
 	{
 		"slug": "Bogaudio-FlipFlop",
-		"name": "FlipFlop"
+		"name": "FlipFlop",
+		"displayName": "FlipFlop"
 	},
 	{
 		"slug": "Bogaudio-Follow",
-		"name": "Follow"
+		"name": "Follow",
+		"displayName": "Follow"
 	},
 	{
 		"slug": "Bogaudio-FourFO",
-		"name": "FourFO"
+		"name": "FourFO",
+		"displayName": "FourFO"
 	},
 	{
 		"slug": "Bogaudio-FourMan",
-		"name": "FourMan"
+		"name": "FourMan",
+		"displayName": "FourMan"
 	},
 	{
 		"slug": "Bogaudio-Inv",
-		"name": "Inv"
+		"name": "Inv",
+		"displayName": "Inv"
 	},
 	{
 		"slug": "Bogaudio-LFO",
-		"name": "LFO"
+		"name": "LFO",
+		"displayName": "LFO"
 	},
 	{
 		"slug": "Bogaudio-LLFO",
-		"name": "LLFO"
+		"name": "LLFO",
+		"displayName": "LLFO"
 	},
 	{
 		"slug": "Bogaudio-LLPG",
-		"name": "LLPG"
+		"name": "LLPG",
+		"displayName": "LLPG"
 	},
 	{
 		"slug": "Bogaudio-LPG",
-		"name": "LPG"
+		"name": "LPG",
+		"displayName": "LPG"
 	},
 	{
 		"slug": "Bogaudio-LVCF",
-		"name": "LVCF"
+		"name": "LVCF",
+		"displayName": "LVCF"
 	},
 	{
 		"slug": "Bogaudio-LVCO",
-		"name": "LVCO"
+		"name": "LVCO",
+		"displayName": "LVCO"
 	},
 	{
 		"slug": "Bogaudio-Lgsw",
-		"name": "Lgsw"
+		"name": "Lgsw",
+		"displayName": "Lgsw"
 	},
 	{
 		"slug": "Bogaudio-Lmtr",
-		"name": "Lmtr"
+		"name": "Lmtr",
+		"displayName": "Lmtr"
 	},
 	{
 		"slug": "Bogaudio-Manual",
-		"name": "Manual"
+		"name": "Manual",
+		"displayName": "Manual"
 	},
 	{
 		"slug": "Bogaudio-Matrix18",
-		"name": "Matrix18"
+		"name": "Matrix18",
+		"displayName": "Matrix18"
 	},
 	{
 		"slug": "Bogaudio-Matrix44",
-		"name": "Matrix44"
+		"name": "Matrix44",
+		"displayName": "Matrix44"
 	},
 	{
 		"slug": "Bogaudio-Matrix81",
-		"name": "Matrix81"
+		"name": "Matrix81",
+		"displayName": "Matrix81"
 	},
 	{
 		"slug": "Bogaudio-Matrix88",
-		"name": "Matrix88"
+		"name": "Matrix88",
+		"displayName": "Matrix88"
 	},
 	{
 		"slug": "Bogaudio-MegaGate",
-		"name": "MegaGate"
+		"name": "MegaGate",
+		"displayName": "MegaGate"
 	},
 	{
 		"slug": "Bogaudio-Mix1",
-		"name": "Mix1"
+		"name": "Mix1",
+		"displayName": "Mix1"
 	},
 	{
 		"slug": "Bogaudio-Mix2",
-		"name": "Mix2"
+		"name": "Mix2",
+		"displayName": "Mix2"
 	},
 	{
 		"slug": "Bogaudio-Mix4",
-		"name": "Mix4"
+		"name": "Mix4",
+		"displayName": "Mix4"
 	},
 	{
 		"slug": "Bogaudio-Mix8",
-		"name": "Mix8"
+		"name": "Mix8",
+		"displayName": "Mix8"
 	},
 	{
 		"slug": "Bogaudio-Mono",
-		"name": "Mono"
+		"name": "Mono",
+		"displayName": "Mono"
 	},
 	{
 		"slug": "Bogaudio-Mult",
-		"name": "Mult"
+		"name": "Mult",
+		"displayName": "Mult"
 	},
 	{
 		"slug": "Bogaudio-Mumix",
-		"name": "Mumix"
+		"name": "Mumix",
+		"displayName": "Mumix"
 	},
 	{
 		"slug": "Bogaudio-Mute8",
-		"name": "Mute8"
+		"name": "Mute8",
+		"displayName": "Mute8"
 	},
 	{
 		"slug": "Bogaudio-Noise",
-		"name": "Noise"
+		"name": "Noise",
+		"displayName": "Noise"
 	},
 	{
 		"slug": "Bogaudio-Nsgt",
-		"name": "Nsgt"
+		"name": "Nsgt",
+		"displayName": "Nsgt"
 	},
 	{
 		"slug": "Bogaudio-Offset",
-		"name": "Offset"
+		"name": "Offset",
+		"displayName": "Offset"
 	},
 	{
 		"slug": "Bogaudio-OneEight",
-		"name": "OneEight"
+		"name": "OneEight",
+		"displayName": "OneEight"
 	},
 	{
 		"slug": "Bogaudio-PEQ",
-		"name": "PEQ"
+		"name": "PEQ",
+		"displayName": "PEQ"
 	},
 	{
 		"slug": "Bogaudio-PEQ14",
-		"name": "PEQ14"
+		"name": "PEQ14",
+		"displayName": "PEQ14"
 	},
 	{
 		"slug": "Bogaudio-PEQ6",
-		"name": "PEQ6"
+		"name": "PEQ6",
+		"displayName": "PEQ6"
 	},
 	{
 		"slug": "Bogaudio-Pan",
-		"name": "Pan"
+		"name": "Pan",
+		"displayName": "Pan"
 	},
 	{
 		"slug": "Bogaudio-Pgmr",
-		"name": "Pgmr"
+		"name": "Pgmr",
+		"displayName": "Pgmr"
 	},
 	{
 		"slug": "Bogaudio-PolyCon",
-		"name": "PolyCon16"
+		"name": "PolyCon16",
+		"displayName": "PolyCon16"
 	},
 	{
 		"slug": "Bogaudio-PolyCon8",
-		"name": "PolyCon8"
+		"name": "PolyCon8",
+		"displayName": "PolyCon8"
 	},
 	{
 		"slug": "Bogaudio-PolyMult",
-		"name": "PolyMult"
+		"name": "PolyMult",
+		"displayName": "PolyMult"
 	},
 	{
 		"slug": "Bogaudio-PolyOff16",
-		"name": "PolyOff16"
+		"name": "PolyOff16",
+		"displayName": "PolyOff16"
 	},
 	{
 		"slug": "Bogaudio-PolyOff8",
-		"name": "PolyOff8"
+		"name": "PolyOff8",
+		"displayName": "PolyOff8"
 	},
 	{
 		"slug": "Bogaudio-Pressor",
-		"name": "Pressor"
+		"name": "Pressor",
+		"displayName": "Pressor"
 	},
 	{
 		"slug": "Bogaudio-Pulse",
-		"name": "Pulse"
+		"name": "Pulse",
+		"displayName": "Pulse"
 	},
 	{
 		"slug": "Bogaudio-RGate",
-		"name": "RGate"
+		"name": "RGate",
+		"displayName": "RGate"
 	},
 	{
 		"slug": "Bogaudio-Reftone",
-		"name": "Reftone"
+		"name": "Reftone",
+		"displayName": "Reftone"
 	},
 	{
 		"slug": "Bogaudio-SampleHold",
-		"name": "SampleHold"
+		"name": "SampleHold",
+		"displayName": "SampleHold"
 	},
 	{
 		"slug": "Bogaudio-Shaper",
-		"name": "Shaper"
+		"name": "Shaper",
+		"displayName": "Shaper"
 	},
 	{
 		"slug": "Bogaudio-ShaperPlus",
-		"name": "ShaperPlus"
+		"name": "ShaperPlus",
+		"displayName": "ShaperPlus"
 	},
 	{
 		"slug": "Bogaudio-Sine",
-		"name": "Sine"
+		"name": "Sine",
+		"displayName": "Sine"
 	},
 	{
 		"slug": "Bogaudio-Slew",
-		"name": "Slew"
+		"name": "Slew",
+		"displayName": "Slew"
 	},
 	{
 		"slug": "Bogaudio-Stack",
-		"name": "Stack"
+		"name": "Stack",
+		"displayName": "Stack"
 	},
 	{
 		"slug": "Bogaudio-Sums",
-		"name": "Sums"
+		"name": "Sums",
+		"displayName": "Sums"
 	},
 	{
 		"slug": "Bogaudio-Switch",
-		"name": "Switch"
+		"name": "Switch",
+		"displayName": "Switch"
 	},
 	{
 		"slug": "Bogaudio-Switch1616",
-		"name": "Switch1616"
+		"name": "Switch1616",
+		"displayName": "Switch1616"
 	},
 	{
 		"slug": "Bogaudio-Switch18",
-		"name": "Switch18"
+		"name": "Switch18",
+		"displayName": "Switch18"
 	},
 	{
 		"slug": "Bogaudio-Switch44",
-		"name": "Switch44"
+		"name": "Switch44",
+		"displayName": "Switch44"
 	},
 	{
 		"slug": "Bogaudio-Switch81",
-		"name": "Switch81"
+		"name": "Switch81",
+		"displayName": "Switch81"
 	},
 	{
 		"slug": "Bogaudio-Switch88",
-		"name": "Switch88"
+		"name": "Switch88",
+		"displayName": "Switch88"
 	},
 	{
 		"slug": "Bogaudio-UMix",
-		"name": "UMix"
+		"name": "UMix",
+		"displayName": "UMix"
 	},
 	{
 		"slug": "Bogaudio-Unison",
-		"name": "Unison"
+		"name": "Unison",
+		"displayName": "Unison"
 	},
 	{
 		"slug": "Bogaudio-VCA",
-		"name": "VCA"
+		"name": "VCA",
+		"displayName": "VCA"
 	},
 	{
 		"slug": "Bogaudio-VCAmp",
-		"name": "VCAmp"
+		"name": "VCAmp",
+		"displayName": "VCAmp"
 	},
 	{
 		"slug": "Bogaudio-VCF",
-		"name": "VCF"
+		"name": "VCF",
+		"displayName": "VCF"
 	},
 	{
 		"slug": "Bogaudio-VCM",
-		"name": "VCM"
+		"name": "VCM",
+		"displayName": "VCM"
 	},
 	{
 		"slug": "Bogaudio-VCO",
-		"name": "VCO"
+		"name": "VCO",
+		"displayName": "VCO"
 	},
 	{
 		"slug": "Bogaudio-VU",
-		"name": "VU"
+		"name": "VU",
+		"displayName": "VU"
 	},
 	{
 		"slug": "Bogaudio-Velo",
-		"name": "Velo"
+		"name": "Velo",
+		"displayName": "Velo"
 	},
 	{
 		"slug": "Bogaudio-Vish",
-		"name": "Vish"
+		"name": "Vish",
+		"displayName": "Vish"
 	},
 	{
 		"slug": "Bogaudio-Walk",
-		"name": "Walk"
+		"name": "Walk",
+		"displayName": "Walk"
 	},
 	{
 		"slug": "Bogaudio-Walk2",
-		"name": "Walk2"
+		"name": "Walk2",
+		"displayName": "Walk2"
 	},
 	{
 		"slug": "Bogaudio-XCO",
-		"name": "XCO"
+		"name": "XCO",
+		"displayName": "XCO"
 	},
 	{
 		"slug": "Bogaudio-XFade",
-		"name": "XFade"
+		"name": "XFade",
+		"displayName": "XFade"
 	}
 	]
 }

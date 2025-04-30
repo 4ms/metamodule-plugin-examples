@@ -1,8 +1,10 @@
 {
-    "MetaModulePluginMaintainer": "4ms Company",
-    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "",
+	"MetaModuleBrandName": "OrangeLine",
+	"MetaModuleBrandSlug": "OrangeLine",
+	"MetaModulePluginMaintainer": "4ms Company",
+	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Ports of OrangeLine plugins from VCV",
     "MetaModuleIncludedModules": [
 	{
 		"slug": "Fence",

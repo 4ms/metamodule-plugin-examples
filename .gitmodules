@@ -1,9 +1,6 @@
 [submodule "metamodule-plugin-sdk"]
 	path = metamodule-plugin-sdk
 	url = https://github.com/4ms/metamodule-plugin-sdk
-[submodule "Valley/ValleyRackFree"]
-	path = Valley/ValleyRackFree
-	url = https://github.com/4ms/ValleyRackFree.git
 [submodule "Geodesics/Geodesics"]
 	path = Geodesics/Geodesics
 	url = https://github.com/4ms/Geodesics.git
@@ -14,13 +11,13 @@
 	path = ChowDSP/ChowDSP-VCV
 	url = https://github.com/4ms/ChowDSP-VCV.git
 [submodule "CountModula/VCVRackPlugins"]
-	path = CountModula/VCVRackPlugins
+	path = CountModula
 	url = https://github.com/4ms/CountModulaVCVRackPlugins.git
 [submodule "kocmoc/kocmoc-rack-modules"]
 	path = kocmoc/kocmoc-rack-modules
 	url = https://github.com/janne808/kocmoc-rack-modules.git
 [submodule "VCV-Fundamental/Fundamental"]
-	path = Fundamental/Fundamental
+	path = Fundamental
 	url = https://github.com/4ms/VCVRack-Fundamental.git
 [submodule "Airwindows/airwin2rack"]
 	path = Airwindows/airwin2rack

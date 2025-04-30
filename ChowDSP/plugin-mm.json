@@ -1,8 +1,10 @@
 {
-    "MetaModulePluginMaintainer": "4ms Company",
-    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "",
+	"MetaModuleBrandName": "ChowDSP",
+	"MetaModuleBrandSlug": "ChowDSP",
+	"MetaModulePluginMaintainer": "4ms Company",
+	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "ChowDSP modules ported from VCV",
     "MetaModuleIncludedModules": [
 	{
 		"slug": "ChowTape",

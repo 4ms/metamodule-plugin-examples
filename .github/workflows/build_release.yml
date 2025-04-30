@@ -21,7 +21,6 @@ on:
           - RebelTech
           - CosineKitty-Sapphire
           - Fundamental
-          - Valley
           - Venom
           - "./"
       do_release:
@@ -50,7 +49,7 @@ jobs:
     if: ${{ github.event_name == 'push' || inputs.linux_x64 }}
     strategy:
         matrix:
-          gcc: ['12.3.Rel1']  # can add other versions if needed
+          gcc: ['12.3.Rel1'] 
     name: "Build firmware on linux"
     runs-on: ubuntu-24.04
     steps:
@@ -83,16 +82,23 @@ jobs:
 
       - name: Build
         run: |
+          if [ "${{ inputs.plugin }}" == "Fundamental" ] || [ "${{ inputs.plugin }}" == "CountModula" ]; then
+            subdir="metamodule"
+          else
+            subdir=""
+          fi
           mkdir -p metamodule-plugins
-          cd ${{ inputs.plugin }}
-          cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=../metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
+          cd ${{ inputs.plugin }}/${subdir}
+          jq -e . plugin-mm.json >/dev/null || exit 1
+          cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=${{ github.workspace }}/metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
           cmake --build build
           cd ${{ github.workspace }}/metamodule-plugins/
           if [ "${{ inputs.plugin }}" == "./" ]; then for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done; else for f in *.mmplugin; do mv $f ${{ env.CI_REF_NAME }}.mmplugin; done; fi
 
+
       - name: Release
         if: startsWith(github.ref, 'refs/tags/') && ${{ inputs.do_release }}
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           name: "Release: ${{ env.CI_REF_NAME }}"
           files: |

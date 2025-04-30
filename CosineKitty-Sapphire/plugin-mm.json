@@ -1,8 +1,10 @@
 {
+	"MetaModuleBrandName": "Sapphire",
+	"MetaModuleBrandSlug": "CosineKitty-Sapphire",
 	"MetaModulePluginMaintainer": "4ms Company",
 	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": "",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Sapphire modules ported from VCV",
 	"MetaModuleIncludedModules": [
 	{
 		"slug": "Elastika",

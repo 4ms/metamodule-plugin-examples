@@ -1,1660 +1,2075 @@
 {
+	"MetaModuleBrandName": "Airwindows",
+	"MetaModuleBrandSlug": "Airwindows",
     "MetaModulePluginMaintainer": "Dan Green (for now)",
     "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "",
+    "MetaModulePluginMaintainerUrl": "https://metamodule.info",
     "MetaModuleDescription": "Splits the VCV Rack module 'Airwin2Rack' into separate modules for each FX",
     "MetaModuleIncludedModules": [
 	{
 		"slug": "Airwin2Rack",
-		"name": "ADClip7"
+		"name": "ADClip7",
+		"MMslug": "ADClip7"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ADClip8"
+		"name": "ADClip8",
+		"MMslug": "ADClip8"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ADT"
+		"name": "ADT",
+		"MMslug": "ADT"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "AQuickVoiceClip"
+		"name": "AQuickVoiceClip",
+		"MMslug": "AQuickVoiceClip"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Acceleration"
+		"name": "Acceleration",
+		"MMslug": "Acceleration"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Acceleration2"
+		"name": "Acceleration2",
+		"MMslug": "Acceleration2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Air"
+		"name": "Air",
+		"MMslug": "Air"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Air2"
+		"name": "Air2",
+		"MMslug": "Air2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Air3"
+		"name": "Air3",
+		"MMslug": "Air3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Apicolypse"
+		"name": "Apicolypse",
+		"MMslug": "Apicolypse"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "AtmosphereBuss"
+		"name": "AtmosphereBuss",
+		"MMslug": "AtmosphereBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "AtmosphereChannel"
+		"name": "AtmosphereChannel",
+		"MMslug": "AtmosphereChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Aura"
+		"name": "Aura",
+		"MMslug": "Aura"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "AutoPan"
+		"name": "AutoPan",
+		"MMslug": "AutoPan"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "AverMatrix"
+		"name": "AverMatrix",
+		"MMslug": "AverMatrix"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Average"
+		"name": "Average",
+		"MMslug": "Average"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Balanced"
+		"name": "Balanced",
+		"MMslug": "Balanced"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BassAmp"
+		"name": "BassAmp",
+		"MMslug": "BassAmp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BassDrive"
+		"name": "BassDrive",
+		"MMslug": "BassDrive"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BassKit"
+		"name": "BassKit",
+		"MMslug": "BassKit"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Baxandall"
+		"name": "Baxandall",
+		"MMslug": "Baxandall"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Baxandall2"
+		"name": "Baxandall2",
+		"MMslug": "Baxandall2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Beam"
+		"name": "Beam",
+		"MMslug": "Beam"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BigAmp"
+		"name": "BigAmp",
+		"MMslug": "BigAmp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Biquad"
+		"name": "Biquad",
+		"MMslug": "Biquad"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Biquad2"
+		"name": "Biquad2",
+		"MMslug": "Biquad2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BiquadDouble"
+		"name": "BiquadDouble",
+		"MMslug": "BiquadDouble"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BiquadHiLo"
+		"name": "BiquadHiLo",
+		"MMslug": "BiquadHiLo"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BiquadNonLin"
+		"name": "BiquadNonLin",
+		"MMslug": "BiquadNonLin"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BiquadOneHalf"
+		"name": "BiquadOneHalf",
+		"MMslug": "BiquadOneHalf"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BiquadPlus"
+		"name": "BiquadPlus",
+		"MMslug": "BiquadPlus"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BiquadStack"
+		"name": "BiquadStack",
+		"MMslug": "BiquadStack"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BiquadTriple"
+		"name": "BiquadTriple",
+		"MMslug": "BiquadTriple"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BitGlitter"
+		"name": "BitGlitter",
+		"MMslug": "BitGlitter"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BitShiftGain"
+		"name": "BitShiftGain",
+		"MMslug": "BitShiftGain"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BitShiftPan"
+		"name": "BitShiftPan",
+		"MMslug": "BitShiftPan"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Bite"
+		"name": "Bite",
+		"MMslug": "Bite"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BlockParty"
+		"name": "BlockParty",
+		"MMslug": "BlockParty"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BrassRider"
+		"name": "BrassRider",
+		"MMslug": "BrassRider"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BrightAmbience"
+		"name": "BrightAmbience",
+		"MMslug": "BrightAmbience"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BrightAmbience2"
+		"name": "BrightAmbience2",
+		"MMslug": "BrightAmbience2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BrightAmbience3"
+		"name": "BrightAmbience3",
+		"MMslug": "BrightAmbience3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BuildATPDF"
+		"name": "BuildATPDF",
+		"MMslug": "BuildATPDF"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "BussColors4"
+		"name": "BussColors4",
+		"MMslug": "BussColors4"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ButterComp"
+		"name": "ButterComp",
+		"MMslug": "ButterComp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ButterComp2"
+		"name": "ButterComp2",
+		"MMslug": "ButterComp2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "C5RawBuss"
+		"name": "C5RawBuss",
+		"MMslug": "C5RawBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "C5RawChannel"
+		"name": "C5RawChannel",
+		"MMslug": "C5RawChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "CStrip"
+		"name": "CStrip",
+		"MMslug": "CStrip"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "CStrip2"
+		"name": "CStrip2",
+		"MMslug": "CStrip2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Cabs"
+		"name": "Cabs",
+		"MMslug": "Cabs"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Calibre"
+		"name": "Calibre",
+		"MMslug": "Calibre"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Capacitor"
+		"name": "Capacitor",
+		"MMslug": "Capacitor"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Capacitor2"
+		"name": "Capacitor2",
+		"MMslug": "Capacitor2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Chamber"
+		"name": "Chamber",
+		"MMslug": "Chamber"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Chamber2"
+		"name": "Chamber2",
+		"MMslug": "Chamber2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Channel4"
+		"name": "Channel4",
+		"MMslug": "Channel4"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Channel5"
+		"name": "Channel5",
+		"MMslug": "Channel5"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Channel6"
+		"name": "Channel6",
+		"MMslug": "Channel6"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Channel7"
+		"name": "Channel7",
+		"MMslug": "Channel7"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Channel8"
+		"name": "Channel8",
+		"MMslug": "Channel8"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Channel9"
+		"name": "Channel9",
+		"MMslug": "Channel9"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Chorus"
+		"name": "Chorus",
+		"MMslug": "Chorus"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ChorusEnsemble"
+		"name": "ChorusEnsemble",
+		"MMslug": "ChorusEnsemble"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ChromeOxide"
+		"name": "ChromeOxide",
+		"MMslug": "ChromeOxide"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Cider"
+		"name": "Cider",
+		"MMslug": "Cider"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ClearCoat"
+		"name": "ClearCoat",
+		"MMslug": "ClearCoat"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ClipOnly2"
+		"name": "ClipOnly2",
+		"MMslug": "ClipOnly2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ClipSoftly"
+		"name": "ClipSoftly",
+		"MMslug": "ClipSoftly"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "CloudCoat"
+		"name": "CloudCoat",
+		"MMslug": "CloudCoat"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Coils"
+		"name": "Coils",
+		"MMslug": "Coils"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Coils2"
+		"name": "Coils2",
+		"MMslug": "Coils2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Cojones"
+		"name": "Cojones",
+		"MMslug": "Cojones"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Compresaturator"
+		"name": "Compresaturator",
+		"MMslug": "Compresaturator"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console0Buss"
+		"name": "Console0Buss",
+		"MMslug": "Console0Buss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console0Channel"
+		"name": "Console0Channel",
+		"MMslug": "Console0Channel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console4Buss"
+		"name": "Console4Buss",
+		"MMslug": "Console4Buss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console4Channel"
+		"name": "Console4Channel",
+		"MMslug": "Console4Channel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console5Buss"
+		"name": "Console5Buss",
+		"MMslug": "Console5Buss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console5Channel"
+		"name": "Console5Channel",
+		"MMslug": "Console5Channel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console5DarkCh"
+		"name": "Console5DarkCh",
+		"MMslug": "Console5DarkCh"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console6Buss"
+		"name": "Console6Buss",
+		"MMslug": "Console6Buss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console6Channel"
+		"name": "Console6Channel",
+		"MMslug": "Console6Channel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console7Buss"
+		"name": "Console7Buss",
+		"MMslug": "Console7Buss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console7Cascade"
+		"name": "Console7Cascade",
+		"MMslug": "Console7Cascade"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console7Channel"
+		"name": "Console7Channel",
+		"MMslug": "Console7Channel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console7Crunch"
+		"name": "Console7Crunch",
+		"MMslug": "Console7Crunch"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8BussHype"
+		"name": "Console8BussHype",
+		"MMslug": "Console8BussHype"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8BussIn"
+		"name": "Console8BussIn",
+		"MMslug": "Console8BussIn"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8BussOut"
+		"name": "Console8BussOut",
+		"MMslug": "Console8BussOut"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8ChannelHype"
+		"name": "Console8ChannelHype",
+		"MMslug": "Console8ChannelHype"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8ChannelIn"
+		"name": "Console8ChannelIn",
+		"MMslug": "Console8ChannelIn"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8ChannelOut"
+		"name": "Console8ChannelOut",
+		"MMslug": "Console8ChannelOut"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8LiteBuss"
+		"name": "Console8LiteBuss",
+		"MMslug": "Console8LiteBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8LiteChannel"
+		"name": "Console8LiteChannel",
+		"MMslug": "Console8LiteChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8SubHype"
+		"name": "Console8SubHype",
+		"MMslug": "Console8SubHype"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8SubIn"
+		"name": "Console8SubIn",
+		"MMslug": "Console8SubIn"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console8SubOut"
+		"name": "Console8SubOut",
+		"MMslug": "Console8SubOut"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console9Buss"
+		"name": "Console9Buss",
+		"MMslug": "Console9Buss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Console9Channel"
+		"name": "Console9Channel",
+		"MMslug": "Console9Channel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ConsoleLABuss"
+		"name": "ConsoleLABuss",
+		"MMslug": "ConsoleLABuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ConsoleLAChannel"
+		"name": "ConsoleLAChannel",
+		"MMslug": "ConsoleLAChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ConsoleMCBuss"
+		"name": "ConsoleMCBuss",
+		"MMslug": "ConsoleMCBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ConsoleMCChannel"
+		"name": "ConsoleMCChannel",
+		"MMslug": "ConsoleMCChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ConsoleMDBuss"
+		"name": "ConsoleMDBuss",
+		"MMslug": "ConsoleMDBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ConsoleMDChannel"
+		"name": "ConsoleMDChannel",
+		"MMslug": "ConsoleMDChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ConsoleXBuss"
+		"name": "ConsoleXBuss",
+		"MMslug": "ConsoleXBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ConsoleXChannel"
+		"name": "ConsoleXChannel",
+		"MMslug": "ConsoleXChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ContentHideD"
+		"name": "ContentHideD",
+		"MMslug": "ContentHideD"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "CreamCoat"
+		"name": "CreamCoat",
+		"MMslug": "CreamCoat"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Creature"
+		"name": "Creature",
+		"MMslug": "Creature"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "CrickBass"
+		"name": "CrickBass",
+		"MMslug": "CrickBass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "CrunchCoat"
+		"name": "CrunchCoat",
+		"MMslug": "CrunchCoat"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "CrunchyGrooveWear"
+		"name": "CrunchyGrooveWear",
+		"MMslug": "CrunchyGrooveWear"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Crystal"
+		"name": "Crystal",
+		"MMslug": "Crystal"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DCVoltage"
+		"name": "DCVoltage",
+		"MMslug": "DCVoltage"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Dark"
+		"name": "Dark",
+		"MMslug": "Dark"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DarkNoise"
+		"name": "DarkNoise",
+		"MMslug": "DarkNoise"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DeBess"
+		"name": "DeBess",
+		"MMslug": "DeBess"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DeEss"
+		"name": "DeEss",
+		"MMslug": "DeEss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DeHiss"
+		"name": "DeHiss",
+		"MMslug": "DeHiss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DeRez"
+		"name": "DeRez",
+		"MMslug": "DeRez"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DeRez2"
+		"name": "DeRez2",
+		"MMslug": "DeRez2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DeRez3"
+		"name": "DeRez3",
+		"MMslug": "DeRez3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Deckwrecka"
+		"name": "Deckwrecka",
+		"MMslug": "Deckwrecka"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Density"
+		"name": "Density",
+		"MMslug": "Density"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Density2"
+		"name": "Density2",
+		"MMslug": "Density2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Desk"
+		"name": "Desk",
+		"MMslug": "Desk"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Desk4"
+		"name": "Desk4",
+		"MMslug": "Desk4"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DigitalBlack"
+		"name": "DigitalBlack",
+		"MMslug": "DigitalBlack"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Dirt"
+		"name": "Dirt",
+		"MMslug": "Dirt"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Discontinuity"
+		"name": "Discontinuity",
+		"MMslug": "Discontinuity"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Distance"
+		"name": "Distance",
+		"MMslug": "Distance"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Distance2"
+		"name": "Distance2",
+		"MMslug": "Distance2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Distance3"
+		"name": "Distance3",
+		"MMslug": "Distance3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Distortion"
+		"name": "Distortion",
+		"MMslug": "Distortion"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DitherFloat"
+		"name": "DitherFloat",
+		"MMslug": "DitherFloat"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DitherMeDiskers"
+		"name": "DitherMeDiskers",
+		"MMslug": "DitherMeDiskers"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DitherMeTimbers"
+		"name": "DitherMeTimbers",
+		"MMslug": "DitherMeTimbers"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Ditherbox"
+		"name": "Ditherbox",
+		"MMslug": "Ditherbox"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DoublePaul"
+		"name": "DoublePaul",
+		"MMslug": "DoublePaul"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Doublelay"
+		"name": "Doublelay",
+		"MMslug": "Doublelay"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Drive"
+		"name": "Drive",
+		"MMslug": "Drive"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DrumSlam"
+		"name": "DrumSlam",
+		"MMslug": "DrumSlam"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DubCenter"
+		"name": "DubCenter",
+		"MMslug": "DubCenter"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DubSub"
+		"name": "DubSub",
+		"MMslug": "DubSub"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Dubly"
+		"name": "Dubly",
+		"MMslug": "Dubly"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "DustBunny"
+		"name": "DustBunny",
+		"MMslug": "DustBunny"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Dynamics"
+		"name": "Dynamics",
+		"MMslug": "Dynamics"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Dyno"
+		"name": "Dyno",
+		"MMslug": "Dyno"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "EQ"
+		"name": "EQ",
+		"MMslug": "EQ"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "EdIsDim"
+		"name": "EdIsDim",
+		"MMslug": "EdIsDim"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Edge"
+		"name": "Edge",
+		"MMslug": "Edge"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Elation"
+		"name": "Elation",
+		"MMslug": "Elation"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ElectroHat"
+		"name": "ElectroHat",
+		"MMslug": "ElectroHat"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Energy"
+		"name": "Energy",
+		"MMslug": "Energy"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Energy2"
+		"name": "Energy2",
+		"MMslug": "Energy2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Ensemble"
+		"name": "Ensemble",
+		"MMslug": "Ensemble"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "EveryConsole"
+		"name": "EveryConsole",
+		"MMslug": "EveryConsole"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "EverySlew"
+		"name": "EverySlew",
+		"MMslug": "EverySlew"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "EveryTrim"
+		"name": "EveryTrim",
+		"MMslug": "EveryTrim"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Exciter"
+		"name": "Exciter",
+		"MMslug": "Exciter"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Facet"
+		"name": "Facet",
+		"MMslug": "Facet"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "FathomFive"
+		"name": "FathomFive",
+		"MMslug": "FathomFive"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "FinalClip"
+		"name": "FinalClip",
+		"MMslug": "FinalClip"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "FireAmp"
+		"name": "FireAmp",
+		"MMslug": "FireAmp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Flipity"
+		"name": "Flipity",
+		"MMslug": "Flipity"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Floor"
+		"name": "Floor",
+		"MMslug": "Floor"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Flutter"
+		"name": "Flutter",
+		"MMslug": "Flutter"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Flutter2"
+		"name": "Flutter2",
+		"MMslug": "Flutter2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Focus"
+		"name": "Focus",
+		"MMslug": "Focus"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Fracture"
+		"name": "Fracture",
+		"MMslug": "Fracture"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Fracture2"
+		"name": "Fracture2",
+		"MMslug": "Fracture2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "FromTape"
+		"name": "FromTape",
+		"MMslug": "FromTape"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Galactic"
+		"name": "Galactic",
+		"MMslug": "Galactic"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Galactic2"
+		"name": "Galactic2",
+		"MMslug": "Galactic2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "GalacticVibe"
+		"name": "GalacticVibe",
+		"MMslug": "GalacticVibe"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Gatelope"
+		"name": "Gatelope",
+		"MMslug": "Gatelope"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "GlitchShifter"
+		"name": "GlitchShifter",
+		"MMslug": "GlitchShifter"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "GoldenSlew"
+		"name": "GoldenSlew",
+		"MMslug": "GoldenSlew"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Golem"
+		"name": "Golem",
+		"MMslug": "Golem"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "GrindAmp"
+		"name": "GrindAmp",
+		"MMslug": "GrindAmp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Gringer"
+		"name": "Gringer",
+		"MMslug": "Gringer"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "GrooveWear"
+		"name": "GrooveWear",
+		"MMslug": "GrooveWear"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "GuitarConditioner"
+		"name": "GuitarConditioner",
+		"MMslug": "GuitarConditioner"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "HardVacuum"
+		"name": "HardVacuum",
+		"MMslug": "HardVacuum"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "HermeTrim"
+		"name": "HermeTrim",
+		"MMslug": "HermeTrim"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Hermepass"
+		"name": "Hermepass",
+		"MMslug": "Hermepass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "HighGlossDither"
+		"name": "HighGlossDither",
+		"MMslug": "HighGlossDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "HighImpact"
+		"name": "HighImpact",
+		"MMslug": "HighImpact"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Highpass"
+		"name": "Highpass",
+		"MMslug": "Highpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Highpass2"
+		"name": "Highpass2",
+		"MMslug": "Highpass2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Holt"
+		"name": "Holt",
+		"MMslug": "Holt"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Holt2"
+		"name": "Holt2",
+		"MMslug": "Holt2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Hombre"
+		"name": "Hombre",
+		"MMslug": "Hombre"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Huge"
+		"name": "Huge",
+		"MMslug": "Huge"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Hull"
+		"name": "Hull",
+		"MMslug": "Hull"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Hull2"
+		"name": "Hull2",
+		"MMslug": "Hull2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Hype"
+		"name": "Hype",
+		"MMslug": "Hype"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "HypersonX"
+		"name": "HypersonX",
+		"MMslug": "HypersonX"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Hypersonic"
+		"name": "Hypersonic",
+		"MMslug": "Hypersonic"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Infinity"
+		"name": "Infinity",
+		"MMslug": "Infinity"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Infinity2"
+		"name": "Infinity2",
+		"MMslug": "Infinity2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Inflamer"
+		"name": "Inflamer",
+		"MMslug": "Inflamer"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Infrasonic"
+		"name": "Infrasonic",
+		"MMslug": "Infrasonic"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Interstage"
+		"name": "Interstage",
+		"MMslug": "Interstage"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "IronOxide5"
+		"name": "IronOxide5",
+		"MMslug": "IronOxide5"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "IronOxideClassic"
+		"name": "IronOxideClassic",
+		"MMslug": "IronOxideClassic"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "IronOxideClassic2"
+		"name": "IronOxideClassic2",
+		"MMslug": "IronOxideClassic2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Isolator"
+		"name": "Isolator",
+		"MMslug": "Isolator"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Isolator2"
+		"name": "Isolator2",
+		"MMslug": "Isolator2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Kalman"
+		"name": "Kalman",
+		"MMslug": "Kalman"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "LRFlipTimer"
+		"name": "LRFlipTimer",
+		"MMslug": "LRFlipTimer"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "LeadAmp"
+		"name": "LeadAmp",
+		"MMslug": "LeadAmp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "LeftoMono"
+		"name": "LeftoMono",
+		"MMslug": "LeftoMono"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "LilAmp"
+		"name": "LilAmp",
+		"MMslug": "LilAmp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Logical4"
+		"name": "Logical4",
+		"MMslug": "Logical4"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Loud"
+		"name": "Loud",
+		"MMslug": "Loud"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Lowpass"
+		"name": "Lowpass",
+		"MMslug": "Lowpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Lowpass2"
+		"name": "Lowpass2",
+		"MMslug": "Lowpass2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Luxor"
+		"name": "Luxor",
+		"MMslug": "Luxor"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MSFlipTimer"
+		"name": "MSFlipTimer",
+		"MMslug": "MSFlipTimer"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MV"
+		"name": "MV",
+		"MMslug": "MV"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MV2"
+		"name": "MV2",
+		"MMslug": "MV2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MackEQ"
+		"name": "MackEQ",
+		"MMslug": "MackEQ"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Mackity"
+		"name": "Mackity",
+		"MMslug": "Mackity"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MatrixVerb"
+		"name": "MatrixVerb",
+		"MMslug": "MatrixVerb"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Melt"
+		"name": "Melt",
+		"MMslug": "Melt"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MidAmp"
+		"name": "MidAmp",
+		"MMslug": "MidAmp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MidSide"
+		"name": "MidSide",
+		"MMslug": "MidSide"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MoNoam"
+		"name": "MoNoam",
+		"MMslug": "MoNoam"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Mojo"
+		"name": "Mojo",
+		"MMslug": "Mojo"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Monitoring"
+		"name": "Monitoring",
+		"MMslug": "Monitoring"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Monitoring2"
+		"name": "Monitoring2",
+		"MMslug": "Monitoring2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Monitoring3"
+		"name": "Monitoring3",
+		"MMslug": "Monitoring3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "MultiBandDistortion"
+		"name": "MultiBandDistortion",
+		"MMslug": "MultiBandDistortion"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "NCSeventeen"
+		"name": "NCSeventeen",
+		"MMslug": "NCSeventeen"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "NaturalizeDither"
+		"name": "NaturalizeDither",
+		"MMslug": "NaturalizeDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Neverland"
+		"name": "Neverland",
+		"MMslug": "Neverland"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Nikola"
+		"name": "Nikola",
+		"MMslug": "Nikola"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "NodeDither"
+		"name": "NodeDither",
+		"MMslug": "NodeDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Noise"
+		"name": "Noise",
+		"MMslug": "Noise"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "NonlinearSpace"
+		"name": "NonlinearSpace",
+		"MMslug": "NonlinearSpace"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "NotJustAnotherCD"
+		"name": "NotJustAnotherCD",
+		"MMslug": "NotJustAnotherCD"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "NotJustAnotherDither"
+		"name": "NotJustAnotherDither",
+		"MMslug": "NotJustAnotherDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "OneCornerClip"
+		"name": "OneCornerClip",
+		"MMslug": "OneCornerClip"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "OrbitKick"
+		"name": "OrbitKick",
+		"MMslug": "OrbitKick"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Overheads"
+		"name": "Overheads",
+		"MMslug": "Overheads"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PDBuss"
+		"name": "PDBuss",
+		"MMslug": "PDBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PDChannel"
+		"name": "PDChannel",
+		"MMslug": "PDChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pafnuty"
+		"name": "Pafnuty",
+		"MMslug": "Pafnuty"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pafnuty2"
+		"name": "Pafnuty2",
+		"MMslug": "Pafnuty2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Parametric"
+		"name": "Parametric",
+		"MMslug": "Parametric"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PaulDither"
+		"name": "PaulDither",
+		"MMslug": "PaulDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PaulWide"
+		"name": "PaulWide",
+		"MMslug": "PaulWide"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PeaksOnly"
+		"name": "PeaksOnly",
+		"MMslug": "PeaksOnly"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pear"
+		"name": "Pear",
+		"MMslug": "Pear"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pear2"
+		"name": "Pear2",
+		"MMslug": "Pear2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PhaseNudge"
+		"name": "PhaseNudge",
+		"MMslug": "PhaseNudge"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PitchDelay"
+		"name": "PitchDelay",
+		"MMslug": "PitchDelay"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PitchNasty"
+		"name": "PitchNasty",
+		"MMslug": "PitchNasty"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PlatinumSlew"
+		"name": "PlatinumSlew",
+		"MMslug": "PlatinumSlew"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PocketVerbs"
+		"name": "PocketVerbs",
+		"MMslug": "PocketVerbs"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pockey"
+		"name": "Pockey",
+		"MMslug": "Pockey"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pockey2"
+		"name": "Pockey2",
+		"MMslug": "Pockey2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Podcast"
+		"name": "Podcast",
+		"MMslug": "Podcast"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PodcastDeluxe"
+		"name": "PodcastDeluxe",
+		"MMslug": "PodcastDeluxe"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Point"
+		"name": "Point",
+		"MMslug": "Point"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pop"
+		"name": "Pop",
+		"MMslug": "Pop"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pop2"
+		"name": "Pop2",
+		"MMslug": "Pop2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pop3"
+		"name": "Pop3",
+		"MMslug": "Pop3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PowerSag"
+		"name": "PowerSag",
+		"MMslug": "PowerSag"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PowerSag2"
+		"name": "PowerSag2",
+		"MMslug": "PowerSag2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Precious"
+		"name": "Precious",
+		"MMslug": "Precious"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Preponderant"
+		"name": "Preponderant",
+		"MMslug": "Preponderant"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pressure4"
+		"name": "Pressure4",
+		"MMslug": "Pressure4"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pressure5"
+		"name": "Pressure5",
+		"MMslug": "Pressure5"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestAir"
+		"name": "PurestAir",
+		"MMslug": "PurestAir"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestConsole2Buss"
+		"name": "PurestConsole2Buss",
+		"MMslug": "PurestConsole2Buss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestConsole2Channel"
+		"name": "PurestConsole2Channel",
+		"MMslug": "PurestConsole2Channel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestConsole3Buss"
+		"name": "PurestConsole3Buss",
+		"MMslug": "PurestConsole3Buss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestConsole3Channel"
+		"name": "PurestConsole3Channel",
+		"MMslug": "PurestConsole3Channel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestConsoleBuss"
+		"name": "PurestConsoleBuss",
+		"MMslug": "PurestConsoleBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestConsoleChannel"
+		"name": "PurestConsoleChannel",
+		"MMslug": "PurestConsoleChannel"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestDrive"
+		"name": "PurestDrive",
+		"MMslug": "PurestDrive"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestEcho"
+		"name": "PurestEcho",
+		"MMslug": "PurestEcho"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestFade"
+		"name": "PurestFade",
+		"MMslug": "PurestFade"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestGain"
+		"name": "PurestGain",
+		"MMslug": "PurestGain"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestSquish"
+		"name": "PurestSquish",
+		"MMslug": "PurestSquish"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestWarm"
+		"name": "PurestWarm",
+		"MMslug": "PurestWarm"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "PurestWarm2"
+		"name": "PurestWarm2",
+		"MMslug": "PurestWarm2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Pyewacket"
+		"name": "Pyewacket",
+		"MMslug": "Pyewacket"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "RawGlitters"
+		"name": "RawGlitters",
+		"MMslug": "RawGlitters"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "RawTimbers"
+		"name": "RawTimbers",
+		"MMslug": "RawTimbers"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Recurve"
+		"name": "Recurve",
+		"MMslug": "Recurve"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Remap"
+		"name": "Remap",
+		"MMslug": "Remap"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ResEQ"
+		"name": "ResEQ",
+		"MMslug": "ResEQ"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ResEQ2"
+		"name": "ResEQ2",
+		"MMslug": "ResEQ2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Reverb"
+		"name": "Reverb",
+		"MMslug": "Reverb"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Righteous4"
+		"name": "Righteous4",
+		"MMslug": "Righteous4"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "RightoMono"
+		"name": "RightoMono",
+		"MMslug": "RightoMono"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SampleDelay"
+		"name": "SampleDelay",
+		"MMslug": "SampleDelay"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Shape"
+		"name": "Shape",
+		"MMslug": "Shape"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ShortBuss"
+		"name": "ShortBuss",
+		"MMslug": "ShortBuss"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SideDull"
+		"name": "SideDull",
+		"MMslug": "SideDull"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Sidepass"
+		"name": "Sidepass",
+		"MMslug": "Sidepass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Silhouette"
+		"name": "Silhouette",
+		"MMslug": "Silhouette"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Sinew"
+		"name": "Sinew",
+		"MMslug": "Sinew"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SingleEndedTriode"
+		"name": "SingleEndedTriode",
+		"MMslug": "SingleEndedTriode"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Slew"
+		"name": "Slew",
+		"MMslug": "Slew"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Slew2"
+		"name": "Slew2",
+		"MMslug": "Slew2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Slew3"
+		"name": "Slew3",
+		"MMslug": "Slew3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SlewOnly"
+		"name": "SlewOnly",
+		"MMslug": "SlewOnly"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SlewSonic"
+		"name": "SlewSonic",
+		"MMslug": "SlewSonic"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Smooth"
+		"name": "Smooth",
+		"MMslug": "Smooth"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SoftGate"
+		"name": "SoftGate",
+		"MMslug": "SoftGate"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SpatializeDither"
+		"name": "SpatializeDither",
+		"MMslug": "SpatializeDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Spiral"
+		"name": "Spiral",
+		"MMslug": "Spiral"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Spiral2"
+		"name": "Spiral2",
+		"MMslug": "Spiral2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Srsly"
+		"name": "Srsly",
+		"MMslug": "Srsly"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Srsly2"
+		"name": "Srsly2",
+		"MMslug": "Srsly2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Srsly3"
+		"name": "Srsly3",
+		"MMslug": "Srsly3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "StarChild"
+		"name": "StarChild",
+		"MMslug": "StarChild"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "StarChild2"
+		"name": "StarChild2",
+		"MMslug": "StarChild2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "StereoChorus"
+		"name": "StereoChorus",
+		"MMslug": "StereoChorus"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "StereoDoubler"
+		"name": "StereoDoubler",
+		"MMslug": "StereoDoubler"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "StereoEnsemble"
+		"name": "StereoEnsemble",
+		"MMslug": "StereoEnsemble"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "StereoFX"
+		"name": "StereoFX",
+		"MMslug": "StereoFX"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "StoneFireComp"
+		"name": "StoneFireComp",
+		"MMslug": "StoneFireComp"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Stonefire"
+		"name": "Stonefire",
+		"MMslug": "Stonefire"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "StudioTan"
+		"name": "StudioTan",
+		"MMslug": "StudioTan"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SubTight"
+		"name": "SubTight",
+		"MMslug": "SubTight"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SubsOnly"
+		"name": "SubsOnly",
+		"MMslug": "SubsOnly"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Surge"
+		"name": "Surge",
+		"MMslug": "Surge"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "SurgeTide"
+		"name": "SurgeTide",
+		"MMslug": "SurgeTide"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Sweeten"
+		"name": "Sweeten",
+		"MMslug": "Sweeten"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Swell"
+		"name": "Swell",
+		"MMslug": "Swell"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TPDFDither"
+		"name": "TPDFDither",
+		"MMslug": "TPDFDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TPDFWide"
+		"name": "TPDFWide",
+		"MMslug": "TPDFWide"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Tape"
+		"name": "Tape",
+		"MMslug": "Tape"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TapeDelay"
+		"name": "TapeDelay",
+		"MMslug": "TapeDelay"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TapeDelay2"
+		"name": "TapeDelay2",
+		"MMslug": "TapeDelay2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TapeDither"
+		"name": "TapeDither",
+		"MMslug": "TapeDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TapeDust"
+		"name": "TapeDust",
+		"MMslug": "TapeDust"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TapeFat"
+		"name": "TapeFat",
+		"MMslug": "TapeFat"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Texturize"
+		"name": "Texturize",
+		"MMslug": "Texturize"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TexturizeMS"
+		"name": "TexturizeMS",
+		"MMslug": "TexturizeMS"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Thunder"
+		"name": "Thunder",
+		"MMslug": "Thunder"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ToTape5"
+		"name": "ToTape5",
+		"MMslug": "ToTape5"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ToTape6"
+		"name": "ToTape6",
+		"MMslug": "ToTape6"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ToVinyl4"
+		"name": "ToVinyl4",
+		"MMslug": "ToVinyl4"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ToneSlant"
+		"name": "ToneSlant",
+		"MMslug": "ToneSlant"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TransDesk"
+		"name": "TransDesk",
+		"MMslug": "TransDesk"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TremoSquare"
+		"name": "TremoSquare",
+		"MMslug": "TremoSquare"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Tremolo"
+		"name": "Tremolo",
+		"MMslug": "Tremolo"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Trianglizer"
+		"name": "Trianglizer",
+		"MMslug": "Trianglizer"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TripleSpread"
+		"name": "TripleSpread",
+		"MMslug": "TripleSpread"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Tube"
+		"name": "Tube",
+		"MMslug": "Tube"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Tube2"
+		"name": "Tube2",
+		"MMslug": "Tube2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "TubeDesk"
+		"name": "TubeDesk",
+		"MMslug": "TubeDesk"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "UltrasonX"
+		"name": "UltrasonX",
+		"MMslug": "UltrasonX"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Ultrasonic"
+		"name": "Ultrasonic",
+		"MMslug": "Ultrasonic"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "UltrasonicLite"
+		"name": "UltrasonicLite",
+		"MMslug": "UltrasonicLite"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "UltrasonicMed"
+		"name": "UltrasonicMed",
+		"MMslug": "UltrasonicMed"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "UnBox"
+		"name": "UnBox",
+		"MMslug": "UnBox"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "VariMu"
+		"name": "VariMu",
+		"MMslug": "VariMu"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Verbity"
+		"name": "Verbity",
+		"MMslug": "Verbity"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Verbity2"
+		"name": "Verbity2",
+		"MMslug": "Verbity2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Vibrato"
+		"name": "Vibrato",
+		"MMslug": "Vibrato"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "VinylDither"
+		"name": "VinylDither",
+		"MMslug": "VinylDither"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "VoiceOfTheStarship"
+		"name": "VoiceOfTheStarship",
+		"MMslug": "VoiceOfTheStarship"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "VoiceTrick"
+		"name": "VoiceTrick",
+		"MMslug": "VoiceTrick"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Weight"
+		"name": "Weight",
+		"MMslug": "Weight"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Wider"
+		"name": "Wider",
+		"MMslug": "Wider"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "Wolfbot"
+		"name": "Wolfbot",
+		"MMslug": "Wolfbot"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "XBandpass"
+		"name": "XBandpass",
+		"MMslug": "XBandpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "XHighpass"
+		"name": "XHighpass",
+		"MMslug": "XHighpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "XLowpass"
+		"name": "XLowpass",
+		"MMslug": "XLowpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "XNotch"
+		"name": "XNotch",
+		"MMslug": "XNotch"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "XRegion"
+		"name": "XRegion",
+		"MMslug": "XRegion"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "YBandpass"
+		"name": "YBandpass",
+		"MMslug": "YBandpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "YHighpass"
+		"name": "YHighpass",
+		"MMslug": "YHighpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "YLowpass"
+		"name": "YLowpass",
+		"MMslug": "YLowpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "YNotBandpass"
+		"name": "YNotBandpass",
+		"MMslug": "YNotBandpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "YNotHighpass"
+		"name": "YNotHighpass",
+		"MMslug": "YNotHighpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "YNotLowpass"
+		"name": "YNotLowpass",
+		"MMslug": "YNotLowpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "YNotNotch"
+		"name": "YNotNotch",
+		"MMslug": "YNotNotch"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "YNotch"
+		"name": "YNotch",
+		"MMslug": "YNotch"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZBandpass"
+		"name": "ZBandpass",
+		"MMslug": "ZBandpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZBandpass2"
+		"name": "ZBandpass2",
+		"MMslug": "ZBandpass2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZHighpass"
+		"name": "ZHighpass",
+		"MMslug": "ZHighpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZHighpass2"
+		"name": "ZHighpass2",
+		"MMslug": "ZHighpass2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZLowpass"
+		"name": "ZLowpass",
+		"MMslug": "ZLowpass"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZLowpass2"
+		"name": "ZLowpass2",
+		"MMslug": "ZLowpass2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZNotch"
+		"name": "ZNotch",
+		"MMslug": "ZNotch"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZNotch2"
+		"name": "ZNotch2",
+		"MMslug": "ZNotch2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZOutputStage"
+		"name": "ZOutputStage",
+		"MMslug": "ZOutputStage"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZRegion"
+		"name": "ZRegion",
+		"MMslug": "ZRegion"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "ZRegion2"
+		"name": "ZRegion2",
+		"MMslug": "ZRegion2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "curve"
+		"name": "curve",
+		"MMslug": "curve"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kCathedral"
+		"name": "kCathedral",
+		"MMslug": "kCathedral"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kCathedral2"
+		"name": "kCathedral2",
+		"MMslug": "kCathedral2"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kCathedral3"
+		"name": "kCathedral3",
+		"MMslug": "kCathedral3"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kChamberAR"
+		"name": "kChamberAR",
+		"MMslug": "kChamberAR"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kGuitarHall"
+		"name": "kGuitarHall",
+		"MMslug": "kGuitarHall"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kPlate140"
+		"name": "kPlate140",
+		"MMslug": "kPlate140"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kPlate240"
+		"name": "kPlate240",
+		"MMslug": "kPlate240"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kPlateA"
+		"name": "kPlateA",
+		"MMslug": "kPlateA"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kPlateB"
+		"name": "kPlateB",
+		"MMslug": "kPlateB"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kPlateC"
+		"name": "kPlateC",
+		"MMslug": "kPlateC"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "kPlateD"
+		"name": "kPlateD",
+		"MMslug": "kPlateD"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "uLawDecode"
+		"name": "uLawDecode",
+		"MMslug": "uLawDecode"
 	},
 	{
 		"slug": "Airwin2Rack",
-		"name": "uLawEncode"
+		"name": "uLawEncode",
+		"MMslug": "uLawEncode"
 	}
     ]
 }

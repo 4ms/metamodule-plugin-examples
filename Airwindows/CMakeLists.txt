@@ -34,7 +34,10 @@ target_compile_definitions(AirwindowsModules PRIVATE
 	DISABLE_CONSOLE
 )
 
+# Use our own SDK, not the one installed by the airwind2rack cmake
+unset(BUILD_METAMODULE_PLUGIN) 
 add_subdirectory(airwin2rack)
+
 target_compile_options(airwin-registry PRIVATE "-Wno-misleading-indentation;-Wno-unused-variable;-Wno-stringop-truncation")
 
 target_link_libraries(AirwindowsModules PUBLIC airwin-registry)

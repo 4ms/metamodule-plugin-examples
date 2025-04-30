@@ -22,18 +22,22 @@ set(PLUGINS
     NANOModules
     OrangeLine
     RebelTech
-    Valley
     Venom
     kocmoc
 )
 
 foreach(plugin ${PLUGINS})
 
-    message("Building ${plugin}")
+    set(project_cmake_root ${plugin})
+    if ((plugin STREQUAL "Fundamental") OR (plugin STREQUAL "CountModula"))
+        set(project_cmake_root "${plugin}/metamodule")
+    endif()
+
+    message("Building ${plugin} from ${project_cmake_root}")
 
     ExternalProject_Add(
         ${plugin}
-        SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/${plugin}
+        SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/${project_cmake_root}
         CMAKE_ARGS -DMETAMODULE_SDK_DIR=${CMAKE_CURRENT_LIST_DIR}/metamodule-plugin-sdk -DINSTALL_DIR=${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins
         BUILD_ALWAYS true
         INSTALL_COMMAND ""
