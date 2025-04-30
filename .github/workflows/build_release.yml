@@ -81,7 +81,7 @@ jobs:
         uses: FranzDiebold/github-env-vars-action@v2
 
       - name: Build
-        if: ${{ inputs.plugin == "./" }}
+        if: ${{ inputs.plugin == './' }}
         run: |
           mkdir -p metamodule-plugins
           cmake -B build -G Ninja -DMETAMODULE_SDK_DIR=${{ github.workspace }}/metamodule-plugin-sdk -DINSTALL_DIR=${{ github.workspace }}/metamodule-plugins
@@ -90,7 +90,7 @@ jobs:
           for f in *.mmplugin; do mv $f ${f%.mmplugin}-${{ env.CI_REF_NAME }}.mmplugin; done;
 
       - name: Build
-        if: ${{ inputs.plugin != "./" }}
+        if: ${{ inputs.plugin != './' }}
         run: |
           if [ "${{ inputs.plugin }}" == "Fundamental" ] || [ "${{ inputs.plugin }}" == "CountModula" ]; then
             subdir="metamodule"
