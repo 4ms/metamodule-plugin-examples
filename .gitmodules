@@ -42,5 +42,5 @@
 	path = Venom
 	url = https://github.com/4ms/VenomModules.git
 [submodule "Fundamental2"]
-	path = Fundamental2
+	path = Fundamental
 	url = https://github.com/4ms/VCVRack-Fundamental
