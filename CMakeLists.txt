@@ -14,22 +14,22 @@ set(PLUGINS
     Bogaudio
     CVfunk
     ChowDSP
-    CosineKitty-Sapphire
     CountModula
     DrumKit
     Fundamental
     Geodesics
+    kocmoc
     NANOModules
     OrangeLine
     RebelTech
+    Sapphire
     Venom
-    kocmoc
 )
 
 foreach(plugin ${PLUGINS})
 
     set(project_cmake_root ${plugin})
-    if ((plugin STREQUAL "Fundamental") OR (plugin STREQUAL "CountModula"))
+    if ((plugin STREQUAL "Fundamental") OR (plugin STREQUAL "CountModula") OR (plugin STREQUAL "Sapphire"))
         set(project_cmake_root "${plugin}/metamodule")
     endif()
 
