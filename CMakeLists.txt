@@ -14,6 +14,7 @@ set(PLUGINS
     Bogaudio
     CVfunk
     ChowDSP
+    CosineKitty-Sapphire
     CountModula
     DrumKit
     Fundamental
@@ -22,7 +23,6 @@ set(PLUGINS
     NANOModules
     OrangeLine
     RebelTech
-    Sapphire
     Venom
 )
 

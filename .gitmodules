@@ -29,7 +29,7 @@
 	path = RebelTech/rebel-tech-vcv
 	url = https://github.com/hemmer/rebel-tech-vcv
 [submodule "Sapphire/sapphire"]
-	path = Sapphire
+	path = CosineKitty-Sapphire/Sapphire
 	url = https://github.com/4ms/sapphire.git
 [submodule "CVfunk"]
 	path = CVfunk
