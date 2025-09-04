@@ -62,3 +62,6 @@
 [submodule "captvolt"]
 	path = captvolt
 	url = https://github.com/4ms/captvolt-vcv
+[submodule "Vostok/VCV"]
+	path = Vostok/VCV
+	url = https://github.com/Vostok-Instruments/Vostok_VCVRack
