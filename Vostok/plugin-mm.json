@@ -1,0 +1,41 @@
+{
+	"MetaModuleBrandName": "VostokInstruments",
+	"MetaModulePluginMaintainer": "Ewan Hemingway, Vostok Instruments",
+	"MetaModulePluginMaintainerEmail": "",
+	"MetaModulePluginMaintainerUrl": "",
+	"MetaModuleDescription": "",
+	"MetaModuleIncludedModules": [
+	{
+		"slug": "Path",
+		"name": "Path"
+	},
+	{
+		"slug": "Trace",
+		"name": "Trace"
+	},
+	{
+		"slug": "Asset",
+		"name": "Asset"
+	},
+	{
+		"slug": "Atlas",
+		"name": "Atlas"
+	},
+	{
+		"slug": "Ceres",
+		"name": "Ceres"
+	},
+	{
+		"slug": "Fuji",
+		"name": "Fuji"
+	},
+	{
+		"slug": "Sena",
+		"name": "Sena"
+	},
+	{
+		"slug": "Hive",
+		"name": "Hive"
+	}
+	]
+}

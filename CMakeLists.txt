@@ -24,6 +24,7 @@ set(PLUGINS
     OrangeLine
     RebelTech
     Venom
+    Vostok
 )
 
 foreach(plugin ${PLUGINS})
