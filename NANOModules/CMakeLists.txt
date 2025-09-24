@@ -47,12 +47,18 @@ target_sources(NanoModules
     ${SOURCE_DIR}/src/Resources/DaisySP/Source/Drums/analogbassdrum.cpp
     ${SOURCE_DIR}/src/Resources/DaisySP/Source/Utility/dcblock.cpp
 
+    ${SOURCE_DIR}/src/Resources/DaisySP/metamodule-lut/math_lut.cc
+
     # Note that we build our own plugin.cpp, not the one in the source dir.
     # This is because we want to exclude the blank panels
     plugin.cpp 
 )
 
-target_include_directories(NanoModules PRIVATE ${SOURCE_DIR}/src .)
+target_include_directories(NanoModules PRIVATE 
+    ${SOURCE_DIR}/src 
+    .
+    ${SOURCE_DIR}/src/Resources/DaisySP/metamodule-lut
+)
 
 target_compile_options(NanoModules PRIVATE -Wno-double-promotion $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion> -Wno-reorder)
 
