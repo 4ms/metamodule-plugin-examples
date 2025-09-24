@@ -51,7 +51,7 @@ private:
 
 		element_names.clear();
 
-		std::vector<std::pair<MetaModule::Element, ElementCount::Indices>> elem_idx;
+		std::vector<std::tuple<MetaModule::Element, ElementCount::Indices>> elem_idx;
 
 		unsigned num_text_elements = 0;
 		auto title = new_element<MetaModule::TextDisplay>(WidthPx / 2, 10, "", "");
