@@ -47,6 +47,18 @@
 		"name": "VCV Random"
 	},
 	{
+		"slug": "ARC",
+		"name": "ARC"
+	},
+	{
+		"slug": "STFONT",
+		"name": "ST FONT"
+	},
+	{
+		"slug": "OCTA",
+		"name": "OCTA"
+	},
+	{
 		"slug": "EXP4",
 		"name": "EXP4"
 	}

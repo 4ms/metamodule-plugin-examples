@@ -35,20 +35,38 @@ target_sources(NanoModules
     ${SOURCE_DIR}/src/PerformanceMixer.cpp 
     ${SOURCE_DIR}/src/VCVRANDOM.cpp    
     ${SOURCE_DIR}/src/EXP4.cpp    
+    ${SOURCE_DIR}/src/ARC.cpp
+    ${SOURCE_DIR}/src/OCTA.cpp
+    ${SOURCE_DIR}/src/STFONT.cpp
 
     ${SOURCE_DIR}/src/Resources/DaisySP/Source/Filters/svf.cpp
     ${SOURCE_DIR}/src/Resources/DaisySP/Source/Dynamics/compressor.cpp
+    ${SOURCE_DIR}/src/Resources/DaisySP/Source/Synthesis/oscillator.cpp
+    ${SOURCE_DIR}/src/Resources/DaisySP/Source/Drums/hihat.cpp
+    ${SOURCE_DIR}/src/Resources/DaisySP/Source/Drums/analogsnaredrum.cpp
+    ${SOURCE_DIR}/src/Resources/DaisySP/Source/Drums/analogbassdrum.cpp
+    ${SOURCE_DIR}/src/Resources/DaisySP/Source/Utility/dcblock.cpp
+
+    ${SOURCE_DIR}/src/Resources/DaisySP/metamodule-lut/math_lut.cc
 
     # Note that we build our own plugin.cpp, not the one in the source dir.
     # This is because we want to exclude the blank panels
     plugin.cpp 
 )
 
-target_include_directories(NanoModules PRIVATE ${SOURCE_DIR}/src .)
+target_include_directories(NanoModules PRIVATE 
+    ${SOURCE_DIR}/src 
+    .
+    ${SOURCE_DIR}/src/Resources/DaisySP/metamodule-lut
+)
 
 target_compile_options(NanoModules PRIVATE -Wno-double-promotion $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-enum-float-conversion> -Wno-reorder)
 
 set_property(TARGET NanoModules PROPERTY CXX_STANDARD 20)
+
+if("${INSTALL_DIR}" STREQUAL "")
+    set(INSTALL_DIR ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins)
+endif()
 
 create_plugin(
     SOURCE_LIB      NanoModules                       # This is the cmake target name (defined in add_target)
