@@ -44,3 +44,6 @@
 [submodule "Fundamental2"]
 	path = Fundamental
 	url = https://github.com/4ms/VCVRack-Fundamental
+[submodule "Vostok/VCV"]
+	path = Vostok/VCV
+	url = https://github.com/Vostok-Instruments/Vostok_VCVRack
