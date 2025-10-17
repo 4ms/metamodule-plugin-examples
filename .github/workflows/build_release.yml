@@ -10,18 +10,20 @@ on:
         options:
           - Airwindows
           - Bogaudio
-          - ChowDSP
-          - CountModula
           - CVfunk
+          - ChowDSP
+          - CosineKitty-Sapphire
+          - CountModula
           - DrumKit
+          - FrozenWasteland
+          - Frequency-Domain
+          - Fundamental
           - Geodesics
-          - kocmoc
           - NANOModules
           - OrangeLine
           - RebelTech
-          - CosineKitty-Sapphire
-          - Fundamental
           - Venom
+          - kocmoc
           - "./"
       do_release:
         description: 'Create Release (must also tag!)'
