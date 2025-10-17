@@ -17,6 +17,7 @@ set(PLUGINS
     CosineKitty-Sapphire
     CountModula
     DrumKit
+    FrozenWasteland
     Fundamental
     Geodesics
     kocmoc
@@ -29,7 +30,7 @@ set(PLUGINS
 foreach(plugin ${PLUGINS})
 
     set(project_cmake_root ${plugin})
-    if ((plugin STREQUAL "Fundamental") OR (plugin STREQUAL "CountModula") OR (plugin STREQUAL "Sapphire"))
+    if ((plugin STREQUAL "Fundamental") OR (plugin STREQUAL "CountModula") OR (plugin STREQUAL "Sapphire") OR (plugin STREQUAL "FrozenWasteland"))
         set(project_cmake_root "${plugin}/metamodule")
     endif()
 
