@@ -44,3 +44,6 @@
 [submodule "Fundamental2"]
 	path = Fundamental
 	url = https://github.com/4ms/VCVRack-Fundamental
+[submodule "FrozenWasteland"]
+	path = FrozenWasteland
+	url = https://github.com/4ms/FrozenWasteland
