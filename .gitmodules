@@ -47,3 +47,6 @@
 [submodule "FrozenWasteland"]
 	path = FrozenWasteland
 	url = https://github.com/4ms/FrozenWasteland
+[submodule "Frequency-Domain"]
+	path = Frequency-Domain
+	url = https://github.com/4ms/Frequency-Domain
