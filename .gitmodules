@@ -50,3 +50,6 @@
 [submodule "Frequency-Domain"]
 	path = Frequency-Domain
 	url = https://github.com/4ms/Frequency-Domain
+[submodule "ProducerPack"]
+	path = ProducerPack
+	url = https://github.com/4ms/ProducerPack
