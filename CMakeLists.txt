@@ -23,6 +23,7 @@ set(PLUGINS
     kocmoc
     NANOModules
     OrangeLine
+    ProducerPack
     RebelTech
     Venom
 )
