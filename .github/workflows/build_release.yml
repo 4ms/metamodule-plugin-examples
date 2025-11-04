@@ -8,6 +8,8 @@ on:
         required: true
         type: choice
         options:
+          - 4ms-ProducerPack
+          - 4ms-XOXDrums
           - Airwindows
           - Bogaudio
           - CVfunk
@@ -21,7 +23,6 @@ on:
           - Geodesics
           - NANOModules
           - OrangeLine
-          - ProducerPack
           - RebelTech
           - Venom
           - kocmoc
