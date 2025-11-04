@@ -37,11 +37,11 @@ on:
         required: true
         default: true
         type: boolean
-      # win_x64:
-      #   description: 'build on Windows (no releases)'
-      #   required: true
-      #   default: false
-      #   type: boolean
+      win_x64:
+        description: 'build on Windows (no releases)'
+        required: true
+        default: false
+        type: boolean
       macos:
         description: 'build on Mac (no releases)'
         required: true
@@ -131,7 +131,7 @@ jobs:
         with:
           msystem: MINGW64
           update: true
-          install: git make mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja
+          install: git make mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
           path-type: inherit
 
       - name: Install Arm GNU Toolchain (arm-none-eabi-gcc)
@@ -152,7 +152,7 @@ jobs:
       - name: Build
         run: |
           cd ${{ inputs.plugin }}
-          cmake -B build -G Ninja
+          cmake -B build -G "MSYS Makefiles" -DMETAMODULE_SDK_DIR=metamodule-plugin-sdk
           cmake --build build
 
   build-mac-x64:
