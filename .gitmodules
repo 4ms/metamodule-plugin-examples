@@ -53,3 +53,6 @@
 [submodule "ProducerPack"]
 	path = 4ms-ProducerPack
 	url = https://github.com/4ms/ProducerPack
+[submodule "4ms-XOXDrums"]
+	path = 4ms-XOXDrums
+	url = https://github.com/4ms/XOXDrums
