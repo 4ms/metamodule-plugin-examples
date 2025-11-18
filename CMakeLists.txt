@@ -48,6 +48,7 @@ foreach(plugin ${PLUGINS})
     CMAKE_ARGS
       -DMETAMODULE_SDK_DIR=${CMAKE_CURRENT_LIST_DIR}/metamodule-plugin-sdk
       -DINSTALL_DIR=${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins
+      -DTOOLCHAIN_BASE_DIR=${TOOLCHAIN_BASE_DIR}
     BUILD_ALWAYS true
     INSTALL_COMMAND "")
 
