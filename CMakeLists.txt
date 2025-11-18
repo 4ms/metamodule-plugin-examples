@@ -14,6 +14,7 @@ set(PLUGINS
     4ms-XOXDrums
     Airwindows
     Bogaudio
+    WordGenerator 
     CVfunk
     ChowDSP
     CosineKitty-Sapphire
