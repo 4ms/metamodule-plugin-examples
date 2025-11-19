@@ -1,1 +1,1 @@
-## NANO Modules -- MetaModule plugin
+## Booga Word Generator -- MetaModule plugin

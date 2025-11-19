@@ -1,14 +1,14 @@
 {
-	"MetaModuleBrandName": "WordGenerator",
+	"MetaModuleBrandName": "Word Generator",
 	"MetaModuleBrandSlug": "WordGenerator",
-    "MetaModulePluginMaintainer": "4ms Company",
-    "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-    "MetaModulePluginMaintainerUrl": "https://metamodule.info",
-    "MetaModuleDescription": "Booga Word Generator module ported from VCV",
-    "MetaModuleIncludedModules": [
-	{
-		"slug": "WordGenerator",
-		"name": "Word Generator"
-	}
-    ]
+	"MetaModulePluginMaintainer": "4ms Company",
+	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Booga Word Generator module ported from VCV",
+	"MetaModuleIncludedModules": [
+		{
+			"slug": "WordGenerator",
+			"name": "Word Generator"
+		}
+	]
 }

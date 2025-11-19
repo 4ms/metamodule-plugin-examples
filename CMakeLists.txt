@@ -14,7 +14,6 @@ set(PLUGINS
     4ms-XOXDrums
     Airwindows
     Bogaudio
-    WordGenerator 
     CVfunk
     ChowDSP
     CosineKitty-Sapphire
@@ -27,7 +26,8 @@ set(PLUGINS
     NANOModules
     OrangeLine
     RebelTech
-    Venom)
+    Venom
+    WordGenerator)
 
 foreach(plugin ${PLUGINS})
 
