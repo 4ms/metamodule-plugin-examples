@@ -61,4 +61,4 @@
 	url = https://github.com/sindarknave/word-generator
 [submodule "word-generator1"]
 	path = WordGenerator/word-generator
-	url = git@github.com:sindarknave/word-generator
+	url = https://github.com/sindarknave/word-generator
