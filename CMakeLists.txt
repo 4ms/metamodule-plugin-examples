@@ -22,6 +22,7 @@ set(PLUGINS
     FrozenWasteland
     Fundamental
     Geodesics
+    ImpromptuModular
     kocmoc
     NANOModules
     OrangeLine
