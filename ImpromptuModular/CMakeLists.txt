@@ -1,23 +1,27 @@
 cmake_minimum_required(VERSION 3.22)
 
-#########################################################
-# Step 1: Include plugin.cmake from the SDK. 
-# You must do this before anything else since it defines the TOOLCHAIN
-include(${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk/plugin.cmake)
+cmake_minimum_required(VERSION 3.22)
 
-#########################################################
-# Step 2: Define your project name, vesion, etc
+if(NOT "${METAMODULE_SDK_DIR}" STREQUAL "")
+	message("METAMODULE_SDK_DIR set by CMake variable ${METAMODULE_SDK_DIR}")
+elseif (DEFINED ENV{METAMODULE_SDK_DIR})
+    set(METAMODULE_SDK_DIR "$ENV{METAMODULE_SDK_DIR}")
+	message("METAMODULE_SDK_DIR set by environment variable ${METAMODULE_SDK_DIR}")
+else()
+    set(METAMODULE_SDK_DIR "${CMAKE_CURRENT_LIST_DIR}/../metamodule-plugin-sdk")
+	message("METAMODULE_SDK_DIR set to default: ${METAMODULE_SDK_DIR}")
+endif()
+
+include(${METAMODULE_SDK_DIR}/plugin.cmake)
+
 project(ImpromptuMetaModulePlugin 
     VERSION     0.1 
     DESCRIPTION "Impromptu Plugin for MetaModule" 
     LANGUAGES   C CXX ASM
 )
 
-#########################################################
-# Step 3: Create a cmake target for your plugin and add all your sources, compile flags, includes, etc.
 add_library(Impromptu STATIC)
 
-# convenient variable pointing to the VCV Rack repo
 set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/ImpromptuModular)
 
 target_sources(Impromptu
