@@ -21,6 +21,7 @@ on:
           - Frequency-Domain
           - Fundamental
           - Geodesics
+          - ImpromptuModular
           - NANOModules
           - OrangeLine
           - RebelTech
