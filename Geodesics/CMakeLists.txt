@@ -35,6 +35,7 @@ target_sources(Geodesics
     ${SOURCE_DIR}/src/Ions.cpp
     ${SOURCE_DIR}/src/Pulsars.cpp
     ${SOURCE_DIR}/src/Torus.cpp
+    ${SOURCE_DIR}/src/TwinParadox.cpp
 
     # Note that we build our own plugin.cpp, not the one in Geodesics/src/
     # This is because we want to exclude the above modules from the plugin
