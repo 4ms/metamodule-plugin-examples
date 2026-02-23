@@ -26,6 +26,7 @@ void init(Plugin *p) {
   p->addModel(modelDarkEnergy);
   p->addModel(modelTorus);
   p->addModel(modelFate);
+  p->addModel(modelTwinParadox);
   // p->addModel(modelBlankLogo);
   // p->addModel(modelBlankInfo);
 }
