@@ -8,9 +8,15 @@
 
 #include "ImpromptuModular.hpp"
 
+#if defined(METAMODULE_BUILTIN)
+extern Plugin *pluginInstance;
+
+void init_Impromptu(Plugin *p) {
+#else
 Plugin *pluginInstance;
 
 void init(Plugin *p) {
+#endif
   pluginInstance = p;
 
   // readThemeAndContrastFromDefault();
