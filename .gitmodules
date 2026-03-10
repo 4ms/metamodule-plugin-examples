@@ -56,9 +56,6 @@
 [submodule "4ms-XOXDrums"]
 	path = 4ms-XOXDrums
 	url = https://github.com/4ms/XOXDrums
-[submodule "word-generator"]
-	path = EucQuant/word-generator
-	url = https://github.com/sindarknave/word-generator
 [submodule "word-generator1"]
 	path = WordGenerator/word-generator
 	url = https://github.com/sindarknave/word-generator
