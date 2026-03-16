@@ -1,46 +1,50 @@
 {
-	"MetaModuleBrandName": "Geodesics",
-	"MetaModuleBrandSlug": "Geodesics",
-	"MetaModulePluginMaintainer": "4ms Company",
-	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
-	"MetaModuleDescription": "Ports of Geodesics plugins from VCV",
-    "MetaModuleIncludedModules": [
-	{
-		"slug": "BlackHoles",
-		"name": "BlackHoles"
-	},
-	{
-		"slug": "Pulsars",
-		"name": "Pulsars"
-	},
-	{
-		"slug": "Branes",
-		"name": "Branes"
-	},
-	{
-		"slug": "Ions",
-		"name": "Ions"
-	},
-	{
-		"slug": "Entropia",
-		"name": "Entropia"
-	},
-	{
-		"slug": "Energy",
-		"name": "Energy"
-	},
-	{
-		"slug": "DarkEnergy",
-		"name": "DarkEnergy"
-	},
-	{
-		"slug": "Torus",
-		"name": "Torus"
-	},
-	{
-		"slug": "Fate",
-		"name": "Fate"
-	}
-    ]
+  "MetaModuleBrandName": "Geodesics",
+  "MetaModuleBrandSlug": "Geodesics",
+  "MetaModulePluginMaintainer": "4ms Company",
+  "MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
+  "MetaModulePluginMaintainerUrl": "https://metamodule.info",
+  "MetaModuleDescription": "Ports of Geodesics plugins from VCV",
+  "MetaModuleIncludedModules": [
+    {
+      "slug": "BlackHoles",
+      "name": "BlackHoles"
+    },
+    {
+      "slug": "Pulsars",
+      "name": "Pulsars"
+    },
+    {
+      "slug": "Branes",
+      "name": "Branes"
+    },
+    {
+      "slug": "Ions",
+      "name": "Ions"
+    },
+    {
+      "slug": "Entropia",
+      "name": "Entropia"
+    },
+    {
+      "slug": "Energy",
+      "name": "Energy"
+    },
+    {
+      "slug": "DarkEnergy",
+      "name": "DarkEnergy"
+    },
+    {
+      "slug": "Torus",
+      "name": "Torus"
+    },
+    {
+      "slug": "Fate",
+      "name": "Fate"
+    },
+    {
+      "slug": "TwinParadox",
+      "name": "Twin Paradox"
+    }
+  ]
 }
