@@ -14,9 +14,14 @@ namespace MetaModuleAirwindows
 // so that patches made on VCV work on MM.
 
 static constexpr unsigned maxParams = 10;
-enum ParamIds { PARAM_0 = 0, ATTEN_0 = 11, IN_LEVEL = 22, OUT_LEVEL, NUM_PARAMS };
+// PARAM_0..OUT_LEVEL keep the Airwin2Rack indices (see above). MONO_POLY is a
+// MetaModule-only AltParam, so it takes a fresh index past the shared ones.
+enum ParamIds { PARAM_0 = 0, ATTEN_0 = 11, IN_LEVEL = 22, OUT_LEVEL, MONO_POLY, NUM_PARAMS };
 enum InputIds { INPUT_L, INPUT_R, CV_0, NUM_INPUTS = CV_0 + maxParams };
 enum OutputIds { OUTPUT_L, OUTPUT_R, NUM_OUTPUTS };
+
+// MONO_POLY AltParam choices (index = round(val)):
+enum PolyMode { Monophonic = 0, Polyphonic = 1 };
 
 // Polyphonic stereo Airwindows effect.
 // The L and R audio jacks are polyphonic; the CV jacks are mono.
@@ -35,29 +40,57 @@ struct Module : CoreProcessorPoly {
 		for (auto &f : fx)
 			f = reg.generator();
 		num_params = std::min<unsigned>(reg.nParams, maxParams);
+
+		// Default to Monophonic, matching the AltParam default, in case the host
+		// does not push the default value before the first update().
+		params[MONO_POLY] = float(PolyMode::Monophonic);
 	}
 
 	void update() override {
 		const float gain = params[IN_LEVEL] * 0.2f;
+		const bool mono = params[MONO_POLY] <= 0.5f;
 
-		// Number of voices follows the wider of the two audio jacks (at least 1).
-		const unsigned num_chans = std::clamp<unsigned>(std::max(insL_chans, insR_chans), 1, MaxChans);
+		const unsigned in_chans = std::clamp<unsigned>(std::max(insL_chans, insR_chans), 1, MaxChans);
+		const unsigned num_chans = mono ? 1u : in_chans;
 		outL_chans = num_chans;
 		outR_chans = num_chans;
 
 		// Accumulate one input sample per voice into the block buffers. All
-		// MaxChans buffers are advanced every update so they stay in lockstep
-		// (inL_buf[0] is the master clock); a change in voice count then never
-		// desyncs the per-voice blocks. The lower-count jack is padded with
-		// copies of its highest channel, and an unpatched R mirrors L.
-		for (unsigned c = 0; c < MaxChans; c++) {
-			float l = insL_chans ? insL[std::min<unsigned>(c, insL_chans - 1)] : 0.f;
-			float r = insR_chans ? insR[std::min<unsigned>(c, insR_chans - 1)] : l;
-			inL_buf[c].put(l * gain);
-			inR_buf[c].put(r * gain);
+		// MaxChans buffers are advanced every update so that  a change in
+		// voice count or mode never desyncs the per-voice blocks.
+		if (mono) {
+			// Sum every input channel of each jack into a single mono pair.
+			// The same summed signal is written to every
+			// voice buffer so the lockstep above is preserved.
+			float sumL = 0.f;
+			for (unsigned c = 0; c < insL_chans; c++)
+				sumL += insL[c];
+			float sumR = 0.f;
+			if (insR_chans)
+				for (unsigned c = 0; c < insR_chans; c++)
+					sumR += insR[c];
+			else
+				sumR = sumL;
+
+			for (unsigned c = 0; c < MaxChans; c++) {
+				inL_buf[c].put(sumL * gain);
+				inR_buf[c].put(sumR * gain);
+			}
+		} else {
+			// Polyphonic: per-voice, padding the lower-count jack with copies of
+			// its highest channel; an unpatched R mirrors L.
+			for (unsigned c = 0; c < MaxChans; c++) {
+				float l = insL_chans ? insL[std::min<unsigned>(c, insL_chans - 1)] : 0.f;
+				float r = insR_chans ? insR[std::min<unsigned>(c, insR_chans - 1)] : l;
+				inL_buf[c].put(l * gain);
+				inR_buf[c].put(r * gain);
+			}
 		}
 
 		if (inL_buf[0].full()) {
+			// Mono mode processes only voice 0; poly mode processes every voice.
+			const unsigned num_proc = mono ? 1 : num_chans;
+
 			for (auto i = 0u; i < num_params; i++) {
 				auto param = params[PARAM_0 + i];
 
@@ -66,11 +99,11 @@ struct Module : CoreProcessorPoly {
 					param = std::clamp(param + cv, 0.f, 1.f);
 				}
 
-				for (unsigned c = 0; c < num_chans; c++)
+				for (unsigned c = 0; c < num_proc; c++)
 					fx[c]->setParameter(i, param);
 			}
 
-			for (unsigned c = 0; c < num_chans; c++) {
+			for (unsigned c = 0; c < num_proc; c++) {
 				float *in[2] = {inL_buf[c].data(), inR_buf[c].data()};
 				float *out[2] = {outL_buf[c].data(), outR_buf[c].data()};
 				fx[c]->processReplacing(in, out, BlockSize);
@@ -85,9 +118,14 @@ struct Module : CoreProcessorPoly {
 		}
 
 		const float out_gain = 5.f * params[OUT_LEVEL];
-		for (unsigned c = 0; c < num_chans; c++) {
-			outsL[c] = outL_buf[c].get() * out_gain;
-			outsR[c] = outR_buf[c].get() * out_gain;
+		if (mono) {
+			outsL[0] = outL_buf[0].get() * out_gain;
+			outsR[0] = outR_buf[0].get() * out_gain;
+		} else {
+			for (unsigned c = 0; c < num_chans; c++) {
+				outsL[c] = outL_buf[c].get() * out_gain;
+				outsR[c] = outR_buf[c].get() * out_gain;
+			}
 		}
 	}
 
@@ -97,13 +135,15 @@ struct Module : CoreProcessorPoly {
 	}
 
 	void set_param(int param_id, float val) override {
-		if ((unsigned)param_id < params.size())
+		if ((unsigned)param_id < params.size()) {
 			params[param_id] = val;
+		}
 	}
 
 	float get_param(int param_id) const override {
-		if ((unsigned)param_id < params.size())
+		if ((unsigned)param_id < params.size()) {
 			return params[param_id];
+		}
 		return 0;
 	}
 
@@ -210,6 +250,7 @@ private:
 	std::array<float, NUM_INPUTS> ins{};
 	std::array<bool, NUM_INPUTS> input_patched{};
 
+	// Poly audio port storage (current sample per voice) and channel counts:
 	std::array<float, MaxChans> insL{};
 	std::array<float, MaxChans> insR{};
 	std::array<float, MaxChans> outsL{};
@@ -219,6 +260,7 @@ private:
 	uint8_t outL_chans = 1;
 	uint8_t outR_chans = 1;
 
+	// Per-voice block accumulators:
 	std::array<InputBuffer<float, BlockSize>, MaxChans> inL_buf{};
 	std::array<InputBuffer<float, BlockSize>, MaxChans> inR_buf{};
 	std::array<OutputBuffer<float, BlockSize>, MaxChans> outL_buf{};

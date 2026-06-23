@@ -136,7 +136,22 @@ private:
 			index_element(elem_idx, slider_out, ParamIds::OUT_LEVEL);
 		}
 
+		// Sort all elements into a user-friendly order:
 		MetaModule::populate_sorted_elements_indices(elem_idx, elements, indices);
+
+		{
+			// put alt-params at the end (don't sort them with the other params)
+			auto mode = MetaModule::AltParamChoiceLabeled{};
+			mode.short_name = "Channels";
+			mode.num_pos = 2;
+			mode.default_value = PolyMode::Monophonic;
+			mode.pos_names = {"Monophonic", "Polyphonic"};
+			elements.push_back(mode);
+
+			auto idx = ElementCount::NoElementIndices;
+			idx.param_idx = ParamIds::MONO_POLY;
+			indices.push_back(idx);
+		}
 	}
 
 	void register_module() {
