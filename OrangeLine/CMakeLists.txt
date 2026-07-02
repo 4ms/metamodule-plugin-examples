@@ -51,6 +51,10 @@ target_compile_options(OrangeLine
 
 set_property(TARGET OrangeLine PROPERTY CXX_STANDARD 20)
 
+if("${INSTALL_DIR}" STREQUAL "")
+    set(INSTALL_DIR ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins)
+endif()
+
 create_plugin(
     SOURCE_LIB      OrangeLine                          # This is the cmake target name (defined in add_target)
     PLUGIN_NAME     OrangeLine                          # This must match the brand "slug" used in VCV Rack
