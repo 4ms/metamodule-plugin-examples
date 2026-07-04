@@ -99,7 +99,7 @@ jobs:
       - name: Build
         if: ${{ inputs.plugin != './' }}
         run: |
-          if [ "${{ inputs.plugin }}" == "Fundamental" ] || [ "${{ inputs.plugin }}" == "CountModula" ] || [ "${{ inputs.plugin }}" == "CosineKitty-Sapphire" ] || [ "${{ inputs.plugin }}" == "CVfunk" ] || [ "${{ inputs.plugin }}" == "CaptVolt" || [ "${{ inputs.plugin }}" == "FrozenWasteland" ]; then
+          if [ -d "${{ inputs.plugin }}/metamodule" ]; then
             subdir="metamodule"
           else
             subdir=""
