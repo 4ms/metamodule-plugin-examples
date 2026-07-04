@@ -14,6 +14,7 @@ set(PLUGINS
     4ms-XOXDrums
     Airwindows
     Bogaudio
+    captvolt
     CVfunk
     ChowDSP
     CosineKitty-Sapphire
@@ -38,7 +39,8 @@ foreach(plugin ${PLUGINS})
      OR (plugin STREQUAL "Sapphire")
      OR (plugin STREQUAL "CVfunk")
      OR (plugin STREQUAL "FrozenWasteland")
-     OR (plugin STREQUAL "CosineKitty-Sapphire"))
+     OR (plugin STREQUAL "CosineKitty-Sapphire")
+     OR (plugin STREQUAL "captvolt"))
     set(project_cmake_root "${plugin}/metamodule")
   endif()
 
