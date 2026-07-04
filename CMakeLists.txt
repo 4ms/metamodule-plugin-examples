@@ -34,13 +34,7 @@ set(PLUGINS
 foreach(plugin ${PLUGINS})
 
   set(project_cmake_root ${plugin})
-  if((plugin STREQUAL "Fundamental")
-     OR (plugin STREQUAL "CountModula")
-     OR (plugin STREQUAL "Sapphire")
-     OR (plugin STREQUAL "CVfunk")
-     OR (plugin STREQUAL "FrozenWasteland")
-     OR (plugin STREQUAL "CosineKitty-Sapphire")
-     OR (plugin STREQUAL "captvolt"))
+  if(EXISTS ${CMAKE_CURRENT_LIST_DIR}/${plugin}/metamodule)
     set(project_cmake_root "${plugin}/metamodule")
   endif()
 
