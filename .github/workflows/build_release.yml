@@ -154,7 +154,12 @@ jobs:
 
       - name: Build
         run: |
-          cd ${{ inputs.plugin }}
+          if [ -d "${{ inputs.plugin }}/metamodule" ]; then
+            subdir="metamodule"
+          else
+            subdir=""
+          fi
+          cd ${{ inputs.plugin }}/${subdir}
           cmake -B build -G "MSYS Makefiles" -DMETAMODULE_SDK_DIR=metamodule-plugin-sdk
           cmake --build build
 
@@ -190,7 +195,12 @@ jobs:
 
       - name: Build
         run: |
-          cd ${{ inputs.plugin }}
+          if [ -d "${{ inputs.plugin }}/metamodule" ]; then
+            subdir="metamodule"
+          else
+            subdir=""
+          fi
+          cd ${{ inputs.plugin }}/${subdir}
           cmake -B build -G Ninja
           cmake --build build
 
