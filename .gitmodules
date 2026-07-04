@@ -62,3 +62,6 @@
 [submodule "Impromptu/ImpromptuModular"]
 	path = ImpromptuModular/ImpromptuModular
 	url = https://github.com/4ms/ImpromptuModular.git
+[submodule "captvolt"]
+	path = captvolt
+	url = https://github.com/4ms/captvolt-vcv
