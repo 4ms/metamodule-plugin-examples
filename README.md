@@ -19,7 +19,7 @@ In some cases, certain modules are omitted from the MetaModule plugin.
 
   - cmake v3.24 or later
   - ninja (not required if you configure cmake to use a different generator) 
-  - arm-none-eabi-gcc toolchain 12.2 or 12.3
+  - arm-none-eabi-gcc toolchain 12.2, 12.3, or 15.3
       - Download here: https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads
           - Make sure you get the package for your host computer that ends in `arm-none-eabi`
   - python 3.6 or later
