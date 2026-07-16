@@ -1,5 +1,7 @@
 #pragma once
 
+#ifndef METAMODULE_BUILTIN
+
 namespace std
 {
 
@@ -12,3 +14,4 @@ struct mutex {
 
 } // namespace std
 
+#endif
