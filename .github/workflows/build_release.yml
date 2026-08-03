@@ -27,7 +27,6 @@ on:
           - OrangeLine
           - RebelTech
           - Venom
-          - kocmoc
           - WordGenerator
           - "./"
       do_release:

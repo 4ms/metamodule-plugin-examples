@@ -24,7 +24,6 @@ set(PLUGINS
     Fundamental
     Geodesics
     ImpromptuModular
-    kocmoc
     NANOModules
     OrangeLine
     RebelTech
