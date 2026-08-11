@@ -27,6 +27,7 @@ on:
           - OrangeLine
           - RebelTech
           - Venom
+          - Vostok
           - WordGenerator
           - "./"
       do_release:
