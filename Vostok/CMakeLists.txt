@@ -43,10 +43,11 @@ target_compile_options(VostokInstruments PRIVATE
 target_sources(VostokInstruments PRIVATE
     # ${SOURCE_DIR}/src/plugin.cpp                    # Note: this file contains init(rack::Plugin*)
     ${SOURCE_DIR}/src/Asset.cpp
-    ${SOURCE_DIR}/src/Atlas.cpp
+    # ${SOURCE_DIR}/src/Atlas.cpp
     ${SOURCE_DIR}/src/Ceres.cpp
     ${SOURCE_DIR}/src/Fuji.cpp
     ${SOURCE_DIR}/src/Hive.cpp
+    ${SOURCE_DIR}/src/Halo.cpp
     ${SOURCE_DIR}/src/Path.cpp
     ${SOURCE_DIR}/src/Sena.cpp
     ${SOURCE_DIR}/src/Trace.cpp

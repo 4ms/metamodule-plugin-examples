@@ -18,10 +18,6 @@
 		"name": "Asset"
 	},
 	{
-		"slug": "Atlas",
-		"name": "Atlas"
-	},
-	{
 		"slug": "Ceres",
 		"name": "Ceres"
 	},
@@ -36,6 +32,10 @@
 	{
 		"slug": "Hive",
 		"name": "Hive"
+	},
+	{
+		"slug": "Halo",
+		"name": "Halo"
 	}
 	]
 }
