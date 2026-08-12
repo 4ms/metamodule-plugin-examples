@@ -1,9 +1,9 @@
 {
-	"MetaModuleBrandName": "VostokInstruments",
+	"MetaModuleBrandName": "Vostok Instruments",
 	"MetaModulePluginMaintainer": "Ewan Hemingway, Vostok Instruments",
 	"MetaModulePluginMaintainerEmail": "",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": "",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Vostok Instruments modules ported from VCV",
 	"MetaModuleIncludedModules": [
 	{
 		"slug": "Path",
