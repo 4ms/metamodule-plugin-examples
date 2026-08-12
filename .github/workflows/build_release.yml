@@ -27,6 +27,7 @@ on:
           - OrangeLine
           - RebelTech
           - Venom
+          - Vostok
           - WordGenerator
           - "./"
       do_release:
@@ -76,6 +77,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: 'recursive'
+          fetch-depth: 0
 
       - name: Install linux dependencies
         run: |
@@ -150,6 +152,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: 'recursive'
+          fetch-depth: 0
 
       - name: Build
         run: |
@@ -187,6 +190,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: 'recursive'
+          fetch-depth: 0
 
       - name: Install mac dependencies
         run: |

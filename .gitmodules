@@ -18,7 +18,7 @@
 	url = https://github.com/4ms/airwin2rack
 [submodule "OrangeLine"]
 	path = OrangeLine/OrangeLine
-	url = git@github.com:4ms/OrangeLine
+	url = https://github.com/4ms/OrangeLine
 [submodule "NANO/NANO-Modules_VCV"]
 	path = NANOModules/NANO-Modules_VCV
 	url = https://github.com/4ms/NANO-Modules_VCV.git
@@ -62,3 +62,7 @@
 [submodule "captvolt"]
 	path = captvolt
 	url = https://github.com/4ms/captvolt-vcv
+[submodule "Vostok/VCV"]
+	path = Vostok/VCV
+	url = https://github.com/Vostok-Instruments/Vostok_VCVRack
+	branch = v2-mm

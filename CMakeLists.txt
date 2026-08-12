@@ -28,7 +28,9 @@ set(PLUGINS
     OrangeLine
     RebelTech
     Venom
-    WordGenerator)
+    WordGenerator
+    Vostok
+)
 
 foreach(plugin ${PLUGINS})
 

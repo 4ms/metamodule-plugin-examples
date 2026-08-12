@@ -1,0 +1,41 @@
+{
+	"MetaModuleBrandName": "Vostok Instruments",
+	"MetaModulePluginMaintainer": "Ewan Hemingway, Vostok Instruments",
+	"MetaModulePluginMaintainerEmail": "",
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Vostok Instruments modules ported from VCV",
+	"MetaModuleIncludedModules": [
+	{
+		"slug": "Path",
+		"name": "Path"
+	},
+	{
+		"slug": "Trace",
+		"name": "Trace"
+	},
+	{
+		"slug": "Asset",
+		"name": "Asset"
+	},
+	{
+		"slug": "Ceres",
+		"name": "Ceres"
+	},
+	{
+		"slug": "Fuji",
+		"name": "Fuji"
+	},
+	{
+		"slug": "Sena",
+		"name": "Sena"
+	},
+	{
+		"slug": "Hive",
+		"name": "Hive"
+	},
+	{
+		"slug": "Halo",
+		"name": "Halo"
+	}
+	]
+}
