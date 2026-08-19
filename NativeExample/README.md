@@ -32,7 +32,7 @@ extern "C" void init() {
 ```
 
 
-The `register_module<MyModule, MyModuleInfo>("MyBrandName")` registers the module with the MetaModule firmware so that it can be used in patches. The string "NativeExample" is the brand slug, which must match what's inthe json files (see below).
+The `register_module<MyModule, MyModuleInfo>("MyBrandName")` registers the module with the MetaModule firmware so that it can be used in patches. The string "NativeExample" is the brand slug, which must match what's in the json files (see below).
 
 Let's look at what `SimpleVCA` is, in simple_vca.hh. Here's a simplified version:
 
@@ -45,6 +45,7 @@ class SimpleVCA : public CoreProcessor, MetaModule::CoreHelper<SimpleVCAInfo> {
 public:
 	void update() override {
 		//..
+    }
 
 	void set_param(int param_id, float val) override {
 		//..
@@ -150,14 +151,15 @@ which is how the GUI and DSP stay in sync.
 
 Going back to `set_param()` in our `SimpleVCA` class, we now know what `GainKnob` is,
 but what is `param_idx`? 
-This is a template variable defined in `CoreHelper`, which is not required
-but helps keep your code clean and simple. 
+This is a template variable defined in `CoreHelper` (core-interface/CoreModules/CoreHelper.hh).
+This is not required to be used, but it helps keep your code clean and simple. 
+
 `param_idx<ElemName>` converts the raw Elem name to the parameter index, which is
 what the MetaModule passes into `set_param()`. `param_idx` is safer than using 
 raw indices because it does compile-time checks for the right type: e.g. if you
-tried to do `param_idx<GainLight>`, you would get an error when you compile (rather
-than using raw IDs your plugin would compile and load but you'd get strange behavior 
-when you used it, which is a lot harder to debug)
+tried to do `param_idx<GainLight>`, you would get an error when you compile (versus if 
+you use raw IDs then your plugin would compile and load but you'd get hard to
+debug strange behavior when you used it)
 
 Similar to `param_idx`, the other functions in `SimpleVCA` use `input_idx<>`, `output_idx<>`,
 and `light_idx<>`:
@@ -201,9 +203,9 @@ whenever it needs to draw your module on screen.
 In `get_param()`, typically you just return back the last thing `set_param()`
 sent, but in some cases you might have changed the value and should report
 the new value. For example if your module has a knob that selects a scale 
-and turns a bunch of buttons on/off, or if flipping a switch disables a 
-a different parameter, etc., then the only way the MetaModule can know that one
-of your parameters changed value is when it calls `get_param()`.
+by toggling a bunch of switches, or if press a button disables a 
+a different parameter, etc., then the only way the MetaModule can know that 
+your module changed one of its own parameters is when it calls `get_param()`.
 
 That's it for the source files. Next let's look at the metadata.
 
@@ -211,15 +213,15 @@ That's it for the source files. Next let's look at the metadata.
 
 The two metadata files are `plugin.json` and `plugin-mm.json`
 
-The `plugin.json` is in a format defined by VCV Rack. We require it for native plugins, too, to streamline the way slugs are handled. It's a small short file in standard json, so it's easy to create
+The `plugin.json` is in a format defined by VCV Rack. We require it for native plugins, too, to streamline the way slugs are handled. 
 
 ```json
 {
   "slug": "NativeExample",
   "name": "NativeExample",
+  "brand": "NativeExample",
   "version": "1.0.0",
   "license": "GPL-3.0-or-later",
-  "brand": "NativeExample",
   "author": "Dan Green",
   "modules": [
     {
@@ -235,9 +237,14 @@ The `plugin.json` is in a format defined by VCV Rack. We require it for native p
 
 ```
 
-Above is a minimal example. Typically the fields `slug`, `name`, and `brand` will all be the same. This is known as your "brand slug".
+Above is a minimal example. Typically the fields `slug`, `name`, and `brand`
+will all be the same. This is known as your "brand slug". The brand slug is
+used to identify your plugin, so if you ever change it, then patch files using
+your modules will break. Once a plugin is released, you should never change
+your brand slug for that reason.
 
-You must list out all modules in the `modules` section. The tags are optional but helpful for users to find a your modules.
+You must list out all modules in the `modules` section. The tags are optional
+but helpful for users to find a your modules.
 
 The `plugin-mm.json` is similar:
 
@@ -261,13 +268,13 @@ The important things here are:
 - `MetaModuleBrandName` is the display name on the MetaModule website and on
   the MetaModule hardware screen. It does not have to match the brand slug, but
   try to make it close or else it's confusing to users.
-- `MetaModuleIncludedModules` can be a subset of the `modules` in plugin.json.
-  You might want to do that if you build this plugin for VCV and have a
-  different set of modules available for that.
-- The "Maintainer" fields refer to the MetaModule plugin maintainer. Some
-  projects were ported from VCV or another project, so there might be a
-  maintainer of the VCV plugin and a different person maintaining the
-  MetaModule plugin.
+- `MetaModuleIncludedModules` is usually the same as the `modules` field in
+  `plugin.json` but it can a subset. You might want to have it be a subset if
+  you build this plugin for VCV and have a different set of modules available
+  for VCV vs. MetaModule.
+- The "Maintainer" fields refer to the MetaModule plugin maintainer. In the
+  case that this projects was ported from another project, the MetaModule plugin
+  maintainer might be different than the other project's maintainer. 
 - The `MetaModuleDescription` field shows up on the plugins page on our
   website, and nowhere else.
 
@@ -280,6 +287,8 @@ Graphics are all PNG files, and must be in the `assets/` dir. In your info
 file, you reference the path to PNGs, by using your brand slug instead of
 `assets/`. So, if you plugin brand slug is `CoolBrand`, then you would load the
 file `assets/faceplate.png` with `CoolBrand/faceplate.png`. 
+
+See the `SimpleVCAInfo` class above for examples.
 
 Faceplates must be 240px high, and must have a non-transparent background.
 Other images can be any size and are allowed to use transparency.
