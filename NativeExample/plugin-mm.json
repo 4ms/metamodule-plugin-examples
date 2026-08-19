@@ -1,6 +1,13 @@
 {
+	"MetaModuleBrandName": "Native Example",
 	"MetaModulePluginMaintainer": "4ms Company",
 	"MetaModulePluginMaintainerEmail": "4ms@4mscompany.com",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": "Example project for a MetaModule plugin"
+	"MetaModulePluginMaintainerUrl": "https://metamodule.info",
+	"MetaModuleDescription": "Example project for a MetaModule plugin",
+    "MetaModuleIncludedModules": [
+    {
+      "slug": "SimpleVCA",
+      "name": "Simple VCA"
+    }
+	]
 }

@@ -1,6 +1,6 @@
-
-void init_simple_gain();
+#include "CoreModules/register_module.hh"
+#include "simple_vca.hh"
 
 extern "C" void init() {
-  init_simple_gain();
+	MetaModule::register_module<SimpleVCA, SimpleVCAInfo>("NativeExample");
 }

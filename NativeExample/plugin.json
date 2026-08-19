@@ -3,14 +3,15 @@
   "name": "NativeExample",
   "version": "1.0.0",
   "license": "GPL-3.0-or-later",
-  "brand": "4msCompany",
+  "brand": "NativeExample",
   "author": "Dan Green",
   "modules": [
     {
-      "slug": "SimpleGain",
-      "name": "SimpleGain",
+      "slug": "SimpleVCA",
+      "name": "SimpleVCA",
       "description": "Example plugin",
-      "tags": [
+      "tags": [ 
+		  "VCA"
       ]
     }
   ]
