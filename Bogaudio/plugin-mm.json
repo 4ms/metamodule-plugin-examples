@@ -490,6 +490,51 @@
 		"slug": "Bogaudio-XFade",
 		"name": "XFade",
 		"displayName": "XFade"
+	},
+	{
+		"slug": "Bogaudio-PEQ6XF",
+		"name": "PEQ6XF",
+		"displayName": "PEQ6XF"
+	},
+	{
+		"slug": "Bogaudio-PEQ14XF",
+		"name": "PEQ14XF",
+		"displayName": "PEQ14XF"
+	},
+	{
+		"slug": "Bogaudio-Mix8x",
+		"name": "MIX8X",
+		"displayName": "MIX8X"
+	},
+	{
+		"slug": "Bogaudio-Mix4x",
+		"name": "MIX4X",
+		"displayName": "MIX4X"
+	},
+	{
+		"slug": "Bogaudio-Matrix44Cvm",
+		"name": "MX44CVM",
+		"displayName": "MX44CVM"
+	},
+	{
+		"slug": "Bogaudio-Matrix88Cv",
+		"name": "MX88CV",
+		"displayName": "MX88CV"
+	},
+	{
+		"slug": "Bogaudio-Matrix88M",
+		"name": "MX88M",
+		"displayName": "MX88M"
+	},
+	{
+		"slug": "Bogaudio-AddrSeqX",
+		"name": "ASX",
+		"displayName": "ASX"
+	},
+	{
+		"slug": "Bogaudio-PgmrX",
+		"name": "PGMRX",
+		"displayName": "PGMRX"
 	}
 	]
 }
