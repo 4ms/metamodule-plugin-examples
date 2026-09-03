@@ -77,6 +77,26 @@
 		{
 			"slug": "Sygen",
 			"name": "Sygen"
+		},
+		{
+			"slug": "Chord-Key-Expander",
+			"name": "ChordKey expander"
+		},
+		{
+			"slug": "Clocked-Expander",
+			"name": "Clocked expander"
+		},
+		{
+			"slug": "Foundry-Expander",
+			"name": "Foundry expander"
+		},
+		{
+			"slug": "Gate-Seq-64-Expander",
+			"name": "GateSeq64 expander"
+		},
+		{
+			"slug": "Phrase-Seq-Expander",
+			"name": "PhraseSeq expander"
 		}
 	]
 }
