@@ -13,7 +13,7 @@ endif()
 include(${METAMODULE_SDK_DIR}/plugin.cmake)
 
 project(VostokInstrumentsMetaModulePlugin 
-    VERSION 0.1 
+    VERSION 0.1
     DESCRIPTION "Vostok Instruments for MetaModule" 
     LANGUAGES C CXX ASM
 )
@@ -43,13 +43,14 @@ target_compile_options(VostokInstruments PRIVATE
 target_sources(VostokInstruments PRIVATE
     # ${SOURCE_DIR}/src/plugin.cpp                    # Note: this file contains init(rack::Plugin*)
     ${SOURCE_DIR}/src/Asset.cpp
-    # ${SOURCE_DIR}/src/Atlas.cpp
+    ${SOURCE_DIR}/src/Atlas.cpp
     ${SOURCE_DIR}/src/Ceres.cpp
     ${SOURCE_DIR}/src/Fuji.cpp
     ${SOURCE_DIR}/src/Hive.cpp
     ${SOURCE_DIR}/src/Halo.cpp
     ${SOURCE_DIR}/src/Path.cpp
     ${SOURCE_DIR}/src/Sena.cpp
+    ${SOURCE_DIR}/src/Sigma.cpp
     ${SOURCE_DIR}/src/Trace.cpp
     # Add any additional module source files here
     ${SOURCE_DIR}/src/plugin.cpp
