@@ -76,8 +76,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: 'recursive'
+          submodules: false
           fetch-depth: 0
+
+      - name: Checkout submodules
+        run: |
+          if [ "${{ inputs.plugin }}" = "./" ]; then
+            git submodule update --init --recursive
+          else
+            git submodule update --init --recursive -- metamodule-plugin-sdk "${{ inputs.plugin }}"
+          fi
 
       - name: Install linux dependencies
         run: |
@@ -151,8 +159,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: 'recursive'
+          submodules: false
           fetch-depth: 0
+
+      - name: Checkout submodules
+        run: |
+          if [ "${{ inputs.plugin }}" = "./" ]; then
+            git submodule update --init --recursive
+          else
+            git submodule update --init --recursive -- metamodule-plugin-sdk "${{ inputs.plugin }}"
+          fi
 
       - name: Build
         run: |
@@ -189,8 +205,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: 'recursive'
+          submodules: false
           fetch-depth: 0
+
+      - name: Checkout submodules
+        run: |
+          if [ "${{ inputs.plugin }}" = "./" ]; then
+            git submodule update --init --recursive
+          else
+            git submodule update --init --recursive -- metamodule-plugin-sdk "${{ inputs.plugin }}"
+          fi
 
       - name: Install mac dependencies
         run: |
