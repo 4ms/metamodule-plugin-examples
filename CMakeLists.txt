@@ -13,6 +13,7 @@ set(PLUGINS
     4ms-ProducerPack
     4ms-XOXDrums
     Airwindows
+    alteredstatemachines
     Bogaudio
     captvolt
     CVfunk
