@@ -67,5 +67,5 @@
 	url = https://github.com/Vostok-Instruments/Vostok_VCVRack
 	branch = v2-mm
 [submodule "alteredstatemachines"]
-	path = alteredstatemachines
+	path = AlteredStateMachines
 	url = https://github.com/audiobird/alteredstatemachines-mm
